@@ -14,6 +14,7 @@
 	  {"id":"mcdw:sickle_last_laugh_gold","required": false},
 	  {"id":"paladins:golden_mace","required": false},
 	  {"id":"paladins:golden_great_hammer","required": false},
-	  {"id":"paladins:golden_claymore","required": false}
+	  {"id":"paladins:golden_claymore","required": false},
+	  {"id":"stalwart_dungeons:golden_hammer","required": false}
   ]
 }

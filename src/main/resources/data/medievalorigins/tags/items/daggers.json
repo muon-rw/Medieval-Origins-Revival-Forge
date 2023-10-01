@@ -27,6 +27,7 @@
 	  {"id": "simplyswords:gold_sai","required":false},
 	  {"id": "simplyswords:diamond_sai","required":false},
 	  {"id": "simplyswords:netherite_sai","required":false},
+	  {"id": "simplyswords:runic_sai","required":false},
 	  {"id": "simplyswords:soulstealer","required":false},
 	  {"id": "stalwart_dungeons:awful_dagger","required":false}
   ]

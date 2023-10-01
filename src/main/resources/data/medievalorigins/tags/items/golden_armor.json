@@ -17,6 +17,13 @@
     {"id":"mcda:golden_piglin_armor_helmet","required":false},
     {"id":"mcda:golden_piglin_armor_leggings","required":false},
     {"id":"mcda:golden_piglin_armor_chestplate","required":false},
-    {"id":"mcda:golden_piglin_armor_boots","required":false}
+    {"id":"mcda:golden_piglin_armor_boots","required":false},
+    {"id":"epicsamurai:gold_samurai_helmet","required":false},
+    {"id":"epicsamurai:gold_samurai_chestplate","required":false},
+    {"id":"epicsamurai:gold_samurai_leggings","required":false},
+    {"id":"epicsamurai:gold_samurai_boots","required":false},
+    {"id":"epicsamurai:gold_ninja_helmet","required":false},
+    {"id":"epicsamurai:gold_ninja_chestplate","required":false},
+    {"id":"epicsamurai:gold_ninja_boots","required":false}
   ]
 }

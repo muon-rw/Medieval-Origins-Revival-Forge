@@ -2,7 +2,9 @@
   "replace": false,
   "values": [
     {"id":"#c:helmets","required":false},
-	"leather_helmet",
+    {"id":"#forge:armors/helmets","required":false},
+    {"id":"#forge:helmets","required":false},
+	  "leather_helmet",
     "minecraft:chainmail_helmet",
     "minecraft:golden_helmet",
     "minecraft:iron_helmet",
