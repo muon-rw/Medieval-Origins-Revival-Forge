@@ -1,0 +1,33 @@
+{
+  "replace": false,
+  "values": [
+	  {"id": "#forge:tools/knives","required":false},
+	  {"id": "aquamirae:dagger_of_greed","required":false},
+	  {"id": "bewitchment:athame","required":false},
+	  {"id": "bwplus:vampire_knife","required":false},
+	  {"id": "forbidden_arcanus:mystical_dagger","required":false},
+	  {"id": "graveyard:bone_dagger","required":false},
+	  {"id": "mcdw:dagger_backstabber","required":false},
+	  {"id": "mcdw:dagger_chill_gale_knife","required":false},
+	  {"id": "mcdw:dagger_dagger","required":false},
+	  {"id": "mcdw:dagger_fangs_of_frost","required":false},
+	  {"id": "mcdw:dagger_moon","required":false},
+	  {"id": "mcdw:dagger_resolute_tempest_knife","required":false},
+	  {"id": "mcdw:dagger_shear_dagger","required":false},
+	  {"id": "mcdw:dagger_swift_striker","required":false},
+	  {"id": "mcdw:dagger_tempest_knife","required":false},
+	  {"id": "mcdw:dagger_the_beginning","required":false},
+	  {"id": "mcdw:dagger_the_end","required":false},
+	  {"id": "mcdw:dagger_void_touched_blade","required":false},
+	  {"id": "mcdw:dagger_eternal_knife","required":false},
+	  {"id": "mcdw:dagger_soul_knife","required":false},
+	  {"id": "minecells:assassins_dagger","required":false},
+	  {"id": "spellbladenext:rune_dagger","required":false},
+	  {"id": "simplyswords:iron_sai","required":false},
+	  {"id": "simplyswords:gold_sai","required":false},
+	  {"id": "simplyswords:diamond_sai","required":false},
+	  {"id": "simplyswords:netherite_sai","required":false},
+	  {"id": "simplyswords:soulstealer","required":false},
+	  {"id": "stalwart_dungeons:awful_dagger","required":false}
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "replace": false,
+  "origins": [
+     "medievalorigins:arachnae",
+     "medievalorigins:banshee",
+     "medievalorigins:incubus",
+     "medievalorigins:dwarf",
+     "medievalorigins:wood_elf",
+     "medievalorigins:fae",
+     "medievalorigins:goblin",
+     "medievalorigins:gorgon",
+     "medievalorigins:moon_elf",
+     "medievalorigins:necromancer",
+     "medievalorigins:ogre",
+     "medievalorigins:paladin",
+     "medievalorigins:pixie",
+     "medievalorigins:plague_victim",
+     "medievalorigins:siren",
+     "medievalorigins:yeti"
+  ]
+}
