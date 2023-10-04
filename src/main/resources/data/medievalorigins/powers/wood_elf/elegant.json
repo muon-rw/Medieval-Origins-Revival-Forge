@@ -31,13 +31,13 @@
 						{
 							"type": "origins:ingredient",
 							"ingredient": {
-								"tag": "c:helmets"
+								"tag": "medievalorigins:helmets"
 							}
 						},
 						{
 							"type": "origins:ingredient",
 							"ingredient": {
-								"tag": "c:boots"
+								"tag": "medievalorigins:boots"
 							}
 						}
 					]
@@ -82,7 +82,7 @@
 				{
 					"type": "origins:ingredient",
 					"ingredient": {
-						"tag": "c:chestplates"
+						"tag": "medievalorigins:chestplates"
 					}
 				}
 			]
@@ -125,7 +125,7 @@
 				{
 					"type": "origins:ingredient",
 					"ingredient": {
-						"tag": "c:leggings"
+						"tag": "medievalorigins:leggings"
 					}
 				}
 			]

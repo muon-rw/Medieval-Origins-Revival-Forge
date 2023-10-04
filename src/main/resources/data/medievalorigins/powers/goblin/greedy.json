@@ -6,7 +6,7 @@
 			{
 				"attribute": "minecraft:generic.attack_damage",
 				"operation": "multiply_base",
-				"value": 0.5
+				"value": 1.0
 			},
 			{
 				"attribute": "additionalentityattributes:bonus_loot_count_rolls",
@@ -36,7 +36,7 @@
 			{
 				"attribute": "minecraft:generic.attack_damage",
 				"operation": "multiply_base",
-				"value": 0.35
+				"value": 1.0
 			},
 			{
 				"attribute": "additionalentityattributes:bonus_loot_count_rolls",
@@ -102,6 +102,10 @@
 		"block_condition": {
 			"type": "origins:or",
 			"conditions": [
+				{
+					"type": "origins:in_tag",
+					"tag": "minecraft:needs_diamond_tool"
+				},
 				{
 					"type": "origins:in_tag",
 					"tag": "minecraft:needs_iron_tool"
@@ -261,7 +265,7 @@
 				"color": "gold"
 			},
 			{
-				"text": "+50% Attack Damage",
+				"text": "+100% Attack Damage",
 				"color": "yellow"
 			},
 			{
@@ -300,7 +304,7 @@
 				"color": "yellow"
 			},
 			{
-				"text": "Iron Mining Level",
+				"text": "Diamond Mining Level",
 				"color": "yellow"
 			}
 		]

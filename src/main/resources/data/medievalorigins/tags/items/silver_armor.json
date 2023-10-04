@@ -8,6 +8,10 @@
     {"id":"mythicmetals:silver_helmet","required":false},
     {"id":"mythicmetals:silver_chestplate","required":false},
     {"id":"mythicmetals:silver_leggings","required":false},
-    {"id":"mythicmetals:silver_boots","required":false}
+    {"id":"mythicmetals:silver_boots","required":false},
+    {"id":"epicsamurai:white_samurai_helmet","required":false},
+    {"id":"epicsamurai:white_samurai_chestplate","required":false},
+    {"id":"epicsamurai:white_samurair_leggings","required":false},
+    {"id":"epicsamurai:white_samurai_boots","required":false}
   ]
 }

@@ -22,13 +22,13 @@
 						{
 							"type": "apoli:ingredient",
 							"ingredient": {
-								"tag": "c:helmets"
+								"tag": "medievalorigins:helmets"
 							}
 						},
 						{
 							"type": "apoli:ingredient",
 							"ingredient": {
-								"tag": "c:boots"
+								"tag": "medievalorigins:boots"
 							}
 						}
 					]
@@ -73,7 +73,7 @@
 				{
 					"type": "apoli:ingredient",
 					"ingredient": {
-						"tag": "c:chestplates"
+						"tag": "medievalorigins:chestplates"
 					}
 				}
 			]
@@ -116,7 +116,7 @@
 				{
 					"type": "apoli:ingredient",
 					"ingredient": {
-						"tag": "c:leggings"
+						"tag": "medievalorigins:leggings"
 					}
 				}
 			]
