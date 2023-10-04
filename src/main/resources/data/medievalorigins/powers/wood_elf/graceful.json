@@ -39,8 +39,8 @@
 		"modifier": {
 			"name": "Attack Speed bonus",
 			"attribute": "minecraft:generic.attack_speed",
-			"value": 0.5,
-			"operation": "addition"
+			"value": 1.0,
+			"operation": "multiply_total"
 		}
 	}
 }
