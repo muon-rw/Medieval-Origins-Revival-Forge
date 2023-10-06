@@ -8,8 +8,7 @@
 		"medievalorigins:yeti/unstoppable",
 		"medievalorigins:yeti/winter_body",
 		"medievalorigins:yeti/flammable",
-		"medievalorigins:yeti/thick_fur",
-		"origins_env_deh:cold_resistance"
+		"medievalorigins:yeti/thick_fur"
 	],
 	"icon": {
 		"item": "minecraft:player_head",

@@ -6,7 +6,7 @@
 			{
 				"attribute": "minecraft:generic.attack_damage",
 				"operation": "multiply_base",
-				"value": 1.0
+				"value": 0.75
 			},
 			{
 				"attribute": "additionalentityattributes:bonus_loot_count_rolls",
@@ -36,7 +36,7 @@
 			{
 				"attribute": "minecraft:generic.attack_damage",
 				"operation": "multiply_base",
-				"value": 1.0
+				"value": 0.75
 			},
 			{
 				"attribute": "additionalentityattributes:bonus_loot_count_rolls",
@@ -265,7 +265,7 @@
 				"color": "gold"
 			},
 			{
-				"text": "+100% Attack Damage",
+				"text": "+75% Attack Damage",
 				"color": "yellow"
 			},
 			{

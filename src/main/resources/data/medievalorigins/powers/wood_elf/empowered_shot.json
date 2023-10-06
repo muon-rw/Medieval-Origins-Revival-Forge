@@ -1,4 +1,10 @@
 {
+    "forge:conditions": {
+        "type": "apoli:any_namespace_loaded",
+        "namespaces": [
+            "iknowicanusetypeforgefalsealsohimom"
+        ]
+    },
     "type": "origins:multiple",
     "hold_time": {
         "type": "origins:resource",
@@ -109,7 +115,6 @@
                                                 "type": "origins:execute_command",
                                                 "command": "data modify entity @s PierceLevel set value 3b"
                                             },
-                                            
                                             {
                                                 "type": "origins:execute_command",
                                                 "command": "kill @e[tag= empowered_shot.direction]"
