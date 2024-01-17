@@ -90,11 +90,11 @@
                                             },
                                             {
                                                 "type": "origins:execute_command",
-                                                "command": "kill @e[tag= empowered_shot.direction]"
+                                                "command": "kill @e[tag=empowered_shot.direction]"
                                             },
                                             {
                                                 "type": "origins:execute_command",
-                                                "command": "execute positioned 0.0 0 0.0 run summon minecraft:area_effect_cloud ^ ^ ^9 {Tags: [\"empowered_shot.direction\"]}"
+                                                "command": "execute positioned 0.0 0 0.0 run summon minecraft:area_effect_cloud ^ ^ ^9 {Duration:1000,Tags: [\"empowered_shot.direction\"]}"
                                             },
                                             {
                                                 "type": "origins:play_sound",
@@ -120,7 +120,7 @@
                                             },
                                             {
                                                 "type": "origins:execute_command",
-                                                "command": "kill @e[tag= empowered_shot.direction]"
+                                                "command": "kill @e[tag=empowered_shot.direction]"
                                             },
                                             {
                                                 "type": "origins:execute_command",

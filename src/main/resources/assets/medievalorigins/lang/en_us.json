@@ -19,6 +19,9 @@
   "origin.medievalorigins.wood_elf.name": "Wood Elf",
   "origin.medievalorigins.wood_elf.description": "Wood Elves are a wise, long-lived race in who live in harmony with the Earth. They are quick with a sword and bow and can outwit their enemies while among the trees.",
 
+  "origin.medievalorigins.high_elf.name": "High Elf",
+  "origin.medievalorigins.high_elf.description": "High Elves are a cunning race with magic coursing through their blood. They are most powerful utilizing the arcane arts, but weak with physical damage.",
+
   "origin.medievalorigins.fae.name": "Fae",
   "origin.medievalorigins.fae.description": "Fae are short magical creatures, regarded as spirits of nature and said to haunt forests and lead travelers' astray. They are equal parts mystic and trickster.",
 
@@ -145,7 +148,10 @@
   "power.medievalorigins.wood_elf/eagle_eyed.description": "Wood Elves' enhanced perception allows them to keep track of an enemy for a while after hitting them, even when they aren't in view.",
 
   "power.medievalorigins.wood_elf/empowered_shot.name": "Focus",
-  "power.medievalorigins.wood_elf/empowered_shot.description": "After charging for a few seconds, release an arrow at tremendous velocity, piercing enemies, flying further, and dealing significantly more damage.",
+  "power.medievalorigins.wood_elf/empowered_shot.description": "After charging for a few seconds, release an arrow at increased velocity, piercing enemies, flying further, and dealing more damage.",
+
+  "power.medievalorigins.wood_elf/empowered_shot_apotheosis.name": "Focus",
+  "power.medievalorigins.wood_elf/empowered_shot_apotheosis.description": "After charging for a few seconds, release an arrow at increased velocity, piercing enemies, flying further, and dealing more damage.",
 
   "power.medievalorigins.wood_elf/elegant.name": "Elegant",
   "power.medievalorigins.wood_elf/elegant.description": "Due to their slender nature, Wood Elves can not wear armor heavier than iron (This can be prevented with an enchantment), and have less health.",
@@ -209,6 +215,36 @@
 
   "power.medievalorigins.gorgon/revenge.name": "Revenge",
   "power.medievalorigins.gorgon/revenge.description": "Centuries of being cursed then blamed for their misfortune has left Gorgon's bitter. They deal massively increased damage at low health.",
+
+  "power.medievalorigins.high_elf/elegant.name": "Elegant",
+  "power.medievalorigins.high_elf/elegant.description": "Due to their slender nature, High Elves can not wear armor heavier than iron (This can be prevented with an enchantment), and have less health.",
+
+  "power.medievalorigins.high_elf/extrusive_movement.name": "Elegant",
+  "power.medievalorigins.high_elf/extrusive_movement.description": "Due to their slender nature, High Elves can not wear armor heavier than iron (This can be prevented with an enchantment), and have less health.",
+
+  "power.medievalorigins.high_elf/fragile.name": "Elegant",
+  "power.medievalorigins.high_elf/fragile.description": "Due to their slender nature, High Elves can not wear armor heavier than iron (This can be prevented with an enchantment), and have less health.",
+
+  "power.medievalorigins.high_elf/gear_spawn.name": "Elegant",
+  "power.medievalorigins.high_elf/gear_spawn.description": "Due to their slender nature, High Elves can not wear armor heavier than iron (This can be prevented with an enchantment), and have less health.",
+
+  "power.medievalorigins.high_elf/glacial_step.name": "Elegant",
+  "power.medievalorigins.high_elf/glacial_step.description": "Due to their slender nature, High Elves can not wear armor heavier than iron (This can be prevented with an enchantment), and have less health.",
+
+  "power.medievalorigins.high_elf/instant_cure.name": "Elegant",
+  "power.medievalorigins.high_elf/instant_cure.description": "Due to their slender nature, High Elves can not wear armor heavier than iron (This can be prevented with an enchantment), and have less health.",
+
+  "power.medievalorigins.high_elf/mystic_affinity.name": "Elegant",
+  "power.medievalorigins.high_elf/mystic_affinity.description": "Due to their slender nature, High Elves can not wear armor heavier than iron (This can be prevented with an enchantment), and have less health.",
+
+  "power.medievalorigins.high_elf/spell_power.name": "Elegant",
+  "power.medievalorigins.high_elf/spell_power.description": "Due to their slender nature, High Elves can not wear armor heavier than iron (This can be prevented with an enchantment), and have less health.",
+
+  "power.medievalorigins.high_elf/towering.name": "Elegant",
+  "power.medievalorigins.high_elf/towering.description": "Due to their slender nature, High Elves can not wear armor heavier than iron (This can be prevented with an enchantment), and have less health.",
+
+  "power.medievalorigins.high_elf/void_warp.name": "Elegant",
+  "power.medievalorigins.high_elf/void_warp.description": "Due to their slender nature, High Elves can not wear armor heavier than iron (This can be prevented with an enchantment), and have less health.",
 
   "power.medievalorigins.moon_elf/crazed.name": "Foreign World",
   "power.medievalorigins.moon_elf/crazed.description": "Try as they might, Moon Elves can not sleep in the overworld.",

@@ -1,0 +1,20 @@
+{
+	"powers": [
+                "medievalorigins:high_elf/mystic_affinity",
+		"medievalorigins:high_elf/fragile",
+                "medievalorigins:high_elf/spell_power",
+                "medievalorigins:high_elf/highborne",
+                "medievalorigins:high_elf/towering",
+                "medievalorigins:high_elf/elegant",
+                "medievalorigins:high_elf/gear_spawn",
+                "medievalorigins:high_elf/glacial_step",
+                "medievalorigins:high_elf/extrusive_movement",
+                "medievalorigins:high_elf/instant_cure",
+                "medievalorigins:high_elf/void_warp"
+	],
+        "icon": {
+		"item": "minecraft:enchanted_book"
+	},
+        "impact": 3,
+        "order": 1
+}
