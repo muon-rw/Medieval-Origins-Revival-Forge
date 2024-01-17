@@ -23,6 +23,16 @@ public class ModEnchantments {
                 }
             });
 
+    public static final RegistryObject<Enchantment> MIRRORING = ENCHANTMENTS.register("mirroring",
+            () -> new Enchantment(Enchantment.Rarity.RARE, EnchantmentCategory.ARMOR, new EquipmentSlot[]{EquipmentSlot.HEAD}) {
+                @Override
+                public int getMaxLevel() {
+                    return 1;
+                }
+                public int getMinLevel() {
+                    return 1;
+                }
+            });
     public static void register(IEventBus eventBus) {
         ENCHANTMENTS.register(eventBus);
     }

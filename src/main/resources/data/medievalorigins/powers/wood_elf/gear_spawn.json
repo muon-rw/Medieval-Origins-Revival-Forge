@@ -21,10 +21,10 @@
                 "type": "origins:give",
                 "stack": {
                     "item": "minecraft:arrow",
-                    "amount": 32
+                    "amount": 16
                 }
             }
         ]
     },
-    "execute_chosen_when_orb": true
+    "execute_chosen_when_orb": false
 }
