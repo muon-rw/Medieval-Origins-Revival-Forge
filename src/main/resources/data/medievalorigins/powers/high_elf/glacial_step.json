@@ -1,8 +1,18 @@
 {
-    "type": "origins:modify_enchantment_level",
+    "type": "apoli:modify_enchantment_level",
     "enchantment": "minecraft:frost_walker",
     "modifier": {
         "operation": "add_base_early",
         "value": 2
+    },
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "offhand",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "medievalorigins:ice_blocks"
+            }
+        }
     }
 }

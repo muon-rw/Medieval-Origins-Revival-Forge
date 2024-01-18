@@ -219,32 +219,35 @@
   "power.medievalorigins.high_elf/elegant.name": "Elegant",
   "power.medievalorigins.high_elf/elegant.description": "Due to their slender nature, High Elves can not wear armor heavier than iron (This can be prevented with an enchantment), and have less health.",
 
-  "power.medievalorigins.high_elf/extrusive_movement.name": "Elegant",
-  "power.medievalorigins.high_elf/extrusive_movement.description": "Due to their slender nature, High Elves can not wear armor heavier than iron (This can be prevented with an enchantment), and have less health.",
+  "power.medievalorigins.high_elf/extrusive_movement.name": "Extrusive Movement",
+  "power.medievalorigins.high_elf/extrusive_movement.description": "Channel the flow of heat to walk freely on smoldering lava, usable by holding obsidian in your offhand.",
 
-  "power.medievalorigins.high_elf/fragile.name": "Elegant",
-  "power.medievalorigins.high_elf/fragile.description": "Due to their slender nature, High Elves can not wear armor heavier than iron (This can be prevented with an enchantment), and have less health.",
+  "power.medievalorigins.high_elf/fragile.name": "Fragile",
+  "power.medievalorigins.high_elf/fragile.description": "High Elves are much more susceptible to physical damage, and deal less damage with physical weapons.",
 
-  "power.medievalorigins.high_elf/gear_spawn.name": "Elegant",
-  "power.medievalorigins.high_elf/gear_spawn.description": "Due to their slender nature, High Elves can not wear armor heavier than iron (This can be prevented with an enchantment), and have less health.",
+  "power.medievalorigins.high_elf/glacial_step.name": "Glacial Step",
+  "power.medievalorigins.high_elf/glacial_step.description": "Manipulate the entropy of water molecules, allowing you to walk as if you had Frost Walker. Activate by holding an ice block in your offhand.",
 
-  "power.medievalorigins.high_elf/glacial_step.name": "Elegant",
-  "power.medievalorigins.high_elf/glacial_step.description": "Due to their slender nature, High Elves can not wear armor heavier than iron (This can be prevented with an enchantment), and have less health.",
+  "power.medievalorigins.high_elf/instant_cure.name": "Instant Cure",
+  "power.medievalorigins.high_elf/instant_cure.description": "Channel healing energy directly into an infected villager without having to weaken its defenses first. Right click any zombie villager with a golden apple to heal.",
 
-  "power.medievalorigins.high_elf/instant_cure.name": "Elegant",
-  "power.medievalorigins.high_elf/instant_cure.description": "Due to their slender nature, High Elves can not wear armor heavier than iron (This can be prevented with an enchantment), and have less health.",
+  "power.medievalorigins.high_elf/mystic_affinity.name": "Mystic Affinity",
+  "power.medievalorigins.high_elf/mystic_affinity.description": "High Elves are powerful and clever manipulators of arcane energy - they deal more magic damage and take less magic damage than other races.",
 
-  "power.medievalorigins.high_elf/mystic_affinity.name": "Elegant",
-  "power.medievalorigins.high_elf/mystic_affinity.description": "Due to their slender nature, High Elves can not wear armor heavier than iron (This can be prevented with an enchantment), and have less health.",
+  "power.medievalorigins.high_elf/spell_power_irons.name": "Highborne",
+  "power.medievalorigins.high_elf/spell_power_irons.description": "High Elves naturally have more mana than other races, and can channel the power of their elders to regenerate mana quickly.",
 
-  "power.medievalorigins.high_elf/spell_power.name": "Elegant",
-  "power.medievalorigins.high_elf/spell_power.description": "Due to their slender nature, High Elves can not wear armor heavier than iron (This can be prevented with an enchantment), and have less health.",
+  "power.medievalorigins.high_elf/spell_power_irons_ars.name": "Highborne",
+  "power.medievalorigins.high_elf/spell_power_irons_ars.description": "High Elves naturally have more mana than other races, and can channel the power of their elders to regenerate mana quickly.",
 
-  "power.medievalorigins.high_elf/towering.name": "Elegant",
-  "power.medievalorigins.high_elf/towering.description": "Due to their slender nature, High Elves can not wear armor heavier than iron (This can be prevented with an enchantment), and have less health.",
+  "power.medievalorigins.high_elf/spell_power_ars.name": "Highborne",
+  "power.medievalorigins.high_elf/spell_power_ars.description": "High Elves naturally have more mana than other races, and can channel the power of their elders to regenerate mana quickly.",
 
-  "power.medievalorigins.high_elf/void_warp.name": "Elegant",
-  "power.medievalorigins.high_elf/void_warp.description": "Due to their slender nature, High Elves can not wear armor heavier than iron (This can be prevented with an enchantment), and have less health.",
+  "power.medievalorigins.high_elf/towering.name": "Towering",
+  "power.medievalorigins.high_elf/towering.description": "High Elves are slender and taller than the average human.",
+
+  "power.medievalorigins.high_elf/void_warp.name": "Void Warp",
+  "power.medievalorigins.high_elf/void_warp.description": "Rip through the fabric of reality to teleport yourself a short distance in any direction. Press the secondary active key while holding an ender pearl.",
 
   "power.medievalorigins.moon_elf/crazed.name": "Foreign World",
   "power.medievalorigins.moon_elf/crazed.description": "Try as they might, Moon Elves can not sleep in the overworld.",

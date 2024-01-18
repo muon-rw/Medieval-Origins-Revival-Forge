@@ -87,11 +87,15 @@ minecraft {
         client {
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
             property 'forge.enabledGameTestNamespaces', mod_id
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
         }
 
         server {
             property 'forge.enabledGameTestNamespaces', mod_id
             args '--nogui'
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
         }
 
         // This run config launches GameTestServer and runs all registered gametests, then exits.
@@ -122,6 +126,14 @@ repositories {
     // See https://docs.gradle.org/current/userguide/declaring_repositories.html#sub:flat_dir_resolver
     flatDir { dir 'libs' }
     maven { url = "https://maven.theillusivec4.top/" }
+    maven {
+        name "KosmX's maven"
+        url 'https://maven.kosmx.dev/'
+    }
+    maven {
+        name = 'GeckoLib'
+        url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+    }
 }
 
 dependencies {
@@ -137,6 +149,13 @@ dependencies {
     implementation fg.deobf("com.github.Virtuoel:Pehkui:${pehkui_version}")
     runtimeOnly fg.deobf("top.theillusivec4.caelus:caelus-forge:${caelus_version}")
     compileOnly fg.deobf("top.theillusivec4.caelus:caelus-forge:${caelus_version}")
+    runtimeOnly fg.deobf("io.redspace.ironsspellbooks:irons_spellbooks:1.20.1-2.2.1")
+    runtimeOnly fg.deobf("com.hollingsworth.ars_nouveau:ars_nouveau:1.20.1-4.8.3-all")
+    runtimeOnly fg.deobf("software.bernie.geckolib:geckolib-forge-${geckolib_version}")
+    runtimeOnly fg.deobf("dev.kosmx.player-anim:player-animation-lib-forge:${player_animator_version}")
+    runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}:api")
+    runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}")
+
     // Example mod dependency with JEI - using fg.deobf() ensures the dependency is remapped to your development mappings
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
     //compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}")
