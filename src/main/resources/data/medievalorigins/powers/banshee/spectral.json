@@ -34,5 +34,58 @@
 	"ghostly": {
 		"type": "origins:model_color",
 		"alpha": 0.7
-	}
+	},
+	"phase": {
+		"type": "origins:phasing",
+		"blacklist": true,
+		"render_type": "blindness",
+		"view_distance": 10,
+		"block_condition": {
+			"type": "origins:in_tag",
+			"tag": "origins:unphasable"
+		},
+		"phase_down_condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:sneaking"
+				},
+				{
+					"type": "origins:on_block"
+				}
+			]
+		},
+		"condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:resistance",
+            "min_amplifier": 10
+        }
+	},
+    "screen_color": {
+        "type": "origins:modify_camera_submersion",
+        "to": "water",
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:resistance",
+            "min_amplifier": 10
+        }
+    },
+	"flight": {
+		"type": "origins:creative_flight",
+		"condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:resistance",
+            "min_amplifier": 10
+        }
+	},
+    "increase_view_distance": {
+        "type": "origins:lava_vision",
+        "s": 0,
+        "v": 15,
+        "condition": {
+            "type": "origins:status_effect",
+            "effect": "minecraft:resistance",
+            "min_amplifier": 10
+        }
+    }
 }
