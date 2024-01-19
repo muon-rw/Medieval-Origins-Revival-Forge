@@ -35,11 +35,8 @@
             ]
         },
         "command_along_ray": "function medievalorigins:mdvlorigins/void_warp",
-        "command_along_ray_only_on_hit": false,
-        "before_action": {
-            "type": "origins:simple"
-        },
-        "command_at_hit": "tp @s ~ ~0.1 ~",
+        "command_along_ray_only_on_hit": true,
+        "command_at_hit": "tp @s ~ ~2 ~",
         "command_step": 1
     },
     "cooldown": 300,
@@ -52,13 +49,26 @@
         "continuous": false
     },
     "condition": {
-        "type": "origins:equipped_item",
-        "equipment_slot": "offhand",
-        "item_condition": {
-            "type": "origins:ingredient",
-            "ingredient": {
-                "tag": "medievalorigins:ender_pearls"
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "offhand",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "tag": "medievalorigins:ender_pearls"
+                    }
+                }
+            },
+            {
+                "type": "origins:raycast",
+                "distance": 50,
+                "block": true,
+                "entity": false,
+                "shape_type": "visual",
+                "fluid_handling": "any"
             }
-        }
+        ]
     }
 }
