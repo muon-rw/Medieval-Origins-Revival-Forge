@@ -1,7 +1,6 @@
 {
-	"loading_priority": 1,
 	"type": "origins:burn",
-	"interval": 20,
+	"interval": 40,
 	"burn_duration": 6,
 	"condition": {
 		"type": "origins:and",

@@ -252,7 +252,7 @@
   "power.medievalorigins.moon_elf/crazed.description": "Try as they might, Moon Elves can not sleep in the overworld.",
 
   "power.medievalorigins.moon_elf/stealth.name": "To the Shadows",
-  "power.medievalorigins.moon_elf/stealth.description": "In the dark, Moon Elves can turn invisible by sneaking, and move a short distance while stealthed. When attacking from stealth, their first attack deals bonus damage and ends the invisibility.",
+  "power.medievalorigins.moon_elf/stealth.description": "In the dark, Moon Elves can turn invisible by sneaking, and move a short distance while stealthed. When attacking from stealth, their first attack deals bonus damage and ends the invisibility. This deals extra damage if wielding a dagger.",
 
   "power.medievalorigins.moon_elf/elegant.name": "Elegant",
   "power.medievalorigins.moon_elf/elegant.description": "Due to their slim builds, Moon Elves can not wear armor heavier than iron. This can be prevented with an enchantment.",
@@ -469,6 +469,8 @@
   "medievalorigins.unwearable": "Unwearable",
 
   "medievalorigins.damage_dealt": "Damage Dealt",
+
+  "medievalorigins.stab_bonus": "Stealth Break Bonus",
 
   "medievalorigins.self_wither": "Withered while holding",
 

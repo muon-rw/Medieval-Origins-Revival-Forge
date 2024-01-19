@@ -56,6 +56,14 @@
 			{
 				"translate": "medievalorigins.damage_dealt",
 				"color": "dark_aqua"
+			},
+			{
+				"text": "\n",
+				"color": "dark_aqua"
+			},
+			{
+				"translate": "medievalorigins.stab_bonus",
+				"color": "dark_aqua"
 			}
 		]
 	}

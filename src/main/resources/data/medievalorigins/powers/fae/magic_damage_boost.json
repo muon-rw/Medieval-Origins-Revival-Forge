@@ -8,5 +8,6 @@
         "name": "Origin magic damage boost",
         "operation": "multiply_base",
         "value": 0.2
-    }
+    },
+    "hidden": true
 }
