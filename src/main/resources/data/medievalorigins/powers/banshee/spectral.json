@@ -3,17 +3,26 @@
 	"immunity": {
 		"type": "origins:active_self",
 		"entity_action": {
-			"type": "origins:apply_effect",
-			"effect": {
-				"effect": "minecraft:resistance",
-				"is_ambient": true,
-				"show_particles": false,
-				"show_icon": false,
-				"amplifier": 10,
-				"duration": 200
-			}
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:apply_effect",
+					"effect": {
+						"effect": "minecraft:resistance",
+						"is_ambient": true,
+						"show_particles": false,
+						"show_icon": false,
+						"amplifier": 10,
+						"duration": 200
+					}
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "function medievalorigins:mdvlorigins/spectral_activate"
+				}
+			]
 		},
-		"cooldown": 3600,
+		"cooldown": 36,
 		"key": {
 			"key": "key.origins.secondary_active",
 			"continuous": false

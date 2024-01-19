@@ -1,9 +1,9 @@
-playsound minecraft:entity.warden.sonic_charge player @a ~ ~ ~ 0.8 0.7
+playsound minecraft:entity.warden.sonic_charge player @a ~ ~ ~ 0.68 0.9
 playsound minecraft:entity.ghast.hurt player @a ~ ~ ~ 0.15 0.6
 playsound minecraft:entity.ghast.hurt player @a ~ ~ ~ 0.16 0.5
 playsound minecraft:entity.ghast.hurt player @a ~ ~ ~ 0.15 0.7
 playsound minecraft:entity.panda.death player @a ~ ~ ~ 0.45 0.5
 playsound minecraft:entity.panda.death player @a ~ ~ ~ 0.45 0.6
-playsound minecraft:entity.allay.hurt player @a ~ ~ ~ 0.7 0.6
-playsound minecraft:entity.allay.hurt player @a ~ ~ ~ 0.7 0.5
-playsound minecraft:entity.warden.sonic_boom player @a ~ ~ ~ 0.7 0.7
+playsound minecraft:entity.allay.hurt player @a ~ ~ ~ 0.3 0.6
+playsound minecraft:entity.allay.hurt player @a ~ ~ ~ 0.3 0.5
+playsound minecraft:entity.warden.sonic_boom player @a ~ ~ ~ 0.65 0.8

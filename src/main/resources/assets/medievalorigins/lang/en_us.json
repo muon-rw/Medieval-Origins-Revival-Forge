@@ -53,7 +53,6 @@
   "origin.medievalorigins.yeti.description": "Lumbering giants of frosty peaks, the Yeti's icy nature allows them to stop almost any foe, but can leave them vulnerable to fiery attacks.",
 
 
-
   "power.medievalorigins.arachnae/bottomless_stomach.name": "Bottomless Stomach",
   "power.medievalorigins.arachnae/bottomless_stomach.description": "Being a human sized spider presents unique challenges. Arachnae require a large quantity of food to stay alive.",
 
@@ -76,10 +75,10 @@
   "power.medievalorigins.arachnae/web_slinger.description": "Arachnae can, on command, spin webs in which their opponents will be immobilised for a short while.",
 
   "power.medievalorigins.banshee/spectral.name": "Spectral",
-  "power.medievalorigins.banshee/spectral.description": "Banshees possess the ability to become intangible at will, meaning they cannot be affected by foes in the physical realm. This of course comes with a cooldown. Activated with the secondary power key.",
+  "power.medievalorigins.banshee/spectral.description": "Banshees possess the ability to become intangible at will, meaning they cannot be affected by foes in the physical realm. Activated with the secondary power key.",
 
-  "power.medievalorigins.banshee/flesheater.name": "Flesh-eater",
-  "power.medievalorigins.banshee/flesheater.description": "Banshees feast upon the organs of the living. Their spectral bodies have no desire for fruit or vegetables.",
+  "power.medievalorigins.banshee/flesheater.name": "Flesh Eater",
+  "power.medievalorigins.banshee/flesheater.description": "Banshees feast upon the organs of the living. Their spectral bodies have no desire for vegetation.",
 
   "power.medievalorigins.banshee/hexed.name": "Hexed",
   "power.medievalorigins.banshee/hexed.description": "Banshees are known for their cursing prowess. Every time they are hit, there is a small chance that the attacker will be consigned to a fate of slow, agonising death.",
@@ -90,8 +89,8 @@
   "power.medievalorigins.banshee/iron_aversion.name": "Iron Aversion",
   "power.medievalorigins.banshee/iron_aversion.description": "Iron is lethal to banshees. They cannot bear to wear it.",
 
-  "power.medievalorigins.banshee/sonic_shriek.name": "Sonic Shriek",
-  "power.medievalorigins.banshee/sonic_shriek.description": "Banshees can unleash a terrifying focused screech at one target, dealing magic damage and nauseating them.",
+  "power.medievalorigins.banshee/sonic_shriek.name": "Wail of Sorrow",
+  "power.medievalorigins.banshee/sonic_shriek.description": "Unleash a terrifying earsplitting screech, dealing magic damage to the first target and nauseating anyone caught in the sound wave.",
 
   "power.medievalorigins.incubus/carnivore.name": "Carnivore",
   "power.medievalorigins.incubus/carnivore.description": "An incubus' bloodlust is insatiable. If it isn't the flesh of an animal, its worthless.",

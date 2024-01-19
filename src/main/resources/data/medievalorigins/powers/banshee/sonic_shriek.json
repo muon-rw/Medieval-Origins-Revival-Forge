@@ -5,7 +5,7 @@
 	},
 	"entity_action": {
 		"type": "origins:raycast",
-		"distance": 24,
+		"distance": 25,
 		"shape_type": "visual",
 		"fluid_handling": "none",
 		"block": true,
@@ -16,44 +16,11 @@
 				{
 					"type": "origins:execute_command",
 					"command": "function medievalorigins:mdvlorigins/banshee_shriek"
-				},
-				{
-					"type": "origins:apply_effect",
-					"effect": {
-						"effect": "minecraft:strength",
-						"duration": 200,
-						"amplifier": 3,
-						"is_ambient": true,
-						"show_particles": true,
-						"show_icon": true
-					}
 				}
 			]
 		},
-		"hit_action": {
-			"type": "origins:apply_effect",
-			"effect": {
-				"effect": "minecraft:strength",
-				"duration": 200,
-				"amplifier": 3,
-				"is_ambient": true,
-				"show_particles": true,
-				"show_icon": true
-			}
-		},
-		"miss_action": {
-			"type": "origins:apply_effect",
-			"effect": {
-				"effect": "minecraft:strength",
-				"duration": 200,
-				"amplifier": 3,
-				"is_ambient": true,
-				"show_particles": true,
-				"show_icon": true
-			}
-		},
 		"command_along_ray": "function medievalorigins:mdvlorigins/banshee_shriek_ray",
-		"command_along_ray_only_on_hit": false,
+		"command_along_ray_only_on_hit": true,
 		"command_step": 1,
 		"bientity_action": {
 			"type": "origins:target_action",
@@ -84,7 +51,15 @@
 			}
 		}
 	},
-	"cooldown": 2000,
+	"condition": {
+		"type": "origins:raycast",
+		"distance": 22,
+		"block": false,
+		"entity": true,
+		"shape_type": "visual",
+		"fluid_handling": "any"
+	},
+	"cooldown": 1000,
 	"hud_render": {
 		"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
 		"bar_index": 0
