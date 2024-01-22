@@ -35,6 +35,23 @@
 		"type": "origins:model_color",
 		"alpha": 0.7
 	},
+	"untargeted": {
+		"type": "origins:action_over_time",
+		"condition": {
+			"type": "origins:status_effect",
+			"effect": "minecraft:resistance",
+			"min_amplifier": 10
+		},
+		"rising_action": {
+			"type": "origins:execute_command",
+			"command": "scale set pehkui:visibility 0 @s"
+		},
+		"falling_action": {
+			"type": "origins:execute_command",
+			"command": "scale reset pehkui:visibility"
+		},
+		"interval": 10
+	},
 	"phase": {
 		"type": "origins:phasing",
 		"blacklist": true,
@@ -56,36 +73,36 @@
 			]
 		},
 		"condition": {
-            "type": "origins:status_effect",
-            "effect": "minecraft:resistance",
-            "min_amplifier": 10
-        }
+			"type": "origins:status_effect",
+			"effect": "minecraft:resistance",
+			"min_amplifier": 10
+		}
 	},
-    "screen_color": {
-        "type": "origins:modify_camera_submersion",
-        "to": "water",
-        "condition": {
-            "type": "origins:status_effect",
-            "effect": "minecraft:resistance",
-            "min_amplifier": 10
-        }
-    },
+	"screen_color": {
+		"type": "origins:modify_camera_submersion",
+		"to": "water",
+		"condition": {
+			"type": "origins:status_effect",
+			"effect": "minecraft:resistance",
+			"min_amplifier": 10
+		}
+	},
 	"flight": {
 		"type": "origins:creative_flight",
 		"condition": {
-            "type": "origins:status_effect",
-            "effect": "minecraft:resistance",
-            "min_amplifier": 10
-        }
+			"type": "origins:status_effect",
+			"effect": "minecraft:resistance",
+			"min_amplifier": 10
+		}
 	},
-    "increase_view_distance": {
-        "type": "origins:lava_vision",
-        "s": 0,
-        "v": 15,
-        "condition": {
-            "type": "origins:status_effect",
-            "effect": "minecraft:resistance",
-            "min_amplifier": 10
-        }
-    }
+	"increase_view_distance": {
+		"type": "origins:lava_vision",
+		"s": 0,
+		"v": 15,
+		"condition": {
+			"type": "origins:status_effect",
+			"effect": "minecraft:resistance",
+			"min_amplifier": 10
+		}
+	}
 }

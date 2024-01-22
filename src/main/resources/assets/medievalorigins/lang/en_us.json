@@ -2,7 +2,7 @@
   "origin.origins.human.description": "Humans are the youngest species, notoriously foolish but undoubtedly courageous. Their fate is more open than most.",
 
   "origin.medievalorigins.alfiq.name": "Alfiq",
-  "origin.medievalorigins.alfiq.description": "Alfiq are a cunning race of anthropomorphic felines with sharp claws and excellent agility. May your roads lead to warm sands.",
+  "origin.medievalorigins.alfiq.description": "Alfiq are a cunning race of anthropomorphic felines with sharp claws and excellent agility. Their roads often lead to warm sands.",
 
   "origin.medievalorigins.arachnae.name": "Arachnae",
   "origin.medievalorigins.arachnae.description": "A grotesque amalgamation of spider and human, with venomous fangs and bristled feet yet the ability to walk upright and wield weaponry.",
@@ -54,16 +54,16 @@
 
 
   "power.medievalorigins.arachnae/bottomless_stomach.name": "Bottomless Stomach",
-  "power.medievalorigins.arachnae/bottomless_stomach.description": "Being a human sized spider presents unique challenges. Arachnae require a large quantity of food to stay alive.",
+  "power.medievalorigins.arachnae/bottomless_stomach.description": "As human sized spiders, Arachnae require a massive quantity of food to stay alive.",
 
   "power.medievalorigins.arachnae/brittle.name": "Brittle",
-  "power.medievalorigins.arachnae/brittle.description": "The Arachnae's exoskeleton cannot support armor heavier than iron. This can be prevented with an enchantment." ,
+  "power.medievalorigins.arachnae/brittle.description": "The Arachnae's chitinous exoskeleton cannot support armor heavier than iron. This can be prevented with an enchantment." ,
 
   "power.medievalorigins.arachnae/climber.name": "Climber",
   "power.medievalorigins.arachnae/climber.description": "The fine bristles on the Arachnae's legs allow them to climb up walls.",
   
-  "power.medievalorigins.arachnae/fragile_exoskeleton.name": "Fragile Exoskeleton",
-  "power.medievalorigins.arachnae/fragile_exoskeleton.description": "The Arachnae's exoskeleton is vulnerable to damage. Their health is less compared to a regular human's.",
+  "power.medievalorigins.arachnae/fragile_exoskeleton.name": "Fragile",
+  "power.medievalorigins.arachnae/fragile_exoskeleton.description": "The Arachnae's exoskeleton is more vulnerable to damage. They have slightly less health than a regular human.",
   
   "power.medievalorigins.arachnae/many_eyes.name": "Many Eyes",
   "power.medievalorigins.arachnae/many_eyes.description": "The Arachnae's eight eyes are all adpated to darkness, and allow them to see clearly even with very little light.",

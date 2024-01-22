@@ -3,6 +3,7 @@ package net.itsparkielad.medievalorigins;
 import com.mojang.logging.LogUtils;
 import net.itsparkielad.medievalorigins.enchantments.ModEnchantments;
 
+import net.itsparkielad.medievalorigins.entity.ModEntities;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -14,8 +15,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 import org.slf4j.Logger;
-
-import javax.swing.*;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(MedievalOrigins.MODID)
@@ -32,6 +31,7 @@ public class MedievalOrigins
         modEventBus.addListener(this::commonSetup);
 
         ModEnchantments.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
