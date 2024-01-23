@@ -1,10 +1,15 @@
 {
 	"type": "origins:active_self",
-	"entity_action": {
-		"type": "origins:execute_command",
-		"command": "function medievalorigins:mdvlorigins/hellraiser"
+	"entity_action": 
+	{
+		"type": "origins:spawn_entity",
+		"entity_type": "medievalorigins:summon_skeleton",
+		"tag": "{LifeTicks:1000}",
+		"bientity_action": {
+			"type": "origins:tame"
+		}
 	},
-	"cooldown": 3000,
+	"cooldown": 50,
 	"hud_render": {
 		"should_render": true,
 		"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",

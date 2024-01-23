@@ -10,7 +10,10 @@
                 "medievalorigins:siren/seduce",
                 "mermod:fabulous_fins"
 	],
-	"icon": "minecraft:sea_lantern",
+        "icon": {
+                "item": "minecraft:ink_sac",
+                "tag": "{CustomModelData:366}"
+        },
 	"impact": 2,
         "order": 1
 }

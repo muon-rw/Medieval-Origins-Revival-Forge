@@ -9,7 +9,10 @@
                 "medievalorigins:necromancer/disturbed",
                 "medievalorigins:necromancer/unguarded"
 	],
-	"icon": "minecraft:wither_rose",
+        "icon": {
+                "item": "minecraft:ink_sac",
+                "tag": "{CustomModelData:360}"
+        },
 	"impact": 2,
         "order": 1
 }

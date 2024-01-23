@@ -8,7 +8,10 @@
                 "medievalorigins:fae/diminutive",
                 "medievalorigins:fae/iron_aversion"
         ],
-        "icon": "minecraft:experience_bottle",
+        "icon": {
+                "item": "minecraft:ink_sac",
+                "tag": "{CustomModelData:367}"
+        },
         "impact": 2,
         "order": 1
 }

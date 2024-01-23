@@ -1,6 +1,7 @@
 package net.itsparkielad.medievalorigins;
 
 import com.mojang.logging.LogUtils;
+import net.itsparkielad.medievalorigins.action.ModActions;
 import net.itsparkielad.medievalorigins.enchantments.ModEnchantments;
 
 import net.itsparkielad.medievalorigins.entity.ModEntities;
@@ -26,12 +27,11 @@ public class MedievalOrigins
     public MedievalOrigins()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
-
         ModEnchantments.register(modEventBus);
         ModEntities.register(modEventBus);
+        ModActions.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

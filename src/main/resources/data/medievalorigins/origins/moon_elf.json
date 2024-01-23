@@ -10,7 +10,8 @@
                 "medievalorigins:moon_elf/towering"
         ],
         "icon": {
-                "item": "minecraft:amethyst_cluster"
+                "item": "minecraft:ink_sac",
+                "tag": "{CustomModelData:359}"
         },
         "impact": 3,
         "order": 1

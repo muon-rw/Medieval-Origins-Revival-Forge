@@ -38,7 +38,13 @@ public class SummonedSkeletonEntity extends Skeleton implements IFollowingSummon
     public SummonedSkeletonEntity(EntityType<? extends Skeleton> entityType, Level level) {
         super(entityType, level);
     }
-
+    public SummonedSkeletonEntity(Level level, LivingEntity owner, ItemStack item) {
+        super(ModEntities.SUMMON_SKELETON.get(), level);
+        this.setWeapon(item);
+        this.owner = owner;
+        this.limitedLifespan = true;
+        setOwnerID(owner.getUUID());
+    }
     private final RangedBowAttackGoal<SummonedSkeletonEntity> bowGoal = new RangedBowAttackGoal<>(this, 1.0D, 20, 15.0F);
 
     private final MeleeAttackGoal meleeGoal = new MeleeAttackGoal(this, 2.2D, true) {
@@ -66,15 +72,6 @@ public class SummonedSkeletonEntity extends Skeleton implements IFollowingSummon
     private int limitedLifeTicks;
 
 
-
-    public SummonedSkeletonEntity(Level level, LivingEntity owner, ItemStack item) {
-        super(ModEntities.SUMMON_SKELETON.get(), level);
-        this.setWeapon(item);
-        this.owner = owner;
-        this.limitedLifespan = true;
-        setOwnerID(owner.getUUID());
-
-    }
 
     @Override
     public void die(DamageSource pDamageSource) {
@@ -143,11 +140,11 @@ public class SummonedSkeletonEntity extends Skeleton implements IFollowingSummon
         this.reassessWeaponGoal();
     }
 
-    private Level level = super.level();
+
 
     @Override
     public void reassessWeaponGoal() {
-        if (this.level instanceof ServerLevel && this.getItemInHand(InteractionHand.MAIN_HAND) != ItemStack.EMPTY) {
+        if (getWorld() instanceof ServerLevel && this.getItemInHand(InteractionHand.MAIN_HAND) != ItemStack.EMPTY) {
             this.goalSelector.removeGoal(this.meleeGoal);
             this.goalSelector.removeGoal(this.bowGoal);
             ItemStack itemstack = this.getItemInHand(ProjectileUtil.getWeaponHoldingHand(this, item -> item instanceof net.minecraft.world.item.BowItem));
@@ -175,7 +172,7 @@ public class SummonedSkeletonEntity extends Skeleton implements IFollowingSummon
         super.tick();
         if (--this.limitedLifeTicks <= 0) {
             this.limitedLifeTicks = 20;
-            this.hurt(level.damageSources().starve(), 20.0F);
+            this.hurt(getWorld().damageSources().starve(), 20.0F);
         }
     }
 
@@ -197,7 +194,7 @@ public class SummonedSkeletonEntity extends Skeleton implements IFollowingSummon
 
     @Override
     public Level getWorld() {
-        return this.level;
+        return this.level();
     }
 
     @Override
@@ -261,7 +258,7 @@ public class SummonedSkeletonEntity extends Skeleton implements IFollowingSummon
         try {
             UUID uuid = this.getOwnerUUID();
 
-            return uuid == null ? null : this.level.getPlayerByUUID(uuid);
+            return uuid == null ? null : this.getWorld().getPlayerByUUID(uuid);
         } catch (IllegalArgumentException var2) {
             return null;
         }

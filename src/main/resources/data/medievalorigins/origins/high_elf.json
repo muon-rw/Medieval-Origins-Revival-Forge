@@ -15,8 +15,9 @@
                 "medievalorigins:high_elf/void_warp"
 	],
         "icon": {
-		"item": "minecraft:enchanted_book"
-	},
+                "item": "minecraft:ink_sac",
+                "tag": "{CustomModelData:364}"
+        },
         "impact": 3,
         "order": 1
 }

@@ -10,7 +10,10 @@
                 "medievalorigins:dwarf/pickaxeless_stone",
                 "medievalorigins:dwarf/helmet_spawn"
 	],
-	"icon": "minecraft:gold_ore",
+        "icon": {
+                "item": "minecraft:ink_sac",
+                "tag": "{CustomModelData:356}"
+        },
 	"impact": 3,
         "order": 1
 }

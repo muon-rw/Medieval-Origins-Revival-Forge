@@ -8,7 +8,10 @@
                 "medievalorigins:banshee/iron_aversion",
                 "medievalorigins:banshee/immaterial"
 	],
-	"icon": "minecraft:ender_eye",
+        "icon": {
+                "item": "minecraft:ink_sac",
+                "tag": "{CustomModelData:358}"
+        },
 	"impact": 2,
         "order": 1
 }
