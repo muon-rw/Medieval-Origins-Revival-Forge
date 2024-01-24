@@ -2,12 +2,7 @@
 	"type": "origins:active_self",
 	"entity_action": 
 	{
-		"type": "origins:spawn_entity",
-		"entity_type": "medievalorigins:summon_skeleton",
-		"tag": "{LifeTicks:1000}",
-		"bientity_action": {
-			"type": "origins:tame"
-		}
+		"type": "medievalorigins:summon_skeleton"
 	},
 	"cooldown": 50,
 	"hud_render": {

@@ -17,5 +17,4 @@ public class ModEventBusEventsClient {
     public static void registerRenderers(final EntityRenderersEvent.RegisterRenderers event) {
         event.registerEntityRenderer(ModEntities.SUMMON_SKELETON.get(), SkeletonRenderer::new);
     }
-
 }

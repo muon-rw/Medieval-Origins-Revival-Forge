@@ -2,6 +2,7 @@ package net.itsparkielad.medievalorigins;
 
 import com.mojang.logging.LogUtils;
 import net.itsparkielad.medievalorigins.action.ModActions;
+import net.itsparkielad.medievalorigins.condition.ModConditions;
 import net.itsparkielad.medievalorigins.enchantments.ModEnchantments;
 
 import net.itsparkielad.medievalorigins.entity.ModEntities;
@@ -32,6 +33,7 @@ public class MedievalOrigins
         ModEnchantments.register(modEventBus);
         ModEntities.register(modEventBus);
         ModActions.register(modEventBus);
+        ModConditions.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

@@ -13,7 +13,6 @@ import java.util.UUID;
  * For entities summoned by spells.
  */
 public interface ISummon extends OwnableEntity {
-    // How many ticks the summon has left
     int getTicksLeft();
 
     void setTicksLeft(int ticks);
