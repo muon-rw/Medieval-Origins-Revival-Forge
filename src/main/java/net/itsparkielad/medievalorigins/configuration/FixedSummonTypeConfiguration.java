@@ -9,20 +9,20 @@ import io.github.edwinmindcraft.calio.api.network.CalioCodecHelper;
 import io.github.edwinmindcraft.calio.api.registry.ICalioDynamicRegistryManager;
 import net.minecraft.core.Holder;
 import net.minecraft.nbt.CompoundTag;
-import net.minecraft.world.entity.EntityType;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 import java.util.Optional;
 
-public record SummonSkeletonConfiguration(@Nullable CompoundTag tag,
-                                       Holder<ConfiguredEntityAction<?, ?>> action) implements IDynamicFeatureConfiguration {
+public record FixedSummonTypeConfiguration(Optional<Integer> duration, @Nullable CompoundTag tag,
+                                           Holder<ConfiguredEntityAction<?, ?>> action) implements IDynamicFeatureConfiguration {
 
-    public static final Codec<SummonSkeletonConfiguration> CODEC = RecordCodecBuilder.create(instance -> instance.group(
+    public static final Codec<FixedSummonTypeConfiguration> CODEC = RecordCodecBuilder.create(instance -> instance.group(
+            CalioCodecHelper.optionalField(SerializableDataTypes.INT, "duration").forGetter(FixedSummonTypeConfiguration::duration),
             CalioCodecHelper.optionalField(SerializableDataTypes.NBT, "tag").forGetter(x -> Optional.ofNullable(x.tag())),
-            ConfiguredEntityAction.optional("entity_action").forGetter(SummonSkeletonConfiguration::action)
-    ).apply(instance, (t1, t2) -> new SummonSkeletonConfiguration(t1.orElse(null), t2)));
+            ConfiguredEntityAction.optional("entity_action").forGetter(FixedSummonTypeConfiguration::action)
+    ).apply(instance, (t1, t2, t3) -> new FixedSummonTypeConfiguration(t1, t2.orElse(null), t3)));
 
 
 

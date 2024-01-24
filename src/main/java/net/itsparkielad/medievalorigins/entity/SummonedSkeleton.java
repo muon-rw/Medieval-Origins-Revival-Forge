@@ -33,19 +33,19 @@ import org.jetbrains.annotations.Nullable;
 import java.util.Optional;
 import java.util.UUID;
 
-public class SummonedSkeletonEntity extends Skeleton implements IFollowingSummon, ISummon {
+public class SummonedSkeleton extends Skeleton implements IFollowingSummon, ISummon {
 
-    public SummonedSkeletonEntity(EntityType<? extends Skeleton> entityType, Level level) {
+    public SummonedSkeleton(EntityType<? extends Skeleton> entityType, Level level) {
         super(entityType, level);
     }
-    public SummonedSkeletonEntity(Level level, LivingEntity owner, ItemStack item) {
+    public SummonedSkeleton(Level level, LivingEntity owner, ItemStack item) {
         super(ModEntities.SUMMON_SKELETON.get(), level);
         this.setWeapon(item);
         this.owner = owner;
-        this.limitedLifespan = true;
+        this.isLimitedLifespan = true;
         setOwnerID(owner.getUUID());
     }
-    private final RangedBowAttackGoal<SummonedSkeletonEntity> bowGoal = new RangedBowAttackGoal<>(this, 1.0D, 20, 15.0F);
+    private final RangedBowAttackGoal<SummonedSkeleton> bowGoal = new RangedBowAttackGoal<>(this, 1.0D, 20, 15.0F);
 
     private final MeleeAttackGoal meleeGoal = new MeleeAttackGoal(this, 2.2D, true) {
         /**
@@ -53,7 +53,7 @@ public class SummonedSkeletonEntity extends Skeleton implements IFollowingSummon
          */
         public void stop() {
             super.stop();
-            SummonedSkeletonEntity.this.setAggressive(false);
+            SummonedSkeleton.this.setAggressive(false);
         }
 
         /**
@@ -61,14 +61,14 @@ public class SummonedSkeletonEntity extends Skeleton implements IFollowingSummon
          */
         public void start() {
             super.start();
-            SummonedSkeletonEntity.this.setAggressive(true);
+            SummonedSkeleton.this.setAggressive(true);
         }
     };
 
     private LivingEntity owner;
     @Nullable
     private BlockPos boundOrigin;
-    private boolean limitedLifespan;
+    private boolean isLimitedLifespan;
     private int limitedLifeTicks;
 
 
@@ -117,7 +117,7 @@ public class SummonedSkeletonEntity extends Skeleton implements IFollowingSummon
         this.goalSelector.addGoal(10, new LookAtPlayerGoal(this, Mob.class, 8.0F));
         this.goalSelector.addGoal(2, new FollowSummonerGoal(this, this.owner, 1.0, 9.0f, 3.0f));
         this.goalSelector.addGoal(4, new WaterAvoidingRandomStrollGoal(this, 1.0D));
-        this.targetSelector.addGoal(2, new HurtByTargetGoal(this, SummonedSkeletonEntity.class){
+        this.targetSelector.addGoal(2, new HurtByTargetGoal(this, SummonedSkeleton.class){
             @Override
             protected boolean canAttack(@Nullable LivingEntity pPotentialTarget, TargetingConditions pTargetPredicate) {
                 return pPotentialTarget != null && super.canAttack(pPotentialTarget, pTargetPredicate) && !pPotentialTarget.getUUID().equals(getOwnerUUID()) ;
@@ -170,7 +170,7 @@ public class SummonedSkeletonEntity extends Skeleton implements IFollowingSummon
      */
     public void tick() {
         super.tick();
-        if (--this.limitedLifeTicks <= 0) {
+        if (this.isLimitedLifespan && --this.limitedLifeTicks <= 0) {
             this.limitedLifeTicks = 20;
             this.hurt(getWorld().damageSources().starve(), 20.0F);
         }
@@ -254,6 +254,10 @@ public class SummonedSkeletonEntity extends Skeleton implements IFollowingSummon
         this.limitedLifeTicks = lifeTicks;
     }
 
+    public void setIsLimitedLife(boolean bool) {
+        this.isLimitedLifespan = bool;
+    }
+
     public LivingEntity getOwnerFromID() {
         try {
             UUID uuid = this.getOwnerUUID();
@@ -277,7 +281,7 @@ public class SummonedSkeletonEntity extends Skeleton implements IFollowingSummon
             compound.putInt("BoundZ", this.boundOrigin.getZ());
         }
 
-        if (this.limitedLifespan) {
+        if (this.isLimitedLifespan) {
             compound.putInt("LifeTicks", this.limitedLifeTicks);
         }
         if (this.getOwnerUUID() == null) {

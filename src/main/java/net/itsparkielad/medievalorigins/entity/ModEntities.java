@@ -15,8 +15,14 @@ public class ModEntities {
     static <T extends Entity> RegistryObject<EntityType<T>> registerEntity(String name, EntityType.Builder<T> builder) {
         return ENTITY_TYPES.register(name, () -> builder.build(MedievalOrigins.MODID + ":" + name));
     }
-    public static final RegistryObject<EntityType<SummonedSkeletonEntity>> SUMMON_SKELETON = registerEntity("summon_skeleton",
-            EntityType.Builder.<SummonedSkeletonEntity>of(SummonedSkeletonEntity::new, MobCategory.CREATURE).sized(1.0F, 1.8F).clientTrackingRange(10));
+    public static final RegistryObject<EntityType<SummonedSkeleton>> SUMMON_SKELETON = registerEntity("summon_skeleton",
+            EntityType.Builder.<SummonedSkeleton>of(SummonedSkeleton::new, MobCategory.CREATURE).sized(1.0F, 1.8F).clientTrackingRange(10));
+
+    public static final RegistryObject<EntityType<SummonedZombie>> SUMMON_ZOMBIE = registerEntity("summon_zombie",
+            EntityType.Builder.<SummonedZombie>of(SummonedZombie::new, MobCategory.CREATURE).sized(1.0F, 1.8F).clientTrackingRange(10));
+
+    public static final RegistryObject<EntityType<SummonedWitherSkeleton>> SUMMON_WITHER_SKELETON = registerEntity("summon_wither_skeleton",
+            EntityType.Builder.<SummonedWitherSkeleton>of(SummonedWitherSkeleton::new, MobCategory.CREATURE).sized(1.0F, 2.1F).clientTrackingRange(10));
 
     public static void register(IEventBus eventBus) {
 
