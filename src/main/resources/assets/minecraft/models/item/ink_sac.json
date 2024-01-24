@@ -105,6 +105,12 @@
                 "custom_model_data": 367
             },
             "model": "medievalorigins:item/fae"
+        },
+        {
+            "predicate": {
+                "custom_model_data": 368
+            },
+            "model": "medievalorigins:item/plague_victim"
         }
     ]
 }

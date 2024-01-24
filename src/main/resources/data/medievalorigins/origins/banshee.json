@@ -1,17 +1,16 @@
 {
-        "loading_priority": 2,
 	"powers": [
 		"medievalorigins:banshee/spectral",
                 "medievalorigins:banshee/hexed",
                 "medievalorigins:banshee/sonic_shriek",
                 "medievalorigins:banshee/flesheater",
-                "medievalorigins:banshee/iron_aversion",
+                "medievalorigins:banshee/dimeritium_shackles",
                 "medievalorigins:banshee/immaterial"
 	],
         "icon": {
                 "item": "minecraft:ink_sac",
                 "tag": "{CustomModelData:358}"
         },
-	"impact": 2,
+	"impact": 3,
         "order": 1
 }

@@ -1,7 +1,7 @@
 {
 	"powers": [
-                "medievalorigins:goblin/cunning",
                 "medievalorigins:goblin/greedy",
+                "medievalorigins:goblin/cunning",
                 "medievalorigins:goblin/nippy",
                 "medievalorigins:goblin/stunted",
 		"medievalorigins:goblin/frail"
@@ -11,5 +11,5 @@
                 "tag": "{CustomModelData:362}"
         },
 	"impact": 1,
-        "order": 1
+        "order": 10
 }

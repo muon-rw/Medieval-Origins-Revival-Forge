@@ -1,14 +1,16 @@
 {
 	"powers": [
+                "medievalorigins:alfiq/clawed",
+                "medievalorigins:alfiq/pounce",
+                "medievalorigins:alfiq/poor_grip",
+                "medievalorigins:alfiq/agile_preference",
 		"medievalorigins:alfiq/on_your_feet",
                 "medievalorigins:alfiq/crepuscular",
-                "medievalorigins:alfiq/pounce",
-                "medievalorigins:alfiq/clawed",
                 "medievalorigins:alfiq/pickpocket",
                 "origins:carnivore",
                 "origins:velvet_paws",
                 "origins:scare_creepers",
-                "medievalorigins:alfiq/milk_drinker"
+                "medievalorigins:alfiq/meow"
 	],
         "icon": {
                 "item": "minecraft:ink_sac",

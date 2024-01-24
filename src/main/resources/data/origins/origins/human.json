@@ -1,0 +1,10 @@
+{
+        "loading_priority": 1,
+	"powers": [
+	],
+        "icon": {
+                "item": "minecraft:player_head"
+        },
+	"impact": 0,
+        "order": 0
+}
