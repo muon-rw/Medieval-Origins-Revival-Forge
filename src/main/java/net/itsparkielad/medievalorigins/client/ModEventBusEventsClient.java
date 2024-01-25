@@ -9,7 +9,6 @@ import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
-@SuppressWarnings("unchecked")
 @Mod.EventBusSubscriber(value = Dist.CLIENT, modid = MedievalOrigins.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
 @OnlyIn(Dist.CLIENT)
 public class ModEventBusEventsClient {

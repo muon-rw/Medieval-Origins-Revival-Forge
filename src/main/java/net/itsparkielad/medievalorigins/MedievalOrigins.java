@@ -6,7 +6,12 @@ import net.itsparkielad.medievalorigins.condition.ModConditions;
 import net.itsparkielad.medievalorigins.enchantments.ModEnchantments;
 
 import net.itsparkielad.medievalorigins.entity.ModEntities;
+import net.minecraft.client.renderer.entity.SkeletonRenderer;
+import net.minecraft.client.renderer.entity.WitherSkeletonRenderer;
+import net.minecraft.client.renderer.entity.ZombieRenderer;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -40,22 +45,17 @@ public class MedievalOrigins
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
-    {
-
-    }
+    {}
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event)
-    {
-
-    }
+    {}
 
     @Mod.EventBusSubscriber(modid = MODID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+    @OnlyIn(Dist.CLIENT)
     public static class ClientModEvents
     {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
-        {
-
-        }
+        {}
     }
 }
