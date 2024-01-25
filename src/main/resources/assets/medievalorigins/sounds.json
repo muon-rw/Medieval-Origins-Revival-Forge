@@ -1,0 +1,26 @@
+{
+    "banshee_cry": {
+        "subtitles": "sounds.medievalorigins.banshee_cry",
+        "sounds": [
+            "medievalorigins:banshee_cry"
+        ]
+    },
+    "channeled_wail": {
+        "subtitles": "sounds.medievalorigins.channeled_wail",
+        "sounds": [
+            "medievalorigins:channeled_wail"
+        ]
+    },
+    "horrible_screech": {
+        "subtitles": "sounds.medievalorigins.horrible_screech",
+        "sounds": [
+            "medievalorigins:horrible_screech"
+        ]
+    },
+    "zhh_woo_woop": {
+        "subtitles": "sounds.medievalorigins.zhh_woo_woop",
+        "sounds": [
+            "medievalorigins:zhh_woo_woop"
+        ]
+    }
+}
