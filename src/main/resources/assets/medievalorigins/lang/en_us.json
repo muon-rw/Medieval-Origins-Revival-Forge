@@ -258,9 +258,6 @@
   "power.medievalorigins.high_elf/mystic_affinity.name": "Mystic Affinity",
   "power.medievalorigins.high_elf/mystic_affinity.description": "High Elves are powerful and clever manipulators of arcane energy - they deal more magic damage and take less magic damage than other races.",
 
-  "power.medievalorigins.high_elf/.name": "Mystic Affinity",
-  "power.medievalorigins.high_elf/mystic_affinity.description": "High Elves are powerful and clever manipulators of arcane energy - they deal more magic damage and take less magic damage than other races.",
-
   "power.medievalorigins.high_elf/spell_power_irons.name": "Highborne",
   "power.medievalorigins.high_elf/spell_power_irons.description": "High Elves naturally have more mana than other races, and can channel the power of their elders to regenerate mana quickly.",
 
@@ -478,7 +475,10 @@
   "enchantment.medievalorigins.mirroring": "Mirroring",
   "enchantment.medievalorigins.mirroring.desc": "With this enchantment applied to helmets, players are immune to a Gorgon's petrifying gaze and Dwarves can see normally in the daylight.",
 
-
+  "sounds.medievalorigins.banshee_cry": "Banshee Cry",
+  "sounds.medievalorigins.channeled_wail": "Channeled Wail",
+  "sounds.medievalorigins.horrible_screech": "Horrible Screech",
+  "sounds.medievalorigins.zhh_voo_woop": "Mysterious Anomaly",
 
   "medievalorigins.contagious_villager": "This villager has already been infected!",
 
@@ -505,4 +505,5 @@
   "medievalorigins.self_wither": "Withered while holding",
 
   "medievalorigins.uncastable": "You can't use this ability right now."
+
 }
