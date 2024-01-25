@@ -17,10 +17,10 @@
             "medievalorigins:horrible_screech"
         ]
     },
-    "zhh_woo_woop": {
-        "subtitles": "sounds.medievalorigins.zhh_woo_woop",
+    "zhh_woo_voop": {
+        "subtitles": "sounds.medievalorigins.zhh_woo_voop",
         "sounds": [
-            "medievalorigins:zhh_woo_woop"
+            "medievalorigins:zhh_woo_voop"
         ]
     }
 }
