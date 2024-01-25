@@ -1,34 +1,98 @@
 {
 	"type": "origins:multiple",
-	"immunity": {
+	"activate": {
 		"type": "origins:active_self",
 		"entity_action": {
 			"type": "origins:and",
 			"actions": [
 				{
-					"type": "origins:apply_effect",
-					"effect": {
-						"effect": "minecraft:resistance",
-						"is_ambient": true,
-						"show_particles": false,
-						"show_icon": false,
-						"amplifier": 10,
-						"duration": 200
-					}
-				},
-				{
 					"type": "origins:execute_command",
 					"command": "function medievalorigins:mdvlorigins/spectral_activate"
+				},
+				{
+					"type": "origins:change_resource",
+					"resource": "medievalorigins:banshee/spectral_duration",
+					"change": 10,
+					"operation": "set"
 				}
 			]
 		},
 		"cooldown": 36,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:resource",
+					"resource": "medievalorigins:banshee/spectral_duration",
+					"compare_to": 0,
+					"comparison": "=="
+				},
+				{
+					"type": "origins:food_level",
+					"compare_to": 6,
+					"comparison": ">="
+				}
+			]
+		},
 		"key": {
 			"key": "key.origins.secondary_active",
 			"continuous": false
 		},
 		"hud_render": {
 			"should_render": true
+		}
+	},
+	"duration": {
+		"type": "origins:resource",
+		"start_value": 0,
+		"min": 0,
+		"max": 10,
+		"hud_render": {
+			"should_render": true,
+			"condition": {
+				"type": "origins:resource",
+				"resource": "medievalorigins:banshee/spectral_duration",
+				"compare_to": 0,
+				"comparison": ">"
+			}
+		}
+	},
+	"tick_duration_and_hunger": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:change_resource",
+					"change": -1,
+					"operation": "add",
+					"resource": "medievalorigins:banshee/spectral_duration"
+				},
+				{
+					"type": "origins:exhaust",
+					"amount": 5
+				}
+			]
+		},
+		"interval": 20,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "medievalorigins:banshee/spectral_duration",
+			"compare_to": 0,
+			"comparison": ">"
+		}
+	},
+	"resistance": {
+		"type": "origins:modify_damage_taken",
+		"modifier": {
+			"operation": "multiply_total_multiplicative",
+			"value": -1
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "medievalorigins:banshee/spectral_duration",
+			"compare_to": 0,
+			"comparison": ">"
 		}
 	},
 	"ghostly": {
@@ -38,9 +102,10 @@
 	"untargeted": {
 		"type": "origins:action_over_time",
 		"condition": {
-			"type": "origins:status_effect",
-			"effect": "minecraft:resistance",
-			"min_amplifier": 10
+			"type": "origins:resource",
+			"resource": "medievalorigins:banshee/spectral_duration",
+			"compare_to": 0,
+			"comparison": ">"
 		},
 		"rising_action": {
 			"type": "origins:execute_command",
@@ -59,40 +124,51 @@
 		"view_distance": 10,
 		"block_condition": {
 			"type": "origins:in_tag",
-			"tag": "origins:unphasable"
+			"tag": "medievalorigins:unphasable"
 		},
 		"phase_down_condition": {
-			"type": "origins:and",
+			"type": "origins:or",
 			"conditions": [
 				{
-					"type": "origins:sneaking"
+					"type": "origins:and",
+					"conditions": [
+						{
+							"type": "origins:sneaking"
+						},
+						{
+							"type": "origins:on_block"
+						}
+					]
 				},
 				{
-					"type": "origins:on_block"
+					"type": "origins:creative_flying"
 				}
 			]
 		},
 		"condition": {
-			"type": "origins:status_effect",
-			"effect": "minecraft:resistance",
-			"min_amplifier": 10
+			"type": "origins:resource",
+			"resource": "medievalorigins:banshee/spectral_duration",
+			"compare_to": 0,
+			"comparison": ">"
 		}
 	},
 	"screen_color": {
 		"type": "origins:modify_camera_submersion",
 		"to": "water",
 		"condition": {
-			"type": "origins:status_effect",
-			"effect": "minecraft:resistance",
-			"min_amplifier": 10
+			"type": "origins:resource",
+			"resource": "medievalorigins:banshee/spectral_duration",
+			"compare_to": 0,
+			"comparison": ">"
 		}
 	},
 	"flight": {
 		"type": "origins:creative_flight",
 		"condition": {
-			"type": "origins:status_effect",
-			"effect": "minecraft:resistance",
-			"min_amplifier": 10
+			"type": "origins:resource",
+			"resource": "medievalorigins:banshee/spectral_duration",
+			"compare_to": 0,
+			"comparison": ">"
 		}
 	},
 	"increase_view_distance": {
@@ -100,9 +176,10 @@
 		"s": 0,
 		"v": 15,
 		"condition": {
-			"type": "origins:status_effect",
-			"effect": "minecraft:resistance",
-			"min_amplifier": 10
+			"type": "origins:resource",
+			"resource": "medievalorigins:banshee/spectral_duration",
+			"compare_to": 0,
+			"comparison": ">"
 		}
 	}
 }

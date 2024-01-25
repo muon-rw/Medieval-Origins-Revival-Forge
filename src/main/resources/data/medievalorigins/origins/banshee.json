@@ -3,9 +3,10 @@
 		"medievalorigins:banshee/spectral",
                 "medievalorigins:banshee/hexed",
                 "medievalorigins:banshee/sonic_shriek",
-                "medievalorigins:banshee/flesheater",
+                "medievalorigins:banshee/lunar_nexus",
                 "medievalorigins:banshee/dimeritium_shackles",
-                "medievalorigins:banshee/immaterial"
+                "medievalorigins:banshee/immaterial",
+                "medievalorigins:banshee/overwhelmed"
 	],
         "icon": {
                 "item": "minecraft:ink_sac",

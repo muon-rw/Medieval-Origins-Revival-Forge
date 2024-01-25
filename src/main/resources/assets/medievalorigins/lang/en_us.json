@@ -100,10 +100,7 @@
   "power.medievalorigins.arachnae/web_slinger.description": "Arachnae can, on command, spin webs in which their opponents will be immobilised for a short while.",
 
   "power.medievalorigins.banshee/spectral.name": "Spectral",
-  "power.medievalorigins.banshee/spectral.description": "Banshees possess the ability to become intangible at will, moving freely throughout the physical realm while being unable to interact with it. Activated with the secondary power key.",
-
-  "power.medievalorigins.banshee/flesheater.name": "Flesh Eater",
-  "power.medievalorigins.banshee/flesheater.description": "Banshees feast upon the organs of the living. Their spectral bodies have no desire for vegetation.",
+  "power.medievalorigins.banshee/spectral.description": "Banshees possess the ability to become intangible, moving freely throughout the physical realm while being unable to interact with it. This uses tremendous energy and can not be activated while low on hunger.",
 
   "power.medievalorigins.banshee/hexed.name": "Hexed",
   "power.medievalorigins.banshee/hexed.description": "Banshees are shrouded in curses, which they shift onto those who wish them harm. Every time they are hit, there is a small chance that the attacker will be consigned to a fate of slow, agonising death.",
@@ -112,10 +109,13 @@
   "power.medievalorigins.banshee/immaterial.description": "Being incorporeal does not come without consequence. Banshees have half the health a living person would have.",
 
   "power.medievalorigins.banshee/dimeritium_shackles.name": "Dimeritium Shackles",
-  "power.medievalorigins.banshee/dimeritium_shackles.description": "Magically suppressive metals, such as iron, are completely intolerable to banshees, as they possess almost no corporeal form.",
+  "power.medievalorigins.banshee/dimeritium_shackles.description": "Magically suppressive metals, such as iron or silver, are completely intolerable to banshees.",
 
-  "power.medievalorigins.banshee/sonic_shriek.name": "Wail of Sorrow",
-  "power.medievalorigins.banshee/sonic_shriek.description": "Unleash a terrifying earsplitting screech, dealing magic damage to the first target and nauseating anyone caught in the sound wave.",
+  "power.medievalorigins.banshee/lunar_nexus.name": "Lunar Nexus",
+  "power.medievalorigins.banshee/lunar_nexus.description": "Banshees restore no hunger from food - their energy is instead restored by being bathed in direct moonlight.",
+
+  "power.medievalorigins.banshee/sonic_shriek.name": "Preemptive Elegy",
+  "power.medievalorigins.banshee/sonic_shriek.description": "Unleash an earsplitting wail to portend danger and safeguard those who it may befall. Those caught directly in the sound wave will be heavily disoriented and take a small amount of damage.",
 
   "power.medievalorigins.incubus/carnivore.name": "Carnivore",
   "power.medievalorigins.incubus/carnivore.description": "An incubus' bloodlust is insatiable. If it isn't the flesh of an animal, its worthless.",
