@@ -12,7 +12,7 @@
 				{
 					"type": "origins:change_resource",
 					"resource": "medievalorigins:banshee/spectral_duration",
-					"change": 8,
+					"change": 10,
 					"operation": "set"
 				}
 			]
@@ -41,14 +41,20 @@
 		"hud_render": {
 			"should_render": true,
 			"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
-			"bar_index": 5
+			"bar_index": 5,
+			"condition": {
+				"type": "origins:resource",
+				"resource": "medievalorigins:banshee/spectral_duration",
+				"compare_to": 0,
+				"comparison": "=="
+			}
 		}
 	},
 	"duration": {
 		"type": "origins:resource",
 		"start_value": 0,
 		"min": 0,
-		"max": 8,
+		"max": 10,
 		"hud_render": {
 			"should_render": true,
 			"condition": {
@@ -74,7 +80,7 @@
 				},
 				{
 					"type": "origins:exhaust",
-					"amount": 6
+					"amount": 5
 				}
 			]
 		},

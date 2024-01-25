@@ -22,36 +22,62 @@
 					"radius": 8,
 					"bientity_action": {
 						"type": "origins:add_velocity",
-						"z": 2
+						"z": 1.8,
+						"y": 0.6
 					},
 					"bientity_condition": {
-						"type": "origins:target_condition",
-						"condition": {
-							"type": "origins:and",
-							"conditions": [
-								{
-									"type": "origins:living"
-								},
-								{
-									"type": "origins:in_tag",
-									"tag": "medievalorigins:bosses",
-									"inverted": true
+						"type": "origins:or",
+						"conditions": [
+							{
+								"type": "origins:and",
+								"conditions": [
+									{
+										"type": "origins:undirected",
+										"condition": {
+											"type": "origins:attacker"
+										}
+									},
+									{										
+										"type": "origins:entity_type",
+										"entity_type": "player"
+									}
+								]
+							},
+							{
+								"type": "origins:target_condition",
+								"condition": {
+									"type": "origins:and",
+									"conditions": [
+										{
+											"type": "origins:living"
+										},
+										{
+											"type": "origins:entity_type",
+											"entity_type": "player",
+											"inverted": true
+										},
+										{
+											"type": "origins:in_tag",
+											"tag": "medievalorigins:bosses",
+											"inverted": true
+										}
+									]
 								}
-							]
-						}
+							}
+						]
 					}
 				}
 			]
 		},
 		"command_along_ray": "function medievalorigins:mdvlorigins/banshee_shriek_ray",
-		"command_along_ray_only_on_hit": true,
+		"command_along_ray_only_on_hit": false,
 		"command_step": 1,
 		"bientity_action": {
 			"type": "origins:and",
 			"actions": [
 				{
 					"type": "origins:add_velocity",
-					"z": 3
+					"z": 0.5
 				},
 				{
 					"type": "origins:target_action",
@@ -102,15 +128,7 @@
 			]
 		}
 	},
-	"condition": {
-		"type": "origins:raycast",
-		"distance": 22,
-		"block": false,
-		"entity": true,
-		"shape_type": "visual",
-		"fluid_handling": "any"
-	},
-	"cooldown": 100,
+	"cooldown": 800,
 	"hud_render": {
 		"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
 		"bar_index": 0
