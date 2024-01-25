@@ -1,4 +1,4 @@
-package net.itsparkielad.medievalorigins.entity.goals;
+package net.itsparkielad.medievalorigins.entity.goal;
 
 import net.itsparkielad.medievalorigins.entity.IFollowingSummon;
 import net.minecraft.core.BlockPos;

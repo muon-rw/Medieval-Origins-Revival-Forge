@@ -1,4 +1,4 @@
-package net.itsparkielad.medievalorigins.enchantments;
+package net.itsparkielad.medievalorigins.enchantment;
 
 import net.itsparkielad.medievalorigins.MedievalOrigins;
 import net.minecraft.world.entity.EquipmentSlot;
