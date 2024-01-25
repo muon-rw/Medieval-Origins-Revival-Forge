@@ -3,6 +3,7 @@ package net.itsparkielad.medievalorigins.client;
 import net.itsparkielad.medievalorigins.MedievalOrigins;
 import net.itsparkielad.medievalorigins.entity.ModEntities;
 import net.minecraft.client.renderer.entity.*;
+import net.minecraft.client.resources.sounds.SoundEventRegistration;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.client.event.EntityRenderersEvent;
@@ -19,5 +20,4 @@ public class ModEventBusEventsClient {
         event.registerEntityRenderer(ModEntities.SUMMON_WITHER_SKELETON.get(), WitherSkeletonRenderer::new);
 
     }
-
 }

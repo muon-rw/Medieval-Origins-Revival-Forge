@@ -13,6 +13,17 @@
 			"value": -1
 		}
 	},
+	"no_starve": {
+		"type": "origins:modify_damage_taken",
+		"modifier": {
+			"operation": "multiply_total_multiplicative",
+			"value": -1
+		},
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "starve"
+		}
+	},
 	"tooltip": {
 		"type": "apoli:tooltip",
 		"item_condition": {
@@ -29,7 +40,7 @@
 			},
 			{
 				"translate": "power.medievalorigins.banshee/lunar_nexus.name",
-				"color": "aqua"
+				"color": "red"
 			},
 			{
 				"text": ")",
@@ -39,7 +50,7 @@
 	},
 	"moon_saturate": {
 		"type": "origins:action_over_time",
-		"interval": 10,
+		"interval": 60,
 		"condition": {
 			"type": "origins:and",
 			"conditions": [
@@ -58,12 +69,9 @@
 			]
 		},
 		"entity_action": {
-			"type": "origins:apply_effect",
-			"effect": {
-				"effect": "minecraft:saturation",
-				"duration": 10,
-				"amplifier": 0
-			}
+			"type": "origins:feed",
+			"food": 1,
+			"saturation": 0.25
 		}
 	}
 }

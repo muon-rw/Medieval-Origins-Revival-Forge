@@ -112,10 +112,10 @@
   "power.medievalorigins.banshee/dimeritium_shackles.description": "Magically suppressive metals, such as iron or silver, are completely intolerable to banshees.",
 
   "power.medievalorigins.banshee/lunar_nexus.name": "Lunar Nexus",
-  "power.medievalorigins.banshee/lunar_nexus.description": "Banshees restore no hunger from food - their energy is instead restored by being bathed in direct moonlight.",
+  "power.medievalorigins.banshee/lunar_nexus.description": "Banshees restore no hunger from food - their energy is instead restored by being bathed in direct moonlight. However, they can not starve.",
 
   "power.medievalorigins.banshee/sonic_shriek.name": "Preemptive Elegy",
-  "power.medievalorigins.banshee/sonic_shriek.description": "Unleash an earsplitting wail to portend danger and safeguard those who it may befall. Those caught directly in the sound wave will be heavily disoriented and take a small amount of damage.",
+  "power.medievalorigins.banshee/sonic_shriek.description": "Banshee's shrieks forewarn death, but such screams are not an attack. They can unleash an earsplitting wail at a target, disorienting them. Nearby enemies will be pushed back and a small protective circle will be summoned on the ground.",
 
   "power.medievalorigins.incubus/carnivore.name": "Carnivore",
   "power.medievalorigins.incubus/carnivore.description": "An incubus' bloodlust is insatiable. If it isn't the flesh of an animal, its worthless.",
@@ -487,6 +487,8 @@
   "medievalorigins.moon_elf_no_sleep": "The strange sounds of this foreign world leave you restless.",
 
   "medievalorigins.insomniac_welts": "Your welts sting and burn. There will be no sleep for you tonight.",
+
+  "medievalorigins.restores_no_hunger": "Restores no Hunger",
 
   "medievalorigins.poor_reputation_villager": "The villager is too scared to trade with you!",
 

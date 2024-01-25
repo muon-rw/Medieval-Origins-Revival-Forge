@@ -3,15 +3,12 @@ package net.itsparkielad.medievalorigins;
 import com.mojang.logging.LogUtils;
 import net.itsparkielad.medievalorigins.action.ModActions;
 import net.itsparkielad.medievalorigins.condition.ModConditions;
-import net.itsparkielad.medievalorigins.enchantments.ModEnchantments;
+import net.itsparkielad.medievalorigins.enchantment.ModEnchantments;
 
 import net.itsparkielad.medievalorigins.entity.ModEntities;
-import net.minecraft.client.renderer.entity.SkeletonRenderer;
-import net.minecraft.client.renderer.entity.WitherSkeletonRenderer;
-import net.minecraft.client.renderer.entity.ZombieRenderer;
+import net.itsparkielad.medievalorigins.sounds.ModSounds;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -39,6 +36,7 @@ public class MedievalOrigins
         ModEntities.register(modEventBus);
         ModActions.register(modEventBus);
         ModConditions.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

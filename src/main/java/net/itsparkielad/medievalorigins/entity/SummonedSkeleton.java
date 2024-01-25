@@ -1,6 +1,6 @@
 package net.itsparkielad.medievalorigins.entity;
 
-import net.itsparkielad.medievalorigins.entity.goals.FollowSummonerGoal;
+import net.itsparkielad.medievalorigins.entity.goal.FollowSummonerGoal;
 import net.minecraft.Util;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;

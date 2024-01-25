@@ -1,10 +1,10 @@
 {
 	"powers": [
 		"medievalorigins:banshee/spectral",
-                "medievalorigins:banshee/hexed",
                 "medievalorigins:banshee/sonic_shriek",
                 "medievalorigins:banshee/lunar_nexus",
                 "medievalorigins:banshee/dimeritium_shackles",
+                "medievalorigins:banshee/hexed",
                 "medievalorigins:banshee/immaterial",
                 "medievalorigins:banshee/overwhelmed"
 	],

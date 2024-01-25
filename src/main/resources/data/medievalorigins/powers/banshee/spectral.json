@@ -12,12 +12,12 @@
 				{
 					"type": "origins:change_resource",
 					"resource": "medievalorigins:banshee/spectral_duration",
-					"change": 10,
+					"change": 8,
 					"operation": "set"
 				}
 			]
 		},
-		"cooldown": 36,
+		"cooldown": 900,
 		"condition": {
 			"type": "origins:and",
 			"conditions": [
@@ -39,14 +39,16 @@
 			"continuous": false
 		},
 		"hud_render": {
-			"should_render": true
+			"should_render": true,
+			"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+			"bar_index": 5
 		}
 	},
 	"duration": {
 		"type": "origins:resource",
 		"start_value": 0,
 		"min": 0,
-		"max": 10,
+		"max": 8,
 		"hud_render": {
 			"should_render": true,
 			"condition": {
@@ -54,7 +56,9 @@
 				"resource": "medievalorigins:banshee/spectral_duration",
 				"compare_to": 0,
 				"comparison": ">"
-			}
+			},
+			"sprite_location": "origins:textures/gui/community/huang/resource_bar_01.png",
+			"bar_index": 5
 		}
 	},
 	"tick_duration_and_hunger": {
@@ -70,7 +74,7 @@
 				},
 				{
 					"type": "origins:exhaust",
-					"amount": 5
+					"amount": 6
 				}
 			]
 		},
