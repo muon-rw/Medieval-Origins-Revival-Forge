@@ -37,9 +37,12 @@
 											"type": "origins:attacker"
 										}
 									},
-									{										
-										"type": "origins:entity_type",
-										"entity_type": "player"
+									{
+										"type": "origins:both",
+										"condition": {
+											"type": "origins:entity_type",
+											"entity_type": "player"
+										}
 									}
 								]
 							},

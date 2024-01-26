@@ -64,7 +64,7 @@
 		"type": "origins:conditioned_attribute",
 		"modifiers": [
 			{
-				"attribute": "reach-entity-attributes:reach",
+				"attribute": "forge:reach",
 				"operation": "addition",
 				"value": 1.0
 			},

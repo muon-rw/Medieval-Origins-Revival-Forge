@@ -20,4 +20,4 @@ execute as @e[tag=necroskelwall,distance=..8] at @s run summon area_effect_cloud
 playsound minecraft:entity.skeleton.death player @s
 
 
-power grant @e[tag=necroskelwall,distance=..8] medievalorigins:necromancer/self_kill 
+power grant @e[tag=necroskelwall,distance=..8] medievalorigins:revenant/self_kill 

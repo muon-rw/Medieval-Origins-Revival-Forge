@@ -45,25 +45,36 @@
         "bar_index": 6
     },
     "key": {
-        "key": "key.origins.secondary_active",
+        "key": "key.origins.primary_active",
         "continuous": false
     },
     "condition": {
         "type": "origins:and",
         "conditions": [
             {
-                "type": "origins:inventory",
-                "process_mode": "items",
-                "slots": [
-                    "weapon.mainhand",
-                    "weapon.offhand"
-                ],
-                "item_condition": {
-                    "type": "origins:ingredient",
-                    "ingredient": {
-                        "tag": "medievalorigins:ender_pearls"
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "mainhand",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "medievalorigins:ender_pearls"
+                            }
+                        }
+                    },
+                    {
+                        "type": "origins:equipped_item",
+                        "equipment_slot": "offhand",
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "tag": "medievalorigins:ender_pearls"
+                            }
+                        }
                     }
-                }
+                ]
             },
             {
                 "type": "origins:raycast",

@@ -3,10 +3,10 @@
 	"modifier": {
         "name": "Flammable",
         "operation": "addition",
-        "value": 8.0
+        "value": 6.0
     },
 	"damage_condition": {
-		"type": "origins:in_tag",
+		"type": "medievalorigins:in_tag",
 		"tag": "minecraft:is_fire"
 	}
 }

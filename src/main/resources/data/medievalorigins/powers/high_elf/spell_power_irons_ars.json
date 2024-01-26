@@ -22,7 +22,7 @@
                 "value": 50
             },
             {
-                "attribute": "iron_spellbooks:max_mana",
+                "attribute": "irons_spellbooks:max_mana",
                 "operation": "addition",
                 "value": 50
             }

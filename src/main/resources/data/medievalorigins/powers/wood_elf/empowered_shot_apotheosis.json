@@ -58,7 +58,7 @@
     },
     "velocity_attribute": {
         "type": "origins:modify_attribute",
-        "attribute": "apotheosis_attributes:arrow_velocity",
+        "attribute": "attributeslib:arrow_velocity",
         "modifier": {
             "operation": "multiply_base",
             "resource": "medievalorigins:wood_elf/empowered_shot_apotheosis_hold_time",

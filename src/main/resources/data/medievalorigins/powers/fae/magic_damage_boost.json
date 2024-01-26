@@ -1,7 +1,7 @@
 {
     "type": "origins:modify_damage_dealt",
 	"damage_condition": {
-		"type": "origins:in_tag",
+		"type": "medievalorigins:in_tag",
 		"tag": "minecraft:witch_resistant_to"
 	},
     "modifier": {

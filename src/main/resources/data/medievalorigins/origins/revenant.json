@@ -1,0 +1,19 @@
+{
+	"powers": [
+                "medievalorigins:revenant/putrid_communion",
+                "medievalorigins:revenant/hellraiser",
+                "medievalorigins:revenant/siphon",
+                "medievalorigins:revenant/resilient",
+                "medievalorigins:revenant/impervious",
+                "medievalorigins:revenant/poor_reputation",
+                "medievalorigins:revenant/black_thumb",
+                "medievalorigins:revenant/disturbed",
+                "medievalorigins:revenant/unguarded"
+	],
+        "icon": {
+                "item": "minecraft:ink_sac",
+                "tag": "{CustomModelData:360}"
+        },
+	"impact": 2,
+        "order": 1
+}

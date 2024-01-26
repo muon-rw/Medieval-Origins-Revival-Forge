@@ -58,7 +58,8 @@
                     "block_condition": {
                         "type": "origins:fluid",
                         "fluid_condition": {
-                            "type": "minecraft:lava"
+                            "type": "origins:in_tag",
+                            "tag": "minecraft:lava"
                         }
                     },
                     "shape": "cube",

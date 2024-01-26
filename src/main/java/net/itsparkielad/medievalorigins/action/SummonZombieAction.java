@@ -10,6 +10,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import org.jetbrains.annotations.NotNull;
 
 
 public class SummonZombieAction extends EntityAction<FixedSummonTypeConfiguration> {
@@ -18,7 +19,7 @@ public class SummonZombieAction extends EntityAction<FixedSummonTypeConfiguratio
         super(FixedSummonTypeConfiguration.CODEC);
     }
     @Override
-    public void execute(FixedSummonTypeConfiguration configuration, Entity caster) {
+    public void execute(@NotNull FixedSummonTypeConfiguration configuration, Entity caster) {
         if (!caster.level().isClientSide()) {
             ServerLevel serverWorld = (ServerLevel)caster.level();
                 SummonedZombie summon = new SummonedZombie(ModEntities.SUMMON_ZOMBIE.get(), serverWorld);
