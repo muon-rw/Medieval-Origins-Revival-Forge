@@ -22,16 +22,15 @@ public class SummonZombieAction extends EntityAction<FixedSummonTypeConfiguratio
         if (!caster.level().isClientSide()) {
             ServerLevel serverWorld = (ServerLevel)caster.level();
                 SummonedZombie summon = new SummonedZombie(ModEntities.SUMMON_ZOMBIE.get(), serverWorld);
-            if (configuration.duration().isPresent()) {
-                summon.setLimitedLife(configuration.duration().get());
-            }
-            else {
-                summon.setIsLimitedLife(false);
-            }
+                if (configuration.duration().isPresent()) {
+                    summon.setLimitedLife(configuration.duration().get());
+                } else {
+                    summon.setIsLimitedLife(false);
+                }
                 serverWorld.tryAddFreshEntityWithPassengers(summon);
-            summon.setOwnerID(caster.getUUID());
-            summon.setWeapon(new ItemStack(Items.AIR));
-            summon.moveTo(caster.position());
+                summon.setOwnerID(caster.getUUID());
+                summon.setWeapon(new ItemStack(Items.AIR));
+                summon.moveTo(caster.position());
                 ConfiguredEntityAction.execute(configuration.action(), summon);
         }
     }

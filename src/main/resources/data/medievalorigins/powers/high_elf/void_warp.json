@@ -52,8 +52,12 @@
         "type": "origins:and",
         "conditions": [
             {
-                "type": "origins:equipped_item",
-                "equipment_slot": "offhand",
+                "type": "origins:inventory",
+                "process_mode": "items",
+                "slots": [
+                    "weapon.mainhand",
+                    "weapon.offhand"
+                ],
                 "item_condition": {
                     "type": "origins:ingredient",
                     "ingredient": {

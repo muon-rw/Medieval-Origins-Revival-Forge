@@ -23,8 +23,7 @@ public class SummonSkeletonAction extends EntityAction<FixedSummonTypeConfigurat
                 SummonedSkeleton summon = new SummonedSkeleton(ModEntities.SUMMON_SKELETON.get(), serverWorld);
                 if (configuration.duration().isPresent()) {
                     summon.setLimitedLife(configuration.duration().get());
-                }
-                else {
+                } else {
                     summon.setIsLimitedLife(false);
                 }
                 serverWorld.tryAddFreshEntityWithPassengers(summon);

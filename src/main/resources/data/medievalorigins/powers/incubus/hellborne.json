@@ -31,7 +31,7 @@
 			"type": "origins:fire"
 		},
 		"modifier": {
-			"name": "Heals from fire damage",
+			"name": "Fire Damage Immunity",
 			"operation": "multiply_total_multiplicative",
 			"value": -1.0
 		}

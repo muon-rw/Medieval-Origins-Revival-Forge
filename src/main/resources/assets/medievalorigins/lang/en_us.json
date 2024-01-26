@@ -32,7 +32,7 @@
   "origin.medievalorigins.gorgon.description": "Gorgons are cursed creatures who were once human, with hair made of writhing snakes and a haunting visage said to petrify those who witness it.",
 
   "origin.medievalorigins.moon_elf.name": "Moon Elf",
-  "origin.medievalorigins.moon_elf.description": "Mysterious, ethereal beings not of this world. Moon elves are named not for their homeland, but for the only thing their victims see before they die.",
+  "origin.medievalorigins.moon_elf.description": "Mysterious, ethereal beings not of this world. Moon elves are named not for their homeland, but for the only thing their victims can see before their end.",
 
   "origin.medievalorigins.ogre.name": "Ogre",
   "origin.medievalorigins.ogre.description": "Ogres are a large, short-tempered, and brutish subspecies of Orc. Their lumbering size and limited intelligence are made up for by their raw strength.",
@@ -42,6 +42,9 @@
 
   "origin.medievalorigins.plague_victim.name": "Plague Victim",
   "origin.medievalorigins.plague_victim.description": "A disease-ridden half-dead creature, cursed and trapped in eternal suffering as a result of a butchered necromantic deal with a powerful demon.",
+
+  "origin.medievalorigins.revenant.name": "Revenant",
+  "origin.medievalorigins.revenant.description": "Once an outcast who died a gruesome and painful death, then was inexplicably returned to life, the revenant is now obsessed with manipulating life and death in other creatures.",
 
   "origin.medievalorigins.siren.name": "Siren",
   "origin.medievalorigins.siren.description": "Sirens have an ensnaring aura; their irresistible beauty is said to be the downfall of many a foolish sailor. Swim the waters and weave a tale of allure and danger.",
@@ -438,35 +441,32 @@
   "power.medievalorigins.yeti/winter_body.name": "Winter Body",
   "power.medievalorigins.yeti/winter_body.description": "Yetis are marginally taller than a regular human, and significantly wider.",
 
-  "origin.medievalorigins.necromancer.name": "Necromancer",
-  "origin.medievalorigins.necromancer.description": "A social outcast obsessed with the forbidden art of raising the dead. Necromancers have access to unnatural power, but at great cost.",
+  "power.medievalorigins.revenant/black_thumb.name": "Black Thumb",
+  "power.medievalorigins.revenant/black_thumb.description": "A Revenant can not harvest any crops; they wilt at their deathly touch.",
 
-  "power.medievalorigins.necromancer/black_thumb.name": "Black Thumb",
-  "power.medievalorigins.necromancer/black_thumb.description": "Necromancers only work with death. They cannot harvest any crops; they wilt at their deathly touch.",
+  "power.medievalorigins.revenant/disturbed.name": "Disturbed",
+  "power.medievalorigins.revenant/disturbed.description": "Experimenting in the forbidden warps the mind. Revenants cannot sleep, too scared to dream of what they wish they did not know.",
 
-  "power.medievalorigins.necromancer/disturbed.name": "Disturbed",
-  "power.medievalorigins.necromancer/disturbed.description": "Experimenting in the forbidden warps the mind. Necromancers cannot sleep, too scared to dream of what they wish they did not know.",
+  "power.medievalorigins.revenant/hellraiser.name": "Reaper's Ward",
+  "power.medievalorigins.revenant/hellraiser.description": "At will, a revenant can raise a circle of inert skeletons, acting as a temporary shield to protect them from danger.",
 
-  "power.medievalorigins.necromancer/hellraiser.name": "Reaper's Ward",
-  "power.medievalorigins.necromancer/hellraiser.description": "At will, a necromancer can raise a circle of nonfunctional skeletons, acting as a shield to block projectiles for a short time.",
+  "power.medievalorigins.revenant/putrid_communion.name": "Putrid Communion",
+  "power.medievalorigins.revenant/putrid_communion.description": "Through the unsettling act of consuming the flesh or bones of the undead, a revenant can strengthen their next summon of the same type. Summons at max power are eternal.",
 
-  "power.medievalorigins.necromancer/putrid_communion.name": "Putrid Communion",
-  "power.medievalorigins.necromancer/putrid_communion.description": "By consuming the flesh and bones of the undead, a necromancer can recreate them as a loyal protector to do their bidding. Summons automatically upon consuming enough.",
+  "power.medievalorigins.revenant/impervious.name": "Impervious",
+  "power.medievalorigins.revenant/impervious.description": "Their assimilation with deathly creatures makes revenants immune to poison, wither and instant damage. Unfortunately, this also means they do not recieve the positive effects from regeneration and instant health.",
 
-  "power.medievalorigins.necromancer/impervious.name": "Impervious",
-  "power.medievalorigins.necromancer/impervious.description": "Their assimilation with deathly creatures makes Necromancers immune to poison, wither and instant damage. Unfortunately, this also means they do not recieve the positive effects from regeneration and instant health.",
+  "power.medievalorigins.revenant/poor_reputation.name": "Poor Reputation",
+  "power.medievalorigins.revenant/poor_reputation.description": "Those who practice forbidden arts are feared by the populace. Villagers will refuse to trade with revenants and iron golems will attack them on sight. This does, however, come with the bonus that they are accepted amongst the ranks of the Pillagers.",
 
-  "power.medievalorigins.necromancer/poor_reputation.name": "Poor Reputation",
-  "power.medievalorigins.necromancer/poor_reputation.description": "Students of the dark arts are (perhaps rightly) feared by the general populace. Villagers will refuse to trade with Necromancers and iron golems will attack them on sight. This does, however, come with the bonus that they are accepted amongst the ranks of the Pillagers.",
+  "power.medievalorigins.revenant/resilient.name": "Resilient",
+  "power.medievalorigins.revenant/resilient.description": "Having experienced death, revenants know intimately its pitfalls. Revenants have increased health.",
 
-  "power.medievalorigins.necromancer/resilient.name": "Resilient",
-  "power.medievalorigins.necromancer/resilient.description": "Learning about death goes a long way towards avoiding it. Necromancers have increased health.",
+  "power.medievalorigins.revenant/siphon.name": "Extractive Sacrifice",
+  "power.medievalorigins.revenant/siphon.description": "Revenants can rip out some of their soul and radiate it into a field around them, thereby strengthening any nearby non-hostile mobs.",
 
-  "power.medievalorigins.necromancer/siphon.name": "Extractive Sacrifice",
-  "power.medievalorigins.necromancer/siphon.description": "Necromancers can rip out some of their soul and radiate it into a field around them, thereby strengthening any nearby non-hostile mobs.",
-
-  "power.medievalorigins.necromancer/unguarded.name": "Unguarded",
-  "power.medievalorigins.necromancer/unguarded.description": "Enveloping oneself in the arcane leaves you open to attack in the physical realm. Most mobs deal more damage to necromancers.",
+  "power.medievalorigins.revenant/unguarded.name": "Unguarded",
+  "power.medievalorigins.revenant/unguarded.description": "Obsessing over the spirit realm leaves revenants more open to attack in the physical realm. Most mobs deal more damage to them.",
 
 
   "enchantment.medievalorigins.featherweight": "Featherweight",

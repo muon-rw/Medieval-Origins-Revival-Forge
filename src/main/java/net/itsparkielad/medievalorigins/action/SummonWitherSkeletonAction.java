@@ -22,12 +22,11 @@ public class SummonWitherSkeletonAction extends EntityAction<FixedSummonTypeConf
         if (!caster.level().isClientSide()) {
             ServerLevel serverWorld = (ServerLevel)caster.level();
                 SummonedWitherSkeleton summon = new SummonedWitherSkeleton(ModEntities.SUMMON_WITHER_SKELETON.get(), serverWorld);
-            if (configuration.duration().isPresent()) {
-                summon.setLimitedLife(configuration.duration().get());
-            }
-            else {
-                summon.setIsLimitedLife(false);
-            }
+                if (configuration.duration().isPresent()) {
+                    summon.setLimitedLife(configuration.duration().get());
+                } else {
+                    summon.setIsLimitedLife(false);
+                }
                 serverWorld.tryAddFreshEntityWithPassengers(summon);
                 summon.setOwnerID(caster.getUUID());
                 summon.setWeapon(new ItemStack(Items.STONE_SWORD));
