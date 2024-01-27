@@ -15,7 +15,7 @@
 			"value": 0.25
 		},
 		"damage_condition": {
-			"type": "origins:in_tag",
+			"type": "medievalorigins:in_tag",
 			"tag": "minecraft:bypasses_armor",
 			"inverted": true
 		}

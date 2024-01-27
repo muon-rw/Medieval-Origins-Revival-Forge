@@ -64,7 +64,7 @@
 		"type": "origins:conditioned_attribute",
 		"modifiers": [
 			{
-				"attribute": "forge:reach",
+				"attribute": "forge:block_reach",
 				"operation": "addition",
 				"value": 1.0
 			},
