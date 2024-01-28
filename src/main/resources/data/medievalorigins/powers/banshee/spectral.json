@@ -12,12 +12,12 @@
 				{
 					"type": "origins:change_resource",
 					"resource": "medievalorigins:banshee/spectral_duration",
-					"change": 10,
+					"change": 40,
 					"operation": "set"
 				}
 			]
 		},
-		"cooldown": 900,
+		"cooldown": 600,
 		"condition": {
 			"type": "origins:and",
 			"conditions": [
@@ -54,7 +54,7 @@
 		"type": "origins:resource",
 		"start_value": 0,
 		"min": 0,
-		"max": 10,
+		"max": 40,
 		"hud_render": {
 			"should_render": true,
 			"condition": {
@@ -70,21 +70,44 @@
 	"tick_duration_and_hunger": {
 		"type": "origins:action_over_time",
 		"entity_action": {
-			"type": "origins:and",
-			"actions": [
-				{
-					"type": "origins:change_resource",
-					"change": -1,
-					"operation": "add",
-					"resource": "medievalorigins:banshee/spectral_duration"
-				},
-				{
-					"type": "origins:exhaust",
-					"amount": 5
-				}
-			]
+			"type": "origins:if_else",
+			"if_action": {
+				"type": "origins:and",
+				"actions": [
+					{
+						"type": "origins:change_resource",
+						"change": -1,
+						"operation": "add",
+						"resource": "medievalorigins:banshee/spectral_duration"
+					},
+					{
+						"type": "origins:exhaust",
+						"amount": 1.25
+					}
+				]
+			},
+			"else_action": {
+				"type": "origins:and",
+				"actions": [
+					{
+						"type": "origins:change_resource",
+						"change": 0,
+						"operation": "set",
+						"resource": "medievalorigins:banshee/spectral_duration"
+					},
+					{
+						"type": "origins:execute_command",
+						"command": "stopsound @s * medievalorigins:channeled_wail"
+					}
+				]
+			},
+			"condition": {
+				"type": "origins:food_level",
+				"compare_to": 7,
+				"comparison": ">="
+			}
 		},
-		"interval": 20,
+		"interval": 5,
 		"condition": {
 			"type": "origins:resource",
 			"resource": "medievalorigins:banshee/spectral_duration",
@@ -94,6 +117,19 @@
 	},
 	"resistance": {
 		"type": "origins:modify_damage_taken",
+		"modifier": {
+			"operation": "multiply_total_multiplicative",
+			"value": -1
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "medievalorigins:banshee/spectral_duration",
+			"compare_to": 0,
+			"comparison": ">"
+		}
+	},
+	"no_cheez": {
+		"type": "origins:modify_damage_dealt",
 		"modifier": {
 			"operation": "multiply_total_multiplicative",
 			"value": -1
@@ -137,21 +173,32 @@
 			"tag": "medievalorigins:unphasable"
 		},
 		"phase_down_condition": {
-			"type": "origins:or",
+			"type": "origins:and",
 			"conditions": [
 				{
-					"type": "origins:and",
-					"conditions": [
-						{
-							"type": "origins:sneaking"
-						},
-						{
-							"type": "origins:on_block"
-						}
-					]
+					"type": "origins:resource",
+					"resource": "medievalorigins:banshee/spectral_duration",
+					"compare_to": 0,
+					"comparison": ">"
 				},
 				{
-					"type": "origins:creative_flying"
+					"type": "origins:or",
+					"conditions": [
+						{
+							"type": "origins:and",
+							"conditions": [
+								{
+									"type": "origins:sneaking"
+								},
+								{
+									"type": "origins:on_block"
+								}
+							]
+						},
+						{
+							"type": "origins:swimming"
+						}
+					]
 				}
 			]
 		},
@@ -173,7 +220,7 @@
 		}
 	},
 	"flight": {
-		"type": "origins:creative_flight",
+		"type": "origins:swimming",
 		"condition": {
 			"type": "origins:resource",
 			"resource": "medievalorigins:banshee/spectral_duration",
