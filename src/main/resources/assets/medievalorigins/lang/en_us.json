@@ -1,8 +1,8 @@
 {
-  "origin.origins.human.description": "A member of the youngest species, foolish but undoubtedly courageous. Their fate is more open than most - venture forth with no benefits or drawbacks.",
+  "origin.origins.human.description": "-§l Typical Height§r: \n§o5'10\" | 180cm§r\n-§l Gameplay Changes§r: \n§oNone§r\n\n A human's fate is more open than most - venture forth with no benefits or drawbacks.",
 
   "origin.medievalorigins.alfiq.name": "Alfiq",
-  "origin.medievalorigins.alfiq.description": "Alfiq are a cunning species of anthropomorphic felines with sharp claws and excellent agility. Their roads often lead to warm sands.",
+  "origin.medievalorigins.alfiq.description": "-§l Typical Height§r: \n§o5'10\" | 180cm§r\n-§l Gameplay Changes§r: \n§6§oModerate§r\n-§l Notable§r: \n§o§2+ Unarmed§r\n§o§2+ Movement§r\n§o§c- Defense§r\n§lAlfiq§r are a cunning species of anthropomorphic felines with sharp claws and excellent agility. Their roads often lead to warm sands.",
 
   "origin.medievalorigins.arachnae.name": "Arachnae",
   "origin.medievalorigins.arachnae.description": "A grotesque amalgamation of spider and human, with venomous fangs and bristled feet yet the ability to walk upright and wield weaponry.",
@@ -467,6 +467,11 @@
 
   "power.medievalorigins.revenant/unguarded.name": "Unguarded",
   "power.medievalorigins.revenant/unguarded.description": "Obsessing over the spirit realm leaves revenants more open to attack in the physical realm. Most mobs deal more damage to them.",
+
+
+
+
+
 
 
   "enchantment.medievalorigins.featherweight": "Featherweight",
