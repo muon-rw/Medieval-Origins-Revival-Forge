@@ -25,9 +25,30 @@
 			},
 			{
 				"element": {
+					"type": "origins:execute_command",
+					"command": "playsound minecraft:entity.ghast.warn player @a ~ ~ ~ 10 1"
+				},
+				"weight": 1
+			},
+			{
+				"element": {
+					"type": "origins:execute_command",
+					"command": "playsound minecraft:entity.creeper.primed player @a ~ ~ ~ 10 1"
+				},
+				"weight": 2
+			},
+			{
+				"element": {
+					"type": "origins:execute_command",
+					"command": "playsound minecraft:entity.witch.celebrate player @a ~ ~ ~ 10 2"
+				},
+				"weight": 2
+			},
+			{
+				"element": {
 					"type": "origins:play_sound",
 					"sound": "minecraft:entity.parrot.ambient",
-					"volume": 10
+					"volume": 1
 				},
 				"weight": 1
 			}

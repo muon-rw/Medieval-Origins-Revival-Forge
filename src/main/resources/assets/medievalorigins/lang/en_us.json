@@ -1,59 +1,59 @@
 {
-  "origin.origins.human.description": "-§l Typical Height§r: \n§o5'10\" | 180cm§r\n-§l Gameplay Changes§r: \n§oNone§r\n\n A human's fate is more open than most - venture forth with no benefits or drawbacks.",
+  "origin.origins.human.description": "-§l Notable Changes§r: \n§oNone§r\n\n A human's fate is more open than most - venture forth with no benefits or drawbacks.",
 
   "origin.medievalorigins.alfiq.name": "Alfiq",
-  "origin.medievalorigins.alfiq.description": "-§l Typical Height§r: \n§o5'10\" | 180cm§r\n-§l Gameplay Changes§r: \n§6§oModerate§r\n-§l Notable§r: \n§o§2+ Unarmed§r\n§o§2+ Movement§r\n§o§c- Defense§r\n§lAlfiq§r are a cunning species of anthropomorphic felines with sharp claws and excellent agility. Their roads often lead to warm sands.",
+  "origin.medievalorigins.alfiq.description": "-§l Notable Changes§r: \n§o§2+ Unarmed Bonus§r\n§o§2+ Unique Movement§r\n§o§6• Carnivore§r\n§o§c- Defense§r\n§lAlfiq§r are a cunning species of anthropomorphic felines with sharp claws and excellent agility. Their roads often lead to warm sands.",
 
   "origin.medievalorigins.arachnae.name": "Arachnae",
-  "origin.medievalorigins.arachnae.description": "A grotesque amalgamation of spider and human, with venomous fangs and bristled feet yet the ability to walk upright and wield weaponry.",
+  "origin.medievalorigins.arachnae.description": "-§l Notable Changes§r: \n§o§2+ Poison, Crowd Control§r\n§o§6• Carnivore§r\n§o§c- Hunger, Defense§r\nA grotesque amalgamation of spider and human, with venomous fangs and bristled feet yet the ability to walk upright and wield weaponry.",
 
   "origin.medievalorigins.banshee.name": "Banshee",
-  "origin.medievalorigins.banshee.description": "Banshees are anguished spirits whose cries can shatter glass and drive people to madness. In myth, their presence is often considered an omen of death.",
+  "origin.medievalorigins.banshee.description": "-§l Notable Changes§r: \n§o§2+ Flight, Support, Phasing§r\n§o§c- Defense§r\n§o§c- Extreme changes, read first!§r\n§lBanshees§r are anguished spirits whose cries can shatter glass and drive people to madness. In myth, their presence is often considered an omen of death.",
 
   "origin.medievalorigins.incubus.name": "Incubus",
-  "origin.medievalorigins.incubus.description": "Incubi are evil servants of a dark power. They are powerful in their own realm, but in exchange for this they have given up their soul, and are weak to pure sources.",
+  "origin.medievalorigins.incubus.description": "-§l Notable Changes§r: \n§o§2+ Ranged Damage, Speed§r\n§o§6• Stealthy, Vegetarian§r\n§o§c- Melee Damage, Defense§r\n§lIncubi§r are evil servants of a dark power. They are powerful in their own realm, but in exchange for this they have given up their soul, and are weak to pure sources.",
 
   "origin.medievalorigins.dwarf.name": "Dwarf",
-  "origin.medievalorigins.dwarf.description": "Dwarves are practical, stocky, and prideful. They excel at mining and living underground, but struggle with the daylight. Rock and stone, brother.",
+  "origin.medievalorigins.dwarf.description": "-§l Notable Changes§r: \n§o§2+ Ranged Damage, Speed§r\n§o§6• Stealthy, Vegetarian§r\n§o§c- Melee Damage, Defense§r\n§lDwarves§r are practical, stocky, and prideful. They excel at mining and living underground, but struggle with the daylight. Rock and stone, brother.",
 
   "origin.medievalorigins.wood_elf.name": "Wood Elf",
-  "origin.medievalorigins.wood_elf.description": "Wood Elves are a wise, long-lived race who live in harmony with the Earth. They are quick with a sword and bow and can outwit their enemies while among the trees.",
+  "origin.medievalorigins.wood_elf.description": "-§l Notable Changes§r: \n§o§2+ Ranged Bonuses, Speed§r\n§o§6• Stealthy, Vegetarian§r\n§o§c- Melee Damage, Defense§r\n§lWood Elves§r are a wise, long-lived race who live in harmony with the Earth. They are quick with a sword and bow and can outwit their enemies while among the trees.",
 
   "origin.medievalorigins.high_elf.name": "High Elf",
-  "origin.medievalorigins.high_elf.description": "High Elves are notoriously arrogant, though undeniably talented; magical energy courses strongly through their blood, though they are weaker with weaponry.",
+  "origin.medievalorigins.high_elf.description": "-§l Notable Changes§r: \n§o§2+ Magic Proficiency§r\n§o§2+ Unique Abilities§r\n§o§c- Physical Damage, Defense§r\n§lHigh Elves§r are notoriously arrogant, though undeniably talented; magical energy courses strongly through their blood, though they are weaker with weaponry.",
 
   "origin.medievalorigins.fae.name": "Fae",
-  "origin.medievalorigins.fae.description": "Fae are short magical winged humanoids, regarded as spirits of nature and said to haunt forests and lead travelers' astray. They are equal parts mystic and trickster.",
+  "origin.medievalorigins.fae.description": "-§l Notable Changes§r: \n§o§2+ Ranged Damage, Speed§r\n§o§6• Stealthy, Vegetarian§r\n§o§c- Melee Damage, Defense§r\n§o§c- Defense§r\n§lFae§r are short magical winged humanoids, regarded as spirits of nature and said to haunt forests and lead travelers' astray. They are equal parts mystic and trickster.",
 
   "origin.medievalorigins.goblin.name": "Goblin",
-  "origin.medievalorigins.goblin.description": "Goblins are obsessed with gold and treasure and tend to find a little more loot wherever they look, but their small size leaves them vulnerable in combat.",
+  "origin.medievalorigins.goblin.description": "-§l Notable Changes§r: \n§o§2+ Gold Gear Bonus§r\n§o§2+ Luck, Speed§r \n§o§6• Small§r \n§o§c- Health§r\n§lGoblins§r are obsessed with gold and treasure and tend to find a little more loot wherever they look, but their small size leaves them vulnerable in combat.",
 
   "origin.medievalorigins.gorgon.name": "Gorgon",
-  "origin.medievalorigins.gorgon.description": "Gorgons are cursed creatures who were once human, with hair made of writhing snakes and a haunting visage said to petrify those who witness it.",
+  "origin.medievalorigins.gorgon.description": "-§l Notable Changes§r: \n§o§2+ Poison Damage, Immunity§r\n§o§2+ Crowd Control§r\n§o§c- Hydrophobe, Unique weaknesses§r\n§lGorgons§r are cursed creatures who were once human, with hair made of writhing snakes and a haunting visage said to petrify those who witness it.",
 
   "origin.medievalorigins.moon_elf.name": "Moon Elf",
-  "origin.medievalorigins.moon_elf.description": "Mysterious, ethereal beings not of this world. Moon elves are named not for their homeland, but for the only thing their victims can see before their end.",
+  "origin.medievalorigins.moon_elf.description": "-§l Notable Changes§r: \n§o§2+ Ranged Damage, Speed§r\n§o§6• Stealthy, Vegetarian§r\n§o§c- Melee Damage, Defense§r\nMysterious, ethereal beings not of this world. Moon elves are named not for their homeland, but for the only thing their victims can see before their end.",
 
   "origin.medievalorigins.ogre.name": "Ogre",
-  "origin.medievalorigins.ogre.description": "Ogres are a large, short-tempered, and brutish subspecies of Orc. Their lumbering size and limited intelligence are made up for by their raw strength.",
+  "origin.medievalorigins.ogre.description": "-§l Notable Changes§r: \n§o§2+ Axe Bonuses, Defense §r\n§o§6• Massive §r\n§o§c- Hunger, Speed §r\n§lOgres§r are a large, short-tempered, and brutish subspecies of Orc. Their lumbering size and limited intelligence are made up for by their raw strength.",
 
   "origin.medievalorigins.pixie.name": "Pixie",
-  "origin.medievalorigins.pixie.description": "Often considered harbingers of good fortune, but also tricky, untrustworthy agents of mischief. Pixies are one of the tiniest creatures to roam the land.",
+  "origin.medievalorigins.pixie.description": "-§l Notable Changes§r: \n§o§2+ Flight, No Fall Damage§r\n§o§6• Tiny, Vegetarian§r\n§o§c- Defense, Reputation §r\nOften considered harbingers of good fortune, but also tricky, untrustworthy agents of mischief. Pixies are one of the tiniest creatures to roam the land.",
 
   "origin.medievalorigins.plague_victim.name": "Plague Victim",
-  "origin.medievalorigins.plague_victim.description": "A disease-ridden half-dead creature who can no longer be called human, cursed and trapped in eternal suffering as a result of a strange magical illness.",
+  "origin.medievalorigins.plague_victim.description": "-§l Notable Changes§r: \n§o§2+ Withering §r\n§o§6• Unique playstyle §r\n§o§6• Undead §r\n§o§c- Defense, Reputation §r\nDisease-ridden half-dead creatures who can no longer be called human, cursed and trapped in eternal suffering as a result of a strange magical illness.",
 
   "origin.medievalorigins.revenant.name": "Revenant",
-  "origin.medievalorigins.revenant.description": "Once the misfortunate who died gruesome and painful deaths, and were later inexplicably returned as a sentient corpse, revenants become obsessed with manipulating life and death in other creatures.",
+  "origin.medievalorigins.revenant.description": "-§l Notable Changes§r: \n§o§2+ Summons §r\n§o§2+ Illager Friendly \n§o§6• Undead §r\n§o§c- Defense, Reputation §r\n§lRevenants§r are misfortunate souls who died gruesome and painful deaths, but inexplicably returned to life. As a result, they become obsessed with manipulating life and death in other creatures.",
 
   "origin.medievalorigins.siren.name": "Siren",
-  "origin.medievalorigins.siren.description": "Sirens have an ensnaring aura; their irresistible beauty is said to be the downfall of many a foolish sailor. They weave a tale of allure and danger.",
+  "origin.medievalorigins.siren.description": "-§l Notable Changes§r: \n§o§2+ Ranged Damage, Speed§r\n§o§6• Stealthy, Vegetarian§r\n§o§c- Melee Damage, Defense§r\n§lSirens§r are said to be a type of Merfolk. They have an ensnaring aura and their irresistible beauty is said to be the downfall of many a foolish sailor.",
 
   "origin.medievalorigins.troll.name": "Troll",
-  "origin.medievalorigins.troll.description": "Large, lumbering giants who hail from the mountains, trolls are aggressive and self sufficient - they prefer to live and fight alone.",
+  "origin.medievalorigins.troll.description": "-§l Notable Changes§r: \n§o§2+ Ranged Damage, Speed§r\n§o§6• Stealthy, Vegetarian§r\n§o§c- Melee Damage, Defense§r\nLarge, lumbering giants who hail from the mountains, trolls are aggressive and self sufficient - they prefer to live and fight alone.",
 
   "origin.medievalorigins.yeti.name": "Yeti",
-  "origin.medievalorigins.yeti.description": "Thick-furred beasts from frosty woods, a Yeti's dominion over ice allows them to freeze foes, but they are especially vulnerable to fiery attacks.",
+  "origin.medievalorigins.yeti.description": "-§l Notable Changes§r: \n§o§2+ Ranged Damage, Speed§r\n§o§6• Stealthy, Vegetarian§r\n§o§c- Melee Damage, Defense§r\nThick-furred beasts from frosty woods, a Yeti's dominion over ice allows them to freeze foes, but they are especially vulnerable to fiery attacks.",
 
   
   "power.medievalorigins.alfiq/clawed.name": "Clawed",
@@ -346,7 +346,7 @@
   "power.medievalorigins.pixie/troublemaker.description": "Villagers know pixies by the legends of trouble they cause, and will refuse to trade with them.",
 
   "power.medievalorigins.plague_victim/contagious.name": "Contagious",
-  "power.medievalorigins.plague_victim/contagious.description": "The Plague is highly contagious. Villagers will refuse to trade with you out of fear of contracting the plague.",
+  "power.medievalorigins.plague_victim/contagious.description": "Your appearance is horrifying. Villagers will refuse to trade with you out of fear.",
 
   "power.medievalorigins.plague_victim/foul_aura.name": "Foul Aura",
   "power.medievalorigins.plague_victim/foul_aura.description": "Plague carrying fleas swarm the victim. Being in the general vicinity of them is not beneficial for one's health.",
@@ -485,7 +485,7 @@
   "sounds.medievalorigins.horrible_screech": "Horrible Screech",
   "sounds.medievalorigins.zhh_voo_woop": "Mysterious Anomaly",
 
-  "medievalorigins.contagious_villager": "This villager has already been infected!",
+  "medievalorigins.contagious_villager": "This villager will not trade with you!",
 
   "medievalorigins.disturbed_restless": "What you know will kill you, but you will die laughing.",
 

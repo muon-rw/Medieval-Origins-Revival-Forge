@@ -10,14 +10,10 @@
 		}
 	},
 	"no_phantoms": {
-		"type": "origins:action_over_time",
-		"entity_action": {
-			"type": "origins:modify_insomnia_ticks",
-			"modifier": {
-				"operation": "set_total",
-				"value": 0
-			}
-		},
-		"interval": 1000
+		"type": "origins:modify_insomnia_ticks",
+		"modifier": {
+			"operation": "set_total",
+			"value": 0
+		}
 	}
 }

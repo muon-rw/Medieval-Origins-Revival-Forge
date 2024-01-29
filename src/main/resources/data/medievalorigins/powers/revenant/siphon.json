@@ -1,92 +1,103 @@
 {
-	"type": "origins:active_self",
-	"cooldown": 600,
-	"hud_render": {
-		"should_render": true,
-		"sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
-		"bar_index": 14
+	"type": "origins:multiple",
+	"resource": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 100,
+		"hud_render": {
+			"should_render": true,
+			"sprite_location": "origins:textures/gui/community/huang/resource_bar_02.png",
+			"bar_index": 14
+		}
 	},
-	"entity_action": {
-		"type": "origins:and",
-		"actions": [
-			{
-				"type": "origins:apply_effect",
-				"effects": [
+	"fill": {
+		"type": "origins:action_when_damage_taken",
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "medievalorigins:revenant/siphon_fill",
+			"change": 1,
+			"operation": "add"
+		},
+		"cooldown": 1,
+		"hud_render": {
+			"should_render": false
+		}
+	},
+	"channel": {
+		"type": "origins:active_self",
+		"hud_render": {
+			"should_render": false
+		},
+		"key": {
+			"key": "key.use",
+			"continuous": true
+		},
+		"cooldown": 2,
+		"entity_action": {
+			"type": "origins:raycast",
+			"distance": 20,
+			"entity": true,
+			"block": false,
+			"bientity_action": {
+				"type": "origins:and",
+				"actions": [
 					{
-						"effect": "minecraft:weakness",
-						"duration": 300,
-						"amplifier": 2,
-						"is_ambient": false,
-						"show_particles": false,
-						"show_icon": true
+						"type": "origins:damage",
+						"amount": 2,
+						"damage_type": "minecraft:starve"
 					},
 					{
-						"effect": "minecraft:slowness",
-						"duration": 300,
-						"amplifier": 1,
-						"is_ambient": false,
-						"show_particles": false,
-						"show_icon": true
+						"type": "origins:actor_action",
+						"action": {
+							"type": "origins:heal",
+							"amount": 1
+						}
 					}
 				]
 			},
-			{
-				"type": "origins:area_of_effect",
-				"radius": 32,
-				"bientity_action": {
-					"type": "origins:target_action",
-					"action": {
-						"type": "origins:apply_effect",
-						"effects": [
-							{
-								"effect": "minecraft:strength",
-								"duration": 300,
-								"amplifier": 3,
-								"is_ambient": false,
-								"show_particles": false,
-								"show_icon": true
-							},
-							{
-								"effect": "minecraft:resistance",
-								"duration": 300,
-								"amplifier": 1,
-								"is_ambient": false,
-								"show_particles": false,
-								"show_icon": true
-							}
-						]
-					}
+			"command_along_ray": "function medievalorigins:mdvlorigins/revenant_siphon",
+			"command_along_ray_only_on_hit": true
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:resource",
+					"resource": "medievalorigins:revenant/siphon_resource",
+					"compare_to": 0,
+					"comparison": ">"
 				},
-				"bientity_condition": {
-					"type": "origins:or",
-					"conditions": [
-						{
-							"type": "origins:owner"
-						},
-						{
-							"type": "origins:and",
-							"conditions": [
-								{
-									"type": "origins:invert",
-									"condition": {
-										"type": "origins:attack_target",
-										"inverted": true
-									}
-								},
-								{
-									"type": "origins:distance",
-									"comparison": "<=",
-									"compare_to": 8
-								}
-							]
+				{
+					"type": "origins:raycast",
+					"entity": true,
+					"block": false,
+					"distance": 20,
+					"fluid_handling": "any",
+					"shape_type": "outline",
+					"match_bientity_condition": {
+						"type": "origins:target_condition",
+						"condition": {
+							"type": "origins:living"
 						}
-					]
+					}
 				}
-			}
-		]
+			]
+		}
 	},
-	"key": {
-		"key": "key.origins.secondary_active",
-		"continuous": false
+	"sounds": {
+		"type": "origins:action_over_time",
+		"interval": 2,
+		"rising_action": {
+			"type": "origins:execute_command",
+			"command": "tellraw @a \"starting succ\""
+		},
+		"falling_action": {
+			"type": "origins:execute_command",
+			"command": "tellraw @a \"ending succ\""
+		},
+		"condition": {
+			"type": "origins:power_active",
+			"power": "medievalorigins:revenant/siphon_channel"
+		}
 	}
 }
