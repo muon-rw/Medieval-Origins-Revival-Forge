@@ -22,5 +22,11 @@
         "sounds": [
             "medievalorigins:zhh_woo_voop"
         ]
+    },
+    "zhh_woo_voop_early": {
+        "subtitles": "sounds.medievalorigins.zhh_woo_voop",
+        "sounds": [
+            "medievalorigins:zhh_woo_voop_early"
+        ]
     }
 }

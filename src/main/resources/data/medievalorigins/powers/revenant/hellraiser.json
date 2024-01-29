@@ -13,7 +13,7 @@
 			"bar_index": 5
 		},
 		"key": {
-			"key": "key.origins.primary_active",
+			"key": "key.origins.secondary_active",
 			"continuous": false
 		}
 	}

@@ -13,8 +13,8 @@
 				"compare_to": 0,
 				"comparison": ">"
 			},
-			"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_15.png",
-			"bar_index": 0
+			"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+			"bar_index": 18
 		}
 	},
 	"bone": {
@@ -31,7 +31,7 @@
 				"comparison": ">"
 			},
 			"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
-			"bar_index": 6
+			"bar_index": 5
 		}
 	}
 }

@@ -1,10 +1,11 @@
 {
 	"powers": [
                 "medievalorigins:revenant/putrid_communion",
+                "medievalorigins:revenant/summons",
                 "medievalorigins:revenant/hellraiser",
                 "medievalorigins:revenant/siphon",
-                "medievalorigins:revenant/resilient",
-                "medievalorigins:revenant/impervious",
+                "medievalorigins:revenant/unwitherable",
+                "medievalorigins:revenant/undeadge",
                 "medievalorigins:revenant/poor_reputation",
                 "medievalorigins:revenant/black_thumb",
                 "medievalorigins:revenant/disturbed",

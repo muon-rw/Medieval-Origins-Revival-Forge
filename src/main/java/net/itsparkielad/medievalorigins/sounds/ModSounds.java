@@ -19,6 +19,7 @@ public class ModSounds {
     public static RegistryObject<SoundEvent> CHANNELED_WAIL = registerSoundEvents("channeled_wail");
     public static RegistryObject<SoundEvent> HORRIBLE_SCREECH = registerSoundEvents("horrible_screech");
     public static RegistryObject<SoundEvent> ZHH_WOO_VOOP = registerSoundEvents("zhh_woo_voop");
+    public static RegistryObject<SoundEvent> ZHH_WOO_VOOP_EARLY = registerSoundEvents("zhh_woo_voop_early");
 
     private static RegistryObject<SoundEvent> registerSoundEvents(String name) {
         return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(MedievalOrigins.MODID, name)));

@@ -453,14 +453,11 @@
   "power.medievalorigins.revenant/putrid_communion.name": "Putrid Communion",
   "power.medievalorigins.revenant/putrid_communion.description": "Through the unsettling act of consuming the flesh or bones of the undead, a revenant can strengthen their next summon of the same type. Summons at max power are eternal.",
 
-  "power.medievalorigins.revenant/impervious.name": "Impervious",
-  "power.medievalorigins.revenant/impervious.description": "Their assimilation with deathly creatures makes revenants immune to poison, wither and instant damage. Unfortunately, this also means they do not recieve the positive effects from regeneration and instant health.",
+  "power.medievalorigins.revenant/unwitherable.name": "Necrotic Curse",
+  "power.medievalorigins.revenant/unwitherable.description": "Their assimilation with deathly creatures makes revenants immune to wither, as well as receiving inverted effects from healing, poison, harming, and regeneration potions. ",
 
   "power.medievalorigins.revenant/poor_reputation.name": "Poor Reputation",
   "power.medievalorigins.revenant/poor_reputation.description": "Those who practice forbidden arts are feared by the populace. Villagers will refuse to trade with revenants and iron golems will attack them on sight. This does, however, come with the bonus that they are accepted amongst the ranks of the Pillagers.",
-
-  "power.medievalorigins.revenant/resilient.name": "Resilient",
-  "power.medievalorigins.revenant/resilient.description": "Having experienced death, revenants know intimately its pitfalls. Revenants have increased health.",
 
   "power.medievalorigins.revenant/siphon.name": "Extractive Sacrifice",
   "power.medievalorigins.revenant/siphon.description": "Revenants can rip out some of their soul and radiate it into a field around them, thereby strengthening any nearby non-hostile mobs.",
@@ -469,13 +466,8 @@
   "power.medievalorigins.revenant/unguarded.description": "Obsessing over the spirit realm leaves revenants more open to attack in the physical realm. Most mobs deal more damage to them.",
 
 
-
-
-
-
-
   "enchantment.medievalorigins.featherweight": "Featherweight",
-  "enchantment.medievalorigins.featherweight.desc": "With this enchantment applied to heavy armor, it can be worn by Arachnae and Elves.",
+  "enchantment.medievalorigins.featherweight.desc": "With this enchantment applied to heavy armor, it can be worn by Arachnae, Elves, and Alfiq.",
 
   "enchantment.medievalorigins.mirroring": "Mirroring",
   "enchantment.medievalorigins.mirroring.desc": "With this enchantment applied to helmets, players are immune to a Gorgon's petrifying gaze and Dwarves can see normally in the daylight.",
