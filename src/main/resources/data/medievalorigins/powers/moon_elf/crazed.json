@@ -1,9 +1,23 @@
 {
-	"type": "origins:prevent_sleep",
-	"message": "medievalorigins.moon_elf_no_sleep",
-	"set_spawn_point": true,
-	"condition": {
-		"type": "origins:dimension",
-		"dimension": "minecraft:overworld"
+	"type": "origins:multiple",
+	"no_sleep": {
+		"type": "origins:prevent_sleep",
+		"message": "medievalorigins.moon_elf_no_sleep",
+		"set_spawn_point": true,
+		"condition": {
+			"type": "origins:dimension",
+			"dimension": "minecraft:overworld"
+		}
+	},
+	"no_phantoms": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:modify_insomnia_ticks",
+			"modifier": {
+				"operation": "set_total",
+				"value": 0
+			}
+		},
+		"interval": 1000
 	}
 }

@@ -1,5 +1,19 @@
 {
-	"type": "origins:prevent_sleep",
-        "message": "medievalorigins.disturbed_restless",
-        "set_spawn_point": true
-} 
+        "type": "origins:multiple",
+        "no_sleep": {
+                "type": "origins:prevent_sleep",
+                "message": "medievalorigins.disturbed_restless",
+                "set_spawn_point": true
+        },
+        "no_phantoms": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:modify_insomnia_ticks",
+			"modifier": {
+				"operation": "set_total",
+				"value": 0
+			}
+		},
+		"interval": 1000
+	}
+}
