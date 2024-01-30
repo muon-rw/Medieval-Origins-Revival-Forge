@@ -27,7 +27,7 @@ public record FixedSummonTypeConfiguration(Optional<Integer> duration, @Nullable
 
 
     @Override
-    public @NotNull List<String> getErrors(@NotNull ICalioDynamicRegistryManager server) {
+    public List<String> getErrors(@NotNull ICalioDynamicRegistryManager server) {
         ImmutableList.Builder<String> builder = ImmutableList.builder();
         if (this.action().isBound())
             builder.addAll(this.action().value().getErrors(server).stream().map("SpawnEntity/%s"::formatted).toList());
@@ -35,7 +35,7 @@ public record FixedSummonTypeConfiguration(Optional<Integer> duration, @Nullable
     }
 
     @Override
-    public @NotNull List<String> getWarnings(@NotNull ICalioDynamicRegistryManager server) {
+    public List<String> getWarnings(@NotNull ICalioDynamicRegistryManager server) {
         ImmutableList.Builder<String> builder = ImmutableList.builder();
         if (this.action().isBound())
             builder.addAll(this.action().value().getWarnings(server).stream().map("SpawnEntity/%s"::formatted).toList());
