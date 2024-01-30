@@ -119,15 +119,18 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
-    // Put repositories for dependencies here
-    // NeoGradle automatically adds the Forge maven and Maven Central for you
 
     // If you have mod jar dependencies in ./libs, you can declare them as a repository like so.
     // See https://docs.gradle.org/current/userguide/declaring_repositories.html#sub:flat_dir_resolver
+
+
+    // Due to inconsistent Origins repositories, all Origins dependencies are currently manually added to a libs folder
     flatDir { dir 'libs' }
+
+
     maven { url = "https://maven.theillusivec4.top/" }
     maven {
-        name "KosmX's maven"
+        name "KosmX's maven - PlayerAnimator"
         url 'https://maven.kosmx.dev/'
     }
     maven {
@@ -144,14 +147,36 @@ repositories {
             includeGroup "curse.maven"
         }
     }
+    maven {
+        name = 'Modrinth'
+        url = 'https://api.modrinth.com/maven'
+        content {
+            includeGroup 'maven.modrinth'
+        }
+    }
+    maven {
+        name = "Pug's Maven - Apugli"
+        url = 'https://maven.merchantpug.net/releases/'
+    }
+    maven {
+        name = "JitPack"
+        url = 'https://jitpack.io'
+    }
+    maven {
+        // JEI
+        name = "Progwml6 maven"
+        url = "https://dvs1.progwml6.com/files/maven/"
+    }
+    maven {
+        // JEI Backup Mirror
+        name = "ModMaven"
+        url = "https://modmaven.dev"
+    }
 }
 
 dependencies {
-    // Specify the version of Minecraft to use.
-    // Any artifact can be supplied so long as it has a "userdev" classifier artifact and is a compatible patcher artifact.
-    // The "userdev" classifier will be requested and setup by NeoGradle.
-    // If the group id is "net.minecraft" and the artifact id is one of ["client", "server", "joined"],
-    // then special handling is done to allow a setup of a vanilla dependency without the use of an external repository.
+
+    // Required
     minecraft "net.neoforged:forge:${minecraft_version}-${neo_version}"
     implementation fg.deobf("io.github.edwinmindcraft:calio-forge:1.20.1-1.11.0.2")
     implementation fg.deobf("io.github.edwinmindcraft:apoli-forge:1.20.1-2.9.0.4-all")
@@ -159,18 +184,27 @@ dependencies {
     implementation fg.deobf("com.github.Virtuoel:Pehkui:${pehkui_version}")
     runtimeOnly fg.deobf("top.theillusivec4.caelus:caelus-forge:${caelus_version}")
     compileOnly fg.deobf("top.theillusivec4.caelus:caelus-forge:${caelus_version}")
+
+    // Bundled libraries
+    implementation(jarJar(fg.deobf("net.merchantpug:Apugli:${project.apugli_version}-forge"))) {
+        jarJar.ranged(it, "[${project.apugli_version},)")
+    }
+    implementation (jarJar(fg.deobf("maven.modrinth:projectile-damage-attribute:${projectile_damage_version}-forge")))
+
+    // Compat and Misc
     runtimeOnly fg.deobf("io.redspace.ironsspellbooks:irons_spellbooks:1.20.1-2.2.1")
     runtimeOnly fg.deobf("com.hollingsworth.ars_nouveau:ars_nouveau:1.20.1-4.8.3-all")
     runtimeOnly fg.deobf("software.bernie.geckolib:geckolib-forge-${geckolib_version}")
     runtimeOnly fg.deobf("dev.kosmx.player-anim:player-animation-lib-forge:${player_animator_version}")
     runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}:api")
     runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}")
+    runtimeOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}")
 
     // Example mod dependency with JEI - using fg.deobf() ensures the dependency is remapped to your development mappings
     // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
     //compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}")
     //compileOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:${jei_version}")
-    //runtimeOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}")
+
 
     // Example mod dependency using a mod jar from ./libs with a flat dir repository
     // This maps to ./libs/coolmod-${mc_version}-${coolmod_version}.jar

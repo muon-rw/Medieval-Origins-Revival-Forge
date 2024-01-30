@@ -28,5 +28,11 @@
         "sounds": [
             "medievalorigins:zhh_woo_voop_early"
         ]
+    },
+    "cronch": {
+        "subtitles": "sounds.medievalorigins.bone_crunch",
+        "sounds": [
+            "medievalorigins:cronch"
+        ]
     }
 }

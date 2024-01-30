@@ -12,9 +12,14 @@
 							"entity_type": "minecraft:skeleton_horse",
 							"tag": "{Tags: [\"necro_summon_temp\"],SaddleItem:{id:saddle,Count:1},Tame:1}",
 							"entity_action": {
-								"type": "origins:grant_power",
-								"power": "medievalorigins:revenant/unwitherable",
-								"source": "medievalorigins:revenant/summons"
+								"type": "origins:and",
+								"actions": [
+									{
+										"type": "origins:grant_power",
+										"power": "medievalorigins:revenant/unwitherable",
+										"source": "medievalorigins:revenant/summons"
+									}
+								]
 							}
 						},
 						{
@@ -39,6 +44,41 @@
 										"action": {
 											"type": "origins:execute_command",
 											"command": "data merge entity @s {Tags:[\"siphon_immune\"]}"
+										}
+									},
+									{
+										"type": "origins:if_else",
+										"if_action": {
+											"type": "origins:and",
+											"actions": [
+												{
+													"type": "origins:target_action",
+													"action": {
+														"type": "origins:execute_command",
+														"command": "function medievalorigins:mdvlorigins/empowered_skeleton_horse"
+													}
+												},
+												{
+													"type": "origins:actor_action",
+													"action": {
+														"type": "origins:modify_resource",
+														"resource": "medievalorigins:revenant/putrid_communion_bone",
+														"modifier": {
+															"operation": "multiply_total_multiplicative",
+															"value": -1
+														}
+													}
+												}
+											]
+										},
+										"condition": {
+											"type": "origins:actor_condition",
+											"condition": {
+												"type": "origins:resource",
+												"resource": "medievalorigins:revenant/putrid_communion_bone",
+												"compare_to": 25,
+												"comparison": ">="
+											}
 										}
 									}
 								]
@@ -119,10 +159,8 @@
 								}
 							},
 							"condition": {
-								"type": "origins:resource",
-								"resource": "medievalorigins:revenant/putrid_communion_bone",
-								"comparison": ">=",
-								"compare_to": 24
+								"type": "origins:constant",
+								"value": true
 							}
 						},
 						{
@@ -139,7 +177,7 @@
 								"type": "origins:resource",
 								"resource": "medievalorigins:revenant/putrid_communion_bone",
 								"comparison": ">=",
-								"compare_to": 24
+								"compare_to": 20
 							}
 						}
 					]

@@ -6,6 +6,7 @@
     {"id": "#c:is_obsidian", "required": false},
     {"id": "#forge:obsidian","required": false},
     {"id": "#forge:unbreakable","required": false},
+    {"id": "#forge:relocation_not_supported","required": false},
     "minecraft:obsidian"
   ]
 }
