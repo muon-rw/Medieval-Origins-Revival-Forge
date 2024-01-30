@@ -451,7 +451,7 @@
   "power.medievalorigins.revenant/hellraiser.description": "At will, a revenant can raise a circle of inert skeletons, acting as a temporary shield to protect them from danger and damage nearby enemies.",
 
   "power.medievalorigins.revenant/putrid_communion.name": "Putrid Communion",
-  "power.medievalorigins.revenant/putrid_communion.description": "Through the unsettling act of consuming the flesh or bones of the undead, a revenant can strengthen their next summon of the same type. Summons at max power are eternal.",
+  "power.medievalorigins.revenant/putrid_communion.description": "Through the unsettling act of consuming the flesh or bones of the undead, a revenant can strengthen their next summon of the same type. Summons at max power receive extra benefits.",
 
   "power.medievalorigins.revenant/unwitherable.name": "Necrotic Curse",
   "power.medievalorigins.revenant/unwitherable.description": "Their assimilation with death makes revenants immune to wither, and, like undead, they take extra damage from smite, receive inverted effects from harming and healing effects, and are immune to poison and regeneration effects.",
