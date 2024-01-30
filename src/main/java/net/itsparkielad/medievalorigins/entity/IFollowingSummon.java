@@ -15,6 +15,10 @@ import java.util.Optional;
 import java.util.UUID;
 
 public interface IFollowingSummon {
+        /*
+        Implementation sourced from Ars Nouveau, in compliance with the LGPL-v3.0 license
+    */
+
     EntityDataAccessor<Optional<UUID>> OWNER_UUID = SynchedEntityData.defineId(TamableAnimal.class, EntityDataSerializers.OPTIONAL_UUID);
 
     Level getWorld();

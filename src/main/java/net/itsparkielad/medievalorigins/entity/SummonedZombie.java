@@ -30,6 +30,10 @@ import java.util.UUID;
 
 public class SummonedZombie extends Zombie implements IFollowingSummon, ISummon {
 
+    /*
+        Implementation sourced from Ars Nouveau, in compliance with the LGPL-v3.0 license
+    */
+
     public SummonedZombie(EntityType<? extends Zombie> entityType, Level level) {
         super(entityType, level);
     }

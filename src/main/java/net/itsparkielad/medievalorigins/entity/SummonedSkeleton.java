@@ -34,6 +34,9 @@ import java.util.Optional;
 import java.util.UUID;
 
 public class SummonedSkeleton extends Skeleton implements IFollowingSummon, ISummon {
+    /*
+        Implementation sourced from Ars Nouveau, in compliance with the LGPL-v3.0 license
+    */
 
     public SummonedSkeleton(EntityType<? extends Skeleton> entityType, Level level) {
         super(entityType, level);
