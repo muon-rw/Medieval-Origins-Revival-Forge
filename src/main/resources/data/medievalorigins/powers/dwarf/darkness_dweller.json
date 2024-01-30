@@ -1,5 +1,6 @@
 {
 	"type": "origins:action_over_time",
+	"interval": 10,
 	"condition": {
 		"type": "origins:and",
 		"conditions": [
