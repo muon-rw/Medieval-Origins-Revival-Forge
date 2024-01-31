@@ -44,7 +44,7 @@
   "origin.medievalorigins.plague_victim.description": "-§l Notable Changes§r: \n§o§2+ Withering §r\n§o§6• Unique playstyle §r\n§o§6• Undead §r\n§o§c- Defense, Reputation §r\nDisease-ridden half-dead creatures who can no longer be called human, cursed and trapped in eternal suffering as a result of a strange magical illness.",
 
   "origin.medievalorigins.revenant.name": "Revenant",
-  "origin.medievalorigins.revenant.description": "-§l Notable Changes§r: \n§o§2+ Summons §r\n§o§2+ Illager Friendly \n§o§6• Undead §r\n§o§c- Defense, Reputation §r\n§lRevenants§r are misfortunate souls who died gruesome and painful deaths, but inexplicably returned to life. As a result, they become obsessed with manipulating life and death in other creatures.",
+  "origin.medievalorigins.revenant.description": "-§l Notable Changes§r: \n§o§2+ Summons §r\n§o§2+ Illager Friendly \n§o§6• Undead, Complex §r\n§o§c- Reputation §r\n§lRevenants§r are misfortunate souls who died gruesome and painful deaths, but inexplicably returned to life. As a result, they become obsessed with manipulating life and death in other creatures.",
 
   "origin.medievalorigins.siren.name": "Siren",
   "origin.medievalorigins.siren.description": "-§l Notable Changes§r: \n§o§2+ Ranged Damage, Speed§r\n§o§6• Stealthy, Vegetarian§r\n§o§c- Melee Damage, Defense§r\n§lSirens§r are said to be a type of Merfolk. They have an ensnaring aura and their irresistible beauty is said to be the downfall of many a foolish sailor.",
@@ -477,6 +477,10 @@
   "sounds.medievalorigins.horrible_screech": "Horrible Screech",
   "sounds.medievalorigins.zhh_voo_woop": "Mysterious Anomaly",
   "sounds.medievalorigins.bone_crunch": "Cracking Bone",
+
+  "entity.medievalorigins.summon_zombie": "Summoner's Zombie",
+  "entity.medievalorigins.summon_skeleton": "Summoner's Skeleton",
+  "entity.medievalorigins.summon_wither_skeleton": "Summoner's Wither Skeleton",
 
   "medievalorigins.contagious_villager": "This villager will not trade with you!",
 
