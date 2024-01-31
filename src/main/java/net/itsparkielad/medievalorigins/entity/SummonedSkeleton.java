@@ -287,10 +287,10 @@ public class SummonedSkeleton extends Skeleton implements IFollowingSummon, ISum
         if (this.isLimitedLifespan) {
             compound.putInt("LifeTicks", this.limitedLifeTicks);
         }
-        if (this.getOwnerUUID() == null) {
-            compound.putUUID("OwnerUUID", Util.NIL_UUID);
-        } else {
+        if (this.getOwnerUUID() != null) {
             compound.putUUID("OwnerUUID", this.getOwnerUUID());
+        } else {
+            // compound.putUUID("OwnerUUID", Util.NIL_UUID);
         }
 
     }
@@ -319,12 +319,16 @@ public class SummonedSkeleton extends Skeleton implements IFollowingSummon, ISum
     @Nullable
     @Override
     public UUID getOwnerUUID() {
-        return this.entityData.get(OWNER_UUID).orElse(null);
+        if (this.getPersistentData().contains("OwnerUUID")) {
+            return this.getPersistentData().getUUID("OwnerUUID");
+        } else {
+            return null;
+        }
     }
 
     @Override
     public void setOwnerID(UUID uuid) {
-        this.entityData.set(OWNER_UUID, Optional.ofNullable(uuid));
+        this.getPersistentData().putUUID("OwnerUUID", uuid);
     }
 
 }
