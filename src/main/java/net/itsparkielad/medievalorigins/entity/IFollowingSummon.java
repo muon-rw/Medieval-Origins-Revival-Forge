@@ -21,6 +21,8 @@ public interface IFollowingSummon {
 
     EntityDataAccessor<Optional<UUID>> OWNER_UUID = SynchedEntityData.defineId(TamableAnimal.class, EntityDataSerializers.OPTIONAL_UUID);
 
+    boolean wantsToAttack(LivingEntity pTarget, LivingEntity pOwner);
+
     Level getWorld();
 
     PathNavigation getPathNav();

@@ -80,7 +80,6 @@ public class SummonedSkeleton extends Skeleton implements IFollowingSummon, ISum
     public void die(DamageSource pDamageSource) {
         super.die(pDamageSource);
     }
-
     @Override
     public EntityType<?> getType() {
         return ModEntities.SUMMON_SKELETON.get();
@@ -115,23 +114,26 @@ public class SummonedSkeleton extends Skeleton implements IFollowingSummon, ISum
 
     @Override
     protected void registerGoals() {
-
-        this.goalSelector.addGoal(9, new LookAtPlayerGoal(this, Player.class, 3.0F, 1.0F));
-        this.goalSelector.addGoal(10, new LookAtPlayerGoal(this, Mob.class, 8.0F));
-        this.goalSelector.addGoal(2, new FollowSummonerGoal(this, this.owner, 1.0, 9.0f, 3.0f));
-        this.goalSelector.addGoal(4, new WaterAvoidingRandomStrollGoal(this, 1.0D));
+        this.targetSelector.addGoal(1, new CopyOwnerTargetGoal<>(this));
         this.targetSelector.addGoal(2, new HurtByTargetGoal(this, SummonedSkeleton.class){
             @Override
             protected boolean canAttack(@Nullable LivingEntity pPotentialTarget, TargetingConditions pTargetPredicate) {
                 return pPotentialTarget != null && super.canAttack(pPotentialTarget, pTargetPredicate) && !pPotentialTarget.getUUID().equals(getOwnerUUID()) ;
             }
         });
-        this.targetSelector.addGoal(1, new CopyOwnerTargetGoal<>(this));
         this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, Mob.class, 10, false, true,
                 (LivingEntity entity) ->
                         (entity instanceof Mob mob && mob.getTarget() != null && mob.getTarget().equals(this.owner))
                                 || (entity != null && entity.getKillCredit() != null && entity.getKillCredit().equals(this.owner))
         ));
+        this.goalSelector.addGoal(5, new FollowSummonerGoal(this, this.owner, 1.0, 9.0f, 3.0f));
+        this.goalSelector.addGoal(6, new WaterAvoidingRandomStrollGoal(this, 1.0D));
+        this.goalSelector.addGoal(9, new LookAtPlayerGoal(this, Player.class, 3.0F, 1.0F));
+        this.goalSelector.addGoal(10, new LookAtPlayerGoal(this, Mob.class, 8.0F));
+
+
+
+
     }
 
     public void setOwner(LivingEntity owner) {
@@ -193,6 +195,11 @@ public class SummonedSkeleton extends Skeleton implements IFollowingSummon, ISum
             return pEntity == summoner || summoner.isAlliedTo(pEntity);
         }
         return super.isAlliedTo(pEntity);
+    }
+
+    @Override
+    public boolean wantsToAttack(LivingEntity pTarget, LivingEntity pOwner) {
+        return true;
     }
 
     @Override
