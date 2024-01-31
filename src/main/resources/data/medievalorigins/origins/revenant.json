@@ -1,8 +1,10 @@
 {
 	"powers": [
                 "medievalorigins:revenant/cronch",
+                "medievalorigins:revenant/transfer_item",
                 "medievalorigins:revenant/putrid_communion",
                 "medievalorigins:revenant/skeleton_summons",
+                "medievalorigins:revenant/zombie_summons",
                 "medievalorigins:revenant/hellraiser",
                 "medievalorigins:revenant/siphon",
                 "medievalorigins:revenant/unwitherable",
@@ -16,6 +18,6 @@
                 "item": "minecraft:ink_sac",
                 "tag": "{CustomModelData:360}"
         },
-	"impact": 2,
+	"impact": 3,
         "order": 1
 }
