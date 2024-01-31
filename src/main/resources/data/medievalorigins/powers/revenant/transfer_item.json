@@ -1,5 +1,6 @@
 {
 	"type": "origins:action_on_entity_use",
+	"hidden": true,
 	"bientity_condition": {
 		"type": "origins:target_condition",
 		"condition": {

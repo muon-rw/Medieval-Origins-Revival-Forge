@@ -451,16 +451,19 @@
   "power.medievalorigins.revenant/hellraiser.description": "At will, a revenant can raise a circle of inert skeletons, acting as a temporary shield to protect them from danger and damage nearby enemies.",
 
   "power.medievalorigins.revenant/putrid_communion.name": "Putrid Communion",
-  "power.medievalorigins.revenant/putrid_communion.description": "Through the unsettling act of consuming the flesh or bones of the undead, a revenant can strengthen their next summon of the same type. Summons at max power receive extra benefits.",
+  "power.medievalorigins.revenant/putrid_communion.description": "Through the unsettling act of consuming the flesh or bones of the undead, a revenant can empower their next summon of the same type.",
 
   "power.medievalorigins.revenant/unwitherable.name": "Necrotic Curse",
-  "power.medievalorigins.revenant/unwitherable.description": "Their assimilation with death makes revenants immune to wither, and, like undead, they take extra damage from smite, receive inverted effects from harming and healing effects, and are immune to poison and regeneration effects.",
+  "power.medievalorigins.revenant/unwitherable.description": "Revenants are immune to wither, and, like undead, they take extra damage from smite, receive inverted effects from harming and healing effects, and are immune to poison and regeneration effects.",
+
+  "power.medievalorigins.revenant/skeleton_summons.name": "Revenance",
+  "power.medievalorigins.revenant/skeleton_summons.description": "Revenants can reconstruct creatures of the night modified to do their own bidding. These act as pets, will follow and teleport, and skeletons can be equipped with any weapon. Summon by activating while holding: \n\nSkeleton: \n- Mainhand: 4 bones\n\nSkeleton Horse: \n- Mainhand: 12 bones\n- Offhand: 1 saddle \n\nWither Skeleton: \n- Mainhand: 12 bones\n- Offhand: 1 wither skull\n\nZombie: \n- Mainhand: 4 flesh\n\nZombie Horse: \n- Mainhand: 12 flesh\n- Offhand: 1 saddle",
 
   "power.medievalorigins.revenant/poor_reputation.name": "Chaotic Ally",
-  "power.medievalorigins.revenant/poor_reputation.description": "Those who practice forbidden arts are feared by the populace. Villagers will refuse to trade with revenants and iron golems will attack them on sight. This does, however, come with the bonus that they are accepted amongst the ranks of the Pillagers.",
+  "power.medievalorigins.revenant/poor_reputation.description": "Villagers will refuse to trade with revenants and iron golems will attack them on sight. However, they are accepted amongst the ranks of the Pillagers.",
 
-  "power.medievalorigins.revenant/siphon.name": "Extractive Sacrifice",
-  "power.medievalorigins.revenant/siphon.description": "Revenants can rip out some of their soul and radiate it into a field around them, thereby strengthening any nearby non-hostile mobs.",
+  "power.medievalorigins.revenant/siphon.name": "Essence Extraction",
+  "power.medievalorigins.revenant/siphon.description": "Each time they are struck, revenants slowly build up a power which allows them to draw essence out of another creature, draining its life and filling their own. ",
 
   "power.medievalorigins.revenant/unguarded.name": "Unguarded",
   "power.medievalorigins.revenant/unguarded.description": "Obsessing over the spirit realm leaves revenants more open to attack in the physical realm. Most mobs deal more damage to them.",

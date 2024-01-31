@@ -1,5 +1,6 @@
 {
 	"type": "origins:active_self",
+	"hidden": true,
 	"condition": {
 		"type": "origins:equipped_item",
 		"equipment_slot": "mainhand",
