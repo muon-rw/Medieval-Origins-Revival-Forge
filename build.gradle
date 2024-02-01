@@ -182,10 +182,16 @@ dependencies {
     compileOnly fg.deobf("top.theillusivec4.caelus:caelus-forge:${caelus_version}")
 
     // Bundled libraries
-    implementation(jarJar(fg.deobf("net.merchantpug:Apugli:${project.apugli_version}-forge"))) {
-        jarJar.ranged(it, "[${project.apugli_version},)")
+    implementation (jarJar(fg.deobf("net.merchantpug:Apugli:${apugli_version}+${minecraft_version}-forge"))) {
+            jarJar.ranged(it, "[${apugli_version},)")
     }
-    implementation (jarJar(fg.deobf("maven.modrinth:projectile-damage-attribute:${projectile_damage_version}-forge")))
+    implementation (jarJar(fg.deobf("maven.modrinth:projectile-damage-attribute:${projectile_damage_version}+${minecraft_version}-forge"))) {
+        jarJar.ranged(it, "[${projectile_damage_version},)")
+    }
+
+    //jarJar fg.deobf("net.merchantpug:Apugli:${apugli_version}+${minecraft_version}-forge")
+    //jarJar fg.deobf("maven.modrinth:projectile-damage-attribute:${projectile_damage_version}-forge")
+
 
     // Compat and Misc
     runtimeOnly fg.deobf("io.redspace.ironsspellbooks:irons_spellbooks:1.20.1-2.2.1")
@@ -272,3 +278,14 @@ publishing {
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
 }
+
+tasks.jarJar.configure {
+    archiveClassifier = ""
+    dependsOn('reobfJar')
+}
+
+reobf {
+    jarJar {}
+}
+
+jar.finalizedBy('reobfJarJar')
