@@ -8,7 +8,7 @@
   "origin.medievalorigins.arachnae.description": "-§l Notable Changes§r: \n§o§2+ Poison, Crowd Control§r\n§o§6• Carnivore§r\n§o§c- Hunger, Defense§r\nA grotesque amalgamation of spider and human, with venomous fangs and bristled feet yet the ability to walk upright and wield weaponry.",
 
   "origin.medievalorigins.banshee.name": "Banshee",
-  "origin.medievalorigins.banshee.description": "-§l Notable Changes§r: \n§o§2+ Flight, Support, Phasing§r\n§o§c- Defense§r\n§o§c- Extreme changes, read first!§r\n§lBanshees§r are anguished spirits whose cries can shatter glass and drive people to madness. In myth, their presence is often considered an omen of death.",
+  "origin.medievalorigins.banshee.description": "-§l Notable Changes§r: \n§o§2+ Hover, Support, Phasing§r\n§o§c- Defense§r\n§o§c- Extreme changes, read first!§r\n§lBanshees§r are anguished spirits whose cries can shatter glass and drive people to madness. In myth, their presence is often considered an omen of death.",
 
   "origin.medievalorigins.incubus.name": "Incubus",
   "origin.medievalorigins.incubus.description": "-§l Notable Changes§r: \n§o§2+ Ranged Damage, Speed§r\n§o§6• Stealthy, Vegetarian§r\n§o§c- Melee Damage, Defense§r\n§lIncubi§r are evil servants of a dark power. They are powerful in their own realm, but in exchange for this they have given up their soul, and are weak to pure sources.",
@@ -38,7 +38,7 @@
   "origin.medievalorigins.ogre.description": "-§l Notable Changes§r: \n§o§2+ Axe Bonuses, Defense §r\n§o§6• Massive §r\n§o§c- Hunger, Speed §r\n§lOgres§r are a large, short-tempered, and brutish subspecies of Orc. Their lumbering size and limited intelligence are made up for by their raw strength.",
 
   "origin.medievalorigins.pixie.name": "Pixie",
-  "origin.medievalorigins.pixie.description": "-§l Notable Changes§r: \n§o§2+ Flight, No Fall Damage§r\n§o§6• Tiny, Vegetarian§r\n§o§c- Defense, Reputation §r\nOften considered harbingers of good fortune, but also tricky, untrustworthy agents of mischief. Pixies are one of the tiniest creatures to roam the land.",
+  "origin.medievalorigins.pixie.description": "-§l Notable Changes§r: \n§o§2+ Hover, No Fall Damage§r\n§o§6• Tiny: Avg. 5\" | 25cm §r\n§o§c- Defense, Reputation §r\nOften considered harbingers of good fortune, but also tricky, untrustworthy agents of mischief. Pixies are one of the tiniest creatures to roam the land.",
 
   "origin.medievalorigins.plague_victim.name": "Plague Victim",
   "origin.medievalorigins.plague_victim.description": "-§l Notable Changes§r: \n§o§2+ Withering §r\n§o§6• Unique playstyle §r\n§o§6• Undead §r\n§o§c- Defense, Reputation §r\nDisease-ridden half-dead creatures who can no longer be called human, cursed and trapped in eternal suffering as a result of a strange magical illness.",
@@ -198,8 +198,8 @@
   "power.medievalorigins.fae/diminutive.name": "Diminutive",
   "power.medievalorigins.fae/diminutive.description": "It is rare for a fae to break 5 feet in height. They are small for a humanoid, most being barely taller than the average goblin.",
 
-  "power.medievalorigins.fae/iron_aversion.name": "Iron Shackles",
-  "power.medievalorigins.fae/iron_aversion.description": "Iron inhibits fae powers. It is unbearable for them to wear it.",
+  "power.medievalorigins.fae/iron_aversion.name": "Magical Suppression",
+  "power.medievalorigins.fae/iron_aversion.description": "Iron and silver inhibit fae powers. It is unbearable for them to wear it.",
 
   "power.medievalorigins.fae/levitation.name": "Levitation",
   "power.medievalorigins.fae/levitation.description": "Fae are light, winged creatures who can float effortlessly on the air. Press the primary active key to hover upward.",
@@ -346,31 +346,34 @@
   "power.medievalorigins.pixie/troublemaker.description": "Villagers know pixies by the legends of trouble they cause, and will refuse to trade with them.",
 
   "power.medievalorigins.plague_victim/contagious.name": "Contagious",
-  "power.medievalorigins.plague_victim/contagious.description": "Your appearance is horrifying. Villagers will refuse to trade with you out of fear.",
+  "power.medievalorigins.plague_victim/contagious.description": "The Plagued are a horrifying sight. Villagers will refuse to trade with them out of fear.",
 
   "power.medievalorigins.plague_victim/foul_aura.name": "Foul Aura",
-  "power.medievalorigins.plague_victim/foul_aura.description": "Plague carrying fleas swarm the victim. Being in the general vicinity of them is not beneficial for one's health.",
+  "power.medievalorigins.plague_victim/foul_aura.description": "A horrifying magic swarms the victim, and slowly consumes the life of any living nearby.",
 
   "power.medievalorigins.plague_victim/insomniac.name": "Insomniac",
-  "power.medievalorigins.plague_victim/insomniac.description": "The horrible welts make sleep impossible for carriers of the Plague to sleep.",
+  "power.medievalorigins.plague_victim/insomniac.description": "Sleep is impossible for the Plagued, due to their unending agony.",
 
   "power.medievalorigins.plague_victim/plague_immunity.name": "Plague Immunity",
-  "power.medievalorigins.plague_victim/plague_immunity.description": "Although the plague affects the carrier, they do not suffer the brunt of its symptoms. Carriers are immune to poison and wither.",
+  "power.medievalorigins.plague_victim/plague_immunity.description": "Though the immense pain never ends, there is only so much tissue that can die. Carriers are immune to poison and wither.",
 
-  "power.medievalorigins.plague_victim/risk_of_transmission.name": "Risk of Transmission",
-  "power.medievalorigins.plague_victim/risk_of_transmission.description": "Every contact with a plague victim is a 50/50 on whether you will contract the disease or not. Their opponents best pray that they get lucky...",
+  "power.medievalorigins.plague_victim/eternal_suffering.name": "Eternal Suffering",
+  "power.medievalorigins.plague_victim/eternal_suffering.description": "Once per day, upon death, the Plagued are instead forcefully kept alive, prolonging their torment.",
+
+  "power.medievalorigins.plague_victim/risk_of_transmission.name": "Contagious Hex",
+  "power.medievalorigins.plague_victim/risk_of_transmission.description": "Each contact with the victim is a gamble - everything they hit has a chance to itself become infected.",
 
   "power.medievalorigins.plague_victim/sensitive_skin.name": "Sensitive Skin",
-  "power.medievalorigins.plague_victim/sensitive_skin.description": "The Plague causes welts and lesions upon the skin, which are tender and painful to touch. As a result, victims cannot wear armor for the pain it causes.",
+  "power.medievalorigins.plague_victim/sensitive_skin.description": "The Plagued are covered in welts and lesions upon the skin, tender and painful to touch. Its victims cannot wear armor for the pain it causes.",
 
   "power.medievalorigins.plague_victim/skin_and_bones.name": "Skin and Bones",
-  "power.medievalorigins.plague_victim/skin_and_bones.description": "The Plague causes rapid muscle atrophy, resulting in reduced health and speed.",
+  "power.medievalorigins.plague_victim/skin_and_bones.description": "This illness drains the spirit, resulting in reduced health and speed.",
 
   "power.medievalorigins.siren/amphibious.name": "Amphibious",
-  "power.medievalorigins.siren/amphibious.description": "Sirens, being a subset of merpeople, can survive in water, and swim with increased speed.",
+  "power.medievalorigins.siren/amphibious.description": "Sirens, being a subset of Mer, can survive in water, and swim with increased speed.",
 
   "power.medievalorigins.siren/flammable.name": "Flammable",
-  "power.medievalorigins.siren/flammable.description": "Sirens and fire do not mix well. Any contact with flames results in instant death. Be sure to watch your step in the nether!",
+  "power.medievalorigins.siren/flammable.description": "Sirens and fire do not mix. Any contact with flames results in instant death. Be sure to watch your step in the nether!",
 
   "power.medievalorigins.siren/holy_water.name": "Holy Water",
   "power.medievalorigins.siren/holy_water.description": "Sirens have regenerative powers, which are at full force when they are in water.",
@@ -385,7 +388,7 @@
   "power.medievalorigins.siren/siren_song.description": "Sirens are known for their alluring calls. Press the primary active key to make all mobs around you neutral until hit. Does not work on bosses or players.",
 
   "power.medievalorigins.siren/seduce.name": "Captivate",
-  "power.medievalorigins.siren/seduce.description": "Sirens can use their beauty to coax villagers into giving more favorable trades. Activate while looking at a villager to affect them.",
+  "power.medievalorigins.siren/seduce.description": "Sirens can coax a villager into giving more favorable trades. Activate while looking at a villager.",
   
   "power.medievalorigins.siren/water_vision.name": "Water Vision",
   "power.medievalorigins.siren/water_vision.description": "Sirens have superior underwater vision compared to other creatures.",
