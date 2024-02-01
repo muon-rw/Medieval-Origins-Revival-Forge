@@ -1,4 +1,5 @@
 {
+        "loading_priority": 11,
 	"powers": [
                 "medievalorigins:incubus/demon_fire",
 		"medievalorigins:incubus/hellborne",

@@ -1,4 +1,5 @@
 {
+        "loading_priority": 11,
         "powers": [
                 "medievalorigins:moon_elf/moonlight_rogue",
                 "medievalorigins:moon_elf/stealth",

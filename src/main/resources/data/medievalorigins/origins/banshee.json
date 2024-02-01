@@ -1,4 +1,5 @@
 {
+        "loading_priority": 11,
 	"powers": [
 		"medievalorigins:banshee/spectral",
                 "medievalorigins:banshee/sonic_shriek",

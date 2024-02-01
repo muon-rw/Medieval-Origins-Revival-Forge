@@ -1,4 +1,5 @@
 {
+        "loading_priority": 11,
 	"powers": [
                 "medievalorigins:siren/siren_song",
                 "medievalorigins:siren/amphibious",

@@ -1,4 +1,5 @@
 {
+        "loading_priority": 11,
 	"powers": [
                 "medievalorigins:dwarf/dwarven_tech",
                 "medievalorigins:dwarf/miniature",

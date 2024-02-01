@@ -1,4 +1,5 @@
 {
+	"loading_priority": 11,
 	"powers": [
 		"medievalorigins:pixie/pixie_properties",
 		"medievalorigins:pixie/feather_footed",

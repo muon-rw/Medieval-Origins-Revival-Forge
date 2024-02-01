@@ -1,5 +1,5 @@
-{
-	"loading_priority": 2,
+{    
+	"loading_priority": 11,
 	"powers": [
 		"medievalorigins:yeti/frigid_pulse",
 		"medievalorigins:yeti/from_whence_you_came",

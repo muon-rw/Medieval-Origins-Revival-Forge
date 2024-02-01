@@ -1,4 +1,5 @@
 {
+        "loading_priority": 11,
 	"powers": [
                 "medievalorigins:revenant/cronch",
                 "medievalorigins:revenant/transfer_item",

@@ -1,4 +1,5 @@
 {
+        "loading_priority": 11,
 	"powers": [
                 "medievalorigins:arachnae/climber",
 		"medievalorigins:arachnae/many_eyes",

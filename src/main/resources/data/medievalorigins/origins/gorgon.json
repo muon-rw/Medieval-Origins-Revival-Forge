@@ -1,4 +1,5 @@
 {
+        "loading_priority": 11,
 	"powers": [
                 "medievalorigins:gorgon/petrifying_gaze",
                 "medievalorigins:gorgon/revenge",

@@ -1,4 +1,5 @@
 {
+        "loading_priority": 11,
 	"powers": [
                 "medievalorigins:alfiq/clawed",
                 "medievalorigins:alfiq/pounce",

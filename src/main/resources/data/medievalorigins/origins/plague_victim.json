@@ -1,4 +1,5 @@
 {
+        "loading_priority": 11,
 	"powers": [
                 "medievalorigins:plague_victim/foul_aura",
 		"medievalorigins:plague_victim/plague_immunity",

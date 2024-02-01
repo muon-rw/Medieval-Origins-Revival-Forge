@@ -1,4 +1,5 @@
 {
+        "loading_priority": 11,
         "powers": [
                 "medievalorigins:fae/levitation",
                 "medievalorigins:fae/magic_resistance",
