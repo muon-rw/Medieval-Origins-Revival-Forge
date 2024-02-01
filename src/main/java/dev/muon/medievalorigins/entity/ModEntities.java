@@ -1,6 +1,6 @@
-package net.itsparkielad.medievalorigins.entity;
+package dev.muon.medievalorigins.entity;
 
-import net.itsparkielad.medievalorigins.MedievalOrigins;
+import dev.muon.medievalorigins.MedievalOrigins;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;

@@ -1,9 +1,9 @@
-package net.itsparkielad.medievalorigins;
+package dev.muon.medievalorigins;
 
-import net.itsparkielad.medievalorigins.entity.SummonedSkeleton;
-import net.itsparkielad.medievalorigins.entity.ModEntities;
-import net.itsparkielad.medievalorigins.entity.SummonedWitherSkeleton;
-import net.itsparkielad.medievalorigins.entity.SummonedZombie;
+import dev.muon.medievalorigins.entity.ModEntities;
+import dev.muon.medievalorigins.entity.SummonedSkeleton;
+import dev.muon.medievalorigins.entity.SummonedZombie;
+import dev.muon.medievalorigins.entity.SummonedWitherSkeleton;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;

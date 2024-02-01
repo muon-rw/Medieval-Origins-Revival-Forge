@@ -1,6 +1,6 @@
-package net.itsparkielad.medievalorigins.entity.goal;
+package dev.muon.medievalorigins.entity.goal;
 
-import net.itsparkielad.medievalorigins.entity.IFollowingSummon;
+import dev.muon.medievalorigins.entity.IFollowingSummon;
 import net.minecraft.core.BlockPos;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.LivingEntity;

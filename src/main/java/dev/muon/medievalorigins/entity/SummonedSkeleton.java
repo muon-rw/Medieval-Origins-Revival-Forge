@@ -1,6 +1,6 @@
-package net.itsparkielad.medievalorigins.entity;
+package dev.muon.medievalorigins.entity;
 
-import net.itsparkielad.medievalorigins.entity.goal.FollowSummonerGoal;
+import dev.muon.medievalorigins.entity.goal.FollowSummonerGoal;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.server.level.ServerLevel;
@@ -19,7 +19,7 @@ import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.ai.targeting.TargetingConditions;
-import net.minecraft.world.entity.monster.WitherSkeleton;
+import net.minecraft.world.entity.monster.Skeleton;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.ProjectileUtil;
 import net.minecraft.world.item.ItemStack;
@@ -32,22 +32,22 @@ import org.jetbrains.annotations.Nullable;
 import java.util.Optional;
 import java.util.UUID;
 
-public class SummonedWitherSkeleton extends WitherSkeleton implements IFollowingSummon, ISummon {
+public class SummonedSkeleton extends Skeleton implements IFollowingSummon, ISummon {
     /*
         Implementation sourced from Ars Nouveau, in compliance with the LGPL-v3.0 license
     */
 
-    public SummonedWitherSkeleton(EntityType<? extends WitherSkeleton> entityType, Level level) {
+    public SummonedSkeleton(EntityType<? extends Skeleton> entityType, Level level) {
         super(entityType, level);
     }
-    public SummonedWitherSkeleton(Level level, LivingEntity owner, ItemStack item) {
-        super(ModEntities.SUMMON_WITHER_SKELETON.get(), level);
+    public SummonedSkeleton(Level level, LivingEntity owner, ItemStack item) {
+        super(ModEntities.SUMMON_SKELETON.get(), level);
         this.setWeapon(item);
         this.owner = owner;
         this.isLimitedLifespan = true;
         setOwnerID(owner.getUUID());
     }
-    private final RangedBowAttackGoal<SummonedWitherSkeleton> bowGoal = new RangedBowAttackGoal<>(this, 1.0D, 20, 15.0F);
+    private final RangedBowAttackGoal<SummonedSkeleton> bowGoal = new RangedBowAttackGoal<>(this, 1.0D, 20, 15.0F);
 
     private final MeleeAttackGoal meleeGoal = new MeleeAttackGoal(this, 2.2D, true) {
         /**
@@ -55,7 +55,7 @@ public class SummonedWitherSkeleton extends WitherSkeleton implements IFollowing
          */
         public void stop() {
             super.stop();
-            SummonedWitherSkeleton.this.setAggressive(false);
+            SummonedSkeleton.this.setAggressive(false);
         }
 
         /**
@@ -63,7 +63,7 @@ public class SummonedWitherSkeleton extends WitherSkeleton implements IFollowing
          */
         public void start() {
             super.start();
-            SummonedWitherSkeleton.this.setAggressive(true);
+            SummonedSkeleton.this.setAggressive(true);
         }
     };
 
@@ -79,10 +79,9 @@ public class SummonedWitherSkeleton extends WitherSkeleton implements IFollowing
     public void die(DamageSource pDamageSource) {
         super.die(pDamageSource);
     }
-
     @Override
     public EntityType<?> getType() {
-        return ModEntities.SUMMON_WITHER_SKELETON.get();
+        return ModEntities.SUMMON_SKELETON.get();
     }
 
     @Nullable
@@ -114,22 +113,26 @@ public class SummonedWitherSkeleton extends WitherSkeleton implements IFollowing
 
     @Override
     protected void registerGoals() {
-        this.targetSelector.addGoal(1, new HurtByTargetGoal(this, SummonedWitherSkeleton.class){
+        this.targetSelector.addGoal(1, new CopyOwnerTargetGoal<>(this));
+        this.targetSelector.addGoal(2, new HurtByTargetGoal(this, SummonedSkeleton.class){
             @Override
             protected boolean canAttack(@Nullable LivingEntity pPotentialTarget, TargetingConditions pTargetPredicate) {
                 return pPotentialTarget != null && super.canAttack(pPotentialTarget, pTargetPredicate) && !pPotentialTarget.getUUID().equals(getOwnerUUID()) ;
             }
         });
-        this.targetSelector.addGoal(2, new CopyOwnerTargetGoal<>(this));
         this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, Mob.class, 10, false, true,
                 (LivingEntity entity) ->
                         (entity instanceof Mob mob && mob.getTarget() != null && mob.getTarget().equals(this.owner))
                                 || (entity != null && entity.getKillCredit() != null && entity.getKillCredit().equals(this.owner))
         ));
-        this.goalSelector.addGoal(6, new FollowSummonerGoal(this, this.owner, 1.0, 9.0f, 3.0f));
-        this.goalSelector.addGoal(7, new WaterAvoidingRandomStrollGoal(this, 1.0D));
-        this.goalSelector.addGoal(10, new LookAtPlayerGoal(this, Player.class, 3.0F, 1.0F));
-        this.goalSelector.addGoal(11, new LookAtPlayerGoal(this, Mob.class, 8.0F));
+        this.goalSelector.addGoal(5, new FollowSummonerGoal(this, this.owner, 1.0, 9.0f, 3.0f));
+        this.goalSelector.addGoal(6, new WaterAvoidingRandomStrollGoal(this, 1.0D));
+        this.goalSelector.addGoal(9, new LookAtPlayerGoal(this, Player.class, 3.0F, 1.0F));
+        this.goalSelector.addGoal(10, new LookAtPlayerGoal(this, Mob.class, 8.0F));
+
+
+
+
     }
 
     public void setOwner(LivingEntity owner) {
@@ -140,6 +143,7 @@ public class SummonedWitherSkeleton extends WitherSkeleton implements IFollowing
         this.setItemSlot(EquipmentSlot.MAINHAND, item);
         this.reassessWeaponGoal();
     }
+
 
 
     @Override
@@ -292,7 +296,7 @@ public class SummonedWitherSkeleton extends WitherSkeleton implements IFollowing
         if (this.getOwnerUUID() != null) {
             compound.putUUID("OwnerUUID", this.getOwnerUUID());
         } else {
-        //    compound.putUUID("OwnerUUID", Util.NIL_UUID);
+            // compound.putUUID("OwnerUUID", Util.NIL_UUID);
         }
 
     }

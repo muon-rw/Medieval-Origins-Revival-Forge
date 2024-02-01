@@ -1,6 +1,6 @@
-package net.itsparkielad.medievalorigins.sounds;
+package dev.muon.medievalorigins.sounds;
 
-import net.itsparkielad.medievalorigins.MedievalOrigins;
+import dev.muon.medievalorigins.MedievalOrigins;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;

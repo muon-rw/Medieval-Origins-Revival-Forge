@@ -1,4 +1,4 @@
-package net.itsparkielad.medievalorigins.condition;
+package dev.muon.medievalorigins.condition;
 
 import io.github.edwinmindcraft.apoli.api.power.factory.BlockCondition;
 import io.github.edwinmindcraft.apoli.api.power.factory.DamageCondition;
@@ -9,7 +9,7 @@ import io.github.edwinmindcraft.apoli.common.condition.block.SimpleBlockConditio
 import io.github.edwinmindcraft.apoli.common.condition.damage.InTagCondition;
 import io.github.edwinmindcraft.apoli.common.condition.entity.SimpleEntityCondition;
 import io.github.edwinmindcraft.apoli.common.condition.item.SimpleItemCondition;
-import net.itsparkielad.medievalorigins.MedievalOrigins;
+import dev.muon.medievalorigins.MedievalOrigins;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.item.BowItem;

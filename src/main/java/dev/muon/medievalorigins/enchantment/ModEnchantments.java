@@ -1,6 +1,6 @@
-package net.itsparkielad.medievalorigins.enchantment;
+package dev.muon.medievalorigins.enchantment;
 
-import net.itsparkielad.medievalorigins.MedievalOrigins;
+import dev.muon.medievalorigins.MedievalOrigins;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.EnchantmentCategory;

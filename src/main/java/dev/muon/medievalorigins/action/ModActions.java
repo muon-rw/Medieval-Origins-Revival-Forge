@@ -1,19 +1,10 @@
-package net.itsparkielad.medievalorigins.action;
+package dev.muon.medievalorigins.action;
 import io.github.edwinmindcraft.apoli.api.power.factory.*;
 import io.github.edwinmindcraft.apoli.api.registry.ApoliRegistries;
-import io.github.edwinmindcraft.apoli.common.action.bientity.SimpleBiEntityAction;
-import io.github.edwinmindcraft.apoli.common.registry.ApoliRegisters;
-import net.itsparkielad.medievalorigins.MedievalOrigins;
+import dev.muon.medievalorigins.MedievalOrigins;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
-import io.github.edwinmindcraft.apoli.common.condition.block.SimpleBlockCondition;
-import io.github.edwinmindcraft.apoli.common.condition.entity.SimpleEntityCondition;
-import net.minecraft.world.entity.animal.Animal;
-import net.minecraft.world.level.block.CropBlock;
-import net.minecraft.world.level.block.state.BlockState;
-
-import javax.swing.*;
 
 public class ModActions {
     public static final DeferredRegister<EntityAction<?>> ENTITY_ACTIONS = DeferredRegister.create(ApoliRegistries.ENTITY_ACTION_KEY, MedievalOrigins.MODID);

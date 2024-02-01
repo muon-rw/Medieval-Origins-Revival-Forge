@@ -1,25 +1,29 @@
-package net.itsparkielad.medievalorigins.entity;
+package dev.muon.medievalorigins.entity;
 
-import net.itsparkielad.medievalorigins.entity.goal.FollowSummonerGoal;
-import net.minecraft.Util;
+import dev.muon.medievalorigins.entity.goal.FollowSummonerGoal;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.players.OldUsersConverter;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.DifficultyInstance;
+import net.minecraft.world.InteractionHand;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.goal.LookAtPlayerGoal;
 import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
+import net.minecraft.world.entity.ai.goal.RangedBowAttackGoal;
 import net.minecraft.world.entity.ai.goal.WaterAvoidingRandomStrollGoal;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal;
 import net.minecraft.world.entity.ai.navigation.PathNavigation;
 import net.minecraft.world.entity.ai.targeting.TargetingConditions;
-import net.minecraft.world.entity.monster.Zombie;
+import net.minecraft.world.entity.monster.WitherSkeleton;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.projectile.ProjectileUtil;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.scores.Team;
@@ -28,29 +32,30 @@ import org.jetbrains.annotations.Nullable;
 import java.util.Optional;
 import java.util.UUID;
 
-public class SummonedZombie extends Zombie implements IFollowingSummon, ISummon {
-
+public class SummonedWitherSkeleton extends WitherSkeleton implements IFollowingSummon, ISummon {
     /*
         Implementation sourced from Ars Nouveau, in compliance with the LGPL-v3.0 license
     */
 
-    public SummonedZombie(EntityType<? extends Zombie> entityType, Level level) {
+    public SummonedWitherSkeleton(EntityType<? extends WitherSkeleton> entityType, Level level) {
         super(entityType, level);
     }
-    public SummonedZombie(Level level, LivingEntity owner, ItemStack item) {
-        super(ModEntities.SUMMON_ZOMBIE.get(), level);
+    public SummonedWitherSkeleton(Level level, LivingEntity owner, ItemStack item) {
+        super(ModEntities.SUMMON_WITHER_SKELETON.get(), level);
         this.setWeapon(item);
         this.owner = owner;
         this.isLimitedLifespan = true;
         setOwnerID(owner.getUUID());
     }
+    private final RangedBowAttackGoal<SummonedWitherSkeleton> bowGoal = new RangedBowAttackGoal<>(this, 1.0D, 20, 15.0F);
+
     private final MeleeAttackGoal meleeGoal = new MeleeAttackGoal(this, 2.2D, true) {
         /**
          * Reset the task's internal state. Called when this task is interrupted by another one
          */
         public void stop() {
             super.stop();
-            SummonedZombie.this.setAggressive(false);
+            SummonedWitherSkeleton.this.setAggressive(false);
         }
 
         /**
@@ -58,7 +63,7 @@ public class SummonedZombie extends Zombie implements IFollowingSummon, ISummon 
          */
         public void start() {
             super.start();
-            SummonedZombie.this.setAggressive(true);
+            SummonedWitherSkeleton.this.setAggressive(true);
         }
     };
 
@@ -70,7 +75,6 @@ public class SummonedZombie extends Zombie implements IFollowingSummon, ISummon 
 
 
 
-
     @Override
     public void die(DamageSource pDamageSource) {
         super.die(pDamageSource);
@@ -78,7 +82,7 @@ public class SummonedZombie extends Zombie implements IFollowingSummon, ISummon 
 
     @Override
     public EntityType<?> getType() {
-        return ModEntities.SUMMON_ZOMBIE.get();
+        return ModEntities.SUMMON_WITHER_SKELETON.get();
     }
 
     @Nullable
@@ -110,22 +114,22 @@ public class SummonedZombie extends Zombie implements IFollowingSummon, ISummon 
 
     @Override
     protected void registerGoals() {
-        this.targetSelector.addGoal(1, new CopyOwnerTargetGoal<>(this));
-        this.targetSelector.addGoal(2, new HurtByTargetGoal(this, SummonedZombie.class){
+        this.targetSelector.addGoal(1, new HurtByTargetGoal(this, SummonedWitherSkeleton.class){
             @Override
             protected boolean canAttack(@Nullable LivingEntity pPotentialTarget, TargetingConditions pTargetPredicate) {
                 return pPotentialTarget != null && super.canAttack(pPotentialTarget, pTargetPredicate) && !pPotentialTarget.getUUID().equals(getOwnerUUID()) ;
             }
         });
+        this.targetSelector.addGoal(2, new CopyOwnerTargetGoal<>(this));
         this.targetSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, Mob.class, 10, false, true,
                 (LivingEntity entity) ->
                         (entity instanceof Mob mob && mob.getTarget() != null && mob.getTarget().equals(this.owner))
                                 || (entity != null && entity.getKillCredit() != null && entity.getKillCredit().equals(this.owner))
         ));
-        this.goalSelector.addGoal(4, new FollowSummonerGoal(this, this.owner, 1.0, 9.0f, 3.0f));
-        this.goalSelector.addGoal(5, new WaterAvoidingRandomStrollGoal(this, 1.0D));
-        this.goalSelector.addGoal(9, new LookAtPlayerGoal(this, Player.class, 3.0F, 1.0F));
-        this.goalSelector.addGoal(10, new LookAtPlayerGoal(this, Mob.class, 8.0F));
+        this.goalSelector.addGoal(6, new FollowSummonerGoal(this, this.owner, 1.0, 9.0f, 3.0f));
+        this.goalSelector.addGoal(7, new WaterAvoidingRandomStrollGoal(this, 1.0D));
+        this.goalSelector.addGoal(10, new LookAtPlayerGoal(this, Player.class, 3.0F, 1.0F));
+        this.goalSelector.addGoal(11, new LookAtPlayerGoal(this, Mob.class, 8.0F));
     }
 
     public void setOwner(LivingEntity owner) {
@@ -134,10 +138,24 @@ public class SummonedZombie extends Zombie implements IFollowingSummon, ISummon 
 
     public void setWeapon(ItemStack item) {
         this.setItemSlot(EquipmentSlot.MAINHAND, item);
+        this.reassessWeaponGoal();
     }
 
 
-
+    @Override
+    public void reassessWeaponGoal() {
+        if (getWorld() instanceof ServerLevel && this.getItemInHand(InteractionHand.MAIN_HAND) != ItemStack.EMPTY) {
+            this.goalSelector.removeGoal(this.meleeGoal);
+            this.goalSelector.removeGoal(this.bowGoal);
+            ItemStack itemstack = this.getItemInHand(ProjectileUtil.getWeaponHoldingHand(this, item -> item instanceof net.minecraft.world.item.BowItem));
+            if (itemstack.is(Items.BOW)) {
+                this.bowGoal.setMinAttackInterval(20);
+                this.goalSelector.addGoal(4, this.bowGoal);
+            } else {
+                this.goalSelector.addGoal(4, this.meleeGoal);
+            }
+        }
+    }
 
     @Override
     public boolean hurt(DamageSource pSource, float pAmount) {
@@ -244,6 +262,7 @@ public class SummonedZombie extends Zombie implements IFollowingSummon, ISummon 
     public void setIsLimitedLife(boolean bool) {
         this.isLimitedLifespan = bool;
     }
+
     public LivingEntity getOwnerFromID() {
         try {
             UUID uuid = this.getOwnerUUID();
@@ -273,7 +292,7 @@ public class SummonedZombie extends Zombie implements IFollowingSummon, ISummon 
         if (this.getOwnerUUID() != null) {
             compound.putUUID("OwnerUUID", this.getOwnerUUID());
         } else {
-            //compound.putUUID("OwnerUUID", Util.NIL_UUID)
+        //    compound.putUUID("OwnerUUID", Util.NIL_UUID);
         }
 
     }
@@ -313,6 +332,5 @@ public class SummonedZombie extends Zombie implements IFollowingSummon, ISummon 
     public void setOwnerID(UUID uuid) {
         this.getPersistentData().putUUID("OwnerUUID", uuid);
     }
-
 
 }

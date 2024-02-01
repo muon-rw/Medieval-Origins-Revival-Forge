@@ -1,4 +1,4 @@
-package net.itsparkielad.medievalorigins.configuration;
+package dev.muon.medievalorigins.configuration;
 import com.google.common.collect.ImmutableList;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;

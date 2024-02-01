@@ -1,4 +1,4 @@
-package net.itsparkielad.medievalorigins.entity;
+package dev.muon.medievalorigins.entity;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.server.level.ServerLevel;

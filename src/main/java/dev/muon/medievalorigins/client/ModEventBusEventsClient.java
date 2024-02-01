@@ -1,9 +1,8 @@
-package net.itsparkielad.medievalorigins.client;
+package dev.muon.medievalorigins.client;
 
-import net.itsparkielad.medievalorigins.MedievalOrigins;
-import net.itsparkielad.medievalorigins.entity.ModEntities;
+import dev.muon.medievalorigins.entity.ModEntities;
+import dev.muon.medievalorigins.MedievalOrigins;
 import net.minecraft.client.renderer.entity.*;
-import net.minecraft.client.resources.sounds.SoundEventRegistration;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.client.event.EntityRenderersEvent;

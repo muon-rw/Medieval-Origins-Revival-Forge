@@ -1,12 +1,12 @@
-package net.itsparkielad.medievalorigins;
+package dev.muon.medievalorigins;
 
 import com.mojang.logging.LogUtils;
-import net.itsparkielad.medievalorigins.action.ModActions;
-import net.itsparkielad.medievalorigins.condition.ModConditions;
-import net.itsparkielad.medievalorigins.enchantment.ModEnchantments;
+import dev.muon.medievalorigins.action.ModActions;
+import dev.muon.medievalorigins.condition.ModConditions;
+import dev.muon.medievalorigins.enchantment.ModEnchantments;
+import dev.muon.medievalorigins.entity.ModEntities;
 
-import net.itsparkielad.medievalorigins.entity.ModEntities;
-import net.itsparkielad.medievalorigins.sounds.ModSounds;
+import dev.muon.medievalorigins.sounds.ModSounds;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.MinecraftForge;

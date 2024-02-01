@@ -1,9 +1,9 @@
-package net.itsparkielad.medievalorigins.action;
+package dev.muon.medievalorigins.action;
 
+import dev.muon.medievalorigins.entity.SummonedSkeleton;
+import dev.muon.medievalorigins.entity.SummonedWitherSkeleton;
 import io.github.edwinmindcraft.apoli.api.configuration.NoConfiguration;
 import io.github.edwinmindcraft.apoli.api.power.factory.BiEntityAction;
-import net.itsparkielad.medievalorigins.entity.SummonedSkeleton;
-import net.itsparkielad.medievalorigins.entity.SummonedWitherSkeleton;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
