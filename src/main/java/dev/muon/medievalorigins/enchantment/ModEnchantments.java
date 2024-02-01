@@ -21,10 +21,11 @@ public class ModEnchantments {
                 public int getMinLevel() {
                     return 1;
                 }
+                public boolean isTreasureOnly() { return true; }
             });
 
     public static final RegistryObject<Enchantment> MIRRORING = ENCHANTMENTS.register("mirroring",
-            () -> new Enchantment(Enchantment.Rarity.VERY_RARE, EnchantmentCategory.ARMOR, new EquipmentSlot[]{EquipmentSlot.HEAD}) {
+            () -> new Enchantment(Enchantment.Rarity.VERY_RARE, EnchantmentCategory.ARMOR_HEAD, new EquipmentSlot[]{EquipmentSlot.HEAD}) {
                 @Override
                 public int getMaxLevel() {
                     return 1;
@@ -32,6 +33,7 @@ public class ModEnchantments {
                 public int getMinLevel() {
                     return 1;
                 }
+                public boolean isTreasureOnly() { return true; }
             });
     public static void register(IEventBus eventBus) {
         ENCHANTMENTS.register(eventBus);
