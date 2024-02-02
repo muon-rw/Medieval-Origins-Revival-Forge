@@ -40,6 +40,7 @@ minecraft {
             property 'forge.enabledGameTestNamespaces', mod_id
             property 'mixin.env.remapRefMap', 'true'
             property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+            args '--username', 'Dev#'
         }
 
         server {
@@ -109,6 +110,7 @@ dependencies {
     }
 
     // Compat and Misc
+
     runtimeOnly fg.deobf("io.redspace.ironsspellbooks:irons_spellbooks:1.20.1-2.2.1")
     runtimeOnly fg.deobf("com.hollingsworth.ars_nouveau:ars_nouveau:1.20.1-4.8.3-all")
     runtimeOnly fg.deobf("software.bernie.geckolib:geckolib-forge-${geckolib_version}")
@@ -117,6 +119,7 @@ dependencies {
     runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}")
     runtimeOnly fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}")
     runtimeOnly fg.deobf("curse.maven:jade-324717:${jade_id}")
+
 
 }
 
