@@ -328,10 +328,13 @@
   "power.medievalorigins.pixie/curse_of_flight.description": "The very wings which allows pixies to fly also prevent them from flying using any other wings, or wearing any chestplates more substantial than leather.",
 
   "power.medievalorigins.pixie/feather_footed.name": "Feather Footed",
-  "power.medievalorigins.pixie/feather_footed.description": "Pixies' small size means it is completely impossible for them to take fall damage.",
+  "power.medievalorigins.pixie/feather_footed.description": "Pixies are so light, it is impossible for them to take fall damage.",
 
   "power.medievalorigins.pixie/flight.name": "Flight",
   "power.medievalorigins.pixie/flight.description": "Pixies fall slightly slower, can flap their tiny wings in the air to jump upward, and can hold themselves steady in the air (by pressing the Primary Active key).",
+
+  "power.medievalorigins.pixie/mount.name": "Shortcut",
+  "power.medievalorigins.pixie/mount.description": "Mount another player by right clicking them with empty hands.",
 
   "power.medievalorigins.pixie/good_fortunes.name": "Good Fortunes",
   "power.medievalorigins.pixie/good_fortunes.description": "Although pixies can be troublesome, they are also associated with good luck. When mining, they will occasionally get something valubale from plain stone.",
