@@ -196,7 +196,7 @@
   "power.medievalorigins.fae/allure.description": "Fae are naturally alluring. Unfortunately, this means that mobs will pursue them from much further away than they would other creatures.",
 
   "power.medievalorigins.fae/diminutive.name": "Diminutive",
-  "power.medievalorigins.fae/diminutive.description": "It is rare for a fae to break 5 feet in height. They are small for a humanoid, most being barely taller than the average goblin.",
+  "power.medievalorigins.fae/diminutive.description": "Fae are fairly short, most barely being taller than the average goblin. It is rare for them to break 4 feet in height. ",
 
   "power.medievalorigins.fae/iron_aversion.name": "Magical Suppression",
   "power.medievalorigins.fae/iron_aversion.description": "Iron and silver inhibit fae powers. It is unbearable for them to wear it.",
@@ -217,7 +217,10 @@
   "power.medievalorigins.goblin/frail.description": "Due to their small stature, goblins' have less health and are more prone to damage.",
 
   "power.medievalorigins.goblin/greedy.name": "Greedy",
-  "power.medievalorigins.goblin/greedy.description": "Goblins have a special relationship with treasure - they are more proficient with golden gear than others.",
+  "power.medievalorigins.goblin/greedy.description": "Goblins have a special relationship with treasure - they gain extra bonuses when using or wearing golden gear.",
+
+  "power.medievalorigins.goblin/durability.name": "Careful Hoarder",
+  "power.medievalorigins.goblin/durability.description": "Gold in a goblin's hands lasts for much longer than most others who are careless with it.",
 
   "power.medievalorigins.goblin/nippy.name": "Nimble",
   "power.medievalorigins.goblin/nippy.description": "Although short, goblins are quite fast, allowing them to outrun most stronger enemies instead of fighting.",
@@ -229,13 +232,13 @@
   "power.medievalorigins.gorgon/hydrophobe.description": "Gorgons can not tolerate the purity of water and take damage from it.",
 
   "power.medievalorigins.gorgon/to_stone.name": "To Stone",
-  "power.medievalorigins.gorgon/to_stone.description": "Gorgons were cursed with being bound in dark, dank caves. Being outside in daylight causes them to become petrified until night. Can be negated by wearing a helmet.",
+  "power.medievalorigins.gorgon/to_stone.description": "Gorgons were doomed to stay bound in dark caves and old dungeons. Being outside in daylight causes them to become petrified until night. Can be negated by wearing a helmet.",
 
   "power.medievalorigins.gorgon/silver_aversion.name": "Silver Aversion",
   "power.medievalorigins.gorgon/silver_aversion.description": "Gorgons are weak to the purity of silver - they can not stand to wear it and take damage when wielding it. (Iron is also counted as silver)",
 
   "power.medievalorigins.gorgon/petrifying_gaze.name": "Petrifying Gaze",
-  "power.medievalorigins.gorgon/petrifying_gaze.description": "Meet the eyes of any mob facing you, turning them to stone briefly. Does not work on bosses or players.",
+  "power.medievalorigins.gorgon/petrifying_gaze.description": "Meet the eyes of any mob facing you, turning them to stone briefly. Does not work on bosses.",
 
   "power.medievalorigins.gorgon/poison_blood.name": "Poisoned Blood",
   "power.medievalorigins.gorgon/poison_blood.description": "Gorgons are immune to poison, and have a chance to spill their toxic blood onto nearby enemies when hit, poisoning them.",
@@ -387,8 +390,8 @@
   "power.medievalorigins.siren/siren_song.name": "Siren Song",
   "power.medievalorigins.siren/siren_song.description": "Sirens are known for their alluring calls. Press the primary active key to make all mobs around you neutral until hit. Does not work on bosses or players.",
 
-  "power.medievalorigins.siren/seduce.name": "Captivate",
-  "power.medievalorigins.siren/seduce.description": "Sirens can coax a villager into giving more favorable trades. Activate while looking at a villager.",
+  "power.medievalorigins.siren/seduce.name": "Captivating",
+  "power.medievalorigins.siren/seduce.description": "Sirens seem to be able to occasionally receive much better trades from villagers. (Activate with Secondary Active)",
   
   "power.medievalorigins.siren/water_vision.name": "Water Vision",
   "power.medievalorigins.siren/water_vision.description": "Sirens have superior underwater vision compared to other creatures.",
