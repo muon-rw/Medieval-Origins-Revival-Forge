@@ -130,9 +130,6 @@ public class SummonedSkeleton extends Skeleton implements IFollowingSummon, ISum
         this.goalSelector.addGoal(9, new LookAtPlayerGoal(this, Player.class, 3.0F, 1.0F));
         this.goalSelector.addGoal(10, new LookAtPlayerGoal(this, Mob.class, 8.0F));
 
-
-
-
     }
 
     public void setOwner(LivingEntity owner) {
