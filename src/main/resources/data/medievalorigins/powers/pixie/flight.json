@@ -35,11 +35,11 @@
 		"type": "origins:action_on_callback",
 		"entity_action_added": {
 			"type": "origins:execute_command",
-			"command": "medievalorigins:pixie_levitate_clear"
+			"command": "function medievalorigins:mdvlorigins/pixie_levitate_clear"
 		},
 		"entity_action_removed": {
 			"type": "origins:execute_command",
-			"command": "medievalorigins:pixie_levitate_clear"
+			"command": "function medievalorigins:mdvlorigins/pixie_levitate_clear"
 		},
 		"execute_chosen_when_orb": true
 	},
