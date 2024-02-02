@@ -8,7 +8,7 @@
 				"type": "origins:resource",
 				"resource": "medievalorigins:pixie/flight_levitate_resource",
 				"comparison": "==",
-				"compare_to": 1
+				"compare_to": 0
 			},
 			"if_action": {
 				"type": "origins:execute_command",
@@ -29,6 +29,32 @@
 		"start_value": 0,
 		"hud_render": {
 			"should_render": false
+		}
+	},
+	"no_random_floaties": {
+		"type": "origins:action_on_callback",
+		"entity_action_added": {
+			"type": "origins:execute_command",
+			"command": "medievalorigins:pixie_levitate_clear"
+		},
+		"entity_action_removed": {
+			"type": "origins:execute_command",
+			"command": "medievalorigins:pixie_levitate_clear"
+		},
+		"execute_chosen_when_orb": true
+	},
+	"particles": {
+		"type": "origins:action_over_time",
+		"condition": {
+			"type": "origins:resource",
+			"resource": "medievalorigins:pixie/flight_levitate_resource",
+			"comparison": "==",
+			"compare_to": 1
+		},
+		"interval": 1,
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "particle enchant ~ ~-0.05 ~ 0.1 0.0 0.1 0.05 1 force @a"
 		}
 	}
 }

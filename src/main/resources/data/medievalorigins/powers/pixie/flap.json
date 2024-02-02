@@ -1,0 +1,26 @@
+{
+    "hidden": true,
+    "type": "origins:multiple",
+    "jumpies": {
+        "type": "origins:grounded"
+    },
+    "jump_effects": {
+        "type": "origins:active_self",
+        "key": {
+            "key": "key.jump"
+        },
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "function medievalorigins:mdvlorigins/pixie_wing_flap"
+        },
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "slow_fall": {
+        "type": "origins:modify_falling",
+        "velocity": 0.04,
+        "take_fall_damage": false
+    }
+}

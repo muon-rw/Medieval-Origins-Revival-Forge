@@ -10,8 +10,10 @@ import io.github.edwinmindcraft.apoli.common.condition.damage.InTagCondition;
 import io.github.edwinmindcraft.apoli.common.condition.entity.SimpleEntityCondition;
 import io.github.edwinmindcraft.apoli.common.condition.item.SimpleItemCondition;
 import dev.muon.medievalorigins.MedievalOrigins;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.MobType;
+import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.BowItem;
 import net.minecraft.world.item.DiggerItem;
 import net.minecraft.world.item.enchantment.Enchantments;
@@ -36,6 +38,10 @@ public class ModConditions {
     public static final RegistryObject<SimpleItemCondition> IS_TOOL = ITEM_CONDITIONS.register("is_tool", () ->
             new SimpleItemCondition(stack ->
                     Enchantments.BLOCK_EFFICIENCY.canEnchant(stack) || stack.getItem() instanceof DiggerItem)
+    );
+    public static final RegistryObject<SimpleItemCondition> IS_CHESTPLATE = ITEM_CONDITIONS.register("is_chestplate", () ->
+            new SimpleItemCondition(stack ->
+                    stack.getItem() instanceof ArmorItem && ((ArmorItem) stack.getItem()).getEquipmentSlot() == EquipmentSlot.CHEST)
     );
 
     public static final DeferredRegister<BlockCondition<?>> BLOCK_CONDITIONS = DeferredRegister.create(ApoliRegistries.BLOCK_CONDITION_KEY, MedievalOrigins.MODID);

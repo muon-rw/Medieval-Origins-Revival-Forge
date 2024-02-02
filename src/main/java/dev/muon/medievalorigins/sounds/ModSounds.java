@@ -21,6 +21,7 @@ public class ModSounds {
     public static RegistryObject<SoundEvent> ZHH_WOO_VOOP = registerSoundEvents("zhh_woo_voop");
     public static RegistryObject<SoundEvent> ZHH_WOO_VOOP_EARLY = registerSoundEvents("zhh_woo_voop_early");
     public static RegistryObject<SoundEvent> CRONCH = registerSoundEvents("cronch");
+    public static RegistryObject<SoundEvent> DOOR_KNOCK = registerSoundEvents("door_knock");
 
     private static RegistryObject<SoundEvent> registerSoundEvents(String name) {
         return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(MedievalOrigins.MODID, name)));
