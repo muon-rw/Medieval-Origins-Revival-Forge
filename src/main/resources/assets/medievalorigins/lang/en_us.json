@@ -11,7 +11,7 @@
   "origin.medievalorigins.banshee.description": "-§l Notable Changes§r: \n§o§2+ Flight, Support, Phasing§r\n§o§c- Defense§r\n§o§c- Extreme changes, read first!§r\n§lBanshees§r are anguished spirits whose cries can shatter glass and drive people to madness. In myth, their presence is often considered an omen of death.",
 
   "origin.medievalorigins.incubus.name": "Incubus",
-  "origin.medievalorigins.incubus.description": "-§l Notable Changes§r: \n§o§2+ Nether Bonuses\n+ Fireball§r\n§o§c- Damaged by Water§r\n§o§c- Weak in Overworld§r\n§lIncubi§r are evil servants of a dark power. They are powerful in their own realm, but in exchange for this they have given up their soul, and are weak to pure sources.",
+  "origin.medievalorigins.incubus.description": "-§l Notable Changes§r: \n§o§2+ Nether Bonuses\n+ Strength, Fireball§r\n§o§c- Damaged by Water§r\n§o§c- Weak in Overworld§r\n§lIncubi§r are evil servants of a dark power. They are powerful in their own realm, but in exchange for this they have given up their soul, and are weak to pure sources.",
 
   "origin.medievalorigins.dwarf.name": "Dwarf",
   "origin.medievalorigins.dwarf.description": "-§l Notable Changes§r: \n§o§2+ Mining, Caving§r\n§o§6• Short: 102cm/3'8\"§r\n§o§c- Sun sensitive \n- Can't swim§r\n§lDwarves§r are practical, stocky, and prideful. They excel at mining and living underground, but struggle with the daylight. Rock and stone, brother.",
@@ -109,7 +109,7 @@
   "power.medievalorigins.banshee/hexed.description": "Banshees are shrouded in curses, which they shift onto those who wish them harm. Every time they are hit, there is a small chance that the attacker will be consigned to a fate of slow, agonising death.",
 
   "power.medievalorigins.banshee/immaterial.name": "Immaterial",
-  "power.medievalorigins.banshee/immaterial.description": "Being incorporeal does not come without consequence. Banshees have half the health a living person would have.",
+  "power.medievalorigins.banshee/immaterial.description": "Banshees have half the health a living person would have.",
 
   "power.medievalorigins.banshee/dimeritium_shackles.name": "Dimeritium Shackles",
   "power.medievalorigins.banshee/dimeritium_shackles.description": "Magically suppressive metals, such as iron or silver, are completely intolerable to banshees.",
