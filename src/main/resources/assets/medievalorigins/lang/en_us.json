@@ -208,7 +208,7 @@
   "power.medievalorigins.fae/magic_resistance.description": "As magical creatures themselves, faes take less magic damage compared to other creatures.",
 
   "power.medievalorigins.fae/regen.name": "Regeneration",
-  "power.medievalorigins.fae/regen.description": "Fae are magic creatures. Press your secondary power key and you will regenerate health for a short period, at the cost of your hunger.",
+  "power.medievalorigins.fae/regen.description": "Fae can channel their magical energy to heal themselves quickly. Press the secondary active key to regenerate health for a short period at the cost of your hunger.",
 
   "power.medievalorigins.goblin/cunning.name": "Cunning",
   "power.medievalorigins.goblin/cunning.description": "Goblins are clever creatures, and know where to find more rare loot most others would miss.",

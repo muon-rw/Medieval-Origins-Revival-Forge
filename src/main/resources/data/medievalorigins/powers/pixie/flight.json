@@ -31,6 +31,28 @@
 			"should_render": false
 		}
 	},
+	"levitation": {
+		"type": "origins:modify_falling",
+		"velocity": 0.0000000,
+		"take_fall_damage": false,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "medievalorigins:pixie/flight_levitate_resource",
+			"compare_to": 1,
+			"comparison": "=="
+		}
+	},
+	"slow_fall": {
+		"type": "origins:modify_falling",
+		"velocity": 0.045,
+		"take_fall_damage": false,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "medievalorigins:pixie/flight_levitate_resource",
+			"compare_to": 0,
+			"comparison": "=="
+		}
+	},
 	"no_random_floaties": {
 		"type": "origins:action_on_callback",
 		"entity_action_added": {
@@ -55,6 +77,101 @@
 		"entity_action": {
 			"type": "origins:execute_command",
 			"command": "particle enchant ~ ~-0.05 ~ 0.1 0.0 0.1 0.05 1 force @a"
+		}
+	},
+	"dash": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:if_else",
+					"condition": {
+						"type": "origins:resource",
+						"resource": "medievalorigins:pixie/flight_doubletap",
+						"comparison": ">",
+						"compare_to": 0
+					},
+					"if_action": {
+						"type": "origins:and",
+						"actions": [
+							{
+								"type": "origins:add_velocity",
+								"space": "local_horizontal_normalized",
+								"z": 7
+							},
+							{
+								"type": "origins:modify_resource",
+								"resource": "medievalorigins:pixie/flight_doubletap",
+								"modifier": {
+									"operation": "set_total",
+									"value": 0
+								}
+							},
+							{
+								"type": "origins:execute_command",
+								"command": "function medievalorigins/mdvlorigins/pixie_dash"
+							}
+						]
+					},
+					"else_action": {
+						"type": "origins:trigger_cooldown",
+						"power": "medievalorigins:pixie/flight_doubletap"
+					}
+				}
+			]
+		},
+		"key": {
+			"key": "key.sprint"
+		}
+	},
+	"boost": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:if_else",
+					"condition": {
+						"type": "origins:resource",
+						"resource": "medievalorigins:pixie/flight_doubletap",
+						"comparison": ">",
+						"compare_to": 0
+					},
+					"if_action": {
+						"type": "origins:and",
+						"actions": [
+							{
+								"type": "origins:add_velocity",
+								"space": "local_horizontal_normalized",
+								"y": 2
+							},
+							{
+								"type": "origins:modify_resource",
+								"resource": "medievalorigins:pixie/flight_doubletap",
+								"modifier": {
+									"operation": "set_total",
+									"value": 0
+								}
+							},
+							{
+								"type": "origins:execute_command",
+								"command": "function medievalorigins/mdvlorigins/pixie_dash"
+							}
+						]
+					}
+				}
+			]
+		},
+		"key": {
+			"key": "key.jump"
+		}
+	},
+	"doubletap": {
+		"type": "origins:cooldown",
+		"cooldown": 10,
+		"hud_render": {
+			"should_render": true
 		}
 	}
 }

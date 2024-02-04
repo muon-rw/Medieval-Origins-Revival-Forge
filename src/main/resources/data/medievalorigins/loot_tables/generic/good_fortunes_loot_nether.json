@@ -7,6 +7,12 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "weight": 1,
+          "quality": 2.5,
+          "name": "minecraft:ancient_debris"
+        },
+        {
+          "type": "minecraft:item",
           "weight": 5,
           "name": "minecraft:emerald"
         },
