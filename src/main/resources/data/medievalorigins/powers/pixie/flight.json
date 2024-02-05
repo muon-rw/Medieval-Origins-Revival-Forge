@@ -11,8 +11,18 @@
 				"compare_to": 0
 			},
 			"if_action": {
-				"type": "origins:execute_command",
-				"command": "function medievalorigins:mdvlorigins/pixie_levitate"
+				"type": "origins:and",
+				"actions": [
+					{
+						"type": "origins:execute_command",
+						"command": "function medievalorigins:mdvlorigins/pixie_levitate"
+					},
+					{
+						"type": "origins:add_velocity",
+						"y": 0,
+						"set": true
+					}
+				]
 			},
 			"else_action": {
 				"type": "origins:execute_command",
@@ -31,9 +41,20 @@
 			"should_render": false
 		}
 	},
+	"air_slide": {
+		"type": "origins:modify_slipperiness",
+		"modifier": {
+			"operation": "set_total",
+			"value": 0.97
+		},
+		"block_condition": {
+			"type": "origins:movement_blocking",
+			"inverted": true
+		}
+	},
 	"levitation": {
 		"type": "origins:modify_falling",
-		"velocity": 0.0000000,
+		"velocity": 0,
 		"take_fall_damage": false,
 		"condition": {
 			"type": "origins:resource",
@@ -44,7 +65,7 @@
 	},
 	"slow_fall": {
 		"type": "origins:modify_falling",
-		"velocity": 0.045,
+		"velocity": 0.04,
 		"take_fall_damage": false,
 		"condition": {
 			"type": "origins:resource",
@@ -97,8 +118,8 @@
 						"actions": [
 							{
 								"type": "origins:add_velocity",
-								"space": "local_horizontal_normalized",
-								"z": 7
+								"space": "local_horizontal",
+								"z": 2
 							},
 							{
 								"type": "origins:modify_resource",
@@ -110,7 +131,7 @@
 							},
 							{
 								"type": "origins:execute_command",
-								"command": "function medievalorigins/mdvlorigins/pixie_dash"
+								"command": "playsound medievalorigins:dash ambient @a ~ ~ ~ 1 1"
 							}
 						]
 					},
@@ -125,7 +146,7 @@
 			"key": "key.sprint"
 		}
 	},
-	"boost": {
+	"effects_and_superjump": {
 		"type": "origins:active_self",
 		"entity_action": {
 			"type": "origins:and",
@@ -144,7 +165,7 @@
 							{
 								"type": "origins:add_velocity",
 								"space": "local_horizontal_normalized",
-								"y": 2
+								"y": 1.5
 							},
 							{
 								"type": "origins:modify_resource",
@@ -156,15 +177,35 @@
 							},
 							{
 								"type": "origins:execute_command",
-								"command": "function medievalorigins/mdvlorigins/pixie_dash"
+								"command": "playsound medievalorigins:dash ambient @a ~ ~ ~ 1 1"
 							}
 						]
+					},
+					"else_action": {
+						"type": "origins:execute_command",
+						"command": "function medievalorigins:mdvlorigins/pixie_wing_flap"
 					}
 				}
 			]
 		},
 		"key": {
 			"key": "key.jump"
+		}
+	},
+	"doublejumps": {
+		"type": "origins:grounded"
+	},
+	"higher": {
+		"type": "origins:modify_jump",
+		"modifier": {
+			"operation": "addition",
+			"value": 0.3
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "medievalorigins:pixie/flight_doubletap",
+			"compare_to": 0,
+			"comparison": "=="
 		}
 	},
 	"doubletap": {

@@ -40,5 +40,12 @@
         "sounds": [
             "medievalorigins:door_knock"
         ]
+    },
+    "dash": {
+        "subtitles": "sounds.medievalorigins.dash",
+        "sounds": [
+            "medievalorigins:dash",
+            "medievalorigins:dash_2"
+        ]
     }
 }

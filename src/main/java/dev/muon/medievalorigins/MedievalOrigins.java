@@ -6,6 +6,7 @@ import dev.muon.medievalorigins.condition.ModConditions;
 import dev.muon.medievalorigins.enchantment.ModEnchantments;
 import dev.muon.medievalorigins.entity.ModEntities;
 
+import dev.muon.medievalorigins.power.ModPowers;
 import dev.muon.medievalorigins.sounds.ModSounds;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
@@ -37,6 +38,7 @@ public class MedievalOrigins
         ModActions.register(modEventBus);
         ModConditions.register(modEventBus);
         ModSounds.register(modEventBus);
+        ModPowers.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
