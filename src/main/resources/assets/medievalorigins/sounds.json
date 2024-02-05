@@ -47,5 +47,30 @@
             "medievalorigins:dash",
             "medievalorigins:dash_2"
         ]
+    },
+    "boost": {
+        "subtitles": "sounds.medievalorigins.dash",
+        "sounds": [
+            "medievalorigins:boost",
+            "medievalorigins:boost_2",
+            "medievalorigins:boost_3",
+            "medievalorigins:boost_4"
+        ]
+    },
+    "jump": {
+        "subtitles": "sounds.medievalorigins.jump",
+        "sounds": [
+            "medievalorigins:jump_1",
+            "medievalorigins:jump_2",
+            "medievalorigins:jump_3",
+            "medievalorigins:jump_4",
+            "medievalorigins:jump_5"
+        ]
+    },
+    "hover": {
+        "subtitles": "sounds.medievalorigins.hover",
+        "sounds": [
+            "medievalorigins:hover"
+        ]
     }
 }

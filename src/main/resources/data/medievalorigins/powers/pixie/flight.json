@@ -52,6 +52,30 @@
 			"inverted": true
 		}
 	},
+	"levitation_alt": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:apply_effect",
+			"effect": {
+				"amplifier": -1,
+				"effect": "levitation",
+				"duration": 50,
+				"show_particles": false,
+				"is_ambient": true
+			}
+		},
+		"falling_action": {
+			"type": "origins:clear_effect",
+			"effect": "levitation"
+		},
+		"condition": {
+			"type": "origins:resource",
+			"resource": "medievalorigins:pixie/flight_levitate_resource",
+			"compare_to": 1,
+			"comparison": "=="
+		},
+		"interval": 5
+	},
 	"levitation": {
 		"type": "origins:modify_falling",
 		"velocity": 0,
@@ -86,7 +110,7 @@
 		},
 		"execute_chosen_when_orb": true
 	},
-	"particles": {
+	"hover_particles": {
 		"type": "origins:action_over_time",
 		"condition": {
 			"type": "origins:resource",
@@ -98,6 +122,20 @@
 		"entity_action": {
 			"type": "origins:execute_command",
 			"command": "particle enchant ~ ~-0.05 ~ 0.1 0.0 0.1 0.05 1 force @a"
+		}
+	},
+	"hover_sound": {
+		"type": "origins:action_over_time",
+		"condition": {
+			"type": "origins:resource",
+			"resource": "medievalorigins:pixie/flight_levitate_resource",
+			"comparison": "==",
+			"compare_to": 1
+		},
+		"interval": 30,
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "playsound medievalorigins:hover player @a ~ ~ ~ 0.5 1.0"
 		}
 	},
 	"dash": {
@@ -119,7 +157,8 @@
 							{
 								"type": "origins:add_velocity",
 								"space": "local_horizontal",
-								"z": 2
+								"z": 2,
+								"set": true
 							},
 							{
 								"type": "origins:modify_resource",
@@ -131,7 +170,11 @@
 							},
 							{
 								"type": "origins:execute_command",
-								"command": "playsound medievalorigins:dash ambient @a ~ ~ ~ 1 1"
+								"command": "playsound medievalorigins:dash ambient @a ~ ~ ~ 0.65 0.8"
+							},
+							{
+								"type": "origins:execute_command",
+								"command": "playsound medievalorigins:boost ambient @a ~ ~ ~ 0.27 1"
 							}
 						]
 					},
@@ -165,7 +208,8 @@
 							{
 								"type": "origins:add_velocity",
 								"space": "local_horizontal_normalized",
-								"y": 1.5
+								"y": 1.8,
+								"set": true
 							},
 							{
 								"type": "origins:modify_resource",
@@ -177,7 +221,11 @@
 							},
 							{
 								"type": "origins:execute_command",
-								"command": "playsound medievalorigins:dash ambient @a ~ ~ ~ 1 1"
+								"command": "playsound medievalorigins:dash ambient @a ~ ~ ~ 0.65 0.8"
+							},
+							{
+								"type": "origins:execute_command",
+								"command": "playsound medievalorigins:boost ambient @a ~ ~ ~ 0.27 1"
 							}
 						]
 					},
