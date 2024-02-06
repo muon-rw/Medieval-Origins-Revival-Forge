@@ -1,10 +1,9 @@
 {
 	"loading_priority": 11,
 	"powers": [
+		"medievalorigins:pixie/flight",
 		"medievalorigins:pixie/pixie_properties",
 		"medievalorigins:pixie/feather_footed",
-		"medievalorigins:pixie/flight",
-		"medievalorigins:pixie/flap",
 		"medievalorigins:pixie/wings",
 		"medievalorigins:pixie/mount",
 		"medievalorigins:pixie/good_fortunes",
@@ -16,7 +15,7 @@
 	"icon": {
 		"item": "minecraft:ink_sac",
 		"tag": "{CustomModelData:357}"
-},
+	},
 	"impact": 2,
 	"order": 1
 }

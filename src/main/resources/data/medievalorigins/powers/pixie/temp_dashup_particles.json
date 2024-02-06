@@ -1,0 +1,60 @@
+{
+	"type": "origins:multiple",
+	"particles": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:execute_command",
+					"command": "particle dust 0.46 1 0.84 0.6 ~ ~0.3 ~ 0.1 0.3 0.1 1 4"
+				},
+				{
+					"type": "origins:modify_resource",
+					"resource": "medievalorigins:pixie/temp_dashup_particles_limit",
+					"modifier": {
+						"operation": "add_base_early",
+						"value": -1
+					}
+				},
+				{
+					"type": "origins:if_else",
+					"condition": {
+						"type": "origins:resource",
+						"resource": "medievalorigins:pixie/temp_dashup_particles_limit",
+						"comparison": "==",
+						"compare_to": 0
+					},
+					"if_action": {
+						"type": "origins:and",
+						"actions": [
+							{
+								"type": "origins:modify_resource",
+								"resource": "medievalorigins:pixie/temp_dashup_particles_limit",
+								"modifier": {
+									"operation": "set_total",
+									"value": 16
+								}
+							},
+							{
+								"type": "origins:revoke_power",
+								"power": "medievalorigins:pixie/temp_dashup_particles",
+								"source": "medievalorigins:pixie/flight"
+							}
+						]
+					}
+				}
+			]
+		},
+		"interval": 1
+	},
+	"limit": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 16,
+		"start_value": 16,
+		"hud_render": {
+			"should_render": false
+		}
+	}
+}

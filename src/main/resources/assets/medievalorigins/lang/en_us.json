@@ -330,8 +330,8 @@
   "power.medievalorigins.pixie/feather_footed.name": "Feather Footed",
   "power.medievalorigins.pixie/feather_footed.description": "Pixies are so light, it is impossible for them to take fall damage.",
 
-  "power.medievalorigins.pixie/flight.name": "Flight",
-  "power.medievalorigins.pixie/flight.description": "Pixies fall slightly slower, can flap their tiny wings in the air to jump upward, and can hold themselves steady in the air (by pressing the Primary Active key).",
+  "power.medievalorigins.pixie/flight.name": "On the Dusts",
+  "power.medievalorigins.pixie/flight.description": "Pixies can fly and propel themselves forward and upward.\n Read the boxes next to this power for instructions on how to fly. ",
 
   "power.medievalorigins.pixie/mount.name": "Shortcut",
   "power.medievalorigins.pixie/mount.description": "Mount another player by right clicking them with empty hands.",
@@ -491,10 +491,17 @@
   "sounds.medievalorigins.bone_crunch": "Cracking Bone",
   "sounds.medievalorigins.dash": "Pixie Dashes",
   "sounds.medievalorigins.boost": "String Arpeggio",
+  "sounds.medievalorigins.hover": "Faint Hum",
+  "sounds.medievalorigins.jump": "Soft Chimes",
 
   "entity.medievalorigins.summon_zombie": "Summoner's Zombie",
   "entity.medievalorigins.summon_skeleton": "Summoner's Skeleton",
   "entity.medievalorigins.summon_wither_skeleton": "Summoner's Wither Skeleton",
+
+  "badges.medievalorigins.pixie.jump": "Jumps can be repeated infinitely in the air, and are slightly higher.",
+  "badges.medievalorigins.pixie.dash_forward": "Press %s twice quickly to dash forward.",
+  "badges.medievalorigins.pixie.dash_upward": "Quickly press %s then %s to dash upward.",
+  "badges.medievalorigins.pixie.hover": "Press %s to hover in place. Press again to fall freely.",
 
   "medievalorigins.contagious_villager": "This villager will not trade with you!",
 
