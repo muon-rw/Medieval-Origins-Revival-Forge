@@ -105,9 +105,10 @@ dependencies {
     implementation (jarJar(fg.deobf("net.merchantpug:Apugli:${apugli_version}+${minecraft_version}-forge"))) {
             jarJar.ranged(it, "[${apugli_version},)")
     }
+    /*
     implementation (jarJar(fg.deobf("maven.modrinth:projectile-damage-attribute:${projectile_damage_version}+${minecraft_version}-forge"))) {
         jarJar.ranged(it, "[${projectile_damage_version},)")
-    }
+    }*/
 
     // Compat and Misc
 
