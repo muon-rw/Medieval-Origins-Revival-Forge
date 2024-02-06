@@ -22,7 +22,7 @@
 					"radius": 8,
 					"bientity_action": {
 						"type": "origins:add_velocity",
-						"z": 1.8,
+						"z": 2.5,
 						"y": 0.6
 					},
 					"bientity_condition": {
@@ -80,7 +80,7 @@
 			"actions": [
 				{
 					"type": "origins:add_velocity",
-					"z": 0.5
+					"z": 1.0
 				},
 				{
 					"type": "origins:target_action",

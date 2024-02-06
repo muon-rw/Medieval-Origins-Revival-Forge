@@ -17,7 +17,7 @@
 				}
 			]
 		},
-		"cooldown": 600,
+		"cooldown": 900,
 		"condition": {
 			"type": "origins:and",
 			"conditions": [
