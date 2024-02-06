@@ -323,7 +323,7 @@
 		"type": "origins:cooldown",
 		"cooldown": 10,
 		"hud_render": {
-			"should_render": true
+			"should_render": false
 		}
 	}
 }
