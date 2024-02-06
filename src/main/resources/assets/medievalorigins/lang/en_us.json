@@ -529,6 +529,8 @@
 
   "medievalorigins.uncastable": "You can't use this ability right now.",
 
-  "medievalorigins.bonus": "Bonus:"
+  "tooltip.medievalorigins.moon_elf.moonlight_rogue": "Moonlight Rogue:",
+  "tooltip.medievalorigins.goblin.greedy": "Greedy:",
+  "tooltip.medievalorigins.ogre.ravager": "Ravager:"
 
 }

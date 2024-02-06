@@ -42,7 +42,7 @@
 		},
 		"texts": [
 			{
-				"translate": "power.medievalorigins.moon_elf/moonlight_rogue.name",
+				"translate": "tooltip.medievalorigins.moonlight_rogue",
 				"color": "aqua"
 			},
 			{
