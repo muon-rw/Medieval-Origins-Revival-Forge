@@ -521,12 +521,14 @@
 
   "medievalorigins.unwearable": "Unwearable",
 
-  "medievalorigins.damage_dealt": "Damage Dealt",
+  "medievalorigins.damage_dealt": "%s Damage Dealt",
 
   "medievalorigins.stab_bonus": "Stealth Break Bonus",
 
   "medievalorigins.self_wither": "Withered while holding",
 
-  "medievalorigins.uncastable": "You can't use this ability right now."
+  "medievalorigins.uncastable": "You can't use this ability right now.",
+
+  "medievalorigins.bonus": "Bonus:"
 
 }

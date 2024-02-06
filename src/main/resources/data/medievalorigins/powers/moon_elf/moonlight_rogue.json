@@ -40,25 +40,16 @@
 				"tag": "medievalorigins:daggers"
 			}
 		},
-		"text": [
+		"texts": [
 			{
 				"translate": "power.medievalorigins.moon_elf/moonlight_rogue.name",
 				"color": "aqua"
 			},
 			{
-				"text": " Bonus:",
-				"color": "aqua"
-			},
-			{
-				"text": "\n+50% ",
-				"color": "dark_aqua"
-			},
-			{
 				"translate": "medievalorigins.damage_dealt",
-				"color": "dark_aqua"
-			},
-			{
-				"text": "\n",
+				"with": [
+					"50%"
+				],
 				"color": "dark_aqua"
 			},
 			{

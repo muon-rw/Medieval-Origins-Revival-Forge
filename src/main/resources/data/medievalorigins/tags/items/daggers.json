@@ -3,10 +3,12 @@
   "values": [
 	  {"id": "#forge:tools/knives","required":false},
 	  {"id": "aquamirae:dagger_of_greed","required":false},
+	  {"id": "alexscaves:desolate_dagger","required":false},
 	  {"id": "bewitchment:athame","required":false},
 	  {"id": "bwplus:vampire_knife","required":false},
 	  {"id": "forbidden_arcanus:mystical_dagger","required":false},
 	  {"id": "graveyard:bone_dagger","required":false},
+	  {"id": "iceandfire:stymphalian_bird_dagger","required":false},
 	  {"id": "mcdw:dagger_backstabber","required":false},
 	  {"id": "mcdw:dagger_chill_gale_knife","required":false},
 	  {"id": "mcdw:dagger_dagger","required":false},
