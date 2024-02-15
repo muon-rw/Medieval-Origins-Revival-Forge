@@ -56,6 +56,26 @@ public class ModConditions {
                     stack.getItem() instanceof ArmorItem && ((ArmorItem) stack.getItem()).getEquipmentSlot() == EquipmentSlot.CHEST)
     );
 
+    public static final RegistryObject<SimpleItemCondition> GOLDEN_ARMOR = ITEM_CONDITIONS.register("golden_armor", () ->
+            new SimpleItemCondition(stack -> {
+                String itemName = ForgeRegistries.ITEMS.getKey(stack.getItem()).getPath();
+                return ((itemName.contains("gold") || itemName.contains("gilded")) && stack.getItem() instanceof ArmorItem);
+            })
+    );
+
+    public static final RegistryObject<SimpleItemCondition> GOLDEN_WEAPON = ITEM_CONDITIONS.register("golden_weapon", () ->
+            new SimpleItemCondition(stack -> {
+                String itemName = ForgeRegistries.ITEMS.getKey(stack.getItem()).getPath();
+                return ((itemName.contains("gold") || itemName.contains("gilded")) && stack.getItem() instanceof SwordItem);
+            })
+    );
+
+    public static final RegistryObject<SimpleItemCondition> GOLDEN_TOOL = ITEM_CONDITIONS.register("golden_tool", () ->
+            new SimpleItemCondition(stack -> {
+                String itemName = ForgeRegistries.ITEMS.getKey(stack.getItem()).getPath();
+                return ((itemName.contains("gold") || itemName.contains("gilded")) && stack.getItem() instanceof DiggerItem);
+            })
+    );
     public static final DeferredRegister<BlockCondition<?>> BLOCK_CONDITIONS = DeferredRegister.create(ApoliRegistries.BLOCK_CONDITION_KEY, MedievalOrigins.MODID);
     public static final RegistryObject<SimpleBlockCondition> HARVESTABLE_CROPS = BLOCK_CONDITIONS.register("harvestable_crops", () ->
             new SimpleBlockCondition((level, pos, stateSuppplier) -> {
