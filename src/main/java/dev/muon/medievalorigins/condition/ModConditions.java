@@ -16,11 +16,13 @@ import net.minecraft.world.entity.MobType;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.BowItem;
 import net.minecraft.world.item.DiggerItem;
+import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.CropBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 
@@ -35,6 +37,16 @@ public class ModConditions {
             new SimpleItemCondition(stack ->
                     Enchantments.SHARPNESS.canEnchant(stack) || stack.getItem() instanceof BowItem || stack.getItem() instanceof DiggerItem && ((DiggerItem) stack.getItem()).getAttackDamage() > 0)
             );
+    public static final RegistryObject<SimpleItemCondition> IS_BOW = ITEM_CONDITIONS.register("is_bow", () ->
+            new SimpleItemCondition(stack ->
+                    stack.getItem() instanceof BowItem)
+    );
+    public static final RegistryObject<SimpleItemCondition> IS_DAGGER = ITEM_CONDITIONS.register("is_dagger", () ->
+            new SimpleItemCondition(stack -> {
+                String itemId = ForgeRegistries.ITEMS.getKey(stack.getItem()).toString();
+                return (itemId.contains("dagger") || itemId.contains("knife") || itemId.contains("sai")) && stack.getItem() instanceof SwordItem;
+            })
+    );
     public static final RegistryObject<SimpleItemCondition> IS_TOOL = ITEM_CONDITIONS.register("is_tool", () ->
             new SimpleItemCondition(stack ->
                     Enchantments.BLOCK_EFFICIENCY.canEnchant(stack) || stack.getItem() instanceof DiggerItem)
