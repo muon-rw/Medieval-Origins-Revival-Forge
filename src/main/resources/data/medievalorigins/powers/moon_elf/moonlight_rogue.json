@@ -53,7 +53,7 @@
 				"color": "dark_aqua"
 			},
 			{
-				"translate": "medievalorigins.stab_bonus",
+				"translate": "tooltip.medievalorigins.stab_bonus",
 				"color": "dark_aqua"
 			}
 		]

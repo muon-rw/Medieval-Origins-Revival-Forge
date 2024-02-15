@@ -502,35 +502,25 @@
   "badges.medievalorigins.pixie.dash_forward": "Press %s twice quickly to dash forward.",
   "badges.medievalorigins.pixie.dash_upward": "Quickly press %s then %s to dash upward.",
   "badges.medievalorigins.pixie.hover": "Press %s to hover in place. Press again to fall freely.",
+  "badges.medievalorigins.pixie.disable_effects": "Press %s to disable sounds and particles",
 
   "medievalorigins.contagious_villager": "This villager will not trade with you!",
-
   "medievalorigins.disturbed_restless": "What you know will kill you, but you will die laughing.",
-
   "medievalorigins.moon_elf_no_sleep": "The strange sounds of this foreign world leave you restless.",
-
   "medievalorigins.insomniac_welts": "Your welts sting and burn. There will be no sleep for you tonight.",
-
-  "medievalorigins.restores_no_hunger": "Restores no Hunger",
-
   "medievalorigins.poor_reputation_villager": "The villager is too scared to trade with you!",
-
   "medievalorigins.troublemaker": "Villagers don't trade with the likes of you!",
-
-  "medievalorigins.looting_bonus": "Chance to increase mob loot",
-
-  "medievalorigins.unwearable": "Unwearable",
-
-  "medievalorigins.damage_dealt": "%s Damage Dealt",
-
-  "medievalorigins.stab_bonus": "Stealth Break Bonus",
-
-  "medievalorigins.self_wither": "Withered while holding",
-
   "medievalorigins.uncastable": "You can't use this ability right now.",
 
-  "tooltip.medievalorigins.moon_elf.moonlight_rogue": "Moonlight Rogue:",
-  "tooltip.medievalorigins.goblin.greedy": "Greedy:",
-  "tooltip.medievalorigins.ogre.ravager": "Ravager:"
+  "tooltip.medievalorigins.looting_bonus": "Chance to increase mob loot",
+  "tooltip.medievalorigins.unwearable": "Unwearable",
+  "tooltip.medievalorigins.damage_dealt": "%s Damage Dealt",
+  "tooltip.medievalorigins.attack_damage_bonus": "+%s Attack Damage",
+  "tooltip.medievalorigins.stab_bonus": "Stealth Break Bonus",
+  "tooltip.medievalorigins.self_wither": "Withered while holding",
+  "tooltip.medievalorigins.restores_no_hunger": "Restores no Hunger",
+  "tooltip.medievalorigins.moonlight_rogue": "Moonlight Rogue:",
+  "tooltip.medievalorigins.greedy": "Greedy:",
+  "tooltip.medievalorigins.ravager": "Ravager:"
 
 }

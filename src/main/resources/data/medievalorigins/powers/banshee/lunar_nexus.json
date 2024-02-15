@@ -38,7 +38,7 @@
 		},
 		"text": [
 			{
-				"translate": "medievalorigins.restores_no_hunger",
+				"translate": "tooltip.medievalorigins.restores_no_hunger",
 				"color": "gray"
 			},
 			{
