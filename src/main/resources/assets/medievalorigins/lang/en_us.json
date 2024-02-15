@@ -38,7 +38,7 @@
   "origin.medievalorigins.ogre.description": "-§l Notable Changes§r: \n§o§2+ Axe Bonuses, Defense §r\n§o§6• Massive: 268cm/9'5\"§r\n§o§c- Hunger, Speed §r\n§lOgres§r are a large, short-tempered, and brutish subspecies of Orc. Their lumbering size and limited intelligence are made up for by their raw strength.",
 
   "origin.medievalorigins.pixie.name": "Pixie",
-  "origin.medievalorigins.pixie.description": "-§l Notable Changes§r: \n§o§2+ Unique Flight, Odd§r\n§o§6• Tiny: 22cm/9\" §r\n§o§c- Defense, Reputation §r\nOften considered harbingers of good fortune, but also tricky, untrustworthy agents of mischief. Pixies are one of the tiniest creatures to roam the land.",
+  "origin.medievalorigins.pixie.description": "-§l Notable Changes§r: \n§o§2+ Unique Flight, Odd§r\n§o§6• Tiny: 22cm/9\" §r\n§o§c- Defense, Reputation §r\nOften considered harbingers of good fortune, but also tricky, untrustworthy agents of mischief. Pixies are whimsical and very, very small.",
 
   "origin.medievalorigins.plague_victim.name": "Plague Victim",
   "origin.medievalorigins.plague_victim.description": "-§l Notable Changes§r: \n§o§2+ Withering §r\n§o§6• Unique playstyle §r\n§o§6• Undead §r\n§o§c- Defense, Reputation \n§o§c- Difficult§r\nDisease-ridden half-dead creatures who can no longer be called human, cursed and trapped in eternal suffering as a result of a strange magical illness.",
@@ -331,10 +331,10 @@
   "power.medievalorigins.pixie/feather_footed.description": "Pixies are so light, it is impossible for them to take fall damage.",
 
   "power.medievalorigins.pixie/flight.name": "On the Dusts",
-  "power.medievalorigins.pixie/flight.description": "Pixies can fly and propel themselves forward and upward.\n Read the boxes next to this power for instructions on how to fly. ",
+  "power.medievalorigins.pixie/flight.description": "Pixies can fly and propel themselves forward and upward.\nRead the boxes next to this power for instructions on how to fly. ",
 
   "power.medievalorigins.pixie/mount.name": "Shortcut",
-  "power.medievalorigins.pixie/mount.description": "Mount another player by right clicking them with empty hands.",
+  "power.medievalorigins.pixie/mount.description": "You can sit on top of another player's head by right clicking them with empty hands.",
 
   "power.medievalorigins.pixie/good_fortunes.name": "Good Fortunes",
   "power.medievalorigins.pixie/good_fortunes.description": "Although pixies can be troublesome, they are also associated with good luck. When mining, they will occasionally get something valubale from plain stone.",
@@ -502,7 +502,7 @@
   "badges.medievalorigins.pixie.dash_forward": "Press %s twice quickly to dash forward.",
   "badges.medievalorigins.pixie.dash_upward": "Quickly press %s then %s to dash upward.",
   "badges.medievalorigins.pixie.hover": "Press %s to hover in place. Press again to fall freely.",
-  "badges.medievalorigins.pixie.disable_effects": "Press %s to disable sounds and particles",
+  "badges.medievalorigins.pixie.disable_effects": "Press %s while sneaking to disable sounds and particle effects",
 
   "medievalorigins.contagious_villager": "This villager will not trade with you!",
   "medievalorigins.disturbed_restless": "What you know will kill you, but you will die laughing.",

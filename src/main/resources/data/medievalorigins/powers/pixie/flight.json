@@ -51,6 +51,18 @@
 					}
 				]
 			}
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "medievalorigins:textures/gui/pixie_badge.png",
+			"text": {
+				"translate": "badges.medievalorigins.pixie.disable_effects",
+				"with": [
+					{
+						"keybind": "key.loadToolbarActivator"
+					}
+				]
+			}
 		}
 	],
 	"always_jump": {
@@ -182,24 +194,46 @@
 	"hover_particles": {
 		"type": "origins:action_over_time",
 		"condition": {
-			"type": "origins:resource",
-			"resource": "medievalorigins:pixie/flight_levitate_resource",
-			"comparison": "==",
-			"compare_to": 1
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:resource",
+					"resource": "medievalorigins:pixie/flight_levitate_resource",
+					"comparison": "==",
+					"compare_to": 1
+				},
+				{
+					"type": "origins:resource",
+					"resource": "medievalorigins:pixie/flight_effects_toggle",
+					"comparison": "==",
+					"compare_to": 1
+				}
+			]
 		},
-		"interval": 1,
+		"interval": 2,
 		"entity_action": {
 			"type": "origins:execute_command",
-			"command": "particle enchant ~ ~-0.05 ~ 0.1 0.0 0.1 0.05 1 force @a"
+			"command": "particle enchant ~ ~-0.05 ~ 0.07 0.0 0.07 0.05 1 force @a"
 		}
 	},
 	"hover_sound": {
 		"type": "origins:action_over_time",
 		"condition": {
-			"type": "origins:resource",
-			"resource": "medievalorigins:pixie/flight_levitate_resource",
-			"comparison": "==",
-			"compare_to": 1
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:resource",
+					"resource": "medievalorigins:pixie/flight_levitate_resource",
+					"comparison": "==",
+					"compare_to": 1
+				},
+				{
+					"type": "origins:resource",
+					"resource": "medievalorigins:pixie/flight_effects_toggle",
+					"comparison": "==",
+					"compare_to": 1
+				}
+			]
 		},
 		"interval": 20,
 		"entity_action": {
@@ -238,17 +272,31 @@
 								}
 							},
 							{
-								"type": "origins:execute_command",
-								"command": "playsound medievalorigins:dash player @a ~ ~ ~ 0.65 0.8"
-							},
-							{
-								"type": "origins:execute_command",
-								"command": "playsound medievalorigins:boost player @a ~ ~ ~ 0.27 1"
-							},
-							{
-								"type": "origins:grant_power",
-								"power": "medievalorigins:pixie/temp_dash_particles",
-								"source": "medievalorigins:pixie/flight"
+								"type": "origins:if_else",
+								"condition": {
+									"type": "origins:resource",
+									"resource": "medievalorigins:pixie/flight_effects_toggle",
+									"compare_to": 1,
+									"comparison": "=="
+								},
+								"if_action": {
+									"type": "origins:and",
+									"actions": [
+										{
+											"type": "origins:execute_command",
+											"command": "playsound medievalorigins:dash player @a ~ ~ ~ 0.65 0.8"
+										},
+										{
+											"type": "origins:execute_command",
+											"command": "playsound medievalorigins:boost player @a ~ ~ ~ 0.27 1"
+										},
+										{
+											"type": "origins:grant_power",
+											"power": "medievalorigins:pixie/temp_dash_particles",
+											"source": "medievalorigins:pixie/flight"
+										}
+									]
+								}
 							}
 						]
 					},
@@ -294,29 +342,99 @@
 								}
 							},
 							{
-								"type": "origins:execute_command",
-								"command": "playsound medievalorigins:dash player @a ~ ~ ~ 0.65 0.8"
-							},
-							{
-								"type": "origins:execute_command",
-								"command": "playsound medievalorigins:boost player @a ~ ~ ~ 0.27 1"
-							},
-							{
-								"type": "origins:grant_power",
-								"power": "medievalorigins:pixie/temp_dashup_particles",
-								"source": "medievalorigins:pixie/flight"
+								"type": "origins:if_else",
+								"condition": {
+									"type": "origins:resource",
+									"resource": "medievalorigins:pixie/flight_effects_toggle",
+									"compare_to": 1,
+									"comparison": "=="
+								},
+								"if_action": {
+									"type": "origins:and",
+									"actions": [
+										{
+											"type": "origins:execute_command",
+											"command": "playsound medievalorigins:dash player @a ~ ~ ~ 0.65 0.8"
+										},
+										{
+											"type": "origins:execute_command",
+											"command": "playsound medievalorigins:boost player @a ~ ~ ~ 0.27 1"
+										},
+										{
+											"type": "origins:grant_power",
+											"power": "medievalorigins:pixie/temp_dashup_particles",
+											"source": "medievalorigins:pixie/flight"
+										}
+									]
+								}
 							}
 						]
 					},
 					"else_action": {
-						"type": "origins:execute_command",
-						"command": "function medievalorigins:mdvlorigins/pixie_wing_flap"
+						"type": "origins:if_else",
+						"condition": {
+							"type": "origins:resource",
+							"resource": "medievalorigins:pixie/flight_effects_toggle",
+							"compare_to": 1,
+							"comparison": "=="
+						},
+						"if_action": {
+							"type": "origins:execute_command",
+							"command": "function medievalorigins:mdvlorigins/pixie_wing_flap"
+						}
 					}
 				}
 			]
 		},
 		"key": {
 			"key": "key.jump"
+		}
+	},
+	"effects_toggle": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 1,
+		"start_value": 1,
+		"hud_render": {
+			"should_render": false
+		}
+	},
+	"effects_toggle_key": {
+		"type": "origins:active_self",
+		"cooldown": 0,
+		"hud_render": {
+			"should_render": false
+		},
+		"key": {
+			"key": "key.loadToolbarActivator"
+		},
+		"condition": {
+			"type": "origins:sneaking"
+		},
+		"entity_action": {
+			"type": "origins:if_else",
+			"condition": {
+				"type": "origins:resource",
+				"compare_to": 0,
+				"comparison": "==",
+				"resource": "medievalorigins:pixie/flight_effects_toggle"
+			},
+			"if_action": {
+				"type": "origins:modify_resource",
+				"resource": "medievalorigins:pixie/flight_effects_toggle",
+				"modifier": {
+					"operation": "set_total",
+					"value": 1
+				}
+			},
+			"else_action": {
+				"type": "origins:modify_resource",
+				"resource": "medievalorigins:pixie/flight_effects_toggle",
+				"modifier": {
+					"operation": "set_total",
+					"value": 0
+				}
+			}
 		}
 	},
 	"doubletap": {
