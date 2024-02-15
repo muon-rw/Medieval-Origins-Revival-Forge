@@ -13,10 +13,24 @@
             "value": -0.8
         },
         "item_condition": {
-            "type": "origins:ingredient",
-            "ingredient": {
-                "tag": "medievalorigins:golden_gear"
-            }
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "tag": "medievalorigins:golden_gear"
+                    }
+                },
+                {
+                    "type": "medievalorigins:golden_armor"
+                },
+                {
+                    "type": "medievalorigins:golden_weapon"
+                },
+                {
+                    "type": "medievalorigins:golden_tool"
+                }
+            ]
         }
     },
     "chance_clear": {
@@ -30,10 +44,24 @@
             "value": 0
         },
         "item_condition": {
-            "type": "origins:ingredient",
-            "ingredient": {
-                "tag": "medievalorigins:golden_gear"
-            }
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "tag": "medievalorigins:golden_gear"
+                    }
+                },
+                {
+                    "type": "medievalorigins:golden_armor"
+                },
+                {
+                    "type": "medievalorigins:golden_weapon"
+                },
+                {
+                    "type": "medievalorigins:golden_tool"
+                }
+            ]
         }
     }
 }

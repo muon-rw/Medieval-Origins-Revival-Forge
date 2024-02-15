@@ -76,6 +76,90 @@
 			}
 		}
 	},
+	"golden_set_bonus": {
+		"type": "origins:modify_damage_taken",
+		"modifier": {
+			"operation": "multiply_base_multiplicative",
+			"value": -0.2
+		},
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "head",
+					"item_condition": {
+						"type": "origins:or",
+						"conditions": [
+							{
+								"type": "medievalorigins:golden_armor"
+							},
+							{
+								"type": "origins:ingredient",
+								"ingredient": {
+									"tag": "medievalorigins:golden_armor"
+								}
+							}
+						]
+					}
+				},
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "chest",
+					"item_condition": {
+						"type": "origins:or",
+						"conditions": [
+							{
+								"type": "medievalorigins:golden_armor"
+							},
+							{
+								"type": "origins:ingredient",
+								"ingredient": {
+									"tag": "medievalorigins:golden_armor"
+								}
+							}
+						]
+					}
+				},
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "legs",
+					"item_condition": {
+						"type": "origins:or",
+						"conditions": [
+							{
+								"type": "medievalorigins:golden_armor"
+							},
+							{
+								"type": "origins:ingredient",
+								"ingredient": {
+									"tag": "medievalorigins:golden_armor"
+								}
+							}
+						]
+					}
+				},
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "feet",
+					"item_condition": {
+						"type": "origins:or",
+						"conditions": [
+							{
+								"type": "medievalorigins:golden_armor"
+							},
+							{
+								"type": "origins:ingredient",
+								"ingredient": {
+									"tag": "medievalorigins:golden_armor"
+								}
+							}
+						]
+					}
+				}
+			]
+		}
+	},
 	"golden_tool_boosts": {
 		"type": "origins:conditioned_attribute",
 		"modifiers": [
@@ -148,14 +232,9 @@
 		"type": "origins:conditioned_attribute",
 		"modifiers": [
 			{
-				"attribute": "minecraft:generic.armor",
-				"operation": "multiply_base",
-				"value": 0.15
-			},
-			{
 				"attribute": "minecraft:generic.max_health",
 				"operation": "addition",
-				"value": 1
+				"value": 2
 			}
 		],
 		"condition": {
@@ -188,7 +267,7 @@
 			{
 				"attribute": "minecraft:generic.max_health",
 				"operation": "addition",
-				"value": 1
+				"value": 2
 			}
 		],
 		"condition": {
@@ -214,14 +293,9 @@
 		"type": "origins:conditioned_attribute",
 		"modifiers": [
 			{
-				"attribute": "minecraft:generic.armor",
-				"operation": "multiply_base",
-				"value": 0.15
-			},
-			{
 				"attribute": "minecraft:generic.max_health",
 				"operation": "addition",
-				"value": 1
+				"value": 2
 			}
 		],
 		"condition": {
@@ -254,7 +328,7 @@
 			{
 				"attribute": "minecraft:generic.max_health",
 				"operation": "addition",
-				"value": 1
+				"value": 2
 			}
 		],
 		"condition": {
@@ -298,11 +372,15 @@
 				"color": "gold"
 			},
 			{
-				"text": "+15% Armor",
+				"text": "+2 Max Health",
 				"color": "yellow"
 			},
 			{
-				"text": "+1 Max Health",
+				"text": "Increased Durability",
+				"color": "yellow"
+			},
+			{
+				"text": "Set Bonus: +20% Resistance",
 				"color": "yellow"
 			}
 		]
@@ -335,6 +413,10 @@
 			{
 				"translate": "tooltip.medievalorigins.looting_bonus",
 				"color": "yellow"
+			},
+			{
+				"text": "Increased Durability",
+				"color": "yellow"
 			}
 		]
 	},
@@ -364,7 +446,11 @@
 				"color": "yellow"
 			},
 			{
-				"text": "Iron Mining Level",
+				"text": "Iron+ Mining Level",
+				"color": "yellow"
+			},
+			{
+				"text": "Increased Durability",
 				"color": "yellow"
 			}
 		]
