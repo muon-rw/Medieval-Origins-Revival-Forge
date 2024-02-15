@@ -28,7 +28,8 @@
 	"no_fire_damage": {
 		"type": "origins:modify_damage_taken",
 		"damage_condition": {
-			"type": "origins:fire"
+			"type": "medievalorigins:in_tag",
+			"tag": "minecraft:is_fire"
 		},
 		"modifier": {
 			"name": "Fire Damage Immunity",

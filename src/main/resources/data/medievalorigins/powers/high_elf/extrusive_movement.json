@@ -43,7 +43,8 @@
     "no_burnies": {
         "type": "origins:modify_damage_taken",
         "damage_condition": {
-            "type": "origins:fire"
+            "type": "medievalorigins:in_tag",
+            "tag": "minecraft:is_fire"
         },
         "modifier": {
             "name": "Origin Fire Immunity",
