@@ -21,7 +21,6 @@ public class ModEnchantments {
                 public int getMinLevel() {
                     return 1;
                 }
-                public boolean isTreasureOnly() { return true; }
             });
 
     public static final RegistryObject<Enchantment> MIRRORING = ENCHANTMENTS.register("mirroring",
@@ -33,7 +32,6 @@ public class ModEnchantments {
                 public int getMinLevel() {
                     return 1;
                 }
-                public boolean isTreasureOnly() { return true; }
             });
     public static void register(IEventBus eventBus) {
         ENCHANTMENTS.register(eventBus);
