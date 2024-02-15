@@ -380,7 +380,11 @@
 				"color": "yellow"
 			},
 			{
-				"text": "Set Bonus: +20% Resistance",
+				"text": "Set Bonus:",
+				"color": "gold"
+			},
+			{
+				"text": "+20% Resistance",
 				"color": "yellow"
 			}
 		]
