@@ -43,8 +43,8 @@ public class ModConditions {
     );
     public static final RegistryObject<SimpleItemCondition> IS_DAGGER = ITEM_CONDITIONS.register("is_dagger", () ->
             new SimpleItemCondition(stack -> {
-                String itemId = ForgeRegistries.ITEMS.getKey(stack.getItem()).toString();
-                return (itemId.contains("dagger") || itemId.contains("knife") || itemId.contains("sai")) && stack.getItem() instanceof SwordItem;
+                String itemName = ForgeRegistries.ITEMS.getKey(stack.getItem()).getPath();
+                return (itemName.contains("dagger") || itemName.contains("knife") || itemName.contains("sai")) && stack.getItem() instanceof SwordItem;
             })
     );
     public static final RegistryObject<SimpleItemCondition> IS_TOOL = ITEM_CONDITIONS.register("is_tool", () ->
