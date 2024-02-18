@@ -1,5 +1,21 @@
 {
 	"type": "origins:multiple",
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "medievalorigins:textures/gui/pixie_badge.png",
+			"text": [
+				{
+					"translate": "badges.medievalorigins.revenant.siphon",
+					"with": [
+						{
+							"keybind": "key.use"
+						}
+					]
+				}
+			]
+		}
+	],
 	"resource": {
 		"type": "origins:resource",
 		"min": 0,

@@ -44,7 +44,7 @@
   "origin.medievalorigins.plague_victim.description": "-§l Notable Changes§r: \n§o§2+ Withering §r\n§o§6• Unique playstyle §r\n§o§6• Undead §r\n§o§c- Defense, Reputation \n§o§c- Difficult§r\nDisease-ridden half-dead creatures who can no longer be called human, cursed and trapped in eternal suffering as a result of a strange magical illness.",
 
   "origin.medievalorigins.revenant.name": "Revenant",
-  "origin.medievalorigins.revenant.description": "-§l Notable Changes§r: \n§o§2+ Summons §r\n§o§2+ Illager Friendly \n§o§6• Undead, Complex §r\n§o§c- Reputation §r\n§lRevenants§r are misfortunate souls who died gruesome and painful deaths, but inexplicably returned to life. As a result, they become obsessed with manipulating life and death in other creatures.",
+  "origin.medievalorigins.revenant.description": "-§l Notable Changes§r: \n§o§2+ Summons §r\n§o§2+ Illager Friendly \n§o§6• Undead, Complex §r\n§o§c- Reputation\n- Living interactions §r\n§lRevenants§r are misfortunate souls who died gruesome and painful deaths, but inexplicably returned to life. As a result, they become obsessed with manipulating life and death in other creatures.",
 
   "origin.medievalorigins.siren.name": "Siren",
   "origin.medievalorigins.siren.description": "-§l Notable Changes§r: \n§o§2+ Water-Based, Utility §r\n§o§6• Weaker on Land§r\n§o§c- Vulnerable to Fire§r\n§lSirens§r are said to be a type of Merfolk. They have an ensnaring aura and their irresistible beauty is said to be the downfall of many a foolish sailor.",
@@ -451,7 +451,7 @@
   "power.medievalorigins.yeti/winter_body.description": "Yetis are marginally taller than a regular human, and significantly wider.",
 
   "power.medievalorigins.revenant/black_thumb.name": "Black Thumb",
-  "power.medievalorigins.revenant/black_thumb.description": "A Revenant can not harvest any crops; they wilt at their deathly touch.",
+  "power.medievalorigins.revenant/black_thumb.description": "A Revenant can not harvest any crops; they wilt at their deathly touch. ",
 
   "power.medievalorigins.revenant/disturbed.name": "Disturbed",
   "power.medievalorigins.revenant/disturbed.description": "Experimenting in the forbidden warps the mind. Revenants cannot sleep, too scared to dream of what they wish they did not know.",
@@ -472,7 +472,7 @@
   "power.medievalorigins.revenant/poor_reputation.description": "Villagers will refuse to trade with revenants and iron golems will attack them on sight. However, they are accepted amongst the ranks of the Pillagers.",
 
   "power.medievalorigins.revenant/siphon.name": "Essence Extraction",
-  "power.medievalorigins.revenant/siphon.description": "Each time they are struck, revenants slowly build up a power which allows them to draw essence out of another creature, draining its life and filling their own. ",
+  "power.medievalorigins.revenant/siphon.description": "When hit, revenants slowly build up a power which allows them to siphon life from their enemies. This affects all living creatures, for better or worse.",
 
   "power.medievalorigins.revenant/unguarded.name": "Unguarded",
   "power.medievalorigins.revenant/unguarded.description": "Obsessing over the spirit realm leaves revenants more open to attack in the physical realm. Most mobs deal more damage to them.",
@@ -503,6 +503,8 @@
   "badges.medievalorigins.pixie.dash_upward": "Quickly press %s then %s to dash upward.",
   "badges.medievalorigins.pixie.hover": "Press %s to hover in place. Press again to fall freely.",
   "badges.medievalorigins.pixie.disable_effects": "Press %s while sneaking to disable sounds and particle effects",
+
+  "badges.medievalorigins.revenant.siphon": "Press %s while pointing at a living creature to drain its life force. This hurts even passive animals, but not summoned dead.",
 
   "medievalorigins.contagious_villager": "This villager will not trade with you!",
   "medievalorigins.disturbed_restless": "What you know will kill you, but you will die laughing.",
