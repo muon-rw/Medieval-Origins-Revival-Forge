@@ -249,17 +249,11 @@
   "power.medievalorigins.high_elf/elegant.name": "Elegant",
   "power.medievalorigins.high_elf/elegant.description": "Due to their slender nature, High Elves can not wear armor heavier than iron (This can be prevented with an enchantment), and have less health.",
 
-  "power.medievalorigins.high_elf/extrusive_movement.name": "Extrusive Movement",
-  "power.medievalorigins.high_elf/extrusive_movement.description": "Channel the flow of heat to walk freely on smoldering lava, usable by holding obsidian in your offhand.",
+  "power.medievalorigins.high_elf/ebonbreath.name": "Draw Essence",
+  "power.medievalorigins.high_elf/ebonbreath.description": "By holding different items, high elves can channel the object's energy to unleash various magics. Hover over each box to see details.",
 
   "power.medievalorigins.high_elf/fragile.name": "Fragile",
   "power.medievalorigins.high_elf/fragile.description": "A High Elf is not built for hand to hand combat. They are much more susceptible to physical damage, and have less health.",
-
-  "power.medievalorigins.high_elf/glacial_step.name": "Glacial Step",
-  "power.medievalorigins.high_elf/glacial_step.description": "Manipulate the entropy of water molecules, allowing you to walk as if you had Frost Walker. Activate by holding an ice block in your offhand.",
-
-  "power.medievalorigins.high_elf/instant_cure.name": "Instant Cure",
-  "power.medievalorigins.high_elf/instant_cure.description": "Channel healing energy directly into an infected villager without having to weaken its defenses first. Right click any zombie villager with a golden apple to heal.",
 
   "power.medievalorigins.high_elf/mystic_affinity.name": "Mystic Affinity",
   "power.medievalorigins.high_elf/mystic_affinity.description": "High Elves are powerful and clever manipulators of arcane energy - they deal more magic damage and take less magic damage than other races.",
@@ -275,9 +269,6 @@
 
   "power.medievalorigins.high_elf/towering.name": "Towering",
   "power.medievalorigins.high_elf/towering.description": "High Elves are slender and taller than the average human.",
-
-  "power.medievalorigins.high_elf/void_warp.name": "Void Warp",
-  "power.medievalorigins.high_elf/void_warp.description": "Rip through the fabric of reality to teleport yourself a short distance in any direction. Press the secondary active key while holding an ender pearl.",
 
   "power.medievalorigins.moon_elf/crazed.name": "Foreign World",
   "power.medievalorigins.moon_elf/crazed.description": "Try as they might, Moon Elves can not sleep in the overworld.",
@@ -503,6 +494,13 @@
   "badges.medievalorigins.pixie.dash_upward": "Quickly press %s then %s to dash upward.",
   "badges.medievalorigins.pixie.hover": "Press %s to hover in place. Press again to fall freely.",
   "badges.medievalorigins.pixie.disable_effects": "Press %s while sneaking to disable sounds and particle effects",
+
+  "badges.medievalorigins.high_elf.glacial_step": "§bGlacial Step:§r Hold an ice block to manipulate the entropy of water molecules, allowing you to walk as if you had Frost Walker",
+  "badges.medievalorigins.high_elf.extrusive_movement": "§4Extrusive Movement:§r Hold obsidian to channel the flow of heat and walk freely on smoldering lava",
+  "badges.medievalorigins.high_elf.instant_cure": "§eInstant Cure:§r Right click a villager with a golden apple to directly channel its healing energy without needing to weaken them",
+  "badges.medievalorigins.high_elf.void_warp": "§5Void Warp:§r Press %s while holding an ender pearl to rip through the fabric of reality and teleport yourself directly, up to 50 blocks away",
+  "badges.medievalorigins.high_elf.blazenbreath": "§cBlazenbreath:§r Press %s while holding coal to shoot forth a weak cone of flame. Hold blaze powder instead to shoot forth a moderate cone of flame",
+  "badges.medievalorigins.high_elf.ebonbreath": "§dEbonbreath:§r Press %s while holding bottled dragon's breath to shoot forth a cone of strong magical flame",
 
   "badges.medievalorigins.revenant.siphon": "Press %s while pointing at a living creature to drain its life force. This hurts even passive animals, but not summoned dead.",
 

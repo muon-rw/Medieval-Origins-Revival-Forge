@@ -1,5 +1,66 @@
 {
     "type": "origins:multiple",
+    "badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "medievalorigins:textures/gui/pixie_badge.png",
+			"text": [
+				{
+					"translate": "badges.medievalorigins.high_elf.glacial_step"
+				}
+			]
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "medievalorigins:textures/gui/pixie_badge.png",
+			"text": {
+				"translate": "badges.medievalorigins.high_elf.extrusive_movement"
+			}
+		},
+        {
+			"type": "origins:tooltip",
+			"sprite": "medievalorigins:textures/gui/pixie_badge.png",
+			"text": {
+				"translate": "badges.medievalorigins.high_elf.instant_cure"
+			}
+		},
+        {
+			"type": "origins:tooltip",
+			"sprite": "medievalorigins:textures/gui/pixie_badge.png",
+			"text": {
+				"translate": "badges.medievalorigins.high_elf.void_warp",
+				"with": [
+					{
+						"keybind": "key.origins.primary_active"
+					}
+				]
+			}
+		},
+        {
+			"type": "origins:tooltip",
+			"sprite": "medievalorigins:textures/gui/pixie_badge.png",
+			"text": {
+				"translate": "badges.medievalorigins.high_elf.blazenbreath",
+				"with": [
+					{
+						"keybind": "key.origins.primary_active"
+					}
+				]
+			}
+		},
+        {
+			"type": "origins:tooltip",
+			"sprite": "medievalorigins:textures/gui/pixie_badge.png",
+			"text": {
+				"translate": "badges.medievalorigins.high_elf.ebonbreath",
+				"with": [
+					{
+						"keybind": "key.origins.primary_active"
+					}
+				]
+			}
+		}
+	],
     "marker": {
         "type": "origins:active_self",
         "entity_action": {
@@ -13,19 +74,6 @@
                     "shape_type": "collider",
                     "fluid_handling": "any",
                     "command_at_hit": "summon area_effect_cloud ~ ~ ~ {Duration:5, Tags:[\"ebonmarker\"]}"
-                },
-                {
-                    "type": "origins:modify_inventory",
-                    "slots": ["weapon.mainhand","weapon.offhand"],
-                    "item_action": {
-                        "type": "origins:consume"
-                    },
-                    "item_condition": {
-                        "type": "origins:ingredient",
-                        "ingredient": {
-                            "item": "minecraft:dragon_breath"
-                        }
-                    }
                 }
             ]
         },
@@ -169,6 +217,19 @@
                                         "power": "medievalorigins:high_elf/ebonmark"
                                     }
                                 ]
+                            }
+                        }
+                    },
+                    {
+                        "type": "origins:modify_inventory",
+                        "slots": ["weapon.mainhand","weapon.offhand"],
+                        "item_action": {
+                            "type": "origins:consume"
+                        },
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "item": "minecraft:dragon_breath"
                             }
                         }
                     }

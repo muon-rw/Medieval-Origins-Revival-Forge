@@ -1,4 +1,5 @@
 {
+    "hidden": true,
     "type": "origins:multiple",
     "walk": {
         "type": "origins:walk_on_fluid",

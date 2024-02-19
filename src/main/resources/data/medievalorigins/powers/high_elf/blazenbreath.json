@@ -1,4 +1,5 @@
 {
+    "hidden": true,
     "type": "origins:multiple",
     "marker": {
         "type": "origins:active_self",
@@ -13,19 +14,6 @@
                     "shape_type": "collider",
                     "fluid_handling": "any",
                     "command_at_hit": "summon area_effect_cloud ~ ~ ~ {Duration:5, Tags:[\"blazenmarker\"]}"
-                },
-                {
-                    "type": "origins:modify_inventory",
-                    "slots": ["weapon.mainhand","weapon.offhand"],
-                    "item_action": {
-                        "type": "origins:consume"
-                    },
-                    "item_condition": {
-                        "type": "origins:ingredient",
-                        "ingredient": {
-                            "item": "minecraft:blaze_powder"
-                        }
-                    }
                 }
             ]
         },
@@ -163,6 +151,22 @@
                                         "power": "medievalorigins:high_elf/blazenmark"
                                     }
                                 ]
+                            }
+                        }
+                    },
+                    {
+                        "type": "origins:modify_inventory",
+                        "slots": [
+                            "weapon.mainhand",
+                            "weapon.offhand"
+                        ],
+                        "item_action": {
+                            "type": "origins:consume"
+                        },
+                        "item_condition": {
+                            "type": "origins:ingredient",
+                            "ingredient": {
+                                "item": "minecraft:blaze_powder"
                             }
                         }
                     }
