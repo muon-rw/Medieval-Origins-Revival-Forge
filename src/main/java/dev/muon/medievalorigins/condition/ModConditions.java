@@ -13,6 +13,7 @@ import dev.muon.medievalorigins.MedievalOrigins;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.MobType;
+import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.BowItem;
 import net.minecraft.world.item.DiggerItem;
@@ -30,6 +31,8 @@ public class ModConditions {
     public static final DeferredRegister<EntityCondition<?>> ENTITY_CONDITIONS = DeferredRegister.create(ApoliRegistries.ENTITY_CONDITION_KEY, MedievalOrigins.MODID);
     public static final RegistryObject<SimpleEntityCondition> IS_UNDEAD = ENTITY_CONDITIONS.register("is_undead", () ->
             new SimpleEntityCondition(entity -> entity instanceof LivingEntity && ((LivingEntity) entity).getMobType() == MobType.UNDEAD));
+    public static final RegistryObject<SimpleEntityCondition> IS_ARROW = ENTITY_CONDITIONS.register("is_arrow", () ->
+            new SimpleEntityCondition(entity -> entity instanceof AbstractArrow));
 
 
     public static final DeferredRegister<ItemCondition<?>> ITEM_CONDITIONS = DeferredRegister.create(ApoliRegistries.ITEM_CONDITION_KEY, MedievalOrigins.MODID);
@@ -41,6 +44,7 @@ public class ModConditions {
             new SimpleItemCondition(stack ->
                     stack.getItem() instanceof BowItem)
     );
+
     public static final RegistryObject<SimpleItemCondition> IS_DAGGER = ITEM_CONDITIONS.register("is_dagger", () ->
             new SimpleItemCondition(stack -> {
                 String itemName = ForgeRegistries.ITEMS.getKey(stack.getItem()).getPath();
