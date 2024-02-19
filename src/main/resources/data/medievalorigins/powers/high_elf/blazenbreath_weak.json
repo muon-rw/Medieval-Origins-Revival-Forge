@@ -1,4 +1,5 @@
 {
+    "hidden": true,
     "type": "origins:multiple",
     "marker": {
         "type": "origins:active_self",
@@ -23,7 +24,7 @@
                     "item_condition": {
                         "type": "origins:ingredient",
                         "ingredient": {
-                            "item": "minecraft:blaze_powder"
+                            "tag": "medievalorigins:weak_flammables"
                         }
                     }
                 }
@@ -45,7 +46,7 @@
                             "item_condition": {
                                 "type": "origins:ingredient",
                                 "ingredient": {
-                                    "item": "minecraft:blaze_powder"
+                                    "tag": "medievalorigins:weak_flammables"
                                 }
                             }
                         },
@@ -55,7 +56,7 @@
                             "item_condition": {
                                 "type": "origins:ingredient",
                                 "ingredient": {
-                                    "item": "minecraft:blaze_powder"
+                                    "tag": "medievalorigins:weak_flammables"
                                 }
                             }
                         }
@@ -109,8 +110,8 @@
                                 }
                             }
                         },
-                        "command_at_hit": "function medievalorigins:mdvlorigins/blazenbreath_hit",
-                        "command_along_ray": "function medievalorigins:mdvlorigins/blazenbreath_ray"
+                        "command_at_hit": "function medievalorigins:mdvlorigins/blazenbreath_weak_hit",
+                        "command_along_ray": "function medievalorigins:mdvlorigins/blazenbreath_weak_ray"
                     },
                     {
                         "type": "origins:execute_command",
@@ -137,7 +138,7 @@
                                 },
                                 {
                                     "type": "origins:damage",
-                                    "amount": 8,
+                                    "amount": 4,
                                     "damage_type": "medievalorigins:blazenbreath"
                                 },
                                 {
@@ -190,7 +191,7 @@
                             "item_condition": {
                                 "type": "origins:ingredient",
                                 "ingredient": {
-                                    "item": "minecraft:blaze_powder"
+                                    "tag": "medievalorigins:weak_flammables"
                                 }
                             }
                         },
@@ -200,7 +201,7 @@
                             "item_condition": {
                                 "type": "origins:ingredient",
                                 "ingredient": {
-                                    "item": "minecraft:blaze_powder"
+                                    "tag": "medievalorigins:weak_flammables"
                                 }
                             }
                         }
