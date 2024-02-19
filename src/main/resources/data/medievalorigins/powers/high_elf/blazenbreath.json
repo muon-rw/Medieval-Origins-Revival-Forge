@@ -12,7 +12,7 @@
                     "entity": true,
                     "shape_type": "collider",
                     "fluid_handling": "any",
-                    "command_at_hit": "summon area_effect_cloud ~ ~ ~ {Duration:5, Tags:[\"ebonmarker\"]}"
+                    "command_at_hit": "summon area_effect_cloud ~ ~ ~ {Duration:5, Tags:[\"blazenmarker\"]}"
                 },
                 {
                     "type": "origins:modify_inventory",
@@ -23,7 +23,7 @@
                     "item_condition": {
                         "type": "origins:ingredient",
                         "ingredient": {
-                            "item": "minecraft:dragon_breath"
+                            "item": "minecraft:fire_charge"
                         }
                     }
                 }
@@ -45,7 +45,7 @@
                             "item_condition": {
                                 "type": "origins:ingredient",
                                 "ingredient": {
-                                    "item": "minecraft:dragon_breath"
+                                    "item": "minecraft:fire_charge"
                                 }
                             }
                         },
@@ -55,7 +55,7 @@
                             "item_condition": {
                                 "type": "origins:ingredient",
                                 "ingredient": {
-                                    "item": "minecraft:dragon_breath"
+                                    "item": "minecraft:fire_charge"
                                 }
                             }
                         }
@@ -101,7 +101,7 @@
                                             "type": "origins:target_action",
                                             "action": {
                                                 "type": "origins:grant_power",
-                                                "power": "medievalorigins:high_elf/ebonmark",
+                                                "power": "medievalorigins:high_elf/blazenmark",
                                                 "source": "apoli:command"
                                             }
                                         }
@@ -109,23 +109,17 @@
                                 }
                             }
                         },
-                        "command_at_hit": "function medievalorigins:mdvlorigins/ebonbreath_hit",
-                        "command_along_ray": "function medievalorigins:mdvlorigins/ebonbreath_ray"
+                        "command_at_hit": "function medievalorigins:mdvlorigins/blazenbreath_hit",
+                        "command_along_ray": "function medievalorigins:mdvlorigins/blazenbreath_ray"
                     },
                     {
                         "type": "origins:execute_command",
-                        "command": "kill @e[tag=ebonmarker]"
+                        "command": "kill @e[tag=blazenmarker]"
                     },
                     {
                         "type": "origins:play_sound",
-                        "sound": "minecraft:entity.ender_dragon.growl",
-                        "volume": 0.4,
-                        "pitch": 1.2
-                    },
-                    {
-                        "type": "origins:play_sound",
-                        "sound": "minecraft:entity.ender_dragon.shoot",
-                        "volume": 0.6,
+                        "sound": "minecraft:entity.blaze.shoot",
+                        "volume": 1,
                         "pitch": 0.75
                     },
                     {
@@ -143,14 +137,14 @@
                                 },
                                 {
                                     "type": "origins:damage",
-                                    "amount": 10,
-                                    "damage_type": "medievalorigins:ebonbreath"
+                                    "amount": 6,
+                                    "damage_type": "medievalorigins:blazenbreath"
                                 },
                                 {
                                     "type": "origins:target_action",
                                     "action": {
                                         "type": "origins:revoke_power",
-                                        "power": "medievalorigins:high_elf/ebonmark",
+                                        "power": "medievalorigins:high_elf/blazenmark",
                                         "source": "apoli:command"
                                     }
                                 }
@@ -166,7 +160,7 @@
                                     },
                                     {
                                         "type": "origins:power",
-                                        "power": "medievalorigins:high_elf/ebonmark"
+                                        "power": "medievalorigins:high_elf/blazenmark"
                                     }
                                 ]
                             }
@@ -178,8 +172,8 @@
         "cooldown": 30,
         "hud_render": {
             "should_render": true,
-            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
-            "bar_index": 15
+            "sprite_location": "origins:textures/gui/resource_bar.png",
+            "bar_index": 7
         },
         "key": {
             "key": "key.origins.primary_active"
@@ -196,7 +190,7 @@
                             "item_condition": {
                                 "type": "origins:ingredient",
                                 "ingredient": {
-                                    "item": "minecraft:dragon_breath"
+                                    "item": "minecraft:fire_charge"
                                 }
                             }
                         },
@@ -206,7 +200,7 @@
                             "item_condition": {
                                 "type": "origins:ingredient",
                                 "ingredient": {
-                                    "item": "minecraft:dragon_breath"
+                                    "item": "minecraft:fire_charge"
                                 }
                             }
                         }
