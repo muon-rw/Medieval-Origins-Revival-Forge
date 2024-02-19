@@ -3,6 +3,7 @@
     "values": [
         {"id":"#minecraft:is_magic","required":false},
         {"id":"#minecraft:witch_resistant_to","required":false},
+        {"id":"#medievalorigins:spell_damage","required":false},
         {"id":"#irons_spellbooks:eldritch_magic","required":false},
         {"id":"#irons_spellbooks:blood_magic","required":false},
         {"id":"#irons_spellbooks:ender_magic","required":false},

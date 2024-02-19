@@ -16,7 +16,7 @@
 		},
 		"damage_condition": {
 			"type": "medievalorigins:in_tag",
-			"tag": "mmedievalorigins:is_magic",
+			"tag": "medievalorigins:is_magic",
 			"inverted": true
 		}
 	}
