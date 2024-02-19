@@ -8,7 +8,8 @@
 		"medievalorigins:yeti/unstoppable",
 		"medievalorigins:yeti/winter_body",
 		"medievalorigins:yeti/flammable",
-		"medievalorigins:yeti/thick_fur"
+		"medievalorigins:yeti/thick_fur",
+		"origins_survive:cold_resistance"
 	],
 	"icon": {
 		"item": "minecraft:ink_sac",

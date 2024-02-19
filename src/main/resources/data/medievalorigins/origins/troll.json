@@ -8,7 +8,7 @@
                 "medievalorigins:troll/lumbering",
                 "medievalorigins:troll/old_blood",
                 "medievalorigins:troll/out_of_stock",
-                "origins_env_deh:cold_resistance"
+                "origins_survive:cold_resistance"
 	],
 	"icon": {
 		"item": "minecraft:player_head",

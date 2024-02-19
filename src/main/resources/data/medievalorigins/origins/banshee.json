@@ -7,7 +7,8 @@
                 "medievalorigins:banshee/dimeritium_shackles",
                 "medievalorigins:banshee/hexed",
                 "medievalorigins:banshee/immaterial",
-                "medievalorigins:banshee/overwhelmed"
+                "medievalorigins:banshee/overwhelmed",
+                "origins_survive:sleepless"
 	],
         "icon": {
                 "item": "minecraft:ink_sac",
