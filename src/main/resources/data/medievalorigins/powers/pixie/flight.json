@@ -294,8 +294,17 @@
 											"type": "origins:grant_power",
 											"power": "medievalorigins:pixie/temp_dash_particles",
 											"source": "medievalorigins:pixie/flight"
+										},
+										{
+											"type": "origins:grant_power",
+											"power": "medievalorigins:pixie/temp_dash_particles_limit",
+											"source": "medievalorigins:pixie/flight"
 										}
 									]
+								},
+								"else_action": {
+									"type": "origins:execute_command",
+									"command": "playsound medievalorigins:dash player @a ~ ~ ~ 0.65 0.8"
 								}
 							}
 						]
@@ -364,8 +373,17 @@
 											"type": "origins:grant_power",
 											"power": "medievalorigins:pixie/temp_dashup_particles",
 											"source": "medievalorigins:pixie/flight"
+										},
+										{
+											"type": "origins:grant_power",
+											"power": "medievalorigins:pixie/temp_dashup_particles_limit",
+											"source": "medievalorigins:pixie/flight"
 										}
 									]
+								},
+								"else_action": {
+									"type": "origins:execute_command",
+									"command": "playsound medievalorigins:dash player @a ~ ~ ~ 0.65 0.8"
 								}
 							}
 						]
