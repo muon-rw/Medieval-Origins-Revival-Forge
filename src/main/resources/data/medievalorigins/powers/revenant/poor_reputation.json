@@ -26,15 +26,14 @@
 		}
 	},
 	"pillager_team": {
-		"type": "origins:action_on_callback",
-		"entity_action_chosen": {
-			"type": "origins:execute_command",
-			"command": "team add PillagerAlly"
+		"type": "apugli:mobs_ignore",
+		"mob_condition": {
+			"type": "origins:in_tag",
+			"tag": "medievalorigins:pillagers"
 		},
-		"entity_action_lost": {
-			"type": "origins:execute_command",
-			"command": "team leave PillagerAlly"
-		},
-		"execute_chosen_when_orb": true
+		"bientity_condition": {
+			"type": "origins:attacker",
+			"inverted": true
+		}
 	}
 }
