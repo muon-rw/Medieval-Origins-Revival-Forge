@@ -29,8 +29,6 @@ import net.minecraftforge.registries.RegistryObject;
 
 public class ModConditions {
     public static final DeferredRegister<EntityCondition<?>> ENTITY_CONDITIONS = DeferredRegister.create(ApoliRegistries.ENTITY_CONDITION_KEY, MedievalOrigins.MODID);
-    public static final RegistryObject<SimpleEntityCondition> IS_UNDEAD = ENTITY_CONDITIONS.register("is_undead", () ->
-            new SimpleEntityCondition(entity -> entity instanceof LivingEntity && ((LivingEntity) entity).getMobType() == MobType.UNDEAD));
     public static final RegistryObject<SimpleEntityCondition> IS_ARROW = ENTITY_CONDITIONS.register("is_arrow", () ->
             new SimpleEntityCondition(entity -> entity instanceof AbstractArrow));
 
@@ -44,40 +42,51 @@ public class ModConditions {
             new SimpleItemCondition(stack ->
                     stack.getItem() instanceof BowItem)
     );
-
     public static final RegistryObject<SimpleItemCondition> IS_DAGGER = ITEM_CONDITIONS.register("is_dagger", () ->
             new SimpleItemCondition(stack -> {
                 String itemName = ForgeRegistries.ITEMS.getKey(stack.getItem()).getPath();
-                return (itemName.contains("dagger") || itemName.contains("knife") || itemName.contains("sai") || itemName.contains("athame")) && stack.getItem() instanceof SwordItem;
+                return stack.getItem() instanceof SwordItem && (itemName.contains("dagger") || itemName.contains("knife") || itemName.contains("sai") || itemName.contains("athame"));
             })
     );
     public static final RegistryObject<SimpleItemCondition> IS_TOOL = ITEM_CONDITIONS.register("is_tool", () ->
             new SimpleItemCondition(stack ->
-                    Enchantments.BLOCK_EFFICIENCY.canEnchant(stack) || stack.getItem() instanceof DiggerItem)
+                    stack.getItem() instanceof DiggerItem || Enchantments.BLOCK_EFFICIENCY.canEnchant(stack) )
     );
     public static final RegistryObject<SimpleItemCondition> IS_CHESTPLATE = ITEM_CONDITIONS.register("is_chestplate", () ->
             new SimpleItemCondition(stack ->
                     stack.getItem() instanceof ArmorItem && ((ArmorItem) stack.getItem()).getEquipmentSlot() == EquipmentSlot.CHEST)
     );
+    public static final RegistryObject<SimpleItemCondition> IS_HELMET = ITEM_CONDITIONS.register("is_helmet", () ->
+            new SimpleItemCondition(stack ->
+                    stack.getItem() instanceof ArmorItem && ((ArmorItem) stack.getItem()).getEquipmentSlot() == EquipmentSlot.HEAD)
+    );
+    public static final RegistryObject<SimpleItemCondition> IS_LEGGINGS = ITEM_CONDITIONS.register("is_leggings", () ->
+            new SimpleItemCondition(stack ->
+                    stack.getItem() instanceof ArmorItem && ((ArmorItem) stack.getItem()).getEquipmentSlot() == EquipmentSlot.LEGS)
+    );
+    public static final RegistryObject<SimpleItemCondition> IS_BOOTS = ITEM_CONDITIONS.register("is_boots", () ->
+            new SimpleItemCondition(stack ->
+                    stack.getItem() instanceof ArmorItem && ((ArmorItem) stack.getItem()).getEquipmentSlot() == EquipmentSlot.FEET)
+    );
 
     public static final RegistryObject<SimpleItemCondition> GOLDEN_ARMOR = ITEM_CONDITIONS.register("golden_armor", () ->
             new SimpleItemCondition(stack -> {
                 String itemName = ForgeRegistries.ITEMS.getKey(stack.getItem()).getPath();
-                return ((itemName.contains("gold") || itemName.contains("gilded")) && stack.getItem() instanceof ArmorItem);
+                return (stack.getItem() instanceof ArmorItem && (itemName.contains("gold") || itemName.contains("gilded")));
             })
     );
 
     public static final RegistryObject<SimpleItemCondition> GOLDEN_WEAPON = ITEM_CONDITIONS.register("golden_weapon", () ->
             new SimpleItemCondition(stack -> {
                 String itemName = ForgeRegistries.ITEMS.getKey(stack.getItem()).getPath();
-                return ((itemName.contains("gold") || itemName.contains("gilded")) && stack.getItem() instanceof SwordItem);
+                return (stack.getItem() instanceof SwordItem && (itemName.contains("gold") || itemName.contains("gilded")));
             })
     );
 
     public static final RegistryObject<SimpleItemCondition> GOLDEN_TOOL = ITEM_CONDITIONS.register("golden_tool", () ->
             new SimpleItemCondition(stack -> {
                 String itemName = ForgeRegistries.ITEMS.getKey(stack.getItem()).getPath();
-                return ((itemName.contains("gold") || itemName.contains("gilded")) && stack.getItem() instanceof DiggerItem);
+                return (stack.getItem() instanceof DiggerItem && (itemName.contains("gold") || itemName.contains("gilded")));
             })
     );
     public static final DeferredRegister<BlockCondition<?>> BLOCK_CONDITIONS = DeferredRegister.create(ApoliRegistries.BLOCK_CONDITION_KEY, MedievalOrigins.MODID);
