@@ -82,7 +82,7 @@
 
 
   "power.medievalorigins.arachnae/bottomless_stomach.name": "Bottomless Stomach",
-  "power.medievalorigins.arachnae/bottomless_stomach.description": "As human sized spiders, Arachnae require a massive quantity of food to stay alive.",
+  "power.medievalorigins.arachnae/bottomless_stomach.description": "Arachnae require a larger quantity of food to stay alive.",
 
   "power.medievalorigins.arachnae/brittle.name": "Brittle",
   "power.medievalorigins.arachnae/brittle.description": "The Arachnae's chitinous exoskeleton cannot support armor heavier than iron. This can be prevented with an enchantment." ,
@@ -97,7 +97,7 @@
   "power.medievalorigins.arachnae/many_eyes.description": "The Arachnae's eight eyes are all adpated to darkness, and allow them to see clearly even with very little light.",
   
   "power.medievalorigins.arachnae/venomous_bite.name": "Venomous Bite",
-  "power.medievalorigins.arachnae/venomous_bite.description": "Arachnae's fangs contain venom, and every bite is a chance to poison their opponent.",
+  "power.medievalorigins.arachnae/venomous_bite.description": "Arachnae's fangs contain venom, and every attack has a chance to inflict poison.",
 
   "power.medievalorigins.arachnae/web_slinger.name": "Web Slinger",
   "power.medievalorigins.arachnae/web_slinger.description": "Arachnae can, on command, spin webs in which their opponents will be immobilised for a short while.",
