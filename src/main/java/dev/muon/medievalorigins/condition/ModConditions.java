@@ -48,25 +48,15 @@ public class ModConditions {
                 return stack.getItem() instanceof SwordItem && (itemName.contains("dagger") || itemName.contains("knife") || itemName.contains("sai") || itemName.contains("athame"));
             })
     );
+    public static final RegistryObject<SimpleItemCondition> IS_FIST_WEAPON = ITEM_CONDITIONS.register("is_fist_weapon", () ->
+            new SimpleItemCondition(stack -> {
+                String itemName = ForgeRegistries.ITEMS.getKey(stack.getItem()).getPath();
+                return stack.getItem() instanceof SwordItem && (itemName.contains("fist") || itemName.contains("claw") || itemName.contains("gauntlet"));
+            })
+    );
     public static final RegistryObject<SimpleItemCondition> IS_TOOL = ITEM_CONDITIONS.register("is_tool", () ->
             new SimpleItemCondition(stack ->
                     stack.getItem() instanceof DiggerItem || Enchantments.BLOCK_EFFICIENCY.canEnchant(stack) )
-    );
-    public static final RegistryObject<SimpleItemCondition> IS_CHESTPLATE = ITEM_CONDITIONS.register("is_chestplate", () ->
-            new SimpleItemCondition(stack ->
-                    stack.getItem() instanceof ArmorItem && ((ArmorItem) stack.getItem()).getEquipmentSlot() == EquipmentSlot.CHEST)
-    );
-    public static final RegistryObject<SimpleItemCondition> IS_HELMET = ITEM_CONDITIONS.register("is_helmet", () ->
-            new SimpleItemCondition(stack ->
-                    stack.getItem() instanceof ArmorItem && ((ArmorItem) stack.getItem()).getEquipmentSlot() == EquipmentSlot.HEAD)
-    );
-    public static final RegistryObject<SimpleItemCondition> IS_LEGGINGS = ITEM_CONDITIONS.register("is_leggings", () ->
-            new SimpleItemCondition(stack ->
-                    stack.getItem() instanceof ArmorItem && ((ArmorItem) stack.getItem()).getEquipmentSlot() == EquipmentSlot.LEGS)
-    );
-    public static final RegistryObject<SimpleItemCondition> IS_BOOTS = ITEM_CONDITIONS.register("is_boots", () ->
-            new SimpleItemCondition(stack ->
-                    stack.getItem() instanceof ArmorItem && ((ArmorItem) stack.getItem()).getEquipmentSlot() == EquipmentSlot.FEET)
     );
 
     public static final RegistryObject<SimpleItemCondition> GOLDEN_ARMOR = ITEM_CONDITIONS.register("golden_armor", () ->
@@ -76,6 +66,12 @@ public class ModConditions {
             })
     );
 
+    public static final RegistryObject<SimpleItemCondition> SILVER_ARMOR = ITEM_CONDITIONS.register("silver_armor", () ->
+            new SimpleItemCondition(stack -> {
+                String itemName = ForgeRegistries.ITEMS.getKey(stack.getItem()).getPath();
+                return (stack.getItem() instanceof ArmorItem && (itemName.contains("silver") || itemName.contains("iron")));
+            })
+    );
     public static final RegistryObject<SimpleItemCondition> GOLDEN_WEAPON = ITEM_CONDITIONS.register("golden_weapon", () ->
             new SimpleItemCondition(stack -> {
                 String itemName = ForgeRegistries.ITEMS.getKey(stack.getItem()).getPath();
