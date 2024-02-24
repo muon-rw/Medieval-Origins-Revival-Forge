@@ -29,16 +29,12 @@
 					"type": "origins:or",
 					"conditions": [
 						{
-							"type": "origins:ingredient",
-							"ingredient": {
-								"tag": "medievalorigins:helmets"
-							}
+							"type": "origins:is_equippable",
+							"equipment_slot": "head"
 						},
 						{
-							"type": "origins:ingredient",
-							"ingredient": {
-								"tag": "medievalorigins:boots"
-							}
+							"type": "origins:is_equippable",
+							"equipment_slot": "feet"
 						}
 					]
 				}
@@ -80,10 +76,8 @@
 					"compare_to": 1
 				},
 				{
-					"type": "origins:ingredient",
-					"ingredient": {
-						"tag": "medievalorigins:chestplates"
-					}
+					"type": "origins:is_equippable",
+					"equipment_slot": "chest"
 				}
 			]
 		},
@@ -123,10 +117,8 @@
 					"compare_to": 1
 				},
 				{
-					"type": "origins:ingredient",
-					"ingredient": {
-						"tag": "medievalorigins:leggings"
-					}
+					"type": "origins:is_equippable",
+					"equipment_slot": "legs"
 				}
 			]
 		},
