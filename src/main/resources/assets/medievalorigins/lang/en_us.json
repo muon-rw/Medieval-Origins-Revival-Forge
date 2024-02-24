@@ -2,7 +2,7 @@
   "origin.origins.human.description": "-§l Notable Changes§r: \n§oNone§r\n\n A human's fate is more open than most - venture forth with no benefits or drawbacks.",
 
   "origin.medievalorigins.alfiq.name": "Alfiq",
-  "origin.medievalorigins.alfiq.description": "-§l NOT YET IMPLEMENTED Notable Changes§r: \n§o§2+ Unarmed Bonus§r\n§o§2+ Unique Movement§r\n§o§6• Carnivore§r\n§o§c- Defense§r\n§lAlfiq§r are a cunning species of anthropomorphic felines with sharp claws and excellent agility. Their roads often lead to warm sands.",
+  "origin.medievalorigins.alfiq.description": "-§l Notable Changes§r: \n§o§2+ Unarmed Bonus§r\n§o§2+ Unique Movement§r\n§o§6• Carnivore§r\n§o§c- Defense§r\n§lAlfiq§r are a cunning species of anthropomorphic felines with sharp claws and excellent agility. Their roads often lead to warm sands.",
 
   "origin.medievalorigins.arachnae.name": "Arachnae",
   "origin.medievalorigins.arachnae.description": "-§l Notable Changes§r: \n§o§2+ Poison, Crowd Control\n+ Wall Climbing§r\n§o§6• Carnivore§r\n§o§c- Hunger, Armor§r\nA grotesque amalgamation of spider and human, with venomous fangs and bristled feet yet the ability to walk upright and wield weaponry.",
@@ -57,16 +57,16 @@
 
   
   "power.medievalorigins.alfiq/clawed.name": "Clawed",
-  "power.medievalorigins.alfiq/clawed.description": "Alfiq have razor sharp retractable claws, allowing them to defend themselves without a weapon and climb up and cling to steep surfaces.",
+  "power.medievalorigins.alfiq/clawed.description": "Alfiq have razor sharp retractable claws; they deal extra damage with empty paws, and can climb up and cling to steep surfaces (Can be toggled)",
 
   "power.medievalorigins.alfiq/crepuscular.name": "Crepuscular",
-  "power.medievalorigins.alfiq/crepuscular.description": "Near sunset and sunrise, when Alfiq naturally hunt, they will move more quickly. At other times, they are lethargic and slightly slower.",
+  "power.medievalorigins.alfiq/crepuscular.description": "Near sunset and sunrise, when Alfiq naturally hunt, they will move and attack much more quickly. At other times, they are lethargic and slightly slower.",
 
   "power.medievalorigins.alfiq/on_your_feet.name": "On Your Feet",
-  "power.medievalorigins.alfiq/on_your_feet.description": "If an Alfiq ever falls from a height where others would take 5 hearts or more of damage, they instead take no damage at all.",
+  "power.medievalorigins.alfiq/on_your_feet.description": "If you ever fall from a height where you would take 5 hearts or more of damage, they instead take no damage at all.",
 
   "power.medievalorigins.alfiq/pickpocket.name": "Pickpocket",
-  "power.medievalorigins.alfiq/pickpocket.description": "Right click the back of a villager while crouching with empty paws for a chance to steal some emeralds. Or get caught.",
+  "power.medievalorigins.alfiq/pickpocket.description": "Right click the back of a villager while crouching with empty paws for a chance to steal some emeralds. Or get caught. Rumor has it you may be able to steal from other players.",
 
   "power.medievalorigins.alfiq/pounce.name": "Pounce",
   "power.medievalorigins.alfiq/pounce.description": "After crouching without moving for a few seconds to charge up, an Alfiq can leap forward a great distance. Striking an enemy during the pounce deals bonus damage.",
@@ -503,6 +503,8 @@
   "badges.medievalorigins.high_elf.ebonbreath": "§dEbonbreath:§r Press %s while holding bottled dragon's breath to shoot forth a cone of strong magical flame",
 
   "badges.medievalorigins.revenant.siphon": "Press %s while pointing at a living creature to drain its life force. This hurts even passive animals, but not summoned dead.",
+
+  "badges.medievalorigins.alfiq.wall_climb": "Press %s to toggle wall climbing.",
 
   "medievalorigins.contagious_villager": "This villager will not trade with you!",
   "medievalorigins.disturbed_restless": "What you know will kill you, but you will die laughing.",
