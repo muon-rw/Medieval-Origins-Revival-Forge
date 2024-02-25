@@ -16,6 +16,12 @@
                     "space": "local"
                 },
                 {
+                    "type": "origins:play_sound",
+                    "sound": "medievalorigins:dash",
+                    "pitch": 0.7,
+                    "category": "player"
+                },
+                {
                     "type": "origins:modify_resource",
                     "resource": "*:*_meter",
                     "modifier": {
