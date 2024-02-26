@@ -20,6 +20,12 @@
 		"bientity_action": {
 			"type": "origins:mount"
 		},
+		"item_condition": {
+			"type": "origins:empty"
+		},
+		"hands": [
+			"main_hand"
+		],
 		"bientity_condition": {
 			"type": "origins:target_condition",
 			"condition": {
