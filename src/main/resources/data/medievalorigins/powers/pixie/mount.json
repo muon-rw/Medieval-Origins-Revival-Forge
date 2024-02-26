@@ -26,6 +26,25 @@
 		"hands": [
 			"main_hand"
 		],
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "mainhand",
+					"item_condition": {
+						"type": "origins:empty"
+					}
+				},
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "offhand",
+					"item_condition": {
+						"type": "origins:empty"
+					}
+				}
+			]
+		},
 		"bientity_condition": {
 			"type": "origins:target_condition",
 			"condition": {
