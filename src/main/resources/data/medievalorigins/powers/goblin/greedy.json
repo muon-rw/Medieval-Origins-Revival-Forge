@@ -417,10 +417,6 @@
 			{
 				"translate": "tooltip.medievalorigins.looting_bonus",
 				"color": "yellow"
-			},
-			{
-				"text": "Increased Durability",
-				"color": "yellow"
 			}
 		]
 	},
@@ -451,10 +447,6 @@
 			},
 			{
 				"text": "Iron+ Mining Level",
-				"color": "yellow"
-			},
-			{
-				"text": "Increased Durability",
 				"color": "yellow"
 			}
 		]

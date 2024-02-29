@@ -1,8 +1,5 @@
 {
 	"type": "origins:multiple",
-	"thanks_pug": {
-		"type": "apugli:prevent_movement_checks"
-	},
 	"badges": [
 		{
 			"type": "origins:tooltip",

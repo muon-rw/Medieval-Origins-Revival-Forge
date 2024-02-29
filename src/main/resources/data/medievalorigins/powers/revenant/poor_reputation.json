@@ -25,24 +25,85 @@
 			}
 		}
 	},
-	"pillager_team": {
-		"type": "apugli:mobs_ignore",
-		"mob_condition": {
-			"type": "origins:or",
-			"conditions": [
+	"create_team": {
+		"type": "origins:action_on_callback",
+		"entity_action_added": {
+			"type": "origins:and",
+			"actions": [
 				{
-					"type": "origins:in_tag",
-					"tag": "medievalorigins:pillagers"
+					"type": "origins:execute_command",
+					"command": "team add PillagerAlly"
 				},
 				{
-					"type": "origins:entity_group",
-					"group": "illager"
+					"type": "origins:execute_command",
+					"command": "team join PillagerAlly"
 				}
 			]
 		},
+		"entity_action_respawned": {
+			"type": "origins:execute_command",
+			"command": "team join PillagerAlly"
+		},
+		"entity_action_lost": {
+			"type": "origins:execute_command",
+			"command": "team leave @s"
+		}
+	},
+	"leave_on_aggro": {
+		"type": "origins:action_on_hit",
+		"bientity_action": {
+			"type": "origins:actor_action",
+			"action": {
+				"type": "origins:execute_command",
+				"command": "team leave @s"
+			}
+		},
 		"bientity_condition": {
-			"type": "origins:attacker",
-			"inverted": true
+			"type": "origins:target_condition",
+			"condition": {
+				"type": "origins:or",
+				"conditions": [
+					{
+						"type": "origins:in_tag",
+						"tag": "medievalorigins:pillagers"
+					},
+					{
+						"type": "origins:entity_group",
+						"group": "illager"
+					}
+				]
+			}
+		}
+	},
+	"pillager_team": {
+		"type": "origins:action_over_time",
+		"interval": 50,
+		"entity_action": {
+			"type": "origins:area_of_effect",
+			"radius": 64,
+			"bientity_action": {
+				"type": "origins:target_action",
+				"action": {
+					"type": "origins:execute_command",
+					"command": "team join PillagerAlly"
+				}
+			},
+			"bientity_condition": {
+				"type": "origins:target_condition",
+				"condition": {
+					"type": "origins:or",
+					"conditions": [
+						{
+							"type": "origins:in_tag",
+							"tag": "medievalorigins:pillagers"
+						},
+						{
+							"type": "origins:entity_group",
+							"group": "illager"
+						}
+					]
+				}
+			}
 		}
 	}
 }

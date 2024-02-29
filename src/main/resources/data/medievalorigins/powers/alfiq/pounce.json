@@ -1,19 +1,19 @@
 {
     "type": "origins:multiple",
     "jump": {
-        "type": "apugli:action_on_jump",
+        "type": "origins:modify_jump",
         "entity_action": {
             "type": "origins:and",
             "actions": [
                 {
                     "type": "origins:add_velocity",
-                    "y": 0.2,
+                    "y": 0.3,
                     "space": "world"
                 },
                 {
                     "type": "origins:add_velocity",
-                    "z": 1.5,
-                    "space": "local"
+                    "z": 1.6,
+                    "space": "local_horizontal_normalized"
                 },
                 {
                     "type": "origins:play_sound",
@@ -49,10 +49,6 @@
                 }
             ]
         },
-        "hud_render": {
-            "should_render": false
-        },
-        "cooldown": 1,
         "condition": {
             "type": "origins:resource",
             "resource": "*:*_meter",
