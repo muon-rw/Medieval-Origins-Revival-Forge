@@ -463,7 +463,7 @@
   "power.medievalorigins.revenant/poor_reputation.description": "Villagers will refuse to trade with revenants and iron golems will attack them on sight. However, they are accepted amongst the ranks of the Pillagers.",
 
   "power.medievalorigins.revenant/siphon.name": "Essence Extraction",
-  "power.medievalorigins.revenant/siphon.description": "When hit, revenants slowly build up a power which allows them to siphon life from their enemies. This affects all living creatures, for better or worse.",
+  "power.medievalorigins.revenant/siphon.description": "When hit, revenants slowly build up a power which allows them to siphon life from their enemies. This affects all creatures for better or worse, except summoned dead.",
 
   "power.medievalorigins.revenant/unguarded.name": "Unguarded",
   "power.medievalorigins.revenant/unguarded.description": "Obsessing over the spirit realm leaves revenants more open to attack in the physical realm. Most mobs deal more damage to them.",
