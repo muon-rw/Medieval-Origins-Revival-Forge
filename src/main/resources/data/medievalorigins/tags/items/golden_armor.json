@@ -5,6 +5,6 @@
     {"id":"adventurez:stone_golem_helmet","required":false},
     {"id":"adventurez:stone_golem_leggings","required":false},
     {"id":"adventurez:stone_golem_boots","required":false},
-    "minecraft:golden_chestplate"
+    "minecraft:golden_helmet"
   ]
 }
