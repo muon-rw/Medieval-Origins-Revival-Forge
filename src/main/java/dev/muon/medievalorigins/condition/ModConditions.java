@@ -58,7 +58,6 @@ public class ModConditions {
             new SimpleItemCondition(stack ->
                     stack.getItem() instanceof DiggerItem || Enchantments.BLOCK_EFFICIENCY.canEnchant(stack) )
     );
-
     public static final RegistryObject<SimpleItemCondition> GOLDEN_ARMOR = ITEM_CONDITIONS.register("golden_armor", () ->
             new SimpleItemCondition(stack -> {
                 String itemName = ForgeRegistries.ITEMS.getKey(stack.getItem()).getPath();
