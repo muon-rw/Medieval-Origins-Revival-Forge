@@ -6,6 +6,7 @@ import dev.muon.medievalorigins.condition.ModConditions;
 import dev.muon.medievalorigins.enchantment.ModEnchantments;
 import dev.muon.medievalorigins.entity.ModEntities;
 import dev.muon.medievalorigins.sounds.ModSounds;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.MinecraftForge;
@@ -24,6 +25,9 @@ import org.slf4j.Logger;
 public class MedievalOrigins
 {
     public static final String MODID = "medievalorigins";
+    public static ResourceLocation loc(String id) {
+        return new ResourceLocation(MODID, id);
+    }
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public MedievalOrigins()
