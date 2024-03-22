@@ -9,6 +9,7 @@ import io.github.edwinmindcraft.calio.api.network.CalioCodecHelper;
 import io.github.edwinmindcraft.calio.api.registry.ICalioDynamicRegistryManager;
 import net.minecraft.core.Holder;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.resources.ResourceLocation;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -16,13 +17,15 @@ import java.util.List;
 import java.util.Optional;
 
 public record FixedSummonTypeConfiguration(Optional<Integer> duration, @Nullable CompoundTag tag,
-                                           Holder<ConfiguredEntityAction<?, ?>> action) implements IDynamicFeatureConfiguration {
+                                           Holder<ConfiguredEntityAction<?, ?>> action,
+                                           Optional<ResourceLocation> weapon) implements IDynamicFeatureConfiguration {
 
     public static final Codec<FixedSummonTypeConfiguration> CODEC = RecordCodecBuilder.create(instance -> instance.group(
             CalioCodecHelper.optionalField(SerializableDataTypes.INT, "duration").forGetter(FixedSummonTypeConfiguration::duration),
             CalioCodecHelper.optionalField(SerializableDataTypes.NBT, "tag").forGetter(x -> Optional.ofNullable(x.tag())),
-            ConfiguredEntityAction.optional("entity_action").forGetter(FixedSummonTypeConfiguration::action)
-    ).apply(instance, (t1, t2, t3) -> new FixedSummonTypeConfiguration(t1, t2.orElse(null), t3)));
+            ConfiguredEntityAction.optional("entity_action").forGetter(FixedSummonTypeConfiguration::action),
+            CalioCodecHelper.optionalField(SerializableDataTypes.IDENTIFIER, "weapon").forGetter(FixedSummonTypeConfiguration::weapon)
+    ).apply(instance, (t1, t2, t3, t4) -> new FixedSummonTypeConfiguration(t1, t2.orElse(null), t3, t4)));
 
 
 
@@ -48,5 +51,8 @@ public record FixedSummonTypeConfiguration(Optional<Integer> duration, @Nullable
 
     public Holder<ConfiguredEntityAction<?, ?>> action() {
         return this.action;
+    }
+    public Optional<ResourceLocation> weapon() {
+        return this.weapon;
     }
 }
