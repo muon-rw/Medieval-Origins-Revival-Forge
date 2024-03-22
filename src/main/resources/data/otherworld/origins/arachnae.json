@@ -1,0 +1,20 @@
+{
+        "loading_priority": 11,
+	"powers": [
+                "otherworld:arachnae/climber",
+		"otherworld:arachnae/many_eyes",
+                "otherworld:arachnae/venomous_bite",
+                "otherworld:arachnae/web_slinger",
+                "otherworld:arachnae/bottomless_stomach",
+                "otherworld:arachnae/brittle",
+                "otherworld:arachnae/fragile_exoskeleton",
+                "origins:master_of_webs",
+                "origins:arthropod"
+	],
+        "icon": {
+                "item": "minecraft:ink_sac",
+                "tag": "{CustomModelData:361}"
+        },
+	"impact": 2,
+        "order": 1
+}

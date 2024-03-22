@@ -1,0 +1,19 @@
+{
+        "loading_priority": 11,
+	"powers": [
+                "otherworld:plague_victim/foul_aura",
+		"otherworld:plague_victim/plague_immunity",
+                "otherworld:plague_victim/risk_of_transmission",
+                "otherworld:plague_victim/contagious",
+                "otherworld:plague_victim/insomniac",
+                "otherworld:plague_victim/sensitive_skin",
+                "otherworld:plague_victim/skin_and_bones",
+                "origins_survive:illness_resistance"
+	],
+        "icon": {
+		"item": "minecraft:ink_sac",
+		"tag": "{CustomModelData:368}"
+},
+	"impact": 3,
+        "order": 1
+}

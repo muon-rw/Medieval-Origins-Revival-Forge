@@ -1,23 +1,15 @@
 {
-  "replace": false,
+  "replace": true,
   "origins": [
-     "medievalorigins:arachnae",
-     "medievalorigins:banshee",
-     "medievalorigins:incubus",
-     "medievalorigins:dwarf",
-     "medievalorigins:wood_elf",
-     "medievalorigins:high_elf",
-     "medievalorigins:alfiq",
-     "medievalorigins:fae",
-     "medievalorigins:goblin",
-     "medievalorigins:gorgon",
-     "medievalorigins:moon_elf",
-     "medievalorigins:revenant",
-     "medievalorigins:ogre",
-     "medievalorigins:paladin",
-     "medievalorigins:pixie",
-     "medievalorigins:plague_victim",
-     "medievalorigins:siren",
-     "medievalorigins:yeti"
+     "otherworld:human",
+     "otherworld:dwarf",
+     "otherworld:elf",
+     "otherworld:half_elf",
+     "otherworld:gnome",
+     "otherworld:halfling",
+     "otherworld:tiefling",
+     "otherworld:undead",
+     "otherworld:dragonborn",
+     "otherworld:minecraft"
   ]
 }

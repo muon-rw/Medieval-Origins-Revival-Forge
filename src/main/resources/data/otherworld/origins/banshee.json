@@ -1,0 +1,19 @@
+{
+        "loading_priority": 11,
+	"powers": [
+		"otherworld:banshee/spectral",
+                "otherworld:banshee/sonic_shriek",
+                "otherworld:banshee/lunar_nexus",
+                "otherworld:banshee/dimeritium_shackles",
+                "otherworld:banshee/hexed",
+                "otherworld:banshee/immaterial",
+                "otherworld:banshee/overwhelmed",
+                "origins_survive:sleepless"
+	],
+        "icon": {
+                "item": "minecraft:ink_sac",
+                "tag": "{CustomModelData:358}"
+        },
+	"impact": 3,
+        "order": 1
+}

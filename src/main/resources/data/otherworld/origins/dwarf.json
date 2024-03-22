@@ -1,0 +1,20 @@
+{
+        "loading_priority": 11,
+	"powers": [
+                "otherworld:dwarf/dwarven_tech",
+                "otherworld:dwarf/miniature",
+		"otherworld:dwarf/nocturnal_eyes",
+                "otherworld:dwarf/darkness_dweller",
+                "otherworld:dwarf/dense",
+                "otherworld:dwarf/potent_brew",
+                "otherworld:dwarf/mythril_resonance",
+                "otherworld:dwarf/pickaxeless_stone",
+                "otherworld:dwarf/helmet_spawn"
+	],
+        "icon": {
+                "item": "minecraft:ink_sac",
+                "tag": "{CustomModelData:356}"
+        },
+	"impact": 2,
+        "order": 1
+}

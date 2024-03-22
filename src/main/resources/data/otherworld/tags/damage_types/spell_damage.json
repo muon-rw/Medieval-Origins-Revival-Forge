@@ -1,6 +1,7 @@
 {
     "replace": false,
     "values": [
+        {"id":"otherworld:ebonbreath","required":false},
         {"id":"otherworld:blazenbreath","required":false}
     ]
 }

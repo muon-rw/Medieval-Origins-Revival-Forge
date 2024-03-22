@@ -1,0 +1,23 @@
+{
+        "loading_priority": 11,
+	"powers": [
+                "otherworld:alfiq/clawed",
+                "otherworld:alfiq/poor_grip",
+                "otherworld:alfiq/agile_preference",
+		"otherworld:alfiq/on_your_feet",
+                "otherworld:alfiq/crepuscular",
+                "otherworld:alfiq/pickpocket",
+                "otherworld:alfiq/pickpocket_player",
+                "otherworld:alfiq/pounce",
+                "origins:carnivore",
+                "origins:velvet_paws",
+                "origins:scare_creepers",
+                "otherworld:alfiq/meow"
+	],
+        "icon": {
+                "item": "minecraft:ink_sac",
+                "tag": "{CustomModelData:363}"
+        },
+	"impact": 1,
+        "order": 1
+}
