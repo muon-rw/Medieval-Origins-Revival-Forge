@@ -64,8 +64,8 @@ public class SummonedZombie extends Zombie implements IFollowingSummon, ISummon 
     private LivingEntity owner;
     @Nullable
     private BlockPos boundOrigin;
-    private boolean isLimitedLifespan;
-    private int limitedLifeTicks;
+    private boolean isLimitedLifespan = true;
+    private int limitedLifeTicks = 0;
 
 
 
@@ -142,9 +142,6 @@ public class SummonedZombie extends Zombie implements IFollowingSummon, ISummon 
 
     @Override
     public boolean hurt(DamageSource pSource, float pAmount) {
-        if (pSource.is(DamageTypes.MOB_ATTACK) && pSource.getEntity() instanceof ISummon summon){
-            if (summon.getOwnerUUID() != null && summon.getOwnerUUID().equals(this.getOwnerUUID())) return false;
-        }
         return super.hurt(pSource, pAmount);
     }
 
@@ -208,34 +205,18 @@ public class SummonedZombie extends Zombie implements IFollowingSummon, ISummon 
         return 0;
     }
 
-    /**
-     * (abstract) Protected helper method to read subclass entity data from NBT.
-     */
     public void readAdditionalSaveData(CompoundTag compound) {
         super.readAdditionalSaveData(compound);
         if (compound.contains("BoundX")) {
             this.boundOrigin = new BlockPos(compound.getInt("BoundX"), compound.getInt("BoundY"), compound.getInt("BoundZ"));
         }
-
         if (compound.contains("LifeTicks")) {
             this.setLimitedLife(compound.getInt("LifeTicks"));
         }
-        UUID s;
-        if (compound.contains("OwnerUUID", 8)) {
-            s = compound.getUUID("OwnerUUID");
-        } else {
-            String s1 = compound.getString("Owner");
-            s = OldUsersConverter.convertMobOwnerIfNecessary(this.getServer(), s1);
+
+        if (compound.hasUUID("OwnerUUID")) {
+            this.setOwnerID(compound.getUUID("OwnerUUID"));
         }
-
-        if (s != null) {
-            try {
-                this.setOwnerID(s);
-
-            } catch (Throwable ignored) {
-            }
-        }
-
     }
 
     public void setLimitedLife(int lifeTicks) {
@@ -271,25 +252,16 @@ public class SummonedZombie extends Zombie implements IFollowingSummon, ISummon 
         if (this.isLimitedLifespan) {
             compound.putInt("LifeTicks", this.limitedLifeTicks);
         }
-        if (this.getOwnerUUID() != null) {
-            compound.putUUID("OwnerUUID", this.getOwnerUUID());
-        } else {
-            //compound.putUUID("OwnerUUID", Util.NIL_UUID)
+        UUID ownerUuid = this.getOwnerUUID();
+        if (ownerUuid != null) {
+            compound.putUUID("OwnerUUID", ownerUuid);
         }
-
     }
 
     @Override
     protected boolean isSunBurnTick() {
         return false;
     }
-/*
-    @Override
-    public void die(DamageSource cause) {
-        super.die(cause);
-        onSummonDeath(level, cause, false);
-    }
-*/
     @Override
     public int getTicksLeft() {
         return limitedLifeTicks;
@@ -303,17 +275,11 @@ public class SummonedZombie extends Zombie implements IFollowingSummon, ISummon 
     @Nullable
     @Override
     public UUID getOwnerUUID() {
-        if (this.getPersistentData().contains("OwnerUUID")) {
-            return this.getPersistentData().getUUID("OwnerUUID");
-        } else {
-            return null;
-        }
+        return this.entityData.get(OWNER_UUID).orElse(null);
     }
 
     @Override
     public void setOwnerID(UUID uuid) {
-        this.getPersistentData().putUUID("OwnerUUID", uuid);
+        this.entityData.set(OWNER_UUID, Optional.ofNullable(uuid));
     }
-
-
 }

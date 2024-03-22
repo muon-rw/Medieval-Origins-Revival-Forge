@@ -70,8 +70,8 @@ public class SummonedSkeleton extends Skeleton implements IFollowingSummon, ISum
     private LivingEntity owner;
     @Nullable
     private BlockPos boundOrigin;
-    private boolean isLimitedLifespan;
-    private int limitedLifeTicks;
+    private boolean isLimitedLifespan = true;
+    private int limitedLifeTicks = 0;
 
 
 
@@ -160,15 +160,11 @@ public class SummonedSkeleton extends Skeleton implements IFollowingSummon, ISum
 
     @Override
     public boolean hurt(DamageSource pSource, float pAmount) {
-        if (pSource.is(DamageTypes.MOB_ATTACK) && pSource.getEntity() instanceof ISummon summon){
-            if (summon.getOwnerUUID() != null && summon.getOwnerUUID().equals(this.getOwnerUUID())) return false;
-        }
         return super.hurt(pSource, pAmount);
     }
 
-    /**
-     * Called to update the entity's position/logic.
-     */
+
+    @Override
     public void tick() {
         super.tick();
         if (this.isLimitedLifespan && --this.limitedLifeTicks <= 0) {
@@ -176,6 +172,18 @@ public class SummonedSkeleton extends Skeleton implements IFollowingSummon, ISum
             this.hurt(getWorld().damageSources().starve(), 20.0F);
         }
     }
+    /*
+    @Override
+    public void tick() {
+        super.tick();
+        if (this.isLimitedLifespan) {
+            this.limitedLifeTicks--;
+            if (this.limitedLifeTicks <= 0) {
+                this.limitedLifeTicks = 20;
+                this.hurt(getWorld().damageSources().starve(), 20.0F);
+            }
+        }
+    }*/
 
     public Team getTeam() {
         if (this.getSummoner() != null) return getSummoner().getTeam();
@@ -194,7 +202,7 @@ public class SummonedSkeleton extends Skeleton implements IFollowingSummon, ISum
     }
 
     @Override
-    public boolean wantsToAttack(LivingEntity pTarget, LivingEntity pOwner) {
+    public boolean wantsToAttack(LivingEntity target, LivingEntity owner) {
         return true;
     }
 
@@ -234,26 +242,13 @@ public class SummonedSkeleton extends Skeleton implements IFollowingSummon, ISum
         if (compound.contains("BoundX")) {
             this.boundOrigin = new BlockPos(compound.getInt("BoundX"), compound.getInt("BoundY"), compound.getInt("BoundZ"));
         }
-
         if (compound.contains("LifeTicks")) {
             this.setLimitedLife(compound.getInt("LifeTicks"));
         }
-        UUID s;
-        if (compound.contains("OwnerUUID", 8)) {
-            s = compound.getUUID("OwnerUUID");
-        } else {
-            String s1 = compound.getString("Owner");
-            s = OldUsersConverter.convertMobOwnerIfNecessary(this.getServer(), s1);
+
+        if (compound.hasUUID("OwnerUUID")) {
+            this.setOwnerID(compound.getUUID("OwnerUUID"));
         }
-
-        if (s != null) {
-            try {
-                this.setOwnerID(s);
-
-            } catch (Throwable ignored) {
-            }
-        }
-
     }
 
     public void setLimitedLife(int lifeTicks) {
@@ -273,7 +268,6 @@ public class SummonedSkeleton extends Skeleton implements IFollowingSummon, ISum
             return null;
         }
     }
-
     protected void defineSynchedData() {
         super.defineSynchedData();
         this.entityData.define(OWNER_UUID, Optional.empty());
@@ -290,25 +284,16 @@ public class SummonedSkeleton extends Skeleton implements IFollowingSummon, ISum
         if (this.isLimitedLifespan) {
             compound.putInt("LifeTicks", this.limitedLifeTicks);
         }
-        if (this.getOwnerUUID() != null) {
-            compound.putUUID("OwnerUUID", this.getOwnerUUID());
-        } else {
-            // compound.putUUID("OwnerUUID", Util.NIL_UUID);
+        UUID ownerUuid = this.getOwnerUUID();
+        if (ownerUuid != null) {
+            compound.putUUID("OwnerUUID", ownerUuid);
         }
-
     }
 
     @Override
     protected boolean isSunBurnTick() {
         return false;
     }
-/*
-    @Override
-    public void die(DamageSource cause) {
-        super.die(cause);
-        onSummonDeath(level, cause, false);
-    }
-*/
     @Override
     public int getTicksLeft() {
         return limitedLifeTicks;
@@ -322,16 +307,12 @@ public class SummonedSkeleton extends Skeleton implements IFollowingSummon, ISum
     @Nullable
     @Override
     public UUID getOwnerUUID() {
-        if (this.getPersistentData().contains("OwnerUUID")) {
-            return this.getPersistentData().getUUID("OwnerUUID");
-        } else {
-            return null;
-        }
+        return this.entityData.get(OWNER_UUID).orElse(null);
     }
 
     @Override
     public void setOwnerID(UUID uuid) {
-        this.getPersistentData().putUUID("OwnerUUID", uuid);
+        this.entityData.set(OWNER_UUID, Optional.ofNullable(uuid));
     }
 
 }

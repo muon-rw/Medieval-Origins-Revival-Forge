@@ -37,22 +37,38 @@ public interface IFollowingSummon {
             super(creature, false);
         }
 
-        /**
-         * Returns whether the EntityAIBase should begin execution.
-         */
+        @Override
         public boolean canUse() {
             if (!(this.mob instanceof IFollowingSummon summon)) return false;
-            return summon.getSummoner() != null && summon.getSummoner().getLastHurtMob() != null;
+            LivingEntity ownerLastHurt = summon.getSummoner() != null ? summon.getSummoner().getLastHurtMob() : null;
+            // Check if the last entity hurt by the owner is a valid target
+            return ownerLastHurt != null && this.isValidTarget(ownerLastHurt, summon.getSummoner());
         }
 
-        /**
-         * Execute a one shot task or start executing a continuous task
-         */
+        @Override
         public void start() {
-            if (mob instanceof IFollowingSummon summon && summon.getSummoner() != null)
-                mob.setTarget(summon.getSummoner().getLastHurtMob());
+            if (mob instanceof IFollowingSummon summon && summon.getSummoner() != null) {
+                LivingEntity target = summon.getSummoner().getLastHurtMob();
+                if (this.isValidTarget(target, summon.getSummoner())) {
+                    mob.setTarget(target);
+                }
+            }
             super.start();
         }
-    }
 
+        private boolean isValidTarget(LivingEntity target, LivingEntity owner) {
+            // Do not target the owner, itself, or other summons with the same owner
+            if (target == owner || target == mob) {
+                return false;
+            }
+            if (target instanceof ISummon) {
+                UUID targetOwnerUUID = ((ISummon) target).getOwnerUUID();
+                if (targetOwnerUUID != null && targetOwnerUUID.equals(((ISummon) mob).getOwnerUUID())) {
+                    return false;
+                }
+            }
+            // Additional checks can be added here
+            return true;
+        }
+    }
 }
