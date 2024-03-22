@@ -51,7 +51,7 @@ public class ModConditions {
     public static final RegistryObject<SimpleItemCondition> IS_FIST_WEAPON = ITEM_CONDITIONS.register("is_fist_weapon", () ->
             new SimpleItemCondition(stack -> {
                 String itemName = ForgeRegistries.ITEMS.getKey(stack.getItem()).getPath();
-                return stack.getItem() instanceof SwordItem && (itemName.contains("fist") || itemName.contains("claw") || itemName.contains("gauntlet"));
+                return Enchantments.SHARPNESS.canEnchant(stack) && (itemName.contains("fist") || itemName.contains("claw") || itemName.contains("gauntlet"));
             })
     );
     public static final RegistryObject<SimpleItemCondition> IS_TOOL = ITEM_CONDITIONS.register("is_tool", () ->
