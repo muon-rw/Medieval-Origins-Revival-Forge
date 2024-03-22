@@ -92,25 +92,11 @@ public class SummonedWitherSkeleton extends WitherSkeleton implements IFollowing
         return super.finalizeSpawn(worldIn, difficultyIn, reason, spawnDataIn, dataTag);
     }
 
-    /**
-     * Gives armor or weapon for entity based on given DifficultyInstance
-     */
     @Override
     protected void populateDefaultEquipmentSlots(RandomSource randomSource, DifficultyInstance pDifficulty) {
-
     }
-
     @Override
-    protected void dropAllDeathLoot(DamageSource pDamageSource) {}
-
-    @Override
-    protected boolean shouldDropLoot() {return false;}
-
-    @Override
-    protected void dropCustomDeathLoot(DamageSource pSource, int pLooting, boolean pRecentlyHit) {}
-
-    @Override
-    protected void dropEquipment() {}
+    protected boolean shouldDropLoot() {return true;}
 
     @Override
     protected void registerGoals() {
