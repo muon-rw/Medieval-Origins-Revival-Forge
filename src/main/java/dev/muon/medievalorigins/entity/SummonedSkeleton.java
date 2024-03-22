@@ -50,17 +50,11 @@ public class SummonedSkeleton extends Skeleton implements IFollowingSummon, ISum
     private final RangedBowAttackGoal<SummonedSkeleton> bowGoal = new RangedBowAttackGoal<>(this, 1.0D, 20, 15.0F);
 
     private final MeleeAttackGoal meleeGoal = new MeleeAttackGoal(this, 2.2D, true) {
-        /**
-         * Reset the task's internal state. Called when this task is interrupted by another one
-         */
         public void stop() {
             super.stop();
             SummonedSkeleton.this.setAggressive(false);
         }
 
-        /**
-         * Execute a one shot task or start executing a continuous task
-         */
         public void start() {
             super.start();
             SummonedSkeleton.this.setAggressive(true);
@@ -71,7 +65,7 @@ public class SummonedSkeleton extends Skeleton implements IFollowingSummon, ISum
     @Nullable
     private BlockPos boundOrigin;
     private boolean isLimitedLifespan = true;
-    private int limitedLifeTicks = 0;
+    private int limitedLifeTicks = 20;
 
 
 
@@ -172,18 +166,6 @@ public class SummonedSkeleton extends Skeleton implements IFollowingSummon, ISum
             this.hurt(getWorld().damageSources().starve(), 20.0F);
         }
     }
-    /*
-    @Override
-    public void tick() {
-        super.tick();
-        if (this.isLimitedLifespan) {
-            this.limitedLifeTicks--;
-            if (this.limitedLifeTicks <= 0) {
-                this.limitedLifeTicks = 20;
-                this.hurt(getWorld().damageSources().starve(), 20.0F);
-            }
-        }
-    }*/
 
     public Team getTeam() {
         if (this.getSummoner() != null) return getSummoner().getTeam();

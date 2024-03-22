@@ -71,7 +71,7 @@ public class SummonedWitherSkeleton extends WitherSkeleton implements IFollowing
     @Nullable
     private BlockPos boundOrigin;
     private boolean isLimitedLifespan = true;
-    private int limitedLifeTicks = 0;
+    private int limitedLifeTicks = 20;
 
 
 

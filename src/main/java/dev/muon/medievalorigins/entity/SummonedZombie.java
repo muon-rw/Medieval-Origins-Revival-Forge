@@ -65,7 +65,7 @@ public class SummonedZombie extends Zombie implements IFollowingSummon, ISummon 
     @Nullable
     private BlockPos boundOrigin;
     private boolean isLimitedLifespan = true;
-    private int limitedLifeTicks = 0;
+    private int limitedLifeTicks = 20;
 
 
 
