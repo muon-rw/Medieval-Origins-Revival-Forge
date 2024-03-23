@@ -1,0 +1,531 @@
+{
+  "origin.origins.human.description": "-§l Notable Changes§r: \n§oNone§r\n\n A human's fate is more open than most - venture forth with no benefits or drawbacks.",
+
+  "origin.otherworldorigins.alfiq.name": "Alfiq",
+  "origin.otherworldorigins.alfiq.description": "-§l Notable Changes§r: \n§o§2+ Unarmed Bonus§r\n§o§2+ Unique Movement§r\n§o§6• Carnivore§r\n§o§c- Defense§r\n§lAlfiq§r are a cunning species of anthropomorphic felines with sharp claws and excellent agility. Their roads often lead to warm sands.",
+
+  "origin.otherworldorigins.arachnae.name": "Arachnae",
+  "origin.otherworldorigins.arachnae.description": "-§l Notable Changes§r: \n§o§2+ Poison, Crowd Control\n+ Wall Climbing§r\n§o§6• Carnivore§r\n§o§c- Hunger, Armor§r\nA grotesque amalgamation of spider and human, with venomous fangs and bristled feet yet the ability to walk upright and wield weaponry.",
+
+  "origin.otherworldorigins.banshee.name": "Banshee",
+  "origin.otherworldorigins.banshee.description": "-§l Notable Changes§r: \n§o§2+ Flight, Support, Phasing§r\n§o§c- Defense§r\n§o§c- Extreme changes, read first!§r\n§lBanshees§r are anguished spirits whose cries can shatter glass and drive people to madness. In myth, their presence is often considered an omen of death.",
+
+  "origin.otherworldorigins.tiefling.name": "tiefling",
+  "origin.otherworldorigins.tiefling.description": "-§l Notable Changes§r: \n§o§2+ Nether Bonuses\n+ Strength, Fireball§r\n§o§c- Damaged by Water§r\n§o§c- Weak in Overworld§r\n§lIncubi§r are evil servants of a dark power. They are powerful in their own realm, but in exchange for this they have given up their soul, and are weak to pure sources.",
+
+  "origin.otherworldorigins.dwarf.name": "Dwarf",
+  "origin.otherworldorigins.dwarf.description": "-§l Notable Changes§r: \n§o§2+ Mining, Caving§r\n§o§6• Short: 102cm/3'8\"§r\n§o§c- Sun sensitive \n- Can't swim§r\n§lDwarves§r are practical, stocky, and prideful. They excel at mining and living underground, but struggle with the daylight. Rock and stone, brother.",
+
+  "origin.otherworldorigins.wood_elf.name": "Wood Elf",
+  "origin.otherworldorigins.wood_elf.description": "-§l Notable Changes§r: \n§o§2+ Ranged Bonuses, Speed§r\n§o§6• Stealthy, Vegetarian§r\n§o§c- Melee Damage, Defense§r\n§lWood Elves§r are a wise, long-lived race who live in harmony with the Earth. They are quick with a sword and bow and can outwit their enemies while among the trees.",
+
+  "origin.otherworldorigins.high_elf.name": "High Elf",
+  "origin.otherworldorigins.high_elf.description": "-§l Notable Changes§r: \n§o§2+ Magic, Unique Abilities§r\n§o§c- Physical Damage\n- Defense§r\n§lHigh Elves§r are notoriously arrogant, though undeniably talented; magical energy courses strongly through their blood, though they are weaker with weaponry.",
+
+  "origin.otherworldorigins.fae.name": "Fae",
+  "origin.otherworldorigins.fae.description": "-§l Notable Changes§r: \n§o§2+ Hovering, Magic§r\n§o§6• Short: 122cm/4'0\"§r\n§o§c- Loved by Mobs§r\n§o§c- Defense§r\n§lFae§r are short magical winged humanoids, regarded as spirits of nature and said to haunt forests and lead travelers' astray. They are equal parts mystic and trickster.",
+
+  "origin.otherworldorigins.goblin.name": "Goblin",
+  "origin.otherworldorigins.goblin.description": "-§l Notable Changes§r: \n§o§2+ Gold Gear Bonuses§r\n§o§2+ Luck, Speed§r \n§o§6• Small: 92cm/3'4\"§r \n§o§c- Health, Defense§r\n§lGoblins§r are obsessed with gold and treasure and tend to find a little more loot wherever they look, but their small size leaves them vulnerable in combat.",
+
+  "origin.otherworldorigins.gorgon.name": "Gorgon",
+  "origin.otherworldorigins.gorgon.description": "-§l Notable Changes§r: \n§o§2+ Poison Damage, Immunity§r\n§o§2+ Crowd Control§r\n§o§c- Hydrophobe \n- Unique weaknesses§r\n§lGorgons§r are cursed creatures who were once human, with hair made of writhing snakes and a haunting visage said to petrify those who witness it.",
+
+  "origin.otherworldorigins.moon_elf.name": "Moon Elf",
+  "origin.otherworldorigins.moon_elf.description": "-§l Notable Changes§r: \n§o§2+ Dagger Damage\n+ Dextrous§r\n§o§6• Stealthy, Doesn't Sleep§r\n§o§c- Defense§r\nMysterious, ethereal beings not of this world. Moon elves are named not for their homeland, but for the only thing their victims can see before their end.",
+
+  "origin.otherworldorigins.ogre.name": "Ogre",
+  "origin.otherworldorigins.ogre.description": "-§l Notable Changes§r: \n§o§2+ Axe Bonuses, Defense §r\n§o§6• Massive: 268cm/9'5\"§r\n§o§c- Hunger, Speed §r\n§lOgres§r are a large, short-tempered, and brutish subspecies of Orc. Their lumbering size and limited intelligence are made up for by their raw strength.",
+
+  "origin.otherworldorigins.pixie.name": "Pixie",
+  "origin.otherworldorigins.pixie.description": "-§l Notable Changes§r: \n§o§2+ Unique Flight, Odd§r\n§o§6• Tiny: 22cm/9\" §r\n§o§c- Defense, Reputation §r\nOften considered harbingers of good fortune, but also tricky, untrustworthy agents of mischief. Pixies are whimsical and very, very small.",
+
+  "origin.otherworldorigins.plague_victim.name": "Plague Victim",
+  "origin.otherworldorigins.plague_victim.description": "-§l Notable Changes§r: \n§o§2+ Withering §r\n§o§6• Unique playstyle §r\n§o§6• Undead §r\n§o§c- Defense, Reputation \n§o§c- Difficult§r\nDisease-ridden half-dead creatures who can no longer be called human, cursed and trapped in eternal suffering as a result of a strange magical illness.",
+
+  "origin.otherworldorigins.revenant.name": "Revenant",
+  "origin.otherworldorigins.revenant.description": "-§l Notable Changes§r: \n§o§2+ Summons §r\n§o§2+ Illager Friendly \n§o§6• Undead, Complex §r\n§o§c- Reputation\n- Living interactions §r\n§lRevenants§r are misfortunate souls who died gruesome and painful deaths, but inexplicably returned to life. As a result, they become obsessed with manipulating life and death in other creatures.",
+
+  "origin.otherworldorigins.siren.name": "Siren",
+  "origin.otherworldorigins.siren.description": "-§l Notable Changes§r: \n§o§2+ Water-Based, Utility §r\n§o§6• Weaker on Land§r\n§o§c- Vulnerable to Fire§r\n§lSirens§r are said to be a type of Merfolk. They have an ensnaring aura and their irresistible beauty is said to be the downfall of many a foolish sailor.",
+
+  "origin.otherworldorigins.troll.name": "Troll",
+  "origin.otherworldorigins.troll.description": "-§l Notable Changes§r: \n§o§cNOT CURRENTLY IMPLEMENTED§r\nLarge, lumbering giants who hail from the mountains, trolls are aggressive and self sufficient - they prefer to live and fight alone.",
+
+  "origin.otherworldorigins.yeti.name": "Yeti",
+  "origin.otherworldorigins.yeti.description": "-§l Notable Changes§r: \n§o§2+ Frost-Based, Tanky§r\n§o§6• Large: 203cm/6'8\"§r\n§o§c- Heat Sensitive§r\nThick-furred beasts from frosty woods, a Yeti's dominion over ice allows them to freeze foes, but they are especially vulnerable to fiery attacks.",
+
+  
+  "power.otherworldorigins.alfiq/clawed.name": "Clawed",
+  "power.otherworldorigins.alfiq/clawed.description": "Alfiq have razor sharp retractable claws; they deal extra damage with empty paws, and can climb up and cling to steep surfaces (Can be toggled)",
+
+  "power.otherworldorigins.alfiq/crepuscular.name": "Crepuscular",
+  "power.otherworldorigins.alfiq/crepuscular.description": "Near sunset and sunrise, when Alfiq naturally hunt, they will move and attack much more quickly. At other times, they are lethargic and slightly slower.",
+
+  "power.otherworldorigins.alfiq/on_your_feet.name": "On Your Feet",
+  "power.otherworldorigins.alfiq/on_your_feet.description": "If you ever fall from a height where you would take 5 hearts or more of damage, they instead take no damage at all.",
+
+  "power.otherworldorigins.alfiq/pickpocket.name": "Pickpocket",
+  "power.otherworldorigins.alfiq/pickpocket.description": "Right click the back of a villager while crouching with empty paws for a chance to steal some emeralds. Or get caught. Rumor has it you may be able to steal from other players.",
+
+  "power.otherworldorigins.alfiq/pounce.name": "Pounce",
+  "power.otherworldorigins.alfiq/pounce.description": "After crouching without moving for a few seconds to charge up, an Alfiq can leap forward a great distance. Striking an enemy during the pounce deals bonus damage.",
+
+  "power.otherworldorigins.alfiq/poor_grip.name": "Poor Grip",
+  "power.otherworldorigins.alfiq/poor_grip.description": "Alfiq have reduced breaking speed with tools and reduced damage with handled weapons like swords and axes.",
+
+  "power.otherworldorigins.alfiq/agile_preference.name": "Agile Preference",
+  "power.otherworldorigins.alfiq/agile_preference.description": "Alfiq are easily made uncomfortable with heavier armors, preferring lighter fare for ease of movement. Heavier armors can still be worn with an enchantment.",
+
+  "power.otherworldorigins.alfiq/meow.name": "Meow",
+  "power.otherworldorigins.alfiq/meow.description": "",
+
+
+  "power.otherworldorigins.arachnae/bottomless_stomach.name": "Bottomless Stomach",
+  "power.otherworldorigins.arachnae/bottomless_stomach.description": "Arachnae require a larger quantity of food to stay alive.",
+
+  "power.otherworldorigins.arachnae/brittle.name": "Brittle",
+  "power.otherworldorigins.arachnae/brittle.description": "The Arachnae's chitinous exoskeleton cannot support armor heavier than iron. This can be prevented with an enchantment." ,
+
+  "power.otherworldorigins.arachnae/climber.name": "Climber",
+  "power.otherworldorigins.arachnae/climber.description": "The fine bristles on the Arachnae's legs allow them to climb up walls.",
+  
+  "power.otherworldorigins.arachnae/fragile_exoskeleton.name": "Fragile",
+  "power.otherworldorigins.arachnae/fragile_exoskeleton.description": "The Arachnae's exoskeleton is more vulnerable to damage. They have slightly less health than a regular human.",
+  
+  "power.otherworldorigins.arachnae/many_eyes.name": "Many Eyes",
+  "power.otherworldorigins.arachnae/many_eyes.description": "The Arachnae's eight eyes are all adpated to darkness, and allow them to see clearly even with very little light.",
+  
+  "power.otherworldorigins.arachnae/venomous_bite.name": "Venomous Bite",
+  "power.otherworldorigins.arachnae/venomous_bite.description": "Arachnae's fangs contain venom, and every attack has a chance to inflict poison.",
+
+  "power.otherworldorigins.arachnae/web_slinger.name": "Web Slinger",
+  "power.otherworldorigins.arachnae/web_slinger.description": "Arachnae can, on command, spin webs in which their opponents will be immobilised for a short while.",
+
+  "power.otherworldorigins.banshee/spectral.name": "Spectral",
+  "power.otherworldorigins.banshee/spectral.description": "Banshees possess the ability to become intangible, moving freely throughout the physical realm while being unable to interact with it. This uses tremendous energy and can not be activated while low on hunger.",
+
+  "power.otherworldorigins.banshee/hexed.name": "Hexed",
+  "power.otherworldorigins.banshee/hexed.description": "Banshees are shrouded in curses, which they shift onto those who wish them harm. Every time they are hit, there is a small chance that the attacker will be consigned to a fate of slow, agonising death.",
+
+  "power.otherworldorigins.banshee/immaterial.name": "Immaterial",
+  "power.otherworldorigins.banshee/immaterial.description": "Banshees have half the health a living person would have.",
+
+  "power.otherworldorigins.banshee/dimeritium_shackles.name": "Dimeritium Shackles",
+  "power.otherworldorigins.banshee/dimeritium_shackles.description": "Magically suppressive metals, such as iron or silver, are completely intolerable to banshees.",
+
+  "power.otherworldorigins.banshee/lunar_nexus.name": "Lunar Nexus",
+  "power.otherworldorigins.banshee/lunar_nexus.description": "Banshees restore no hunger from food - their energy is instead restored by being bathed in direct moonlight. However, they can not starve.",
+
+  "power.otherworldorigins.banshee/sonic_shriek.name": "Preemptive Elegy",
+  "power.otherworldorigins.banshee/sonic_shriek.description": "Banshee's shrieks forewarn death, but such screams are not an attack. They can unleash an earsplitting wail at a target, disorienting them. Nearby enemies will be pushed back and a small protective circle will be summoned on the ground.",
+
+  "power.otherworldorigins.tiefling/carnivore.name": "Carnivore",
+  "power.otherworldorigins.tiefling/carnivore.description": "An tiefling' bloodlust is insatiable. If it isn't the flesh of an animal, its worthless.",
+
+  "power.otherworldorigins.tiefling/demon_fire.name": "Demon Fire",
+  "power.otherworldorigins.tiefling/demon_fire.description": "Imbued with the devil's power, the tiefling can release a burst of hell's energy on command. Triggered with secondary power key.",
+
+  "power.otherworldorigins.tiefling/hellborne.name": "Hellborne",
+  "power.otherworldorigins.tiefling/hellborne.description": "Having spent eternities in the depths of hell, fire feels like home - it deals no damage to Incubi and satiates them.",
+
+  "power.otherworldorigins.tiefling/hydrophobe.name": "Hydrophobe",
+  "power.otherworldorigins.tiefling/hydrophobe.description": "Water scalds Incubi, damaging them on contact.",
+
+  "power.otherworldorigins.tiefling/impure.name": "Impure",
+  "power.otherworldorigins.tiefling/impure.description": "Much like the undead, incubi are saturated with dark energy and can not receive healing from potions.",
+
+  "power.otherworldorigins.tiefling/dimension_strength.name": "Realm Advantage",
+  "power.otherworldorigins.tiefling/dimension_strength.description": "As agents of hell, Incubi are not accustomed to dimensions where the sun shines and are weaker there. But they are considerably stronger in the Nether.",
+
+  "power.otherworldorigins.tiefling/unholy_deal.name": "Unholy Deal",
+  "power.otherworldorigins.tiefling/unholy_deal.description": "An tiefling can exchange some of their life force for raw power for a short time. Triggered with Primary Active key.",
+
+  "power.otherworldorigins.dwarf/darkness_dweller.name": "Darkness Dweller",
+  "power.otherworldorigins.dwarf/darkness_dweller.description": "Dwarven eyes are adapted for the dark. Direct sunlight burns their sensitive retinas, blinding them until darkness returns. Prevented by wearing a gold helmet or with an enchantment.",
+
+  "power.otherworldorigins.dwarf/dense.name": "Dense",
+  "power.otherworldorigins.dwarf/dense.description": "Dwarves are extremely heavy for their size; despite their best efforts, they sink rapidly in water.",
+
+  "power.otherworldorigins.dwarf/dwarven_tech.name": "Dwarven Tech",
+  "power.otherworldorigins.dwarf/dwarven_tech.description": "Dwarves are capable of mining stone without a pickaxe, and mine anything faster than others.",
+
+  "power.otherworldorigins.dwarf/miniature.name": "Stocky",
+  "power.otherworldorigins.dwarf/miniature.description": "Dwarves are just short enough to fit into a 1 meter tall tunnel (and almost as wide as one).",
+
+  "power.otherworldorigins.dwarf/mythril_resonance.name": "Mythril Resonance",
+  "power.otherworldorigins.dwarf/mythril_resonance.description": "Powerful metals which carry the spirit of your people fill you with might.",
+
+  "power.otherworldorigins.dwarf/nocturnal_eyes.name": "Nocturnal Eyes",
+  "power.otherworldorigins.dwarf/nocturnal_eyes.description": "Living underground has lead to dwarves having highly sensitive eyes, they can focus to see clearly even in dark caverns.",
+
+  "power.otherworldorigins.dwarf/potent_brew.name": "Potent Brew",
+  "power.otherworldorigins.dwarf/potent_brew.description": "Dwarves are notorious for their powerful drinks which would knock out someone twice their size. Activate to take a swig and fully restore health.",
+
+  "power.otherworldorigins.human/description.name": "Note",
+  "power.otherworldorigins.human/description.description": "Humans have no changes from the base game.",
+
+  "power.otherworldorigins.wood_elf/archer.name": "Natural Archer",
+  "power.otherworldorigins.wood_elf/archer.description": "Wood Elves spend their whole lives training with bows - their arrows are always more deadly.",
+
+  "power.otherworldorigins.wood_elf/forest_vision.name": "Forest Vision",
+  "power.otherworldorigins.wood_elf/forest_vision.description": "After centuries in the grove, Wood Elves are well adapted to be among nature. While in tall shrubbery or leaves, they can crouch to gain night vision while becoming undetectable.",
+
+  "power.otherworldorigins.wood_elf/eagle_eyed.name": "Eagle Eyed",
+  "power.otherworldorigins.wood_elf/eagle_eyed.description": "Wood Elves' enhanced perception allows them to keep track of an enemy for a while after hitting them, even when they aren't in view.",
+
+  "power.otherworldorigins.wood_elf/empowered_shot.name": "Focus",
+  "power.otherworldorigins.wood_elf/empowered_shot.description": "After charging for a few seconds, release an arrow at increased velocity, piercing enemies, flying further, and dealing more damage.",
+
+  "power.otherworldorigins.wood_elf/empowered_shot_apotheosis.name": "Focus",
+  "power.otherworldorigins.wood_elf/empowered_shot_apotheosis.description": "After charging for a few seconds, release an arrow at increased velocity, piercing enemies, flying further, and dealing more damage.",
+
+  "power.otherworldorigins.wood_elf/elegant.name": "Elegant",
+  "power.otherworldorigins.wood_elf/elegant.description": "Due to their slender nature, Wood Elves can not wear armor heavier than iron (This can be prevented with an enchantment), and have less health.",
+
+  "power.otherworldorigins.wood_elf/steward.name": "Steward",
+  "power.otherworldorigins.wood_elf/steward.description": "Wood elves live off of the forest and in harmony with it. They can not digest meat.",
+
+  "power.otherworldorigins.wood_elf/towering.name": "Towering",
+  "power.otherworldorigins.wood_elf/towering.description": "Wood elves are taller than the average human. Despite this, they are just as thin.",
+
+  "power.otherworldorigins.wood_elf/graceful.name": "Graceful",
+  "power.otherworldorigins.wood_elf/graceful.description": "Elven arms are not as powerful, but they are quick. They deal reduced damage but attack slightly faster.",
+
+  "power.otherworldorigins.fae/allure.name": "Allure",
+  "power.otherworldorigins.fae/allure.description": "Fae are naturally alluring. Unfortunately, this means that mobs will pursue them from much further away than they would other creatures.",
+
+  "power.otherworldorigins.fae/diminutive.name": "Diminutive",
+  "power.otherworldorigins.fae/diminutive.description": "Fae are fairly short, most barely being taller than the average goblin.",
+
+  "power.otherworldorigins.fae/iron_aversion.name": "Magical Suppression",
+  "power.otherworldorigins.fae/iron_aversion.description": "Iron and silver inhibit fae powers. It is unbearable for them to wear it.",
+
+  "power.otherworldorigins.fae/levitation.name": "Levitation",
+  "power.otherworldorigins.fae/levitation.description": "Fae are light, winged creatures who can float effortlessly on the air. Press the primary active key to hover upward.",
+
+  "power.otherworldorigins.fae/magic_resistance.name": "Magic Resistance",
+  "power.otherworldorigins.fae/magic_resistance.description": "As magical creatures themselves, faes take less magic damage compared to other creatures.",
+
+  "power.otherworldorigins.fae/regen.name": "Regeneration",
+  "power.otherworldorigins.fae/regen.description": "Fae can channel their magical energy to heal themselves quickly. Press the secondary active key to regenerate health for a short period at the cost of your hunger.",
+
+  "power.otherworldorigins.goblin/cunning.name": "Cunning",
+  "power.otherworldorigins.goblin/cunning.description": "Goblins are clever creatures, and know where to find more rare loot most others would miss.",
+
+  "power.otherworldorigins.goblin/frail.name": "Frail",
+  "power.otherworldorigins.goblin/frail.description": "Due to their small stature, goblins' have less health and are more prone to damage.",
+
+  "power.otherworldorigins.goblin/greedy.name": "Greedy",
+  "power.otherworldorigins.goblin/greedy.description": "Goblins have a special relationship with treasure - they gain extra bonuses when using or wearing golden gear.",
+
+  "power.otherworldorigins.goblin/durability.name": "Careful Hoarder",
+  "power.otherworldorigins.goblin/durability.description": "Gold in a goblin's hands lasts for much longer than most others who are careless with it.",
+
+  "power.otherworldorigins.goblin/nippy.name": "Nimble",
+  "power.otherworldorigins.goblin/nippy.description": "Although short, goblins are quite fast, allowing them to outrun most stronger enemies instead of fighting.",
+
+  "power.otherworldorigins.goblin/stunted.name": "Stunted",
+  "power.otherworldorigins.goblin/stunted.description": "Goblins are two thirds the height of a human.",
+
+  "power.otherworldorigins.gorgon/hydrophobe.name": "Hydrophobe",
+  "power.otherworldorigins.gorgon/hydrophobe.description": "Gorgons can not tolerate the purity of water and take damage from it.",
+
+  "power.otherworldorigins.gorgon/to_stone.name": "To Stone",
+  "power.otherworldorigins.gorgon/to_stone.description": "Gorgons were doomed to stay bound in dark caves and old dungeons. Being outside in daylight causes them to become petrified until night. Can be negated by wearing a helmet.",
+
+  "power.otherworldorigins.gorgon/silver_aversion.name": "Silver Aversion",
+  "power.otherworldorigins.gorgon/silver_aversion.description": "Gorgons are weak to the purity of silver - they can not stand to wear it and take damage when wielding it. (Iron is also counted as silver)",
+
+  "power.otherworldorigins.gorgon/petrifying_gaze.name": "Petrifying Gaze",
+  "power.otherworldorigins.gorgon/petrifying_gaze.description": "Meet the eyes of any mob facing you, turning them to stone briefly. Does not work on bosses.",
+
+  "power.otherworldorigins.gorgon/poison_blood.name": "Poisoned Blood",
+  "power.otherworldorigins.gorgon/poison_blood.description": "Gorgons are immune to poison, and have a chance to spill their toxic blood onto nearby enemies when hit, poisoning them.",
+
+  "power.otherworldorigins.gorgon/revenge.name": "Revenge",
+  "power.otherworldorigins.gorgon/revenge.description": "Centuries of being cursed then blamed for their misfortune has left Gorgon's bitter. They deal massively increased damage at low health.",
+
+  "power.otherworldorigins.high_elf/elegant.name": "Elegant",
+  "power.otherworldorigins.high_elf/elegant.description": "Due to their slender nature, High Elves can not wear armor heavier than iron (This can be prevented with an enchantment), and have less health.",
+
+  "power.otherworldorigins.high_elf/ebonbreath.name": "Draw Essence",
+  "power.otherworldorigins.high_elf/ebonbreath.description": "By holding different items, high elves can channel the object's energy to unleash various magics. Hover over each box to see details.",
+
+  "power.otherworldorigins.high_elf/fragile.name": "Fragile",
+  "power.otherworldorigins.high_elf/fragile.description": "A High Elf is not built for hand to hand combat. They are much more susceptible to physical damage, and have less health.",
+
+  "power.otherworldorigins.high_elf/mystic_affinity.name": "Mystic Affinity",
+  "power.otherworldorigins.high_elf/mystic_affinity.description": "High Elves are powerful and clever manipulators of arcane energy - they deal more magic damage and take less magic damage than other races.",
+
+  "power.otherworldorigins.high_elf/spell_power_irons.name": "Highborne",
+  "power.otherworldorigins.high_elf/spell_power_irons.description": "High Elves naturally have more mana than other races, and can channel the power of their elders to regenerate mana quickly.",
+
+  "power.otherworldorigins.high_elf/spell_power_irons_ars.name": "Highborne",
+  "power.otherworldorigins.high_elf/spell_power_irons_ars.description": "High Elves naturally have more mana than other races, and can channel the power of their elders to regenerate mana quickly.",
+
+  "power.otherworldorigins.high_elf/spell_power_ars.name": "Highborne",
+  "power.otherworldorigins.high_elf/spell_power_ars.description": "High Elves naturally have more mana than other races, and can channel the power of their elders to regenerate mana quickly.",
+
+  "power.otherworldorigins.high_elf/towering.name": "Towering",
+  "power.otherworldorigins.high_elf/towering.description": "High Elves are slender and taller than the average human.",
+
+  "power.otherworldorigins.moon_elf/crazed.name": "Foreign World",
+  "power.otherworldorigins.moon_elf/crazed.description": "Try as they might, Moon Elves can not sleep in the overworld.",
+
+  "power.otherworldorigins.moon_elf/stealth.name": "To the Shadows",
+  "power.otherworldorigins.moon_elf/stealth.description": "In the dark, Moon Elves can turn invisible by sneaking, and move a short distance while stealthed. When attacking from stealth, their first attack deals bonus damage and ends the invisibility. This deals extra damage if wielding a dagger.",
+
+  "power.otherworldorigins.moon_elf/elegant.name": "Elegant",
+  "power.otherworldorigins.moon_elf/elegant.description": "Due to their slim builds, Moon Elves can not wear armor heavier than iron. This can be prevented with an enchantment.",
+
+  "power.otherworldorigins.moon_elf/ethereal.name": "Ethereal",
+  "power.otherworldorigins.moon_elf/ethereal.description": "Moon elves are thin and even slightly translucent, and their skin has a peculiar blue hue.",
+
+  "power.otherworldorigins.moon_elf/fragile.name": "Fragile",
+  "power.otherworldorigins.moon_elf/fragile.description": "Moon Elves have to stay lightweight to maintain their agility. They have reduced health and take increased physical damage.",
+  
+  "power.otherworldorigins.moon_elf/moonlight_rogue.name": "Moonlight Rogue",
+  "power.otherworldorigins.moon_elf/moonlight_rogue.description": "Moon Elves are most efficient wielding a light and easy to conceal weapon. They deal more damage with daggers and knives.",
+
+  "power.otherworldorigins.moon_elf/nimble.name": "Nimble",
+  "power.otherworldorigins.moon_elf/nimble.description": "With their quick reflexes, Moon Elves have a small chance to dodge any attack.",
+
+  "power.otherworldorigins.moon_elf/towering.name": "Towering",
+  "power.otherworldorigins.moon_elf/towering.description": "Moon Elves are about the same height as their distant relatives of the forest, making them slightly taller than humans.",
+
+  "power.otherworldorigins.ogre/gargantuan.name": "Gargantuan",
+  "power.otherworldorigins.ogre/gargantuan.description": "Ogres are massive, and can't fit through doors or even in many small structures.  ",
+
+  "power.otherworldorigins.ogre/lead_belly.name": "Lead Belly",
+  "power.otherworldorigins.ogre/lead_belly.description": "Ogres care little for what they eat. Food is food. They do not experience poison or hunger.",
+
+  "power.otherworldorigins.ogre/ravenous.name": "Ravenous",
+  "power.otherworldorigins.ogre/ravenous.description": "Ogres are almost never full; they need to eat near constantly to stay satisfied.'",
+
+  "power.otherworldorigins.ogre/ravager.name": "Ravager",
+  "power.otherworldorigins.ogre/ravager.description": "Axes feel right in an Ogre's hand; this comfort allows them to swing with much more force.",
+
+  "power.otherworldorigins.ogre/bloodlust.name": "Bloodlust",
+  "power.otherworldorigins.ogre/bloodlust.description": "Ogres are known to unpredictably fly into a blinding rage, where they can stomp through a horde of foes quickly but can barely make out what's happening around them. ",
+
+  "power.otherworldorigins.ogre/sluggish.name": "Sluggish",
+  "power.otherworldorigins.ogre/sluggish.description": "Likely as an adaptation to conserve some of their energy despite their massive size, ogres are quite slow.",
+
+  "power.otherworldorigins.ogre/stocky.name": "Stocky",
+  "power.otherworldorigins.ogre/stocky.description": "Ogre's are beefy and resilient. Their thick skin and dense bones make them able to tank many more hits before needing to recover.",
+
+  "power.otherworldorigins.pixie/curse_of_flight.name": "Curse of Flight",
+  "power.otherworldorigins.pixie/curse_of_flight.description": "The very wings which allows pixies to fly also prevent them from flying using any other wings, or wearing any chestplates more substantial than leather.",
+
+  "power.otherworldorigins.pixie/feather_footed.name": "Feather Footed",
+  "power.otherworldorigins.pixie/feather_footed.description": "Pixies are so light, it is impossible for them to take fall damage.",
+
+  "power.otherworldorigins.pixie/flight.name": "On the Dusts",
+  "power.otherworldorigins.pixie/flight.description": "Pixies can fly and propel themselves forward and upward.\nRead the boxes next to this power for instructions on how to fly. ",
+
+  "power.otherworldorigins.pixie/mount.name": "Shortcut",
+  "power.otherworldorigins.pixie/mount.description": "You can sit on top of another player's head by right clicking them with empty hands.",
+
+  "power.otherworldorigins.pixie/good_fortunes.name": "Good Fortunes",
+  "power.otherworldorigins.pixie/good_fortunes.description": "Although pixies can be troublesome, they are also associated with good luck. When mining, they will occasionally get something valubale from plain stone.",
+
+  "power.otherworldorigins.pixie/mischief_maketh_man.name": "Mischief Maketh Man",
+  "power.otherworldorigins.pixie/mischief_maketh_man.description": "Pixies are capable of performing numerous mischievous acts which, if not always dangerous, are certainly loud.",
+
+  "power.otherworldorigins.pixie/pixie_properties.name": "Bitesize",
+  "power.otherworldorigins.pixie/pixie_properties.description": "Pixies are some of the smallest creatures to roam the land, rarely even reaching the average human's knee.",
+
+  "power.otherworldorigins.pixie/soaked.name": "Soaked",
+  "power.otherworldorigins.pixie/soaked.description": "Being as small as they are, water poses signficant threat to pixies. It hampers their movement and impairs their ability to fly.",
+
+  "power.otherworldorigins.pixie/troublemaker.name": "Troublemaker",
+  "power.otherworldorigins.pixie/troublemaker.description": "Villagers know pixies by the legends of trouble they cause, and will refuse to trade with them.",
+
+  "power.otherworldorigins.plague_victim/contagious.name": "Contagious",
+  "power.otherworldorigins.plague_victim/contagious.description": "The Plagued are a horrifying sight. Villagers will refuse to trade with them out of fear.",
+
+  "power.otherworldorigins.plague_victim/foul_aura.name": "Foul Aura",
+  "power.otherworldorigins.plague_victim/foul_aura.description": "A horrifying magic swarms the victim, and slowly consumes the life of any living nearby.",
+
+  "power.otherworldorigins.plague_victim/insomniac.name": "Insomniac",
+  "power.otherworldorigins.plague_victim/insomniac.description": "Sleep is impossible for the Plagued, due to their unending agony.",
+
+  "power.otherworldorigins.plague_victim/plague_immunity.name": "Plague Immunity",
+  "power.otherworldorigins.plague_victim/plague_immunity.description": "Though the immense pain never ends, there is only so much tissue that can die. Carriers are immune to poison and wither.",
+
+  "power.otherworldorigins.plague_victim/eternal_suffering.name": "Eternal Suffering",
+  "power.otherworldorigins.plague_victim/eternal_suffering.description": "Once per day, upon death, the Plagued are instead forcefully kept alive, prolonging their torment.",
+
+  "power.otherworldorigins.plague_victim/risk_of_transmission.name": "Contagious Hex",
+  "power.otherworldorigins.plague_victim/risk_of_transmission.description": "Each contact with the victim is a gamble - everything they hit has a chance to itself become infected.",
+
+  "power.otherworldorigins.plague_victim/sensitive_skin.name": "Sensitive Skin",
+  "power.otherworldorigins.plague_victim/sensitive_skin.description": "The Plagued are covered in welts and lesions upon the skin, tender and painful to touch. Its victims cannot wear armor for the pain it causes.",
+
+  "power.otherworldorigins.plague_victim/skin_and_bones.name": "Skin and Bones",
+  "power.otherworldorigins.plague_victim/skin_and_bones.description": "This illness drains the spirit, resulting in reduced health and speed.",
+
+  "power.otherworldorigins.siren/amphibious.name": "Amphibious",
+  "power.otherworldorigins.siren/amphibious.description": "Sirens, being a subset of Mer, can survive in water, and swim with increased speed.",
+
+  "power.otherworldorigins.siren/flammable.name": "Flammable",
+  "power.otherworldorigins.siren/flammable.description": "Sirens and fire do not mix. Any contact with flames results in instant death. Be sure to watch your step in the nether!",
+
+  "power.otherworldorigins.siren/holy_water.name": "Holy Water",
+  "power.otherworldorigins.siren/holy_water.description": "Sirens have regenerative powers, which are at full force when they are in water.",
+
+  "power.otherworldorigins.siren/out_of_your_depth.name": "Out of Your Depth",
+  "power.otherworldorigins.siren/out_of_your_depth.description": "Although sirens can survive just fine on land, it is not their natural environment. As such, their regenerative abilities do not apply, and any damage taken can only be healed with potions.",
+
+  "power.otherworldorigins.siren/prone.name": "Prone",
+  "power.otherworldorigins.siren/prone.description": "While sirens can regenerate their bodies, they are weak to blunt force. Melee attacks do more damage to them.",
+
+  "power.otherworldorigins.siren/siren_song.name": "Siren Song",
+  "power.otherworldorigins.siren/siren_song.description": "Sirens are known for their alluring calls. Press the primary active key to make all mobs around you neutral until hit. Does not work on bosses or players.",
+
+  "power.otherworldorigins.siren/seduce.name": "Captivating",
+  "power.otherworldorigins.siren/seduce.description": "Sirens seem to be able to occasionally receive much better trades from villagers. (Activate with Secondary Active)",
+  
+  "power.otherworldorigins.siren/water_vision.name": "Water Vision",
+  "power.otherworldorigins.siren/water_vision.description": "Sirens have superior underwater vision compared to other creatures.",
+
+  "power.otherworldorigins.troll/apex_predator.name": "Apex Predator",
+  "power.otherworldorigins.troll/apex_predator.description": "Trolls cannot eat regular foodstuffs, and can only satiate their hunger by slaughtering other creautres.",
+
+  "power.otherworldorigins.troll/ham_fisted.name": "Ham Fisted",
+  "power.otherworldorigins.troll/ham_fisted.description": "While the huge fists of the troll pack a mighty punch, they are far too cumbersome to hold a shield.",
+
+  "power.otherworldorigins.troll/ironhide.name": "Ironhide",
+  "power.otherworldorigins.troll/ironhide.description": "Trolls have incredibly thick skin, giving them a natural armor and massively increased health.",
+
+  "power.otherworldorigins.troll/lumbering.name": "Lumbering",
+  "power.otherworldorigins.troll/lumbering.description": "When you're as large as a troll, you have a lot of weight to heft around. Movement is noticably slower than one would expect for their size.",
+
+  "power.otherworldorigins.troll/mountainous.name": "Mountainous",
+  "power.otherworldorigins.troll/mountainous.description": "Trolls take after the mountains from which they come from. They are massively tall, twice the size of the average person.",
+
+  "power.otherworldorigins.troll/old_blood.name": "Old Blood",
+  "power.otherworldorigins.troll/old_blood.description": "The old blood which runs through the veins of the trolls is bound to the mountains. They cannot heal themselves outside of their hilly homelands.",
+
+  "power.otherworldorigins.troll/out_of_stock.name": "Out of Stock",
+  "power.otherworldorigins.troll/out_of_stock.description": "Try as they might, trolls never seem to be able to find any armor in their size. Thus, they are doomed to walk with what coverings nature gave them, and nothing more.",
+
+  "power.otherworldorigins.troll/rock_throw.name": "Rock Throw",
+  "power.otherworldorigins.troll/rock_throw.description": "A troll can, at will, hurl a large rock into the air, plowing through whatever may cross its path. However, this does come at the cost of 64 precious cobblestone blocks.",
+
+  "power.otherworldorigins.troll/thunderous_stride.name": "Thunderous Stride",
+  "power.otherworldorigins.troll/thunderous_stride.description": "Trolls walk with purpose. Should they persist long enough, they can walk straight through any obstacle which may cross their path.",
+
+  "power.otherworldorigins.yeti/flammable.name": "Flammable",
+  "power.otherworldorigins.yeti/flammable.description": "Yetis are susceptible to fire damage due to their wintry nature.",
+
+  "power.otherworldorigins.yeti/frigid_pulse.name": "Frigid Pulse",
+  "power.otherworldorigins.yeti/frigid_pulse.description": "A powerful magic runs through the veins of a yeti, allowing them to entomb a group of foes in ice on command. Does not work in the nether or on bosses.",
+
+  "power.otherworldorigins.yeti/from_whence_you_came.name": "From Whence you Came",
+  "power.otherworldorigins.yeti/from_whence_you_came.description": "Thriving best in the lands from which they originate, yetis move faster and are carried on the snow to negate fall damage in icy biomes.",
+
+  "power.otherworldorigins.yeti/frosty_breath.name": "Frosty Breath",
+  "power.otherworldorigins.yeti/frosty_breath.description": "The frosty breath of the yeti slows any opponents which get close to them.",
+
+  "power.otherworldorigins.yeti/thick_fur.name": "Thick Fur",
+  "power.otherworldorigins.yeti/thick_fur.description": "The blessing of thick fur becomes a curse in deserts. Their movement is slowed and health reduced.",
+
+  "power.otherworldorigins.yeti/titanic.name": "Titanic",
+  "power.otherworldorigins.yeti/titanic.description": "Yetis have far more health than a regular human.",
+
+  "power.otherworldorigins.yeti/unstoppable.name": "Unstoppable",
+  "power.otherworldorigins.yeti/unstoppable.description": "Yetis are immune to the slowness effect.",
+
+  "power.otherworldorigins.yeti/winter_body.name": "Winter Body",
+  "power.otherworldorigins.yeti/winter_body.description": "Yetis are marginally taller than a regular human, and significantly wider.",
+
+  "power.otherworldorigins.revenant/black_thumb.name": "Black Thumb",
+  "power.otherworldorigins.revenant/black_thumb.description": "A Revenant can not harvest any crops; they wilt at their deathly touch. ",
+
+  "power.otherworldorigins.revenant/disturbed.name": "Disturbed",
+  "power.otherworldorigins.revenant/disturbed.description": "Experimenting in the forbidden warps the mind. Revenants cannot sleep, too scared to dream of what they wish they did not know.",
+
+  "power.otherworldorigins.revenant/hellraiser.name": "Reaper's Ward",
+  "power.otherworldorigins.revenant/hellraiser.description": "At will, a revenant can raise a circle of inert skeletons, acting as a temporary shield to protect them from danger and damage nearby enemies.",
+
+  "power.otherworldorigins.revenant/putrid_communion.name": "Putrid Communion",
+  "power.otherworldorigins.revenant/putrid_communion.description": "Through the unsettling act of consuming the flesh or bones of the undead, a revenant can empower their next summon of the same type.",
+
+  "power.otherworldorigins.revenant/unwitherable.name": "Necrotic Curse",
+  "power.otherworldorigins.revenant/unwitherable.description": "Revenants are immune to wither, and, like undead, they take extra damage from smite, receive inverted effects from harming and healing effects, and are immune to poison and regeneration effects.",
+
+  "power.otherworldorigins.revenant/skeleton_summons.name": "Revenance",
+  "power.otherworldorigins.revenant/skeleton_summons.description": "Revenants can reconstruct creatures of the night modified to do their own bidding. These act as pets, will follow and teleport, and skeletons can be equipped with any weapon. Summon by activating while holding: \n§lSkeleton:§r \n- Mainhand: 4 bones\n§lSkeleton Horse:§r\n- Mainhand: 12 bones\n- Offhand: 1 saddle \n§lWither Skeleton:§r \n- Mainhand: 12 bones\n- Offhand: 1 wither skull\n§lZombie:§r \n- Mainhand: 4 flesh\n§lZombie Horse:§r \n- Mainhand: 12 flesh\n- Offhand: 1 saddle",
+
+  "power.otherworldorigins.revenant/poor_reputation.name": "Chaotic Ally",
+  "power.otherworldorigins.revenant/poor_reputation.description": "Villagers will refuse to trade with revenants and iron golems will attack them on sight. However, they are accepted amongst the ranks of the Pillagers.",
+
+  "power.otherworldorigins.revenant/siphon.name": "Essence Extraction",
+  "power.otherworldorigins.revenant/siphon.description": "When hit, revenants slowly build up a power which allows them to siphon life from their enemies. This affects all creatures for better or worse, except summoned dead.",
+
+  "power.otherworldorigins.revenant/unguarded.name": "Unguarded",
+  "power.otherworldorigins.revenant/unguarded.description": "Obsessing over the spirit realm leaves revenants more open to attack in the physical realm. Most mobs deal more damage to them.",
+
+
+  "enchantment.otherworldorigins.featherweight": "Featherweight",
+  "enchantment.otherworldorigins.featherweight.desc": "With this enchantment applied to heavy armor, it can be worn by Arachnae, Elves, and Alfiq.",
+
+  "enchantment.otherworldorigins.mirroring": "Mirroring",
+  "enchantment.otherworldorigins.mirroring.desc": "With this enchantment applied to helmets, players are immune to a Gorgon's petrifying gaze and Dwarves can see normally in the daylight.",
+
+  "sounds.otherworldorigins.banshee_cry": "Banshee Cry",
+  "sounds.otherworldorigins.channeled_wail": "Channeled Wail",
+  "sounds.otherworldorigins.horrible_screech": "Horrible Screech",
+  "sounds.otherworldorigins.zhh_voo_woop": "Mysterious Anomaly",
+  "sounds.otherworldorigins.bone_crunch": "Cracking Bone",
+  "sounds.otherworldorigins.dash": "Pixie Dashes",
+  "sounds.otherworldorigins.boost": "String Arpeggio",
+  "sounds.otherworldorigins.hover": "Faint Hum",
+  "sounds.otherworldorigins.jump": "Soft Chimes",
+
+  "entity.otherworldorigins.summon_zombie": "Summoner's Zombie",
+  "entity.otherworldorigins.summon_skeleton": "Summoner's Skeleton",
+  "entity.otherworldorigins.summon_wither_skeleton": "Summoner's Wither Skeleton",
+
+  "badges.otherworldorigins.pixie.jump": "Jumps can be repeated infinitely in the air, and are slightly higher.",
+  "badges.otherworldorigins.pixie.dash_forward": "Press %s twice quickly to dash forward.",
+  "badges.otherworldorigins.pixie.dash_upward": "Quickly press %s then %s to dash upward.",
+  "badges.otherworldorigins.pixie.hover": "Press %s to hover in place. Press again to fall freely.",
+  "badges.otherworldorigins.pixie.disable_effects": "Press %s while sneaking to disable sounds and particle effects",
+
+  "badges.otherworldorigins.high_elf.glacial_step": "§bGlacial Step:§r Hold an ice block to manipulate the entropy of water molecules, allowing you to walk as if you had Frost Walker",
+  "badges.otherworldorigins.high_elf.extrusive_movement": "§4Extrusive Movement:§r Hold obsidian to channel the flow of heat and walk freely on smoldering lava",
+  "badges.otherworldorigins.high_elf.instant_cure": "§eInstant Cure:§r Right click a villager with a golden apple to directly channel its healing energy without needing to weaken them",
+  "badges.otherworldorigins.high_elf.void_warp": "§5Void Warp:§r Press %s while holding an ender pearl to rip through the fabric of reality and teleport yourself directly, up to 50 blocks away",
+  "badges.otherworldorigins.high_elf.blazenbreath": "§cBlazenbreath:§r Press %s while holding coal to shoot forth a weak cone of flame. Hold blaze powder instead to shoot forth a moderate cone of flame",
+  "badges.otherworldorigins.high_elf.ebonbreath": "§dEbonbreath:§r Press %s while holding bottled dragon's breath to shoot forth a cone of strong magical flame",
+
+  "badges.otherworldorigins.revenant.siphon": "Press %s while pointing at a living creature to drain its life force. This hurts even passive animals, but not summoned dead.",
+  "badges.otherworldorigins.revenant.eat": "Besides bones and rotten flesh, eating certain monster heads can charge this resource more quickly.",
+
+  "badges.otherworldorigins.alfiq.wall_climb": "Press %s to toggle wall climbing.",
+
+  "otherworldorigins.contagious_villager": "This villager will not trade with you!",
+  "otherworldorigins.disturbed_restless": "What you know will kill you, but you will die laughing.",
+  "otherworldorigins.moon_elf_no_sleep": "The strange sounds of this foreign world leave you restless.",
+  "otherworldorigins.insomniac_welts": "Your welts sting and burn. There will be no sleep for you tonight.",
+  "otherworldorigins.poor_reputation_villager": "The villager is too scared to trade with you!",
+  "otherworldorigins.troublemaker": "Villagers don't trade with the likes of you!",
+  "otherworldorigins.uncastable": "You can't use this ability right now.",
+
+  "tooltip.otherworldorigins.set_bonus": "Set Bonus:",
+  "tooltip.otherworldorigins.water_protection": "Water Protection",
+  "tooltip.otherworldorigins.looting_bonus": "Chance to increase mob loot",
+  "tooltip.otherworldorigins.unwearable": "Unwearable",
+  "tooltip.otherworldorigins.damage_dealt": "%s Damage Dealt",
+  "tooltip.otherworldorigins.attack_damage_bonus": "+%s Attack Damage",
+  "tooltip.otherworldorigins.stab_bonus": "Stealth Break Bonus",
+  "tooltip.otherworldorigins.self_wither": "Withered while holding",
+  "tooltip.otherworldorigins.restores_no_hunger": "Restores no Hunger",
+  "tooltip.otherworldorigins.moonlight_rogue": "Moonlight Rogue:",
+  "tooltip.otherworldorigins.greedy": "Greedy:",
+  "tooltip.otherworldorigins.ravager": "Ravager:"
+
+}

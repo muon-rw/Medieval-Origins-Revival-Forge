@@ -1,0 +1,23 @@
+{
+        "loading_priority": 11,
+        "powers": [
+                "otherworldorigins:ogre/gargantuan",
+                "otherworldorigins:ogre/bloodlust",
+                "otherworldorigins:ogre/ravager",
+                "otherworldorigins:ogre/lead_belly",
+                "otherworldorigins:ogre/stocky",
+                "otherworldorigins:ogre/ravenous",
+                "otherworldorigins:ogre/sluggish",
+                "otherworldorigins:ogre/unwieldy",
+                "otherworldorigins:ogre/ogre_properties",
+                "otherworldorigins:ogre/bloodlust_camera",
+                "otherworldorigins:ogre/orcish_pride",
+                "origins_survive:illness_resistance"
+        ],
+        "icon": {
+                "item": "minecraft:ink_sac",
+                "tag": "{CustomModelData:355}"
+        },
+        "impact": 3,
+        "order": 1
+}

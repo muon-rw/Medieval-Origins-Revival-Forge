@@ -1,15 +1,15 @@
 {
   "replace": true,
   "origins": [
-     "otherworld:human",
-     "otherworld:dwarf",
-     "otherworld:elf",
-     "otherworld:half_elf",
-     "otherworld:gnome",
-     "otherworld:halfling",
-     "otherworld:tiefling",
-     "otherworld:undead",
-     "otherworld:dragonborn",
-     "otherworld:minecraft"
+     "otherworldorigins:human",
+     "otherworldorigins:dwarf",
+     "otherworldorigins:elf",
+     "otherworldorigins:half_elf",
+     "otherworldorigins:gnome",
+     "otherworldorigins:halfling",
+     "otherworldorigins:tiefling",
+     "otherworldorigins:undead",
+     "otherworldorigins:dragonborn",
+     "otherworldorigins:minecraft"
   ]
 }

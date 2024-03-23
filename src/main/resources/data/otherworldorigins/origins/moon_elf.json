@@ -1,0 +1,20 @@
+{
+        "loading_priority": 11,
+        "powers": [
+                "otherworldorigins:moon_elf/moonlight_rogue",
+                "otherworldorigins:moon_elf/stealth",
+                "otherworldorigins:moon_elf/ethereal",
+                "otherworldorigins:moon_elf/crazed",
+                "otherworldorigins:moon_elf/elegant",
+                "otherworldorigins:moon_elf/nimble",
+                "otherworldorigins:moon_elf/fragile",
+                "otherworldorigins:moon_elf/towering",
+                "origins_survive:sleepless"
+        ],
+        "icon": {
+                "item": "minecraft:ink_sac",
+                "tag": "{CustomModelData:359}"
+        },
+        "impact": 3,
+        "order": 1
+}

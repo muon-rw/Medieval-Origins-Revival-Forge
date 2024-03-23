@@ -1,0 +1,11 @@
+{
+	"type": "origins:disable_regen",
+	"condition": {
+		"type": "origins:biome",
+		"condition": {
+			"type": "origins:in_tag",
+			"tag": "otherworldorigins:troll_mountain",
+			"inverted": true
+		}
+	}
+}

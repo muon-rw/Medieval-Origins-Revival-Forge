@@ -1,0 +1,76 @@
+{
+    "banshee_cry": {
+        "subtitles": "sounds.otherworldorigins.banshee_cry",
+        "sounds": [
+            "otherworldorigins:banshee_cry"
+        ]
+    },
+    "channeled_wail": {
+        "subtitles": "sounds.otherworldorigins.channeled_wail",
+        "sounds": [
+            "otherworldorigins:channeled_wail"
+        ]
+    },
+    "horrible_screech": {
+        "subtitles": "sounds.otherworldorigins.horrible_screech",
+        "sounds": [
+            "otherworldorigins:horrible_screech"
+        ]
+    },
+    "zhh_woo_voop": {
+        "subtitles": "sounds.otherworldorigins.zhh_woo_voop",
+        "sounds": [
+            "otherworldorigins:zhh_woo_voop"
+        ]
+    },
+    "zhh_woo_voop_early": {
+        "subtitles": "sounds.otherworldorigins.zhh_woo_voop",
+        "sounds": [
+            "otherworldorigins:zhh_woo_voop_early"
+        ]
+    },
+    "cronch": {
+        "subtitles": "sounds.otherworldorigins.bone_crunch",
+        "sounds": [
+            "otherworldorigins:cronch"
+        ]
+    },
+    "door_knock": {
+        "subtitles": "sounds.otherworldorigins.door_knock",
+        "sounds": [
+            "otherworldorigins:door_knock"
+        ]
+    },
+    "dash": {
+        "subtitles": "sounds.otherworldorigins.dash",
+        "sounds": [
+            "otherworldorigins:dash",
+            "otherworldorigins:dash_2"
+        ]
+    },
+    "boost": {
+        "subtitles": "sounds.otherworldorigins.dash",
+        "sounds": [
+            "otherworldorigins:boost",
+            "otherworldorigins:boost_2",
+            "otherworldorigins:boost_3",
+            "otherworldorigins:boost_4"
+        ]
+    },
+    "jump": {
+        "subtitles": "sounds.otherworldorigins.jump",
+        "sounds": [
+            "otherworldorigins:jump_1",
+            "otherworldorigins:jump_2",
+            "otherworldorigins:jump_3",
+            "otherworldorigins:jump_4",
+            "otherworldorigins:jump_5"
+        ]
+    },
+    "hover": {
+        "subtitles": "sounds.otherworldorigins.hover",
+        "sounds": [
+            "otherworldorigins:hover"
+        ]
+    }
+}

@@ -1,0 +1,12 @@
+{
+	"type": "origins:modify_damage_taken",
+	"damage_condition": {
+		"type": "otherworldorigins:in_tag",
+		"tag": "otherworldorigins:is_magic"
+	},
+	"modifier": {
+		"name": "Origin Magic Resistance",
+		"operation": "multiply_total_multiplicative",
+		"value": -0.3
+	}
+}

@@ -1,0 +1,1 @@
+resource set @s otherworldorigins:pixie/flight_levitate_resource 0

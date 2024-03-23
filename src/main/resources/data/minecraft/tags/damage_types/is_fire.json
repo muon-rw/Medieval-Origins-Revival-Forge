@@ -1,6 +1,6 @@
 {
     "replace": false,
     "values": [
-        {"id":"otherworld:blazenbreath","required":false}
+        {"id":"otherworldorigins:blazenbreath","required":false}
     ]
 }

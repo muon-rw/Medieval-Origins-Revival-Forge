@@ -1,0 +1,22 @@
+{
+        "loading_priority": 11,
+	"powers": [
+                "otherworldorigins:siren/siren_song",
+                "otherworldorigins:siren/amphibious",
+                "otherworldorigins:siren/holy_water",
+                "otherworldorigins:siren/out_of_your_depth",
+                "otherworldorigins:siren/prone",
+                "otherworldorigins:siren/flammable",
+                "otherworldorigins:siren/water_vision",
+                "otherworldorigins:siren/seduce",
+                "mermod:fabulous_fins",
+                "survive:cold_blooded",
+                "origins:aquatic"
+	],
+        "icon": {
+                "item": "minecraft:ink_sac",
+                "tag": "{CustomModelData:366}"
+        },
+	"impact": 2,
+        "order": 1
+}

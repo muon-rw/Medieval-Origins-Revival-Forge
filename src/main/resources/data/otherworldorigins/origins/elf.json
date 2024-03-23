@@ -1,0 +1,19 @@
+{
+        "loading_priority": 11,
+	"powers": [
+                "otherworldorigins:wood_elf/archer",
+		"otherworldorigins:wood_elf/forest_vision",
+                "otherworldorigins:wood_elf/eagle_eyed",
+                "otherworldorigins:wood_elf/towering",
+                "otherworldorigins:wood_elf/steward",
+                "otherworldorigins:wood_elf/elegant",
+                "otherworldorigins:wood_elf/graceful",
+                "otherworldorigins:wood_elf/gear_spawn"
+	],
+        "icon": {
+		"item": "minecraft:ink_sac",
+		"tag": "{CustomModelData:354}"
+	},
+        "impact": 1,
+        "order": 0
+}

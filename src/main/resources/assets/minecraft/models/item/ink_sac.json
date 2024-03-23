@@ -8,109 +8,109 @@
             "predicate": {
                 "custom_model_data": 351
             },
-            "model": "otherworld:item/paladin"
+            "model": "otherworldorigins:item/paladin"
         },
         {
             "predicate": {
                 "custom_model_data": 352
             },
-            "model": "otherworld:item/gorgon"
+            "model": "otherworldorigins:item/gorgon"
         },
         {
             "predicate": {
                 "custom_model_data": 353
             },
-            "model": "otherworld:item/incubus"
+            "model": "otherworldorigins:item/tiefling"
         },
         {
             "predicate": {
                 "custom_model_data": 354
             },
-            "model": "otherworld:item/wood_elf"
+            "model": "otherworldorigins:item/wood_elf"
         },
         {
             "predicate": {
                 "custom_model_data": 355
             },
-            "model": "otherworld:item/ogre"
+            "model": "otherworldorigins:item/ogre"
         },
         {
             "predicate": {
                 "custom_model_data": 356
             },
-            "model": "otherworld:item/dwarf"
+            "model": "otherworldorigins:item/dwarf"
         },
         {
             "predicate": {
                 "custom_model_data": 357
             },
-            "model": "otherworld:item/pixie"
+            "model": "otherworldorigins:item/pixie"
         },
         {
             "predicate": {
                 "custom_model_data": 358
             },
-            "model": "otherworld:item/banshee"
+            "model": "otherworldorigins:item/banshee"
         },
         {
             "predicate": {
                 "custom_model_data": 359
             },
-            "model": "otherworld:item/moon_elf"
+            "model": "otherworldorigins:item/moon_elf"
         },
         {
             "predicate": {
                 "custom_model_data": 360
             },
-            "model": "otherworld:item/revenant"
+            "model": "otherworldorigins:item/revenant"
         },
         {
             "predicate": {
                 "custom_model_data": 361
             },
-            "model": "otherworld:item/arachnae"
+            "model": "otherworldorigins:item/arachnae"
         },
         {
             "predicate": {
                 "custom_model_data": 362
             },
-            "model": "otherworld:item/goblin"
+            "model": "otherworldorigins:item/goblin"
         },
         {
             "predicate": {
                 "custom_model_data": 363
             },
-            "model": "otherworld:item/alfiq"
+            "model": "otherworldorigins:item/alfiq"
         },
         {
             "predicate": {
                 "custom_model_data": 364
             },
-            "model": "otherworld:item/high_elf"
+            "model": "otherworldorigins:item/high_elf"
         },
         {
             "predicate": {
                 "custom_model_data": 365
             },
-            "model": "otherworld:item/yeti"
+            "model": "otherworldorigins:item/yeti"
         },
         {
             "predicate": {
                 "custom_model_data": 366
             },
-            "model": "otherworld:item/siren"
+            "model": "otherworldorigins:item/siren"
         },
         {
             "predicate": {
                 "custom_model_data": 367
             },
-            "model": "otherworld:item/fae"
+            "model": "otherworldorigins:item/fae"
         },
         {
             "predicate": {
                 "custom_model_data": 368
             },
-            "model": "otherworld:item/plague_victim"
+            "model": "otherworldorigins:item/plague_victim"
         }
     ]
 }

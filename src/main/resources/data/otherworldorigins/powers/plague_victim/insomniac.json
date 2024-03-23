@@ -1,0 +1,5 @@
+{
+	"type": "origins:prevent_sleep",
+	"message": "otherworldorigins.insomniac_welts",
+        "set_spawn_point": true
+}
