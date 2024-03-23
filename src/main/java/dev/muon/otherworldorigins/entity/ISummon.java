@@ -14,7 +14,7 @@ import java.util.UUID;
  */
 public interface ISummon extends OwnableEntity {
         /*
-        Implementation sourced from Ars Nouveau, in compliance with the LGPL-v3.0 license
+        Implementation based off of Ars Nouveau, in compliance with the LGPL-v3.0 license
     */
 
     int getTicksLeft();
@@ -44,6 +44,7 @@ public interface ISummon extends OwnableEntity {
         if (getOwnerUUID() != null)
             tag.putUUID("owner", getOwnerUUID());
     }
+
 
     default @Nullable Entity readOwner(ServerLevel world, CompoundTag tag) {
         return tag.contains("owner") ? world.getEntity(tag.getUUID("owner")) : null;

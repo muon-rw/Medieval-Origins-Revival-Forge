@@ -32,7 +32,7 @@ import java.util.UUID;
 
 public class SummonedWitherSkeleton extends WitherSkeleton implements IFollowingSummon, ISummon {
     /*
-        Implementation sourced from Ars Nouveau, in compliance with the LGPL-v3.0 license
+        Implementation based off of Ars Nouveau, in compliance with the LGPL-v3.0 license
     */
 
     public SummonedWitherSkeleton(EntityType<? extends WitherSkeleton> entityType, Level level) {
@@ -48,17 +48,11 @@ public class SummonedWitherSkeleton extends WitherSkeleton implements IFollowing
     private final RangedBowAttackGoal<SummonedWitherSkeleton> bowGoal = new RangedBowAttackGoal<>(this, 1.0D, 20, 15.0F);
 
     private final MeleeAttackGoal meleeGoal = new MeleeAttackGoal(this, 2.2D, true) {
-        /**
-         * Reset the task's internal state. Called when this task is interrupted by another one
-         */
         public void stop() {
             super.stop();
             SummonedWitherSkeleton.this.setAggressive(false);
         }
 
-        /**
-         * Execute a one shot task or start executing a continuous task
-         */
         public void start() {
             super.start();
             SummonedWitherSkeleton.this.setAggressive(true);
@@ -70,8 +64,6 @@ public class SummonedWitherSkeleton extends WitherSkeleton implements IFollowing
     private BlockPos boundOrigin;
     private boolean isLimitedLifespan = true;
     private int limitedLifeTicks = 20;
-
-
 
     @Override
     public void die(DamageSource pDamageSource) {
@@ -124,8 +116,6 @@ public class SummonedWitherSkeleton extends WitherSkeleton implements IFollowing
         this.setItemSlot(EquipmentSlot.MAINHAND, item);
         this.reassessWeaponGoal();
     }
-
-
     @Override
     public void reassessWeaponGoal() {
         if (getWorld() instanceof ServerLevel && this.getItemInHand(InteractionHand.MAIN_HAND) != ItemStack.EMPTY) {
@@ -146,9 +136,6 @@ public class SummonedWitherSkeleton extends WitherSkeleton implements IFollowing
         return super.hurt(pSource, pAmount);
     }
 
-    /**
-     * Called to update the entity's position/logic.
-     */
     public void tick() {
         super.tick();
         if (this.isLimitedLifespan && --this.limitedLifeTicks <= 0) {
@@ -206,9 +193,6 @@ public class SummonedWitherSkeleton extends WitherSkeleton implements IFollowing
         return 0;
     }
 
-    /**
-     * (abstract) Protected helper method to read subclass entity data from NBT.
-     */
     public void readAdditionalSaveData(CompoundTag compound) {
         super.readAdditionalSaveData(compound);
         if (compound.contains("BoundX")) {

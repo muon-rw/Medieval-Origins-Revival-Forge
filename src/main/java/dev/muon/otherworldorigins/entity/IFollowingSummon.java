@@ -16,7 +16,7 @@ import java.util.UUID;
 
 public interface IFollowingSummon {
         /*
-        Implementation sourced from Ars Nouveau, in compliance with the LGPL-v3.0 license
+        Implementation based off of Ars Nouveau, in compliance with the LGPL-v3.0 license
     */
 
     EntityDataAccessor<Optional<UUID>> OWNER_UUID = SynchedEntityData.defineId(TamableAnimal.class, EntityDataSerializers.OPTIONAL_UUID);
@@ -30,6 +30,14 @@ public interface IFollowingSummon {
     LivingEntity getSummoner();
 
     Mob getSelfEntity();
+    static CopyOwnerTargetGoal<?> createCopyOwnerTargetGoal(PathfinderMob mob) {
+        if (mob instanceof IFollowingSummon) {
+            @SuppressWarnings("unchecked")
+            CopyOwnerTargetGoal<?> goal = new CopyOwnerTargetGoal<>((PathfinderMob & IFollowingSummon) mob);
+            return goal;
+        }
+        throw new IllegalArgumentException("Mob must implement IFollowingSummon");
+    }
 
     class CopyOwnerTargetGoal<I extends PathfinderMob & IFollowingSummon> extends TargetGoal {
 

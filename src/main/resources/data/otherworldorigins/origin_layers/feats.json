@@ -1,0 +1,23 @@
+{
+    "replace": false,
+    "order": 0,
+    "name": "Feats",
+    "gui_title": {
+      "choose_origin": "Choose a Feat:",
+      "view_origin": "Your Feat:"
+    },
+    "missing_description": {
+      "text": "Something has gone wrong, you shouldn't be seeing this. Try reconnecting."
+    },
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "otherworldorigins:human"
+            },
+            "origins": [
+                "otherworldorigins:feats/test"
+            ]
+        }
+    ]
+  }

@@ -1,6 +1,6 @@
 {
-  "replace": true,
-  "loading_priority": 5,
+  "replace": false,
+  "order": 1,
   "name": "Race",
   "gui_title": {
     "choose_origin": "You were born a:",

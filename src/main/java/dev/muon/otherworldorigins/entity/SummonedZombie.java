@@ -28,7 +28,7 @@ import java.util.UUID;
 public class SummonedZombie extends Zombie implements IFollowingSummon, ISummon {
 
     /*
-        Implementation sourced from Ars Nouveau, in compliance with the LGPL-v3.0 license
+        Implementation based off of Ars Nouveau, in compliance with the LGPL-v3.0 license
     */
 
     public SummonedZombie(EntityType<? extends Zombie> entityType, Level level) {
@@ -42,17 +42,11 @@ public class SummonedZombie extends Zombie implements IFollowingSummon, ISummon 
         setOwnerID(owner.getUUID());
     }
     private final MeleeAttackGoal meleeGoal = new MeleeAttackGoal(this, 2.2D, true) {
-        /**
-         * Reset the task's internal state. Called when this task is interrupted by another one
-         */
         public void stop() {
             super.stop();
             SummonedZombie.this.setAggressive(false);
         }
 
-        /**
-         * Execute a one shot task or start executing a continuous task
-         */
         public void start() {
             super.start();
             SummonedZombie.this.setAggressive(true);

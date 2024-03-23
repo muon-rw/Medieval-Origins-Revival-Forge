@@ -18,7 +18,7 @@ import java.util.EnumSet;
 
 public class FollowSummonerGoal extends Goal {
         /*
-        Implementation sourced from Ars Nouveau, in compliance with the LGPL-v3.0 license
+        Implementation based off of Ars Nouveau, in compliance with the LGPL-v3.0 license
     */
 
     protected final IFollowingSummon summon;

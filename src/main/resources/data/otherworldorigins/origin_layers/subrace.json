@@ -1,0 +1,106 @@
+{
+    "replace": false,
+    "order": 1,
+    "name": "Subrace",
+    "gui_title": {
+        "choose_origin": "Select a subrace:",
+        "view_origin": "Select a subrace:"
+    },
+    "missing_description": {
+        "text": "Something has gone wrong, you shouldn't be seeing this. Try reconnecting."
+    },
+    "origins": [
+        {
+            "condition": {
+                "type": "origins:or",
+                "conditions": [
+                    {
+                        "type": "origins:origin",
+                        "origin": "otherworldorigins:race/elf"
+                    },
+                    {
+                        "type": "origins:origin",
+                        "origin": "otherworldorigins:race/half_elf"
+                    }
+                ]
+            },
+            "origins": [
+                "otherworldorigins:subrace/high_elf",
+                "otherworldorigins:subrace/wood_elf",
+                "otherworldorigins:subrace/drow"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "otherworldorigins:race/dwarf"
+            },
+            "origins": [
+                "otherworldorigins:subrace/hill_dwarf",
+                "otherworldorigins:subrace/mountain_dwarf",
+                "otherworldorigins:subrace/duergar"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "otherworldorigins:race/halfling"
+            },
+            "origins": [
+                "otherworldorigins:subrace/lightfoot_halfling",
+                "otherworldorigins:subrace/stout_halfling"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "otherworldorigins:race/gnome"
+            },
+            "origins": [
+                "otherworldorigins:subrace/rock_gnome",
+                "otherworldorigins:subrace/forest_gnome",
+                "otherworldorigins:subrace/deep_gnome"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "otherworldorigins:race/dragonborn"
+            },
+            "origins": [
+                "otherworldorigins:subrace/dragonborn_black",
+                "otherworldorigins:subrace/dragonborn_blue",
+                "otherworldorigins:subrace/dragonborn_brass",
+                "otherworldorigins:subrace/dragonborn_bronze",
+                "otherworldorigins:subrace/dragonborn_copper",
+                "otherworldorigins:subrace/dragonborn_gold",
+                "otherworldorigins:subrace/dragonborn_green",
+                "otherworldorigins:subrace/dragonborn_red",
+                "otherworldorigins:subrace/dragonborn_silver",
+                "otherworldorigins:subrace/dragonborn_white"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "otherworldorigins:race/undead"
+            },
+            "origins": [
+                "otherworldorigins:subrace/zombie",
+                "otherworldorigins:subrace/skeleton",
+                "otherworldorigins:subrace/wither_skeleton"
+            ]
+        },
+        {
+            "condition": {
+                "type": "origins:origin",
+                "origin": "otherworldorigins:race/minecraft"
+            },
+            "origins": [
+                "otherworldorigins:subrace/enderman",
+                "otherworldorigins:subrace/piglin",
+                "otherworldorigins:subrace/pillager"
+            ]
+        }
+    ]
+}
