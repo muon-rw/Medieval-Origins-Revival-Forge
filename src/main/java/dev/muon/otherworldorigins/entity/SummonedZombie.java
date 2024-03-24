@@ -125,6 +125,11 @@ public class SummonedZombie extends Zombie implements IFollowingSummon, ISummon 
         this.owner = owner;
     }
 
+    @Override
+    public void reassessWeaponGoal() {
+
+    }
+
     public void setWeapon(ItemStack item) {
         this.setItemSlot(EquipmentSlot.MAINHAND, item);
     }

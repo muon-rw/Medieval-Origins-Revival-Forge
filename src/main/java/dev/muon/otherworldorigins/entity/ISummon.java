@@ -5,6 +5,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.OwnableEntity;
+import net.minecraft.world.item.ItemStack;
 
 import javax.annotation.Nullable;
 import java.util.UUID;
@@ -24,6 +25,12 @@ public interface ISummon extends OwnableEntity {
     default @Nullable LivingEntity getLivingEntity() {
         return this instanceof LivingEntity ? (LivingEntity) this : null;
     }
+    void setLimitedLife(int lifeTicks);
+    void setIsLimitedLife(boolean bool);
+    void setWeapon(ItemStack item);
+    LivingEntity getOwnerFromID();
+    void setOwner(LivingEntity owner);
+    void reassessWeaponGoal();
 
     @Nullable
     default UUID getOwnerUUID(){

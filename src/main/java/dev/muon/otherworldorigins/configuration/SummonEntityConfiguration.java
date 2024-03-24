@@ -11,23 +11,25 @@ import io.github.edwinmindcraft.calio.api.registry.ICalioDynamicRegistryManager;
 import net.minecraft.core.Holder;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.item.Item;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 import java.util.Optional;
 
-public record SummonEntityConfiguration(Optional<Integer> duration, @Nullable CompoundTag tag,
+public record SummonEntityConfiguration(EntityType<?> entityType, @Nullable CompoundTag tag,
                                         Holder<ConfiguredEntityAction<?, ?>> action,
-                                        Optional<ResourceLocation> weapon,
-                                        ResourceLocation entityType) implements IDynamicFeatureConfiguration {
+                                        Optional<Integer> duration, Optional<Item> weapon)
+        implements IDynamicFeatureConfiguration {
 
     public static final Codec<SummonEntityConfiguration> CODEC = RecordCodecBuilder.create(instance -> instance.group(
-            CalioCodecHelper.optionalField(SerializableDataTypes.INT, "duration").forGetter(SummonEntityConfiguration::duration),
+            SerializableDataTypes.ENTITY_TYPE.fieldOf("entity_type").forGetter(SummonEntityConfiguration::entityType),
             CalioCodecHelper.optionalField(SerializableDataTypes.NBT, "tag").forGetter(x -> Optional.ofNullable(x.tag())),
             ConfiguredEntityAction.optional("entity_action").forGetter(SummonEntityConfiguration::action),
-            CalioCodecHelper.optionalField(SerializableDataTypes.IDENTIFIER, "weapon").forGetter(SummonEntityConfiguration::weapon),
-            SerializableDataTypes.IDENTIFIER.fieldOf("entity_type").forGetter(SummonEntityConfiguration::entityType)
+            CalioCodecHelper.optionalField(SerializableDataTypes.INT, "duration").forGetter(SummonEntityConfiguration::duration),
+            CalioCodecHelper.optionalField(SerializableDataTypes.ITEM, "weapon").forGetter(SummonEntityConfiguration::weapon)
     ).apply(instance, (t1, t2, t3, t4, t5) -> new SummonEntityConfiguration(t1, t2.orElse(null), t3, t4, t5)));
 
     @Override
@@ -46,6 +48,10 @@ public record SummonEntityConfiguration(Optional<Integer> duration, @Nullable Co
         return builder.build();
     }
 
+    public EntityType<?> entityType() {
+        return this.entityType;
+    }
+
     public @Nullable CompoundTag tag() {
         return this.tag;
     }
@@ -54,11 +60,11 @@ public record SummonEntityConfiguration(Optional<Integer> duration, @Nullable Co
         return this.action;
     }
 
-    public Optional<ResourceLocation> weapon() {
-        return this.weapon;
+    public Optional<Integer> duration() {
+        return this.duration;
     }
 
-    public ResourceLocation entityType() {
-        return this.entityType;
+    public Optional<Item> weapon() {
+        return this.weapon;
     }
 }

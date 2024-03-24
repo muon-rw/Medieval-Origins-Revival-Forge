@@ -6,9 +6,7 @@
         "choose_origin": "Select a subrace:",
         "view_origin": "Select a subrace:"
     },
-    "missing_description": {
-        "text": "Something has gone wrong, you shouldn't be seeing this. Try reconnecting."
-    },
+    "missing_description": "Something has gone wrong, you shouldn't be seeing this. Try reconnecting.",
     "origins": [
         {
             "condition": {

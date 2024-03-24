@@ -5,6 +5,12 @@
     },
     "entity_action": {
         "type": "otherworldorigins:summon_entity",
-        "entity_type": "minecraft:skeleton"
+        "entity_type": "otherworldorigins:summon_skeleton",
+        "weapon": "diamond_sword",
+        "duration": 100,
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "say test"
+        }
     }
 }
