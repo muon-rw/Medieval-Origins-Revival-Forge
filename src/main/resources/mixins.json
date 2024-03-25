@@ -1,15 +1,12 @@
 {
   "required": true,
-  "minVersion": "0.8",
   "package": "dev.muon.otherworldorigins.mixin",
   "compatibilityLevel": "JAVA_17",
+  "refmap": "${modid}.refmap.json",
   "mixins": [
-    "MobMixin"
+
   ],
   "client": [
   ],
-  "server": [],
-  "injectors": {
-    "defaultRequire": 1
-  }
+  "minVersion": "0.8"
 }

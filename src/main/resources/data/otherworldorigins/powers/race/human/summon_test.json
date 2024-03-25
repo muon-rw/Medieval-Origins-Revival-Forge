@@ -4,13 +4,34 @@
         "key": "key.origins.primary_active"
     },
     "entity_action": {
-        "type": "otherworldorigins:summon_entity",
-        "entity_type": "otherworldorigins:summon_skeleton",
-        "weapon": "diamond_sword",
-        "duration": 100,
-        "entity_action": {
-            "type": "origins:execute_command",
-            "command": "say test"
-        }
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "otherworldorigins:summon_entity",
+                "entity_type": "otherworldorigins:summon_skeleton",
+                "entity_action": {
+                    "type": "origins:execute_command",
+                    "command": "say test skeleton, infinite no wep"
+                }
+            },
+            {
+                "type": "otherworldorigins:summon_entity",
+                "entity_type": "otherworldorigins:summon_zombie",
+                "weapon": "diamond_sword",
+                "duration": 100,
+                "entity_action": {
+                    "type": "origins:execute_command",
+                    "command": "say test zombie, 5s diamond sword"
+                }
+            },
+            {
+                "type": "otherworldorigins:summon_entity",
+                "entity_type": "otherworldorigins:summon_wither_skeleton",
+                "entity_action": {
+                    "type": "origins:execute_command",
+                    "command": "say test with skel, infinite no wep"
+                }
+            }
+        ]
     }
 }

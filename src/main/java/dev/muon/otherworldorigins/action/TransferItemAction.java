@@ -1,8 +1,8 @@
 package dev.muon.otherworldorigins.action;
 
-import dev.muon.otherworldorigins.entity.SummonedSkeleton;
-import dev.muon.otherworldorigins.entity.SummonedWitherSkeleton;
-import dev.muon.otherworldorigins.entity.SummonedZombie;
+import dev.muon.otherworldorigins.entity.summons.SummonedSkeleton;
+import dev.muon.otherworldorigins.entity.summons.SummonedWitherSkeleton;
+import dev.muon.otherworldorigins.entity.summons.SummonedZombie;
 import io.github.edwinmindcraft.apoli.api.configuration.NoConfiguration;
 import io.github.edwinmindcraft.apoli.api.power.factory.BiEntityAction;
 import net.minecraft.world.InteractionHand;

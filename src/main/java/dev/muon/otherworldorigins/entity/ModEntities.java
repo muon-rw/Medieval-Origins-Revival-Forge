@@ -1,6 +1,9 @@
 package dev.muon.otherworldorigins.entity;
 
 import dev.muon.otherworldorigins.OtherworldOrigins;
+import dev.muon.otherworldorigins.entity.summons.SummonedSkeleton;
+import dev.muon.otherworldorigins.entity.summons.SummonedWitherSkeleton;
+import dev.muon.otherworldorigins.entity.summons.SummonedZombie;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;

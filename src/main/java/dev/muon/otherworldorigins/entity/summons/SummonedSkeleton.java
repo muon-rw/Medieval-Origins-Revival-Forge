@@ -1,5 +1,8 @@
-package dev.muon.otherworldorigins.entity;
+package dev.muon.otherworldorigins.entity.summons;
 
+import dev.muon.otherworldorigins.entity.IFollowingSummon;
+import dev.muon.otherworldorigins.entity.ISummon;
+import dev.muon.otherworldorigins.entity.ModEntities;
 import dev.muon.otherworldorigins.entity.goal.FollowSummonerGoal;
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
@@ -42,12 +45,11 @@ public class SummonedSkeleton extends Skeleton implements IFollowingSummon, ISum
         super(ModEntities.SUMMON_SKELETON.get(), level);
         this.setWeapon(item);
         this.owner = owner;
-        this.isLimitedLifespan = true;
         setOwnerID(owner.getUUID());
     }
     private final RangedBowAttackGoal<SummonedSkeleton> bowGoal = new RangedBowAttackGoal<>(this, 1.0D, 20, 15.0F);
 
-    private final MeleeAttackGoal meleeGoal = new MeleeAttackGoal(this, 2.2D, true) {
+    private final MeleeAttackGoal meleeGoal = new MeleeAttackGoal(this, 1.2D, true) {
         public void stop() {
             super.stop();
             SummonedSkeleton.this.setAggressive(false);
@@ -62,10 +64,8 @@ public class SummonedSkeleton extends Skeleton implements IFollowingSummon, ISum
     private LivingEntity owner;
     @Nullable
     private BlockPos boundOrigin;
-    private boolean isLimitedLifespan = true;
-    private int limitedLifeTicks = 20;
-
-
+    private boolean isLimitedLifespan;
+    private int limitedLifeTicks;
 
     @Override
     public void die(DamageSource pDamageSource) {
@@ -83,12 +83,11 @@ public class SummonedSkeleton extends Skeleton implements IFollowingSummon, ISum
         return super.finalizeSpawn(worldIn, difficultyIn, reason, spawnDataIn, dataTag);
     }
 
-    /**
-     * Gives armor or weapon for entity based on given DifficultyInstance
-     */
     @Override
     protected void populateDefaultEquipmentSlots(RandomSource randomSource, DifficultyInstance pDifficulty) {
+        this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Items.BOW));
     }
+
     @Override
     protected boolean shouldDropLoot() {return true;}
 
@@ -106,6 +105,7 @@ public class SummonedSkeleton extends Skeleton implements IFollowingSummon, ISum
                         (entity instanceof Mob mob && mob.getTarget() != null && mob.getTarget().equals(this.owner))
                                 || (entity != null && entity.getKillCredit() != null && entity.getKillCredit().equals(this.owner))
         ));
+        // No combat goal type here at p4; it gets assigned by reassessWeaponGoal
         this.goalSelector.addGoal(5, new FollowSummonerGoal(this, this.owner, 1.0, 9.0f, 3.0f));
         this.goalSelector.addGoal(6, new WaterAvoidingRandomStrollGoal(this, 1.0D));
         this.goalSelector.addGoal(9, new LookAtPlayerGoal(this, Player.class, 3.0F, 1.0F));
@@ -203,27 +203,47 @@ public class SummonedSkeleton extends Skeleton implements IFollowingSummon, ISum
         return 0;
     }
 
-    /**
-     * (abstract) Protected helper method to read subclass entity data from NBT.
-     */
+    public void addAdditionalSaveData(CompoundTag compound) {
+        super.addAdditionalSaveData(compound);
+        if (this.boundOrigin != null) {
+            compound.putInt("BoundX", this.boundOrigin.getX());
+            compound.putInt("BoundY", this.boundOrigin.getY());
+            compound.putInt("BoundZ", this.boundOrigin.getZ());
+        }
+        compound.putBoolean("isLimited", this.isLimitedLifespan);
+        if (this.isLimitedLifespan) {
+            compound.putInt("LifeTicks", this.limitedLifeTicks);
+        }
+        UUID ownerUuid = this.getOwnerUUID();
+        if (ownerUuid != null) {
+            compound.putUUID("OwnerUUID", ownerUuid);
+        }
+    }
     public void readAdditionalSaveData(CompoundTag compound) {
         super.readAdditionalSaveData(compound);
         if (compound.contains("BoundX")) {
             this.boundOrigin = new BlockPos(compound.getInt("BoundX"), compound.getInt("BoundY"), compound.getInt("BoundZ"));
         }
-        if (compound.contains("LifeTicks")) {
-            this.setLimitedLife(compound.getInt("LifeTicks"));
+        if (compound.contains("isLimited")) {
+            this.isLimitedLifespan = compound.getBoolean("isLimited");
         }
-
+        if (compound.contains("LifeTicks")) {
+            this.setLifeTicks(compound.getInt("LifeTicks"));
+        }
         if (compound.hasUUID("OwnerUUID")) {
             this.setOwnerID(compound.getUUID("OwnerUUID"));
         }
     }
 
-    public void setLimitedLife(int lifeTicks) {
+    @Override
+    public void setLifeTicks(int lifeTicks) {
         this.limitedLifeTicks = lifeTicks;
     }
-
+    @Override
+    public int getTicksLeft() {
+        return limitedLifeTicks;
+    }
+    @Override
     public void setIsLimitedLife(boolean bool) {
         this.isLimitedLifespan = bool;
     }
@@ -242,35 +262,9 @@ public class SummonedSkeleton extends Skeleton implements IFollowingSummon, ISum
         this.entityData.define(OWNER_UUID, Optional.empty());
     }
 
-    public void addAdditionalSaveData(CompoundTag compound) {
-        super.addAdditionalSaveData(compound);
-        if (this.boundOrigin != null) {
-            compound.putInt("BoundX", this.boundOrigin.getX());
-            compound.putInt("BoundY", this.boundOrigin.getY());
-            compound.putInt("BoundZ", this.boundOrigin.getZ());
-        }
-
-        if (this.isLimitedLifespan) {
-            compound.putInt("LifeTicks", this.limitedLifeTicks);
-        }
-        UUID ownerUuid = this.getOwnerUUID();
-        if (ownerUuid != null) {
-            compound.putUUID("OwnerUUID", ownerUuid);
-        }
-    }
-
     @Override
     protected boolean isSunBurnTick() {
         return false;
-    }
-    @Override
-    public int getTicksLeft() {
-        return limitedLifeTicks;
-    }
-
-    @Override
-    public void setTicksLeft(int ticks) {
-        this.limitedLifeTicks = ticks;
     }
 
     @Nullable

@@ -1,9 +1,9 @@
 package dev.muon.otherworldorigins;
 
 import dev.muon.otherworldorigins.entity.ModEntities;
-import dev.muon.otherworldorigins.entity.SummonedSkeleton;
-import dev.muon.otherworldorigins.entity.SummonedZombie;
-import dev.muon.otherworldorigins.entity.SummonedWitherSkeleton;
+import dev.muon.otherworldorigins.entity.summons.SummonedSkeleton;
+import dev.muon.otherworldorigins.entity.summons.SummonedZombie;
+import dev.muon.otherworldorigins.entity.summons.SummonedWitherSkeleton;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
